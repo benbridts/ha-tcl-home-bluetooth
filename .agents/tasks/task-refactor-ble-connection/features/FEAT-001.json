@@ -31,5 +31,5 @@
     "Run: python -m pytest tests/test_protocol.py -v (all 22 tests pass)"
   ],
   "blocked_reason": null,
-  "findings": "All 22 tests pass. All .py files compile cleanly. Used TimeoutError (builtin) instead of asyncio.TimeoutError since Python 3.11+ aliases them. The asyncio import was removed entirely as it is no longer needed."
+  "findings": "All 22 tests pass. All .py files compile cleanly. Review fixes applied: re-added asyncio.Lock for connection serialization (double-check pattern), replaced raw BleakClient with establish_connection from HA bluetooth, added _handle_disconnect callback, added single retry on send failure."
 }
