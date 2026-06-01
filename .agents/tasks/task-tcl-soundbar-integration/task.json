@@ -1,0 +1,14 @@
+{
+  "task_id": "task-tcl-soundbar-integration",
+  "task_description": "Create a Home Assistant custom integration for the TCL S55HE Soundbar using BLE, implementing a media_player entity with power on/off, source selection, volume control, and mute functionality.",
+  "status": "in_progress",
+  "feature_order": ["FEAT-001", "FEAT-002", "FEAT-003"],
+  "blocked_reason": null,
+  "verification": {
+    "build": "pass",
+    "tests": "pass",
+    "test_quality": "pass",
+    "docker_build": "skipped",
+    "summary": "All Python files compile, JSON files valid, 22 unit tests pass covering frame building, parsing, checksum, helpers, and multi-packet reassembly."
+  }
+}
