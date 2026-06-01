@@ -2,7 +2,7 @@
   "id": "FEAT-001",
   "type": "refactor",
   "description": "Fix the local import in protocol.py by moving CMD_GET_VERSION to the module-level import from .const, and refactor media_player.py to use Home Assistant's standard BLE connection management pattern (async_ble_device_from_address + establish_connection) instead of manually managing BleakClient with retry loops and locks.",
-  "status": "in_progress",
+  "status": "completed",
   "steps": [
     "In custom_components/tcl_soundbar/protocol.py: Move the local import of CMD_GET_VERSION from inside build_get_status() to the top-level import block (add it to the existing 'from .const import ...' statement).",
     "In custom_components/tcl_soundbar/media_player.py: Remove the manual BLE connection management code: remove MAX_CONNECT_ATTEMPTS, CONNECT_RETRY_DELAY constants; remove _connect_lock, _connected instance variables; remove the entire _ensure_connected method; remove the _disconnect method; remove the _discover_characteristics method; remove the _start_notifications method.",
@@ -31,5 +31,5 @@
     "Run: python -m pytest tests/test_protocol.py -v (all 22 tests pass)"
   ],
   "blocked_reason": null,
-  "findings": ""
+  "findings": "All 22 tests pass. All .py files compile cleanly. Used TimeoutError (builtin) instead of asyncio.TimeoutError since Python 3.11+ aliases them. The asyncio import was removed entirely as it is no longer needed."
 }
