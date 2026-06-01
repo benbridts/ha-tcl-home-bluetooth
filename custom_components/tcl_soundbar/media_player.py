@@ -1,13 +1,16 @@
 """Media player platform for TCL Soundbar."""
 from __future__ import annotations
 
-import asyncio
 import logging
 from typing import Any
 
 from bleak import BleakClient
 from bleak.exc import BleakError
 
+from homeassistant.components.bluetooth import (
+    async_ble_device_from_address,
+    establish_connection,
+)
 from homeassistant.components.media_player import (
     MediaPlayerEntity,
     MediaPlayerEntityFeature,
@@ -29,10 +32,6 @@ from .const import (
 from .protocol import TCLSoundbarProtocol, TDataMerger
 
 _LOGGER = logging.getLogger(__name__)
-
-# BLE connection constants
-MAX_CONNECT_ATTEMPTS = 3
-CONNECT_RETRY_DELAY = 2.0
 
 
 async def async_setup_entry(
@@ -88,9 +87,6 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             "model": "S55HE Soundbar",
         }
 
-        self._connected = False
-        self._connect_lock = asyncio.Lock()
-
     async def async_added_to_hass(self) -> None:
         """Run when entity is added to hass."""
         _LOGGER.debug("TCL Soundbar entity added to hass: %s", self._address)
@@ -98,60 +94,6 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
     async def async_will_remove_from_hass(self) -> None:
         """Run when entity is removed from hass."""
         await self._disconnect()
-
-    async def _ensure_connected(self) -> bool:
-        """Ensure BLE connection is established.
-
-        Uses an asyncio.Lock so concurrent callers wait for the connection
-        attempt rather than failing immediately.
-
-        Returns:
-            True if connected, False otherwise.
-        """
-        if self._connected and self._client and self._client.is_connected:
-            return True
-
-        async with self._connect_lock:
-            # Re-check after acquiring the lock (another caller may have connected)
-            if self._connected and self._client and self._client.is_connected:
-                return True
-
-            for attempt in range(1, MAX_CONNECT_ATTEMPTS + 1):
-                try:
-                    _LOGGER.debug(
-                        "Connecting to %s (attempt %d/%d)",
-                        self._address,
-                        attempt,
-                        MAX_CONNECT_ATTEMPTS,
-                    )
-                    self._client = BleakClient(self._address)
-                    await self._client.connect()
-                    await self._discover_characteristics()
-                    await self._start_notifications()
-                    self._connected = True
-                    _LOGGER.debug("Connected to %s", self._address)
-
-                    # Poll initial state from device
-                    await self._poll_initial_state()
-
-                    return True
-                except (BleakError, asyncio.TimeoutError, OSError) as err:
-                    _LOGGER.warning(
-                        "Connection attempt %d failed: %s", attempt, err
-                    )
-                    if attempt < MAX_CONNECT_ATTEMPTS:
-                        await asyncio.sleep(CONNECT_RETRY_DELAY * attempt)
-                    else:
-                        _LOGGER.error(
-                            "Failed to connect to %s after %d attempts",
-                            self._address,
-                            MAX_CONNECT_ATTEMPTS,
-                        )
-                        self._attr_state = None
-                        self.async_write_ha_state()
-                        return False
-
-        return False
 
     async def _poll_initial_state(self) -> None:
         """Send a get-status command to request current state from device."""
@@ -162,7 +104,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                 await self._client.write_gatt_char(
                     self._write_characteristic, frame
                 )
-            except (BleakError, asyncio.TimeoutError, OSError) as err:
+            except (BleakError, TimeoutError, OSError) as err:
                 _LOGGER.warning("Failed to poll initial state: %s", err)
 
     async def _discover_characteristics(self) -> None:
@@ -196,6 +138,18 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                 self._notify_characteristic, self._notification_callback
             )
             _LOGGER.debug("Started notifications")
+
+    def _handle_disconnect(self) -> None:
+        """Handle unexpected device disconnection.
+
+        Clears client and characteristics, logs the event, and schedules
+        a state update so HA reflects the disconnected state.
+        """
+        _LOGGER.warning("Device %s disconnected unexpectedly", self._address)
+        self._client = None
+        self._write_characteristic = None
+        self._notify_characteristic = None
+        self.hass.loop.call_soon_threadsafe(self.async_write_ha_state)
 
     def _notification_callback(
         self, _sender: Any, data: bytearray
@@ -259,7 +213,6 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                 await self._client.disconnect()
             except BleakError as err:
                 _LOGGER.debug("Error during disconnect: %s", err)
-        self._connected = False
         self._client = None
         self._write_characteristic = None
         self._notify_characteristic = None
@@ -267,12 +220,42 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
     async def _send_command(self, frame: bytes) -> bool:
         """Send a command frame to the device.
 
+        Connects inline if needed. If the write fails, invalidates the
+        connection and returns False; the next call will reconnect.
+
         Returns:
             True if the command was sent successfully, False otherwise.
         """
-        if not await self._ensure_connected():
-            _LOGGER.error("Cannot send command: not connected")
-            return False
+        if not (self._client and self._client.is_connected):
+            try:
+                ble_device = async_ble_device_from_address(
+                    self.hass, self._address, connectable=True
+                )
+                if ble_device is None:
+                    _LOGGER.error(
+                        "Could not find BLE device for address %s", self._address
+                    )
+                    return False
+
+                _LOGGER.debug("Connecting to %s", self._address)
+                self._client = await establish_connection(
+                    self.hass,
+                    _LOGGER,
+                    ble_device,
+                    self._address,
+                    disconnected_callback=self._handle_disconnect,
+                )
+                await self._discover_characteristics()
+                await self._start_notifications()
+                _LOGGER.debug("Connected to %s", self._address)
+
+                await self._poll_initial_state()
+            except (BleakError, TimeoutError, OSError) as err:
+                _LOGGER.error("Failed to connect to %s: %s", self._address, err)
+                self._client = None
+                self._attr_state = None
+                self.async_write_ha_state()
+                return False
 
         assert self._client is not None
         assert self._write_characteristic is not None
@@ -283,19 +266,9 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                 self._write_characteristic, frame
             )
             return True
-        except (BleakError, asyncio.TimeoutError, OSError) as err:
+        except (BleakError, TimeoutError, OSError) as err:
             _LOGGER.error("Failed to send command: %s", err)
-            self._connected = False
-            # Try one reconnect and resend
-            if await self._ensure_connected():
-                try:
-                    await self._client.write_gatt_char(
-                        self._write_characteristic, frame
-                    )
-                    return True
-                except (BleakError, asyncio.TimeoutError, OSError) as retry_err:
-                    _LOGGER.error("Retry also failed: %s", retry_err)
-                    return False
+            self._client = None
             return False
 
     async def async_turn_on(self) -> None:
