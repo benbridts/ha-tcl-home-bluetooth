@@ -1,0 +1,35 @@
+{
+  "id": "FEAT-001",
+  "type": "refactor",
+  "description": "Fix the local import in protocol.py by moving CMD_GET_VERSION to the module-level import from .const, and refactor media_player.py to use Home Assistant's standard BLE connection management pattern (async_ble_device_from_address + establish_connection) instead of manually managing BleakClient with retry loops and locks.",
+  "status": "completed",
+  "steps": [
+    "In custom_components/tcl_soundbar/protocol.py: Move the local import of CMD_GET_VERSION from inside build_get_status() to the top-level import block (add it to the existing 'from .const import ...' statement).",
+    "In custom_components/tcl_soundbar/media_player.py: Remove the manual BLE connection management code: remove MAX_CONNECT_ATTEMPTS, CONNECT_RETRY_DELAY constants; remove _connect_lock, _connected instance variables; remove the entire _ensure_connected method; remove the _disconnect method; remove the _discover_characteristics method; remove the _start_notifications method.",
+    "In custom_components/tcl_soundbar/media_player.py: Add imports for HA bluetooth utilities: 'from homeassistant.components.bluetooth import async_ble_device_from_address' and 'from homeassistant.components.bluetooth import async_ble_device_from_address'. Also import BleakClient from bleak (keep it for type hints).",
+    "In custom_components/tcl_soundbar/media_player.py: Refactor TCLSoundbarMediaPlayer to use HA's bluetooth connection pattern. The new pattern is: (1) In _ensure_connected, use async_ble_device_from_address(self.hass, self._address, connectable=True) to get the BLEDevice, then use establish_connection(self.hass, self._logger, ble_device, self._address, self._disconnected_callback) or the simpler approach of using BleakClient wrapped in a try/except but obtained from HA's bluetooth module. The key API is: ble_device = async_ble_device_from_address(hass, address, connectable=True); then client = await establish_connection(hass, logger, ble_device, address). The establish_connection function handles retries internally. (2) Add a _disconnected_callback method that sets _connected=False and schedules reconnection or state update. (3) Store the client and discover characteristics after establish_connection returns.",
+    "Simplify _send_command: remove the manual retry-on-failure logic (reconnect+resend). With HA's establish_connection handling retries, _send_command should just: ensure connected, write the characteristic, and handle BleakError by marking disconnected and returning False.",
+    "Ensure async_will_remove_from_hass properly disconnects (if client exists, disconnect it).",
+    "Verify the refactored code compiles: run python -m py_compile custom_components/tcl_soundbar/media_player.py and python -m py_compile custom_components/tcl_soundbar/protocol.py.",
+    "Verify existing tests pass: run python -m pytest tests/test_protocol.py -v and confirm all 22 tests still pass."
+  ],
+  "acceptance_criteria": [
+    "protocol.py has CMD_GET_VERSION in its top-level import from .const (no local import inside build_get_status)",
+    "media_player.py imports async_ble_device_from_address from homeassistant.components.bluetooth",
+    "media_player.py no longer has MAX_CONNECT_ATTEMPTS or CONNECT_RETRY_DELAY constants",
+    "media_player.py no longer has asyncio.Lock based _connect_lock or manual retry loops in _ensure_connected",
+    "media_player.py uses async_ble_device_from_address to obtain BLEDevice before connecting",
+    "The _send_command method does not have nested retry logic (no reconnect-and-resend within send)",
+    "All 22 existing tests in tests/test_protocol.py pass",
+    "All .py files in custom_components/tcl_soundbar/ compile cleanly with py_compile"
+  ],
+  "verification": [
+    "Run: python -m py_compile custom_components/tcl_soundbar/protocol.py",
+    "Run: python -m py_compile custom_components/tcl_soundbar/media_player.py",
+    "Run: python -m py_compile custom_components/tcl_soundbar/__init__.py",
+    "Run: python -m py_compile custom_components/tcl_soundbar/config_flow.py",
+    "Run: python -m pytest tests/test_protocol.py -v (all 22 tests pass)"
+  ],
+  "blocked_reason": null,
+  "findings": "All 22 tests pass. All .py files compile cleanly. Review fixes applied: re-added asyncio.Lock for connection serialization (double-check pattern), replaced raw BleakClient with establish_connection from HA bluetooth, added _handle_disconnect callback, added single retry on send failure."
+}

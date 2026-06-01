@@ -1,0 +1,23 @@
+{
+  "project_type": "Home Assistant custom integration (BLE media player)",
+  "language": "Python",
+  "build_system": "None (custom component, no build step; py_compile for syntax validation)",
+  "test_framework": "pytest with mocked homeassistant modules (tests/test_protocol.py)",
+  "build_command": "python -m py_compile custom_components/tcl_soundbar/media_player.py && python -m py_compile custom_components/tcl_soundbar/protocol.py && python -m py_compile custom_components/tcl_soundbar/__init__.py",
+  "test_command": "python -m pytest tests/test_protocol.py -v",
+  "verification_instructions": "1. Run py_compile on all .py files in custom_components/tcl_soundbar/. 2. Run pytest tests/test_protocol.py. 3. Verify all 22 tests pass.",
+  "snapshot_or_generated_files": null,
+  "setup_instructions": "pyenv global 3.11.15 to set Python version. No pip install needed - tests mock HA dependencies.",
+  "environment_constraints": "OPEN_INTERNET network. No Home Assistant runtime available - tests stub out HA modules with MagicMock. py_compile is sufficient for syntax validation.",
+  "contribution_requirements": "No CONTRIBUTING.md. Keep code style consistent with existing patterns.",
+  "key_patterns": "TCLSoundbarProtocol is a class with all @staticmethod methods serving as a namespace. TDataMerger is stateful. Tests use sys.modules mocking to avoid needing real HA install. The integration uses HA's bluetooth dependency (manifest.json). Config flow stores BLE address in entry.data['address'].",
+  "relevant_files": [
+    "custom_components/tcl_soundbar/media_player.py",
+    "custom_components/tcl_soundbar/protocol.py",
+    "custom_components/tcl_soundbar/const.py",
+    "custom_components/tcl_soundbar/__init__.py",
+    "custom_components/tcl_soundbar/manifest.json",
+    "tests/test_protocol.py"
+  ],
+  "directory_structure": "custom_components/tcl_soundbar/ - integration code. tests/ - test files. apk/ - reference APK from TCL app (not part of integration code)."
+}
