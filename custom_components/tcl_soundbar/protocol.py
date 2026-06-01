@@ -4,6 +4,7 @@ from __future__ import annotations
 import logging
 
 from .const import (
+    CMD_GET_VERSION,
     CMD_SET_MUTE,
     CMD_SET_POWER,
     CMD_SET_SOURCE,
@@ -154,8 +155,6 @@ class TCLSoundbarProtocol:
         Returns:
             Complete frame bytes.
         """
-        from .const import CMD_GET_VERSION
-
         return TCLSoundbarProtocol.build_frame(CMD_GET_VERSION)
 
 
