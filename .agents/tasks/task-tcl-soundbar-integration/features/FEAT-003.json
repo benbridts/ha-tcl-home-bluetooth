@@ -2,7 +2,7 @@
   "id": "FEAT-003",
   "type": "fix",
   "description": "Address semantic review findings in media_player.py: make _send_command return bool, fix mute state tracking, fix notification callback thread safety, add initial state poll, fix _ensure_connected reentrancy, and add local_name filter to manifest.",
-  "status": "in_progress",
+  "status": "completed",
   "steps": [
     "Make _send_command return bool (True on success, False on failure). Guard optimistic state updates behind success check in all command methods.",
     "Fix mute state tracking: track mute state separately, do not derive is_volume_muted from volume==0.",
@@ -27,5 +27,5 @@
     "Run: python -m pytest tests/test_protocol.py -v"
   ],
   "blocked_reason": null,
-  "findings": null
+  "findings": "All 6 review issues fixed. py_compile passes, 22 protocol tests pass. Constructor now takes hass parameter for thread-safe callback scheduling."
 }
