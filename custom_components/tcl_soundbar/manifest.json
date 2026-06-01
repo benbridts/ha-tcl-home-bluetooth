@@ -1,7 +1,7 @@
 {
   "domain": "tcl_soundbar",
-  "name": "TCL Soundbar",
-  "codeowners": [],
+  "name": "TCL Home Soundbar",
+  "codeowners": ["@benbridts"],
   "config_flow": true,
   "dependencies": ["bluetooth"],
   "documentation": "https://github.com/benbridts/ha-tcl-home-bluetooth",

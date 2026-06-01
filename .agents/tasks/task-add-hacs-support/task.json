@@ -1,0 +1,7 @@
+{
+  "task_id": "task-add-hacs-support",
+  "task_description": "Add HACS (Home Assistant Community Store) support to the TCL Soundbar integration by creating hacs.json, README.md with installation instructions, and updating manifest.json codeowners.",
+  "status": "in_progress",
+  "feature_order": ["FEAT-001"],
+  "blocked_reason": null
+}

@@ -1,0 +1,18 @@
+{
+  "project_type": "Home Assistant custom integration (Bluetooth BLE)",
+  "language": "Python",
+  "build_system": "None (HA custom component - no build step)",
+  "test_framework": "pytest (tests/ directory with test_protocol.py)",
+  "build_command": null,
+  "test_command": "pytest tests/",
+  "verification_instructions": "Verify hacs.json is valid JSON, README.md exists with HACS instructions, manifest.json has codeowners populated.",
+  "snapshot_or_generated_files": null,
+  "setup_instructions": "No setup required - this is a Home Assistant custom integration that gets installed via HACS or manually.",
+  "environment_constraints": "OPEN_INTERNET network mode. No Home Assistant runtime available for integration testing.",
+  "contribution_requirements": "No CONTRIBUTING.md found. Standard GitHub workflow.",
+  "key_patterns": "Standard HA custom integration structure: custom_components/<domain>/ with manifest.json, __init__.py, config_flow.py, const.py, protocol.py, media_player.py, strings.json",
+  "relevant_files": [
+    "custom_components/tcl_soundbar/manifest.json"
+  ],
+  "directory_structure": "Root: custom_components/tcl_soundbar/ (integration code), apk/ (decompiled APK for protocol reference), tests/ (pytest tests)"
+}
