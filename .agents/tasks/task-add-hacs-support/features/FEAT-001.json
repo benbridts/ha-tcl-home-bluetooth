@@ -1,0 +1,25 @@
+{
+  "id": "FEAT-001",
+  "type": "feat",
+  "description": "Add HACS support files and installation instructions. Create hacs.json configuration, a README.md with HACS and manual installation instructions, and update manifest.json codeowners.",
+  "status": "in_progress",
+  "steps": [
+    "Create /projects/sandbox/ha-tcl-home-bluetooth/hacs.json in the repository root with the following fields: name ('TCL Home Soundbar'), hacs content_in_root set to false, render_readme set to true, and zip_release set to false. This is the HACS configuration file that tells HACS how to install the integration.",
+    "Update /projects/sandbox/ha-tcl-home-bluetooth/custom_components/tcl_soundbar/manifest.json: (a) set codeowners to [\"@benbridts\"], (b) change the name from 'TCL Soundbar' to 'TCL Home Soundbar' to make it generic enough to cover any TCL soundbar that uses the TCL Home app via Bluetooth.",
+    "Create /projects/sandbox/ha-tcl-home-bluetooth/README.md with: a title 'TCL Home Soundbar' and brief description explaining this is a Home Assistant custom integration for controlling TCL soundbars that use the TCL Home app via Bluetooth LE. Include a features section mentioning power on/off, volume control, mute, and source selection. Include a Prerequisites section noting a Bluetooth adapter is required on the HA host. Include an Installation section with two subsections: (1) HACS installation (add as custom repository with URL https://github.com/benbridts/ha-tcl-home-bluetooth, category Integration, then install) and (2) Manual installation (copy custom_components/tcl_soundbar to the HA config/custom_components/ directory). Include a Configuration section noting the integration auto-discovers TCL soundbars via Bluetooth or can be added manually via Settings > Integrations. Include a Supported Devices section listing known compatible devices (TCL S55HE Soundbar) and noting that other TCL soundbars compatible with the TCL Home app should also work."
+  ],
+  "acceptance_criteria": [
+    "hacs.json exists at the repository root and is valid JSON with correct fields",
+    "manifest.json codeowners field is [\"@benbridts\"] and name is 'TCL Home Soundbar'",
+    "README.md exists at the repository root with HACS installation instructions including the custom repository URL",
+    "README.md includes manual installation instructions as an alternative"
+  ],
+  "verification": [
+    "Run: python3 -c \"import json; json.load(open('/projects/sandbox/ha-tcl-home-bluetooth/hacs.json'))\" to validate hacs.json is valid JSON",
+    "Run: python3 -c \"import json; m=json.load(open('/projects/sandbox/ha-tcl-home-bluetooth/custom_components/tcl_soundbar/manifest.json')); assert m['codeowners'] == ['@benbridts'], f'Got {m[chr(99)+chr(111)+chr(100)+chr(101)+chr(111)+chr(119)+chr(110)+chr(101)+chr(114)+chr(115)]}'\" to verify codeowners",
+    "Run: test -f /projects/sandbox/ha-tcl-home-bluetooth/README.md && echo 'README exists' to confirm README was created",
+    "Run: grep -q 'HACS' /projects/sandbox/ha-tcl-home-bluetooth/README.md && echo 'HACS mentioned in README' to confirm HACS instructions are present"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}
