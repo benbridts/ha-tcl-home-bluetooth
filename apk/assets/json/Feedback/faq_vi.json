@@ -1,0 +1,54 @@
+[
+    {
+        "category": "Account",
+        "tagList": [
+            {
+                "faqList": [
+                    {
+                        "faqId": "1",
+                        "faqTitle": "Làm cách nào để xóa Tài khoản TCL của bạn?"
+                    }
+                ],
+                "tagId": "T1",
+                "tagName": "Tài khoản"
+            }
+        ]
+    },
+    {
+        "category": "Membership",
+        "tagList": [
+            {
+                "faqList": [
+                    {
+                        "faqId": "2",
+                        "faqTitle": "Câu lạc bộ TCL VIP là gì?"
+                    },
+                    {
+                        "faqId": "3",
+                        "faqTitle": "Làm thế nào để tham gia Câu lạc bộ TCL VIP?"
+                    }
+                ],
+                "tagId": "T2",
+                "tagName": "Câu lạc bộ VIP của TCL"
+            },
+            {
+                "faqList": [
+                    {
+                        "faqId": "4",
+                        "faqTitle": "Điểm TCL VIP là gì và làm cách nào để nhận được?"
+                    },
+                    {
+                        "faqId": "5",
+                        "faqTitle": "Làm cách nào để tôi nâng cấp lên cấp độ tiếp theo?"
+                    },
+                    {
+                        "faqId": "6",
+                        "faqTitle": "Khi nào thì tôi sẽ bị hạ cấp?"
+                    }
+                ],
+                "tagId": "T3",
+                "tagName": "Điểm VIP"
+            }
+        ]
+    }
+]

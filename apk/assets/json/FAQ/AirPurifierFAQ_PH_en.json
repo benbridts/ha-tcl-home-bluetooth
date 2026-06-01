@@ -1,0 +1,54 @@
+[
+  {
+    "category": "Accessories",
+    "data": [
+      {
+          "question": "May we know where to buy TCL Air Purifier Filter?",
+          "answer":"You could buy it within TCL official store"
+      },
+      {
+          "question": "I have to use filter from TCL or I can user filter from other brands?",
+          "answer":"Yes, you have to. TCL filter is using true HEPA 13 and quality is reliable."
+      },
+      {
+          "question": "How long can a filter work?",
+          "answer":"It can work 3-6 months. We recommend you replace a new filter every 3-6 months"
+      },
+      {
+          "question": "How do we know when to replace Filter",
+          "answer":"There is a filter light indicator. When the LED indicator starts showing yellow, it means you need to prepare buying a new filter. When the LED indicator starts showing red, it means that filter cannot work, although the air purifier can still work.\nWe recommend you buying a new filter before yellow light ON, better to buy filter together when you buy air purifier."
+      }
+    ]
+  },
+  {
+    "category": "Efficacy",
+    "data": [
+      {
+        "question": "How do we know if air purifier is working",
+        "answer":"You could have air purifier run over 12 hours, and then open it to check filter if it\u0027s getting dirty or not. But this is depended on your circumstance."
+      },
+      {
+        "question": "What room size can this air purifier can cover?",
+        "answer":"The Air purifier CADR 120M3/H, it can cover 15M2~20M2"
+       }
+    ]
+  },
+  {
+    "category": "Function",
+    "data": [
+      {
+        "question": "Does this air purifier support removal of PM 2.5?",
+        "answer":"Yes, it does"
+       }
+    ]
+  },
+  {
+    "category": "Low noise level",
+    "data": [
+      {
+        "question": "I want to buy an air purifier for my bedroom, but have worries that it will be noisy",
+        "answer":"You can set it sleep mode and it will be very quiet ( only 20dB in sleep mode)"
+       }
+    ]
+  }
+]

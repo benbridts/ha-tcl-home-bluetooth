@@ -1,0 +1,54 @@
+[
+    {
+        "category": "Account",
+        "tagList": [
+            {
+                "faqList": [
+                    {
+                        "faqId": "1",
+                        "faqTitle": "如何刪除您的 TCL 帳戶？"
+                    }
+                ],
+                "tagId": "T1",
+                "tagName": "賬號"
+            }
+        ]
+    },
+    {
+        "category": "Membership",
+        "tagList": [
+            {
+                "faqList": [
+                    {
+                        "faqId": "2",
+                        "faqTitle": "何謂 TCL 貴賓會？"
+                    },
+                    {
+                        "faqId": "3",
+                        "faqTitle": "如何加入 TCL 貴賓會？"
+                    }
+                ],
+                "tagId": "T2",
+                "tagName": "TCL VIP Club"
+            },
+            {
+                "faqList": [
+                    {
+                        "faqId": "4",
+                        "faqTitle": "何謂 TCL 貴賓積分，如何獲得？"
+                    },
+                    {
+                        "faqId": "5",
+                        "faqTitle": "我怎樣才能升級到下一個級別？"
+                    },
+                    {
+                        "faqId": "6",
+                        "faqTitle": "我何時會降級至較低級別？"
+                    }
+                ],
+                "tagId": "T3",
+                "tagName": "VIP point"
+            }
+        ]
+    }
+]

@@ -1,0 +1,1977 @@
+{
+  "version": "1.0",
+  "countries": [
+    {
+      "abbr": "AR",
+      "cnName": "阿根廷",
+      "countryCode": "54",
+      "enName": "Argentina",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "AU",
+      "cnName": "澳大利亚",
+      "countryCode": "61",
+      "enName": "Australia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "CL",
+      "cnName": "智利",
+      "countryCode": "56",
+      "enName": "Chile",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "FR",
+      "cnName": "法国",
+      "countryCode": "33",
+      "enName": "France",
+      "isOnline": "1",
+      "language": [
+        "fr",
+        "en"
+      ]
+    },
+    {
+      "abbr": "DE",
+      "cnName": "德国",
+      "countryCode": "49",
+      "enName": "Germany",
+      "isOnline": "1",
+      "language": [
+        "de",
+        "en"
+      ]
+    },
+    {
+      "abbr": "IN",
+      "cnName": "印度",
+      "countryCode": "91",
+      "enName": "India",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "KW",
+      "cnName": "科威特",
+      "countryCode": "965",
+      "enName": "Kuwait",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "MA",
+      "cnName": "摩洛哥",
+      "countryCode": "212",
+      "enName": "Morocco",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "abbr": "MM",
+      "cnName": "缅甸",
+      "countryCode": "95",
+      "enName": "Myanmar",
+      "isOnline": "1",
+      "language": [
+        "my",
+        "en"
+      ]
+    },
+    {
+      "abbr": "NG",
+      "cnName": "尼日利亚",
+      "countryCode": "234",
+      "enName": "Nigeria",
+      "isOnline": "1",
+      "language": [
+        "fr",
+        "en"
+      ]
+    },
+    {
+      "abbr": "PH",
+      "cnName": "菲律宾",
+      "countryCode": "63",
+      "enName": "Philippines",
+      "isOnline": "1",
+      "language": [
+        "fil",
+        "en"
+      ]
+    },
+    {
+      "abbr": "SG",
+      "cnName": "新加坡",
+      "countryCode": "65",
+      "enName": "Singapore",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "TH",
+      "cnName": "泰国",
+      "countryCode": "66",
+      "enName": "Thailand",
+      "isOnline": "1",
+      "language": [
+        "th",
+        "en"
+      ]
+    },
+    {
+      "abbr": "AE",
+      "cnName": "阿联酋",
+      "countryCode": "971",
+      "enName": "United Arab Emirates",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "GB",
+      "cnName": "英国",
+      "countryCode": "44",
+      "enName": "United Kingdom",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MX",
+      "cnName": "墨西哥",
+      "countryCode": "52",
+      "enName": "Mexico",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "GR",
+      "cnName": "希腊",
+      "countryCode": "30",
+      "enName": "Greece",
+      "isOnline": "1",
+      "language": [
+        "el",
+        "en"
+      ]
+    },
+    {
+      "abbr": "EE",
+      "cnName": "爱沙尼亚",
+      "countryCode": "372",
+      "enName": "Estonia",
+      "isOnline": "1",
+      "language": [
+        "et",
+        "en"
+      ]
+    },
+    {
+      "abbr": "BR",
+      "cnName": "巴西",
+      "countryCode": "55",
+      "enName": "Brazil",
+      "isOnline": "1",
+      "language": [
+        "pt-PT",
+        "en"
+      ]
+    },
+    {
+      "abbr": "FI",
+      "cnName": "芬兰",
+      "countryCode": "358",
+      "enName": "Finland",
+      "isOnline": "1",
+      "language": [
+        "fi",
+        "en"
+      ]
+    },
+    {
+      "abbr": "SE",
+      "cnName": "瑞典",
+      "countryCode": "46",
+      "enName": "Sweden",
+      "isOnline": "1",
+      "language": [
+        "sv",
+        "en"
+      ]
+    },
+    {
+      "abbr": "NO",
+      "cnName": "挪威",
+      "countryCode": "47",
+      "enName": "Norway",
+      "isOnline": "1",
+      "language": [
+        "nb",
+        "en"
+      ]
+    },
+    {
+      "abbr": "DK",
+      "cnName": "丹麦",
+      "countryCode": "45",
+      "enName": "Denmark",
+      "isOnline": "1",
+      "language": [
+        "da",
+        "en"
+      ]
+    },
+    {
+      "abbr": "VN",
+      "cnName": "越南",
+      "countryCode": "84",
+      "enName": "Vietnam",
+      "isOnline": "1",
+      "language": [
+        "vi",
+        "en"
+      ]
+    },
+    {
+      "abbr": "IT",
+      "cnName": "意大利",
+      "countryCode": "39",
+      "enName": "Italy",
+      "isOnline": "1",
+      "language": [
+        "it",
+        "en"
+      ]
+    },
+    {
+      "abbr": "UA",
+      "cnName": "乌克兰",
+      "countryCode": "380",
+      "enName": "Ukraine",
+      "isOnline": "1",
+      "language": [
+        "uk",
+        "en"
+      ]
+    },
+    {
+      "abbr": "ES",
+      "cnName": "西班牙",
+      "countryCode": "34",
+      "enName": "Spain",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "EC",
+      "cnName": "厄瓜多尔",
+      "countryCode": "593",
+      "enName": "Ecuador",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "PT",
+      "cnName": "葡萄牙",
+      "countryCode": "351",
+      "enName": "Portugal",
+      "isOnline": "1",
+      "language": [
+        "pt-PT",
+        "en"
+      ]
+    },
+    {
+      "abbr": "PL",
+      "cnName": "波兰",
+      "countryCode": "48",
+      "enName": "Poland",
+      "language": [
+        "pl",
+        "en"
+      ]
+    },
+    {
+      "abbr": "CZ",
+      "cnName": "捷克",
+      "countryCode": "420",
+      "enName": "Czechia",
+      "isOnline": "1",
+      "language": [
+        "cs",
+        "en"
+      ]
+    },
+    {
+      "abbr": "HU",
+      "cnName": "匈牙利",
+      "countryCode": "36",
+      "enName": "Hungary",
+      "isOnline": "1",
+      "language": [
+        "hu",
+        "en"
+      ]
+    },
+    {
+      "abbr": "PK",
+      "cnName": "巴基斯坦",
+      "countryCode": "92",
+      "enName": "Pakistan",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "ID",
+      "cnName": "印尼",
+      "countryCode": "62",
+      "enName": "Indonesia",
+      "isOnline": "1",
+      "language": [
+        "id",
+        "en"
+      ]
+    },
+    {
+      "abbr": "NZ",
+      "cnName": "新西兰",
+      "countryCode": "64",
+      "enName": "New Zealand",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "SK",
+      "cnName": "斯洛伐克",
+      "countryCode": "421",
+      "enName": "Slovakia",
+      "isOnline": "1",
+      "language": [
+        "sk",
+        "en"
+      ]
+    },
+    {
+      "abbr": "SA",
+      "cnName": "沙特",
+      "countryCode": "966",
+      "enName": "Saudi Arabia",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "BH",
+      "cnName": "巴林",
+      "countryCode": "973",
+      "enName": "Bahrain",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "TN",
+      "cnName": "突尼斯",
+      "countryCode": "216",
+      "enName": "Tunisia",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "abbr": "DZ",
+      "cnName": "阿尔及利亚",
+      "countryCode": "213",
+      "enName": "Algeria",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "abbr": "KM",
+      "cnName": "科摩罗",
+      "countryCode": "269",
+      "enName": "Comoros",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "DJ",
+      "cnName": "吉布提",
+      "countryCode": "253",
+      "enName": "Djibouti",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "EG",
+      "cnName": "埃及",
+      "countryCode": "20",
+      "enName": "Egypt",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "IQ",
+      "cnName": "伊拉克",
+      "countryCode": "964",
+      "enName": "Iraq",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "JO",
+      "cnName": "约旦",
+      "countryCode": "962",
+      "enName": "Jordan",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "LB",
+      "cnName": "黎巴嫩",
+      "countryCode": "961",
+      "enName": "Lebanon",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "abbr": "LY",
+      "cnName": "利比亚",
+      "countryCode": "218",
+      "enName": "Libya",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "MR",
+      "cnName": "毛里塔尼亚",
+      "countryCode": "222",
+      "enName": "Mauritania",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "OM",
+      "cnName": "阿曼",
+      "countryCode": "968",
+      "enName": "Oman",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "PS",
+      "cnName": "巴勒斯坦",
+      "countryCode": "970",
+      "enName": "Palestine",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "he",
+        "en"
+      ]
+    },
+    {
+      "abbr": "QA",
+      "cnName": "卡塔尔",
+      "countryCode": "974",
+      "enName": "Qatar",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "SO",
+      "cnName": "索马里",
+      "countryCode": "252",
+      "enName": "Somalia",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "SD",
+      "cnName": "苏丹",
+      "countryCode": "249",
+      "enName": "Sudan",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "SY",
+      "cnName": "叙利亚",
+      "countryCode": "963",
+      "enName": "Syria",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "YE",
+      "cnName": "也门",
+      "countryCode": "967",
+      "enName": "Yemen",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "IS",
+      "cnName": "冰岛",
+      "countryCode": "354",
+      "enName": "Iceland",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "GH",
+      "cnName": "加纳",
+      "countryCode": "233",
+      "enName": "Ghana",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "KE",
+      "cnName": "肯尼亚",
+      "countryCode": "254",
+      "enName": "Kenya",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MU",
+      "cnName": "毛里求斯",
+      "countryCode": "230",
+      "enName": "Mauritius",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "ZA",
+      "cnName": "南非",
+      "countryCode": "27",
+      "enName": "South Africa",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "NL",
+      "cnName": "荷兰",
+      "countryCode": "31",
+      "enName": "Netherlands",
+      "isOnline": "1",
+      "language": [
+        "nl",
+        "en"
+      ]
+    },
+    {
+      "abbr": "AT",
+      "cnName": "奥地利",
+      "countryCode": "43",
+      "enName": "Austria",
+      "isOnline": "1",
+      "language": [
+        "de",
+        "en"
+      ]
+    },
+    {
+      "abbr": "BE",
+      "cnName": "比利时",
+      "countryCode": "32",
+      "enName": "Belgium",
+      "isOnline": "1",
+      "language": [
+        "nl",
+        "fr",
+        "de",
+        "en"
+      ]
+    },
+    {
+      "abbr": "GA",
+      "cnName": "加蓬",
+      "countryCode": "241",
+      "enName": "Gabon",
+      "isOnline": "1",
+      "language": [
+        "fr",
+        "en"
+      ]
+    },
+    {
+      "abbr": "CI",
+      "cnName": "科特迪瓦",
+      "countryCode": "225",
+      "enName": "Cote d'Ivoire",
+      "isOnline": "1",
+      "language": [
+        "fr",
+        "en"
+      ]
+    },
+    {
+      "abbr": "LR",
+      "cnName": "利比里亚",
+      "countryCode": "231",
+      "enName": "Liberia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "LU",
+      "cnName": "卢森堡",
+      "countryCode": "352",
+      "enName": "Luxembourg",
+      "isOnline": "1",
+      "language": [
+        "fr",
+        "de",
+        "en"
+      ]
+    },
+    {
+      "abbr": "CH",
+      "cnName": "瑞士",
+      "countryCode": "41",
+      "enName": "Switzerland",
+      "isOnline": "1",
+      "language": [
+        "de",
+        "fr",
+        "it",
+        "en"
+      ]
+    },
+    {
+      "abbr": "IE",
+      "cnName": "爱尔兰",
+      "countryCode": "353",
+      "enName": "Ireland",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "RO",
+      "cnName": "罗马尼亚",
+      "countryCode": "40",
+      "enName": "Romania",
+      "isOnline": "1",
+      "language": [
+        "ro",
+        "en"
+      ]
+    },
+    {
+      "abbr": "LV",
+      "cnName": "拉脱维亚",
+      "countryCode": "371",
+      "enName": "Latvia",
+      "isOnline": "1",
+      "language": [
+        "lv",
+        "en"
+      ]
+    },
+    {
+      "abbr": "RS",
+      "cnName": "塞尔维亚",
+      "countryCode": "381",
+      "enName": "Serbia",
+      "isOnline": "1",
+      "language": [
+        "sr",
+        "en"
+      ]
+    },
+    {
+      "abbr": "HK",
+      "cnName": "中国香港",
+      "countryCode": "852",
+      "enName": "Hong Kong, China",
+      "isOnline": "1",
+      "language": [
+        "zh-HK",
+        "en"
+      ]
+    },
+    {
+      "abbr": "IL",
+      "cnName": "以色列",
+      "countryCode": "972",
+      "enName": "Israel",
+      "isOnline": "1",
+      "language": [
+        "he",
+        "en"
+      ]
+    },
+    {
+      "abbr": "BO",
+      "cnName": "玻利维亚",
+      "countryCode": "591",
+      "enName": "Bolivia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "DO",
+      "cnName": "多米尼加",
+      "countryCode": "1890",
+      "enName": "Dominica",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "PR",
+      "cnName": "波多黎各",
+      "countryCode": "1787",
+      "enName": "Puerto Rico",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "PA",
+      "cnName": "巴拿马",
+      "countryCode": "507",
+      "enName": "Panama",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "CW",
+      "cnName": "库拉索",
+      "countryCode": "599-9",
+      "enName": "Curacao",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "TR",
+      "cnName": "土耳其",
+      "countryCode": "90",
+      "enName": "Turkey",
+      "isOnline": "1",
+      "language": [
+        "tr",
+        "en"
+      ]
+    },
+    {
+      "abbr": "CY",
+      "cnName": "塞浦路斯",
+      "countryCode": "357",
+      "enName": "Cyprus",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "CO",
+      "cnName": "哥伦比亚",
+      "countryCode": "57",
+      "enName": "Colombia",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "HN",
+      "cnName": "洪都拉斯",
+      "countryCode": "504",
+      "enName": "Honduras",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "GT",
+      "cnName": "危地马拉",
+      "countryCode": "502",
+      "enName": "Guatemala",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "SV",
+      "cnName": "萨尔瓦多",
+      "countryCode": "503",
+      "enName": "Salvador",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "NP",
+      "cnName": "尼泊尔",
+      "countryCode": "977",
+      "enName": "Nepal",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "US",
+      "cnName": "美国",
+      "countryCode": "1",
+      "enName": "United States",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "CA",
+      "cnName": "加拿大",
+      "countryCode": "001",
+      "enName": "Canada",
+      "isOnline": "1",
+      "language": [
+        "fr",
+        "en"
+      ]
+    },
+    {
+      "abbr": "UY",
+      "cnName": "乌拉圭",
+      "countryCode": "598",
+      "enName": "Uruguay",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "HR",
+      "cnName": "克罗地亚",
+      "countryCode": "385",
+      "enName": "Croatia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "AL",
+      "cnName": "阿尔巴尼亚",
+      "countryCode": "355",
+      "enName": "Albania",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "BG",
+      "cnName": "保加利亚",
+      "countryCode": "359",
+      "enName": "Bulgaria",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "XK",
+      "cnName": "科索沃",
+      "countryCode": "383",
+      "enName": "Kosovo",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "LT",
+      "cnName": "立陶宛",
+      "countryCode": "370",
+      "enName": "Lithuania",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MK",
+      "cnName": "北马其顿",
+      "countryCode": "389",
+      "enName": "North Macedonia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MD",
+      "cnName": "摩尔多瓦",
+      "countryCode": "373",
+      "enName": "Moldova",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "BA",
+      "cnName": "波斯尼亚和黑塞哥维那",
+      "countryCode": "55",
+      "enName": "Bosnia and Herzegovina",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "SI",
+      "cnName": "斯洛文尼亚",
+      "countryCode": "386",
+      "enName": "Slovenia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "ME",
+      "cnName": "黑山",
+      "countryCode": "382",
+      "enName": "Montenegro",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "LI",
+      "cnName": "列支敦士登",
+      "countryCode": "423",
+      "enName": "Liechtenstein",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MC",
+      "cnName": "摩纳哥",
+      "countryCode": "377",
+      "enName": "Monaco",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "BY",
+      "cnName": "白俄罗斯",
+      "countryCode": "375",
+      "enName": "Belarus",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "CR",
+      "cnName": "哥斯达黎加",
+      "countryCode": "506",
+      "enName": "Costa Rica",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "NI",
+      "cnName": "尼加拉瓜",
+      "countryCode": "505",
+      "enName": "Nicaragua",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "TW",
+      "cnName": "中国台湾",
+      "countryCode": "886",
+      "enName": "Taiwan, China",
+      "isOnline": "1",
+      "language": [
+        "zh-TW",
+        "en"
+      ]
+    },
+    {
+      "abbr": "HT",
+      "cnName": "海地",
+      "countryCode": "509",
+      "enName": "Haiti",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "AG",
+      "cnName": "安提瓜和巴布达",
+      "countryCode": "1268",
+      "enName": "Antigua and Barbuda",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "KN",
+      "cnName": "圣基茨和尼维斯",
+      "countryCode": "1869",
+      "enName": "Saint Kitts and Nevis",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "LC",
+      "cnName": "圣卢西亚",
+      "countryCode": "1758",
+      "enName": "Saint Lucia",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "VC",
+      "cnName": "圣文森特和格林纳丁斯",
+      "countryCode": "1784",
+      "enName": "Saint Vincent and the Grenadines",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "TT",
+      "cnName": "特立尼达和多巴哥",
+      "countryCode": "1809",
+      "enName": "Trinidad and Tobago",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "AW",
+      "cnName": "阿鲁巴",
+      "countryCode": "297",
+      "enName": "Aruba",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "BB",
+      "cnName": "巴巴多斯",
+      "countryCode": "1246",
+      "enName": "Barbados",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "GY",
+      "cnName": "圭亚那",
+      "countryCode": "592",
+      "enName": "Guyana",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "GD",
+      "cnName": "格林纳达",
+      "countryCode": "1809",
+      "enName": "Grenada",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "JM",
+      "cnName": "牙买加",
+      "countryCode": "1876",
+      "enName": "Jamaica",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    }
+  ],
+  "widget": {
+    "100041": {
+      "widgetId": "100041",
+      "widgetName": "ChatNow",
+      "regionLang": [
+        "IN",
+        "VN",
+        "AU",
+        "NZ",
+        "SA",
+        "CL",
+        "AR",
+        "BR"
+      ]
+    },
+    "40003": {
+      "widgetId": "40003",
+      "widgetName": "Password",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "40002": {
+      "widgetId": "40002",
+      "widgetName": "Phone",
+      "regionLang": [
+        "IN",
+        "VN",
+        "PK",
+        "PH",
+        "TH",
+        "SG",
+        "MM",
+        "US"
+      ]
+    },
+    "20012": {
+      "widgetId": "20012",
+      "widgetName": "Messaging",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "40001": {
+      "widgetId": "40001",
+      "widgetName": "Email",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "100044": {
+      "widgetId": "100044",
+      "widgetName": "Live Chat",
+      "regionLang": [
+        "IN"
+      ]
+    },
+    "30002": {
+      "widgetId": "30002",
+      "widgetName": "Language",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "30001": {
+      "widgetId": "30001",
+      "widgetName": "Account security",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "30003": {
+      "widgetId": "30003",
+      "widgetName": "Region",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "10010": {
+      "widgetId": "10010",
+      "widgetName": "Home",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "20004": {
+      "widgetId": "20004",
+      "widgetName": "Share APP",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "20022": {
+      "widgetId": "20022",
+      "widgetName": "Rate us",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "20023": {
+      "widgetId": "20023",
+      "widgetName": "FeedBack",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "30005": {
+      "widgetId": "30005",
+      "widgetName": "Feedback",
+      "regionLang": [
+        "AR",
+        "AU",
+        "CL",
+        "FR",
+        "DE",
+        "KW",
+        "MA",
+        "MM",
+        "NG",
+        "PH",
+        "SG",
+        "TH",
+        "AE",
+        "GB",
+        "MX",
+        "GR",
+        "EE",
+        "BR",
+        "FI",
+        "SE",
+        "NO",
+        "DK",
+        "VN",
+        "IT",
+        "UA",
+        "ES",
+        "EC",
+        "PL",
+        "CZ",
+        "HU",
+        "PK",
+        "ID",
+        "NZ",
+        "SK",
+        "SA",
+        "BH",
+        "TN",
+        "DZ",
+        "KM",
+        "DJ",
+        "EG",
+        "IQ",
+        "JO",
+        "LB",
+        "LY",
+        "MR",
+        "OM",
+        "PS",
+        "QA",
+        "SD",
+        "SY",
+        "YE",
+        "IS",
+        "GH",
+        "KE",
+        "MU",
+        "ZA",
+        "NL",
+        "AT",
+        "BE",
+        "GA",
+        "CI",
+        "LR",
+        "LU",
+        "CH",
+        "IE",
+        "RO",
+        "LV",
+        "RS",
+        "CA",
+        "HK",
+        "TW",
+        "IL",
+        "BO",
+        "DO",
+        "PR",
+        "PA",
+        "CW",
+        "TR",
+        "CY",
+        "HR",
+        "US",
+        "PT",
+        "SO",
+        "CO",
+        "HN",
+        "GT",
+        "SV",
+        "UY",
+        "AL",
+        "BG",
+        "XK",
+        "LT",
+        "MK",
+        "MD",
+        "BA",
+        "SI",
+        "ME",
+        "LI",
+        "MC",
+        "BY",
+        "CR",
+        "NI",
+        "HT",
+        "AG",
+        "KN",
+        "LC",
+        "VC",
+        "TT",
+        "AW",
+        "BB",
+        "GY",
+        "GD",
+        "JM"
+      ]
+    },
+    "20002": {
+      "widgetId": "20002",
+      "widgetName": "Settings",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "500001": {
+      "widgetId": "500001",
+      "widgetName": "欧洲售后 My address",
+      "regionLang": [
+        ""
+      ]
+    },
+    "500002": {
+      "widgetId": "500002",
+      "widgetName": "欧洲售后 My product",
+      "regionLang": [
+        ""
+      ]
+    },
+    "500003": {
+      "widgetId": "500003",
+      "widgetName": "欧洲售后 Service center",
+      "regionLang": [
+        ""
+      ]
+    },
+    "600001": {
+      "widgetId": "600001",
+      "widgetName": "非欧洲国家售后 My address",
+      "regionLang": [
+        "IN",
+        "VN",
+        "PK",
+        "PH",
+        "TH",
+        "ID"
+      ]
+    },
+    "600002": {
+      "widgetId": "600002",
+      "widgetName": "非欧洲国家售后 My product",
+      "regionLang": [
+        "IN",
+        "VN",
+        "PK",
+        "PH",
+        "TH",
+        "ID"
+      ]
+    },
+    "600003": {
+      "widgetId": "600003",
+      "widgetName": "非欧洲国家售后 Support",
+      "regionLang": [
+        "IN",
+        "VN",
+        "PK",
+        "PH",
+        "TH",
+        "ID",
+        "US"
+      ]
+    },
+    "100006": {
+      "widgetId": "100006",
+      "widgetName": "Profile 基本版",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "20013": {
+      "widgetId": "20013",
+      "widgetName": "会员中心",
+      "regionLang": [
+        "IN",
+        "VN"
+      ]
+    },
+    "20014": {
+      "widgetId": "20014",
+      "widgetName": "Help & Feedback",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "20017": {
+      "widgetId": "20017",
+      "widgetName": "Room management",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "20011": {
+      "widgetId": "20011",
+      "widgetName": "Share devices",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "20018": {
+      "widgetId": "20018",
+      "widgetName": "Voice assistant",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "20019": {
+      "widgetId": "20019",
+      "widgetName": "About",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "50001": {
+      "widgetId": "50001",
+      "widgetName": "Messaging type system",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "50002": {
+      "widgetId": "50002",
+      "widgetName": "Messaging type devices",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "50003": {
+      "widgetId": "50003",
+      "widgetName": "Messaging type activities",
+      "regionLang": [
+        "IN",
+        "AU",
+        "CL",
+        "KW",
+        "MM",
+        "PH",
+        "SG",
+        "TH",
+        "AE",
+        "BR",
+        "VN",
+        "EC",
+        "PK",
+        "ID",
+        "NZ",
+        "SA",
+        "BH",
+        "KM",
+        "DJ",
+        "IQ",
+        "JO",
+        "LB",
+        "LY",
+        "OM",
+        "PS",
+        "QA",
+        "SD",
+        "SY",
+        "YE",
+        "ZA",
+        "HK",
+        "TW",
+        "IL",
+        "BO",
+        "DO",
+        "PR",
+        "PA",
+        "CW",
+        "SO"
+      ]
+    },
+    "110001": {
+      "widgetId": "110001",
+      "widgetName": "subscribe message 营销邮件订阅",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "110002": {
+      "widgetId": "110002",
+      "widgetName": "BI 数据埋点",
+      "regionLang": [
+        "IN",
+        "VN",
+        "PH",
+        "ID",
+        "MM",
+        "SG",
+        "TH"
+      ]
+    }
+  },
+  "language": {
+    "de": {
+      "cnName": "德语",
+      "enName": "Deutsch",
+      "nameCode": "de",
+      "androidNameCode": "de_DE",
+      "iso639Code": "de"
+    },
+    "fi": {
+      "cnName": "芬兰语",
+      "enName": "Suomi",
+      "nameCode": "fi",
+      "androidNameCode": "fi_FI",
+      "iso639Code": "fi"
+    },
+    "fil": {
+      "cnName": "菲律宾语",
+      "enName": "Tagalog",
+      "nameCode": "fil",
+      "androidNameCode": "fil_PH",
+      "iso639Code": "tl"
+    },
+    "lv": {
+      "cnName": "拉脱维亚语",
+      "enName": "Latviešu",
+      "nameCode": "lv",
+      "androidNameCode": "lv_LV",
+      "iso639Code": "lv"
+    },
+    "fr": {
+      "cnName": "法语",
+      "enName": "Français",
+      "nameCode": "fr",
+      "androidNameCode": "fr_FR",
+      "iso639Code": "fr"
+    },
+    "hu": {
+      "cnName": "匈牙利语",
+      "enName": "Magyar",
+      "nameCode": "hu",
+      "androidNameCode": "hu_HU",
+      "iso639Code": "hu"
+    },
+    "uk": {
+      "cnName": "乌克兰语",
+      "enName": "Українська",
+      "nameCode": "uk",
+      "androidNameCode": "uk_UA",
+      "iso639Code": "uk"
+    },
+    "sk": {
+      "cnName": "斯洛伐克语",
+      "enName": "Slovenčina",
+      "nameCode": "sk",
+      "androidNameCode": "sk_SK",
+      "iso639Code": "sk"
+    },
+    "id": {
+      "cnName": "印尼语",
+      "enName": "Bahasa Indonesia",
+      "nameCode": "id",
+      "androidNameCode": "in_ID",
+      "iso639Code": "id"
+    },
+    "sr": {
+      "cnName": "塞尔维亚语",
+      "enName": "Српски",
+      "nameCode": "sr",
+      "androidNameCode": "sr_RS",
+      "iso639Code": "sr"
+    },
+    "sv": {
+      "cnName": "瑞典语",
+      "enName": "Svenska",
+      "nameCode": "sv",
+      "androidNameCode": "sv_SE",
+      "iso639Code": "sv"
+    },
+    "zh-HK": {
+      "cnName": "繁体中文",
+      "enName": "繁體中文",
+      "nameCode": "zh-HK",
+      "androidNameCode": "zh_HK",
+      "iso639Code": "zh-HK"
+    },
+    "zh-TW": {
+      "cnName": "台湾繁体中文",
+      "enName": "繁体中文（台湾）",
+      "nameCode": "zh-TW",
+      "androidNameCode": "zh_TW",
+      "iso639Code": "zh-TW"
+    },
+    "el": {
+      "cnName": "希腊语",
+      "enName": "Ελληνικά",
+      "nameCode": "el",
+      "androidNameCode": "el_GR",
+      "iso639Code": "el"
+    },
+    "en": {
+      "cnName": "英语",
+      "enName": "English",
+      "nameCode": "en",
+      "androidNameCode": "en_US",
+      "iso639Code": "en"
+    },
+    "it": {
+      "cnName": "意大利语",
+      "enName": "Italiano",
+      "nameCode": "it",
+      "androidNameCode": "it_IT",
+      "iso639Code": "it"
+    },
+    "my": {
+      "cnName": "缅甸语(官方)",
+      "enName": "မြန်မာမာ",
+      "nameCode": "my",
+      "androidNameCode": "my_MM",
+      "iso639Code": "my"
+    },
+    "es": {
+      "cnName": "西班牙语",
+      "enName": "Español",
+      "nameCode": "es",
+      "androidNameCode": "es_ES",
+      "iso639Code": "es"
+    },
+    "et": {
+      "cnName": "爱沙尼亚语",
+      "enName": "Eesti",
+      "nameCode": "et",
+      "androidNameCode": "et_EE",
+      "iso639Code": "et"
+    },
+    "cs": {
+      "cnName": "捷克语",
+      "enName": "Čeština",
+      "nameCode": "cs",
+      "androidNameCode": "cs_CZ",
+      "iso639Code": "cs"
+    },
+    "ar": {
+      "cnName": "阿拉伯语(埃及)",
+      "enName": "العربية",
+      "nameCode": "ar",
+      "androidNameCode": "ar_EG",
+      "iso639Code": "ar"
+    },
+    "pt-PT": {
+      "cnName": "葡萄牙语（巴西）",
+      "enName": "Português",
+      "nameCode": "pt-PT",
+      "androidNameCode": "pt_BR",
+      "iso639Code": "pt"
+    },
+    "vi": {
+      "cnName": "越南语",
+      "enName": "Tiếng việt",
+      "nameCode": "vi",
+      "androidNameCode": "vi_VN",
+      "iso639Code": "vi"
+    },
+    "th": {
+      "cnName": "泰语",
+      "enName": "ภาษาไทย",
+      "nameCode": "th",
+      "androidNameCode": "th_TH",
+      "iso639Code": "th"
+    },
+    "nb": {
+      "cnName": "挪威语",
+      "enName": "Norsk",
+      "nameCode": "nb",
+      "androidNameCode": "nb_NO",
+      "iso639Code": "nb"
+    },
+    "pl": {
+      "cnName": "波兰语",
+      "enName": "Polski",
+      "nameCode": "pl",
+      "androidNameCode": "pl_PL",
+      "iso639Code": "pl"
+    },
+    "da": {
+      "cnName": "丹麦语",
+      "enName": "Dansk",
+      "nameCode": "da",
+      "androidNameCode": "da_DK",
+      "iso639Code": "da"
+    },
+    "ro": {
+      "cnName": "罗马尼亚语",
+      "enName": "Română",
+      "nameCode": "ro",
+      "androidNameCode": "ro_RO",
+      "iso639Code": "ro"
+    },
+    "nl": {
+      "cnName": "荷兰语",
+      "enName": "Nederlands",
+      "nameCode": "nl",
+      "androidNameCode": "nl_NL",
+      "iso639Code": "nl"
+    },
+    "he": {
+      "cnName": "希伯来语",
+      "enName": "עִברִית",
+      "nameCode": "he",
+      "androidNameCode": "iw_IL",
+      "iso639Code": "he"
+    },
+    "tr": {
+      "cnName": "土耳其语",
+      "enName": "Türkiye",
+      "nameCode": "tr-TR",
+      "androidNameCode": "tr_TR",
+      "iso639Code": "tr"
+    }
+  },
+  "tabBar": {
+    "10010": {
+      "widgetId": "10010",
+      "widgetName": "Home"
+    },
+    "600003": {
+      "widgetId": "600003",
+      "widgetName": "Support"
+    },
+    "100006": {
+      "widgetId": "100006",
+      "widgetName": "Profile",
+      "subWidgetId": [
+        [
+          "500001",
+          "500002",
+          "500003",
+          "600001",
+          "600002"
+        ],
+        [
+          "20011",
+          "20017",
+          "20018",
+          "100041"
+        ],
+        [
+          "20004",
+          "20023",
+          "20022",
+          "30005",
+          "20002",
+          "20019"
+        ]
+      ]
+    }
+  },
+  "widgetExtra": {
+    "20002": {
+      "widgetId": "20002",
+      "widgetName": "settings",
+      "subWidgetId": [
+        [
+          "30001",
+          "30003",
+          "30002"
+        ]
+      ]
+    },
+    "30001": {
+      "widgetId": "30001",
+      "widgetName": "Account security",
+      "subWidgetId": [
+        [
+          "40001",
+          "40002",
+          "40003"
+        ]
+      ]
+    },
+    "20012": {
+      "widgetId": "20012",
+      "widgetName": "Messaging",
+      "subWidgetId": [
+        [
+          "50001",
+          "50002",
+          "50003"
+        ]
+      ]
+    },
+    "110001": {
+      "widgetId": "110001",
+      "widgetName": "subscribe message 营销邮件订阅"
+    },
+    "110002": {
+      "widgetId": "110002",
+      "widgetName": "BI 数据埋点"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "category": "Account",
+        "content": "Ang pagbura ng TCL Account ay isang hindi na mababawi na operasyon. Kapag kinumpirma mo na burahin ang iyong TCL Account, mangyaring bisitahin ang sumusunod na URL: http://www.tcl.com/deleteaccount",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Ang pagbura ng TCL Account ay isang hindi na mababawi na operasyon. Kapag kinumpirma mo na burahin ang iyong TCL Account, mangyaring bisitahin ang sumusunod na URL: http://www.tcl.com/deleteaccount</p>",
+        "id": "1",
+        "tagName": "Account",
+        "title": "Paano burahin ang iyong TCL Account?"
+    },
+    {
+        "category": "Membership",
+        "content": "Sa TCL, lagi kaming nagbibigay ng mataas na kalidad na mga produkto at serbisyo sa mga kostumer na gusto ang buhay at pinagpatuloy ang karanasan sa IoT. Ang pagbibigay ng matalinong mga produkto at mahusay na mga serbisyo ay palaging nagiging direksyon ng aming pagsisikap. Para sa layunin, itinatag namin ang TCL VIP Club. Sa pagsali sa TCL VIP Club, masisiyahan sa kilalang katayuan sa pagiging kasapi, kumuha ng mga regalo ng mga pagiging kasapi, makaranas ng eksklusibong pribilehiyo at matalinong serbisyo, makisama sa aktibidad ng miyembro, manalo ng premyo ng TCL, at makuha ang pinakabagong mga tatak na uso at balita.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Sa TCL, lagi kaming nagbibigay ng mataas na kalidad na mga produkto at serbisyo sa mga kostumer na gusto ang buhay at pinagpatuloy ang karanasan sa IoT. Ang pagbibigay ng matalinong mga produkto at mahusay na mga serbisyo ay palaging nagiging direksyon ng aming pagsisikap. Para sa layunin, itinatag namin ang TCL VIP Club. Sa pagsali sa TCL VIP Club, masisiyahan sa kilalang katayuan sa pagiging kasapi, kumuha ng mga regalo ng mga pagiging kasapi, makaranas ng eksklusibong pribilehiyo at matalinong serbisyo, makisama sa aktibidad ng miyembro, manalo ng premyo ng TCL, at makuha ang pinakabagong mga tatak na uso at balita.</p>",
+        "id": "2",
+        "tagName": "TCL VIP Club",
+        "title": "Ano ang TCL VIP Club?"
+    },
+    {
+        "category": "Membership",
+        "content": "Kapag nakarehistro ka sa TCL Account sa opisyal na website ng TCL, TCL Home APP, TCL TV o iba pang mga aparato ng IoT, awtomatiko kang makakasali sa may TCL VIP Club. Magiging miyembro ka ng pilak kapag nag sign in ka sa unang beses at maari mo tingnan ang iyong mga pribilehiyo sa TCL VIP Club. Sa kasalukuyan, nagtakda kami ng 2 antas (Pilak at Ginto) sa TCL VIP Club na may iba't ibang pribilehiyo. Maraming mga antas at pribilehiyo ang paparating.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Kapag nakarehistro ka sa TCL Account sa opisyal na website ng TCL, TCL Home APP, TCL TV o iba pang mga aparato ng IoT, awtomatiko kang makakasali sa may TCL VIP Club. Magiging miyembro ka ng pilak kapag nag sign in ka sa unang beses at maari mo tingnan ang iyong mga pribilehiyo sa TCL VIP Club. Sa kasalukuyan, nagtakda kami ng 2 antas (Pilak at Ginto) sa TCL VIP Club na may iba't ibang pribilehiyo. Maraming mga antas at pribilehiyo ang paparating.</p>",
+        "id": "3",
+        "tagName": "TCL VIP Club",
+        "title": "Paano sumali sa TCL VIP Club?"
+    },
+    {
+        "category": "Membership",
+        "content": "Ang puntos ng TCL VIP ay tumutukoy sa halaga ng paglago na nakuha ng mga miyembro ng TCL sa pamamagitan ng pagrehistro, pag-check in, pagsagot ng impormasyon, pagbili at pagrehistro ng mga produkto, referral at pakikipaglahok sa mga aktibidad ng mga miyembro. Itinala ng mga puntos ang paglago ng sistema ng katapatan ng mga miyembro ng TCL. Ang mas maraming puntos na nakukuha mo, ay mas mataas na antas ng pagiging kasapi at ang mas maraming mga benepisyo ang maaari mong matamasa.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Ang puntos ng TCL VIP ay tumutukoy sa halaga ng paglago na nakuha ng mga miyembro ng TCL sa pamamagitan ng pagrehistro, pag-check in, pagsagot ng impormasyon, pagbili at pagrehistro ng mga produkto, referral at pakikipaglahok sa mga aktibidad ng mga miyembro. Itinala ng mga puntos ang paglago ng sistema ng katapatan ng mga miyembro ng TCL. Ang mas maraming puntos na nakukuha mo, ay mas mataas na antas ng pagiging kasapi at ang mas maraming mga benepisyo ang maaari mong matamasa.</p>",
+        "id": "4",
+        "tagName": "TCL VIP Club",
+        "title": "Ano ang puntos ng TCL VIP at paano ko ito makukuha?"
+    },
+    {
+        "category": "Membership",
+        "content": "Kapag naabot ng iyong mga puntos ang susunod na antas ng benchmark, awtomatiko ka maa-upgrade at bibigyan ng mas maraming mga pribilehiyo.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Kapag naabot ng iyong mga puntos ang susunod na antas ng benchmark, awtomatiko ka maa-upgrade at bibigyan ng mas maraming mga pribilehiyo.</p>",
+        "id": "5",
+        "tagName": "VIP point",
+        "title": "Paano ako makakapag-upgrade sa susunod na antas?"
+    },
+    {
+        "category": "Membership",
+        "content": "Ang antas ng pagiging kasapi ay hindi bababa para sa mga miyembro ng pilak at ginto. Ngunit sa hinaharap, ang pagiging kasapi mo ay maaaring bumaba kapag ang mga puntos mo ay hindi umabot sa minimum ng kasalukuyang antas. Nakalaan sa TCL ang karapatan ng pangwakas na interpretasyon.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Ang antas ng pagiging kasapi ay hindi bababa para sa mga miyembro ng pilak at ginto. Ngunit sa hinaharap, ang pagiging kasapi mo ay maaaring bumaba kapag ang mga puntos mo ay hindi umabot sa minimum ng kasalukuyang antas. Nakalaan sa TCL ang karapatan ng pangwakas na interpretasyon.</p>",
+        "id": "6",
+        "tagName": "VIP point",
+        "title": "Kailan ako bababa sa mas mababang antas?"
+    }
+]

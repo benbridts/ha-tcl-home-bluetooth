@@ -1,0 +1,10 @@
+[
+    {
+        "category": "Account",
+        "content": "L'eliminazione dell'account TCL è un'operazione irreversibile. Se confermi di voler eliminare il tuo account TCL, ti invitiamo a visitare il seguente URL: http://www.tcl.com/deleteaccount",
+        "htmlContent": "<p id=\"textHolder\"></p><p>L'eliminazione dell'account TCL è un'operazione irreversibile. Se confermi di voler eliminare il tuo account TCL, ti invitiamo a visitare il seguente URL: http://www.tcl.com/deleteaccount</p>",
+        "id": "1",
+        "tagName": "Account",
+        "title": "Come eliminare il tuo account TCL?"
+    }
+]

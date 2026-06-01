@@ -1,0 +1,684 @@
+{
+  "user": {
+    "pro": [
+      {
+        "des": "新加坡（南亚服务器）",
+        "host": "https://sg.hbr-cloud.com",
+        "clientId": "83796488",
+        "clientKey": "dUvuUrpZkQk9pye8l9crchEvCU8idcBW",
+        "region": [
+          "ALL"
+        ]
+      },
+      {
+        "des": "巴黎（欧洲服务器）",
+        "host": "https://pa.hbr-cloud.com",
+        "clientId": "83796488",
+        "clientKey": "dUvuUrpZkQk9pye8l9crchEvCU8idcBW",
+        "region": [
+          "EE",
+          "GR",
+          "TR"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "des": "测试环境默认服务器",
+        "host": "https://pa-test.hbr-cloud.com",
+        "clientId": "20281172",
+        "clientKey": "2t1NkxeCfI6ujvf5eqzdCb3I71u9ZFnS",
+        "region": [
+          "ALL"
+        ]
+      }
+    ]
+  },
+  "cms": {
+    "pro": [
+      {
+        "des": "澳大利亚（太平洋服务器）",
+        "host": "https://obgcmsau.tcl.com/api",
+        "region": [
+          "AU",
+          "NZ"
+        ]
+      },
+      {
+        "des": "巴林（中东服务器）",
+        "host": "https://obgcmsbh.tcl.com/api",
+        "region": [
+          "AE",
+          "KW",
+          "SA",
+          "BH",
+          "KM",
+          "DJ",
+          "IQ",
+          "JO",
+          "LB",
+          "LY",
+          "OM",
+          "PS",
+          "QA",
+          "SO",
+          "SD",
+          "SY",
+          "YE",
+          "IL",
+          "ZA"
+        ]
+      },
+      {
+        "des": "法国（欧洲服务器）",
+        "host": "https://obgcmseu.tcl.com/api",
+        "region": [
+          "DE",
+          "GB",
+          "FR",
+          "NG",
+          "MA",
+          "AR",
+          "PL",
+          "IT",
+          "ES",
+          "SK",
+          "SE",
+          "HR",
+          "CZ",
+          "UA",
+          "EE",
+          "PT",
+          "DK",
+          "FI",
+          "NO",
+          "HU",
+          "MX",
+          "TN",
+          "DZ",
+          "EG",
+          "MR",
+          "GR",
+          "IS",
+          "GH",
+          "KE",
+          "MU",
+          "NL",
+          "AT",
+          "BE",
+          "GA",
+          "CI",
+          "LR",
+          "LU",
+          "CH",
+          "IE",
+          "RO",
+          "LV",
+          "RS",
+          "TR",
+          "CY",
+          "CO",
+          "HN",
+          "GT",
+          "SV",
+          "AL",
+          "BG",
+          "XK",
+          "LT",
+          "MK",
+          "MD",
+          "BA",
+          "SI",
+          "ME",
+          "LI",
+          "MC",
+          "BY",
+          "RU",
+          "JP"
+        ]
+      },
+      {
+        "des": "印度",
+        "host": "https://obgcms.tcl.com/api",
+        "region": [
+          "IN",
+          "ALL"
+        ]
+      },
+      {
+        "des": "新加坡（南亚服务器）",
+        "host": "https://obgcmssin.tcl.com/api",
+        "region": [
+          "VN",
+          "MM",
+          "PH",
+          "TH",
+          "SG",
+          "ID",
+          "PK",
+          "HK",
+          "TW",
+          "NP",
+          "MY"
+        ]
+      },
+      {
+        "des": "美国（美洲服务器）",
+        "host": "https://obgcmsna.tcl.com/api",
+        "region": [
+          "BR",
+          "CL",
+          "US",
+          "EC",
+          "CA",
+          "BO",
+          "DO",
+          "PR",
+          "PA",
+          "CW",
+          "UY",
+          "CR",
+          "NI",
+          "HT",
+          "AG",
+          "KN",
+          "LC",
+          "VC",
+          "TT",
+          "AW",
+          "BB",
+          "GY",
+          "GD",
+          "JM"
+        ]
+      },
+      {
+        "des": "俄罗斯区域",
+        "host": "http://127.0.0.1",
+        "region": [
+        ]
+      }
+    ],
+    "test": [
+      {
+        "des": "测试",
+        "host": "https://obgcmstest.tcl.com/cms/api",
+        "region": [
+          "ALL"
+        ]
+      },
+      {
+        "des": "俄罗斯区域",
+        "host": "http://127.0.0.1",
+        "region": [
+        ]
+      }
+    ],
+    "uat": [
+      {
+        "des": "UAT",
+        "host": "http://obgcmsin-uat.tclking.com/api",
+        "region": [
+          "ALL"
+        ]
+      }
+    ],
+    "dev": [
+      {
+        "des": "开发",
+        "host": "http://10.121.44.37/cms/api",
+        "region": [
+          "ALL"
+        ]
+      }
+    ]
+  },
+  "crm": {
+    "pro": [
+      {
+        "des": "欧洲",
+        "host": "https://cseleeuint.tcl.com:8086",
+        "region": [
+          "DE",
+          "GB",
+          "ES",
+          "FR",
+          "IT",
+          "PL"
+        ]
+      },
+      {
+        "des": "菲律宾",
+        "host": "https://cseleint.tcl.com:8086",
+        "region": [
+          "PH"
+        ]
+      },
+      {
+        "des": "越南、巴基斯坦",
+        "host": "https://cselesinint.tcl.com:8086",
+        "region": [
+          "ALL",
+          "VN",
+          "PK",
+          "TH",
+          "ID"
+        ]
+      },
+      {
+        "des": "印度",
+        "host": "https://cseleinind.tcl.com:8081",
+        "region": [
+          "IN"
+        ]
+      }
+    ],
+    "uat": [
+      {
+        "des": "欧洲",
+        "host": "https://cseleeuuat.tcl.com:8086",
+        "region": [
+          "DE",
+          "GB",
+          "ES",
+          "FR",
+          "IT",
+          "PL"
+        ]
+      },
+      {
+        "des": "菲律宾",
+        "host": "https://cseleuat.tcl.com:8086",
+        "region": [
+          "PH"
+        ]
+      },
+      {
+        "des": "越南、巴基斯坦",
+        "host": "https://cselesinuat.tclking.com:8086",
+        "region": [
+          "ALL",
+          "VN",
+          "PK",
+          "TH",
+          "ID"
+        ]
+      },
+      {
+        "des": "印度",
+        "host": "https://cseleuatin.tcl.com:8086",
+        "region": [
+          "IN"
+        ]
+      }
+    ]
+  },
+  "member": {
+    "pro": [
+      {
+        "des": "印度会员后台 生产",
+        "host": "https://in-scrm.tcl.com",
+        "region": [
+          "IN"
+        ]
+      },
+      {
+        "des": "巴西会员后台 生产",
+        "host": "https://br-scrm.tcl.com",
+        "region": [
+          "BR"
+        ]
+      },
+      {
+        "des": "越南或其它 后台 生产",
+        "host": "https://moma.tcl.com",
+        "region": [
+          "VN",
+          "ALL"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "des": "测试-越南或其它",
+        "host": "https://test-moma.tcl.com",
+        "region": [
+          "ALL"
+        ]
+      },
+      {
+        "des": "测试-印度",
+        "host": "https://sit-in-scrm.tcl.com",
+        "region": [
+          "IN"
+        ]
+      }
+    ],
+    "uat": [
+      {
+        "des": "UAT环境-越南或其它",
+        "host": "https://uat-moma.tcl.com",
+        "region": [
+          "ALL"
+        ]
+      },
+      {
+        "des": "UAT环境-印度",
+        "host": "https://uat-in-scrm.tcl.com",
+        "region": [
+          "IN"
+        ]
+      }
+    ]
+  },
+  "memberH5": {
+    "pro": [
+      {
+        "des": "印度会员H5 生产",
+        "host": "https://in-moma.tcl.com",
+        "region": [
+          "IN"
+        ]
+      },
+      {
+        "des": "巴西会员H5 生产",
+        "host": "https://br-moma.tcl.com",
+        "region": [
+          "BR"
+        ]
+      },
+      {
+        "des": "越南或其它 会员H5 生产",
+        "host": "https://moma.tcl.com",
+        "region": [
+          "VN",
+          "ALL"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "des": "测试-越南或其它",
+        "host": "https://test-moma.tcl.com",
+        "region": [
+          "ALL"
+        ]
+      },
+      {
+        "des": "测试-印度",
+        "host": "https://sit-in-moma.tcl.com",
+        "region": [
+          "IN"
+        ]
+      }
+    ],
+    "uat": [
+      {
+        "des": "UAT环境-越南或其它",
+        "host": "https://uat-moma.tcl.com",
+        "region": [
+          "ALL"
+        ]
+      },
+      {
+        "des": "UAT环境-印度",
+        "host": "https://uat-in-moma.tcl.com",
+        "region": [
+          "IN"
+        ]
+      }
+    ]
+  },
+  "memberOmps": {
+    "pro": [
+      {
+        "des": "会员权限系统 生产",
+        "host": "https://omps.tcl.com",
+        "region": [
+          "ALL"
+        ]
+      },
+      {
+        "des": "生产环境-印度",
+        "host": "https://in-moma.tcl.com",
+        "region": [
+          "IN"
+        ]
+      },
+      {
+        "des": "生产环境-巴西",
+        "host": "https://br-moma.tcl.com",
+        "region": [
+          "BR"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "des": "会员权限系统 SIT",
+        "host": "https://test-moma.tcl.com",
+        "region": [
+          "ALL"
+        ]
+      },
+      {
+        "des": "测试环境-印度",
+        "host": "https://sit-in-moma.tcl.com",
+        "region": [
+          "IN"
+        ]
+      }
+    ],
+    "uat": [
+      {
+        "des": "会员权限系统 UAT",
+        "host": "https://uat-moma.tcl.com",
+        "region": [
+          "ALL"
+        ]
+      },
+      {
+        "des": "UAT环境-印度",
+        "host": "https://uat-in-moma.tcl.com",
+        "region": [
+          "IN"
+        ]
+      }
+    ]
+  },
+  "shopH5": {
+    "pro": [
+      {
+        "des": "电商Pro环境",
+        "host": "https://www.tcl.com",
+        "region": [
+          "IN",
+          "TH",
+          "ID"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "des": "电商SIT环境，使用UAT环境",
+        "host": "https://dispatcher-qa.tclking.com",
+        "region": [
+          "IN",
+          "TH",
+          "ID"
+        ]
+      }
+    ],
+    "uat": [
+      {
+        "des": "电商UAT环境",
+        "host": "https://dispatcher-qa.tclking.com",
+        "region": [
+          "IN",
+          "TH",
+          "ID"
+        ]
+      }
+    ],
+    "dev": [
+      {
+        "des": "印度电商DEV环境",
+        "host": "https://devtcl-india.mez100.com.cn",
+        "region": [
+          "IN"
+        ]
+      },
+      {
+        "des": "泰国电商DEV环境",
+        "host": "https://devtcl-thailand.mez100.com.cn",
+        "region": [
+          "TH",
+          "ID"
+        ]
+      }
+    ]
+  },
+  "sharePoint": {
+    "pro": [
+      {
+        "des": "Feedback SharePoint pro环境",
+        "host": "https://mediacenter-apiservice-pro.azurewebsites.net",
+        "region": [
+          "ALL"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "des": "Feedback SharePoint UAT 测试环境",
+        "host": "https://mediacenter-apiservice-uat.azurewebsites.net",
+        "region": [
+          "ALL"
+        ]
+      }
+    ],
+    "dev": [
+      {
+        "des": "Feedback SharePoint dev环境",
+        "host": "https://mediacenter-apiservice-dev.azurewebsites.net",
+        "region": [
+          "ALL"
+        ]
+      }
+    ]
+  },
+  "tChannel": {
+    "pro": [
+      {
+        "des": "TChanel pro环境",
+        "host": "https://hwlauncher-o.api.leiniao.com",
+        "region": [
+          "ALL"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "des": "TChanel 测试环境",
+        "host": "http://test.tcllauncher.tcloudfamily.com",
+        "region": [
+          "ALL"
+        ]
+      }
+    ],
+    "dev": [
+      {
+        "des": "TChanel dev环境",
+        "host": "http://test.tcllauncher.tcloudfamily.com",
+        "region": [
+          "ALL"
+        ]
+      }
+    ],
+    "uat":[
+      {
+        "des": "TChanel uat环境",
+        "host": "http://test.tcllauncher.tcloudfamily.com",
+        "region": [
+          "ALL"
+        ]
+      }
+    ]
+  },
+  "tChannelSearch": {
+    "pro": [
+      {
+        "des": "tChannelSearch pro环境",
+        "host": "https://hwsearch-o.api.leiniao.com",
+        "region": [
+          "ALL"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "des": "tChannelSearch 测试环境",
+        "host": "https://hwsearch-t.api.leiniao.com",
+        "region": [
+          "ALL"
+        ]
+      }
+    ],
+    "dev": [
+      {
+        "des": "tChannelSearch dev环境",
+        "host": "https://hwsearch-t.api.leiniao.com",
+        "region": [
+          "ALL"
+        ]
+      }
+    ],
+    "uat":[
+      {
+        "des": "tChannelSearch uat环境",
+        "host": "https://hwsearch-t.api.leiniao.com",
+        "region": [
+          "ALL"
+        ]
+      }
+    ]
+  },
+  "magiConnect": {
+    "pro": [
+      {
+        "des": "MagiConnect pro环境",
+        "host": "https://hwmedia-o.api.leiniao.com",
+        "region": [
+          "ALL"
+        ]
+      }
+    ],
+    "test": [
+      {
+        "des": "MagiConnect 测试环境",
+        "host": "http://hwtcast-t.api.my7v.com",
+        "region": [
+          "ALL"
+        ]
+      }
+    ],
+    "dev": [
+      {
+        "des": "MagiConnect dev环境",
+        "host": "http://hwtcast-t.api.my7v.com",
+        "region": [
+          "ALL"
+        ]
+      }
+    ],
+    "uat":[
+      {
+        "des": "MagiConnect uat环境",
+        "host": "http://hwtcast-t.api.my7v.com",
+        "region": [
+          "ALL"
+        ]
+      }
+    ]
+  }
+}

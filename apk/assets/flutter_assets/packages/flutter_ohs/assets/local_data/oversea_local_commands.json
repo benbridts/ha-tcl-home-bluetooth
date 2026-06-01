@@ -1,0 +1,2574 @@
+{
+  "English": [
+    {
+      "id": "Wake-up word",
+      "title": "Wake-up word",
+      "commands": [
+        "Hey TCL"
+      ]
+    },
+    {
+      "id": "acOnOff",
+      "title": "Air Conditioner Switch",
+      "commands": [
+        "power on",
+        "turn on",
+        "power off",
+        "turn off"
+      ]
+    },
+    {
+      "id": "temperature",
+      "title": "Temperature Adjustment",
+      "commands": [
+        "Sixteen degrees ~ Thirty-one degrees（℃）",
+        "Sixty-one degrees ~ Eighty-eight degrees（℉）",
+        "Set to Sixteen ~ Set to Thirty-one（℃）",
+        "Set to Sixty-one ~ Set to Eighty-eight（℉）",
+        "lower the temperature",
+        "increase the temperature",
+        "i feel cold",
+        "i feel hot"
+      ]
+    },
+    {
+      "id": "windSpeed",
+      "title": "Fan Speed Control",
+      "commands": [
+        "turbo fan",
+        "high fan",
+        "medium fan",
+        "low fan",
+        "mute fan",
+        "auto fan",
+        "minimum fan speed",
+        "maximum fan speed",
+        "increase fan speed",
+        "lower fan speed"
+      ]
+    },
+    {
+      "id": "ModeSwitch",
+      "title": "Mode Switch",
+      "commands": [
+        "cool mode",
+        "heat mode",
+        "fan mode",
+        "dry mode",
+        "auto mode"
+      ]
+    },
+    {
+      "id": "SwingAdjustment",
+      "title": "Swing Adjustment",
+      "commands": [
+        "swing on",
+        "swing off",
+        "vertical swing on",
+        "vertical swing off",
+        "horizontal swing on",
+        "horizontal swing off",
+        "airflow up",
+        "airflow down",
+        "blow air into the center",
+        "airflow left",
+        "airflow right"
+      ]
+    },
+    {
+      "id": "GentleWindControl",
+      "title": "Gentle Wind Control",
+      "commands": [
+        "gentle wind on",
+        "gentle wind",
+        "gentle wind off",
+        "turn off gentle wind"
+      ]
+    },
+    {
+      "id": "DisplayControl",
+      "title": "Display Control",
+      "commands": [
+        "display on",
+        "screen on",
+        "display off",
+        "off display"
+      ]
+    },
+    {
+      "id": "EcoModeControl",
+      "title": "Eco Mode Control",
+      "commands": [
+        "eco mode on",
+        "turn on eco mode",
+        "eco mode off",
+        "deactivate eco mode"
+      ]
+    },
+    {
+      "id": "SleepModeControl",
+      "title": "Sleep Mode Control",
+      "commands": [
+        "sleep mode on",
+        "turn on sleep mode",
+        "sleep mode off",
+        "turn off sleep mode"
+      ]
+    },
+    {
+      "id": "AutoCleanFunctionControl",
+      "title": "Auto-Clean Function Control",
+      "commands": [
+        "auto clean on",
+        "turn on auto clean",
+        "auto clean off",
+        "disable auto clean"
+      ]
+    },
+    {
+      "id": "SupplementaryHeatControl",
+      "title": "Supplementary Heat Control",
+      "commands": [
+        "turn on supplementary heat",
+        "supplementary heat on",
+        "supplementary heat off",
+        "turn off supplementary heat"
+      ]
+    },
+    {
+      "id": "VolumeControl",
+      "title": "Volume Control",
+      "commands": [
+        "volume up",
+        "increase volume",
+        "volume down",
+        "decrease the voice volume",
+        "lowest volume",
+        "maximum volume"
+      ]
+    },
+    {
+      "id": "FreshAirControl",
+      "title": "Fresh Air Control",
+      "commands": [
+        "fresh air on",
+        "turn off fresh air",
+        "increase fresh air",
+        "decrease fresh air",
+        "low fresh air",
+        "medium fresh air",
+        "high fresh air",
+        "auto fresh air"
+      ]
+    },
+    {
+      "id": "HealthModeControl",
+      "title": "Health Mode Control",
+      "commands": [
+        "health mode on",
+        "turn on health mode",
+        "health mode off",
+        "disable health mode"
+      ]
+    },
+    {
+      "id": "SmartAirflowControl",
+      "title": "Smart Airflow Control",
+      "commands": [
+        "follow me",
+        "focus on me",
+        "don't follow me",
+        "blow away from me"
+      ]
+    },
+    {
+      "id": "AntiDirectBlowFunctionControl",
+      "title": "Anti Direct Blow Function Control",
+      "commands": [
+        "turn on anti direct blow mode",
+        "anti direct blow mode on",
+        "turn off anti direct blow mode",
+        "anti direct blow mode off"
+      ]
+    },
+    {
+      "id": "SterilizationModeControl",
+      "title": "Sterilization Mode Control",
+      "commands": [
+        "sterilization mode on",
+        "turn on sterilization mode",
+        "sterilization mode off",
+        "disable sterilization mode"
+      ]
+    },
+    {
+      "id": "GeneratorModeControl",
+      "title": "Generator Mode Control",
+      "commands": [
+        "generator mode on",
+        "turn on generator mode",
+        "generator mode off",
+        "disable generator mode",
+        "increase generator level",
+        "increase the generator level",
+        "decrease generator level",
+        "decrease the generator level",
+        "set the generator mode on level (one ~ six）",
+        "generator level (one ~ six）"
+      ]
+    }
+  ],
+  "Englisha": [
+    {
+      "id": "Wake-up word",
+      "title": "Wake-up word",
+      "commands": [
+        "Hey TCL"
+      ]
+    },
+    {
+      "id": "acOnOff",
+      "title": "Air Conditioner Switch",
+      "commands": [
+        "power on",
+        "turn on",
+        "Shut down",
+        "turn off"
+      ]
+    },
+    {
+      "id": "temperature",
+      "title": "Temperature Adjustment",
+      "commands": [
+        "Sixteen degrees ~ Thirty-one degrees（℃）",
+        "Sixty-one degrees ~ Eighty-eight degrees（℉）",
+        "increase the temperature",
+        "raise the temperature",
+        "decrease the temperature",
+        "lower the temperature",
+        "minimum temperature",
+        "maximum temperature",
+        "I feel cold",
+        "i feel hot"
+      ]
+    },
+    {
+      "id": "windSpeed",
+      "title": "Fan Speed Control",
+      "commands": [
+        "turbo fan speed",
+        "high fan speed",
+        "medium fan speed",
+        "low fan speed",
+        "mute fan speed",
+        "auto fan speed",
+        "increase the fan speed",
+        "decrease the fan speed",
+        "minimum fan speed",
+        "maximum fan speed"
+      ]
+    },
+    {
+      "id": "ModeSwitch",
+      "title": "Mode Switch",
+      "commands": [
+        "cooling mode",
+        "heating mode",
+        "fan mode",
+        "dry mode",
+        "auto mode"
+      ]
+    },
+    {
+      "id": "SwingAdjustment",
+      "title": "Swing Adjustment",
+      "commands": [
+        "swing on",
+        "swing off",
+        "enable the vertical swing",
+        "disable the vertical swing",
+        "horizontal swing on",
+        "horizontal swing off",
+        "blow air upward",
+        "blow air downward",
+        "center the air",
+        "blow air to the left",
+        "blow air to the right"
+      ]
+    },
+    {
+      "id": "GentleWindControl",
+      "title": "Gentle Wind Control",
+      "commands": [
+        "turn on the gentle wind",
+        "enable the gentle wind mode",
+        "turn off the gentle wind",
+        "disable the gentle wind mode"
+      ]
+    },
+    {
+      "id": "DisplayControl",
+      "title": "Display Control",
+      "commands": [
+        "turn on the display",
+        "enable the display",
+        "turn off the display",
+        "disable the display"
+      ]
+    },
+    {
+      "id": "EcoModeControl",
+      "title": "Eco Mode Control",
+      "commands": [
+        "turn on the eco-mode",
+        "enable the eco-mode",
+        "turn off the eco-mode",
+        "disable the eco-mode"
+      ]
+    },
+    {
+      "id": "SleepModeControl",
+      "title": "Sleep Mode Control",
+      "commands": [
+        "turn on the sleep mode",
+        "enable the sleep mode",
+        "turn off the sleep mode",
+        "disable the sleep mode"
+      ]
+    },
+    {
+      "id": "AutoCleanFunctionControl",
+      "title": "Auto-Clean Function Control",
+      "commands": [
+        "turn on the Auto-clean",
+        "enable the Auto-clean",
+        "turn off the Auto-clean",
+        "disable the Auto-clean"
+      ]
+    },
+    {
+      "id": "VolumeControl",
+      "title": "Volume Control",
+      "commands": [
+        "increase the voice volume",
+        "raise the voice volume",
+        "decrease the voice volume",
+        "lower the voice volume",
+        "minimum volume",
+        "maximum volume"
+      ]
+    },
+    {
+      "id": "FreshAirControl",
+      "title": "Fresh Air Control",
+      "commands": [
+        "turn on the fresh air",
+        "turn off the fresh air",
+        "increase the fresh air",
+        "more fresh air",
+        "decrease the fresh air",
+        "less fresh air",
+        "low fresh air",
+        "medium fresh air",
+        "high fresh air",
+        "auto fresh air"
+      ]
+    },
+    {
+      "id": "HealthModeControl",
+      "title": "Health Mode Control",
+      "commands": [
+        "turn on the health mode",
+        "enable the health mode",
+        "turn off the health mode",
+        "disable the health mode"
+      ]
+    },
+    {
+      "id": "SmartAirflowControl",
+      "title": "Smart Airflow Control",
+      "commands": [
+        "follow me",
+        "Blow towards me",
+        "don't follow me",
+        "Blow away from me"
+      ]
+    },
+    {
+      "id": "GeneratorModeControl",
+      "title": "Generator Mode Control",
+      "commands": [
+        "Enable the generator mode",
+        "increase the generator level",
+        "Set the generator mode on level (one ~  six)"
+      ]
+    }
+  ],
+  "Arabic": [
+    {
+      "id": "Wake-up word",
+      "title": "كلمة الإستيقاظ",
+      "commands": [
+        "مرحبًا، تي سي إل"
+      ]
+    },
+    {
+      "id": "acOnOff",
+      "title": "مفتاح جهاز التبريد",
+      "commands": [
+        "فتح المكيف",
+        "افتح التكييف",
+        "اقفل المكيف",
+        "اطفي التكييف"
+      ]
+    },
+    {
+      "id": "temperature",
+      "title": "مفتاح التحكم بدرجة الحرارة",
+      "commands": [
+        "ستة عش درجة ~ إحدى وثلاثون درجة",
+        "زيادة درجة الحرارة",
+        "خفض درجة الحرارة",
+        "أعلى درجة حرارة",
+        "أدنى درجة حرارة",
+        "اشعر بالبرد",
+        "أشعر بالحر"
+      ]
+    },
+    {
+      "id": "windSpeed",
+      "title": "مفتاح التحكم بسرعة المروحة",
+      "commands": [
+        "مروحة توربو",
+        "سرعة مروحة توربو",
+        "سرعة المروحة العالية",
+        "سرعة المروحة متوسطة",
+        "سرعة المروحة منخفضة",
+        "كتم سرعة المروحة",
+        "سرعة المروحة التلقائية",
+        "ارفع سرعة المروحة",
+        "زيادة سرعة المروحة",
+        "خفض سرعة المروحة",
+        "تقليل سرعة المروحة",
+        "أعلى سرعة",
+        "أدنى سرعة"
+      ]
+    },
+    {
+      "id": "ModeSwitch",
+      "title": "مفتاح وضعيات التشغيل",
+      "commands": [
+        "وضع التبريد",
+        "وضع التدفئة",
+        "وضع المروحة",
+        "الوضع الجاف",
+        "الوضع التلقائي"
+      ]
+    },
+    {
+      "id": "SwingAdjustment",
+      "title": "مفتاح التحكم بتوزيع الهواء",
+      "commands": [
+        "تشغيل موزع الهواء",
+        "إطفاء موزع الهواء",
+        "تشغيل موزع الهواء العمودي",
+        "إطفاء موزع الهواء العمودي",
+        "تشغيل موزع الهواء الأفقي",
+        "إطفاء موزع الهواء الأفقي",
+        "نفخ الهواء للأعلى",
+        "نفخ الهوا للأسفل",
+        "مركز الهواء",
+        "نفخ الهواء لليسار",
+        "نفخ الهواء لليمين"
+      ]
+    },
+    {
+      "id": "GentleWindControl",
+      "title": "مفتاح الهواء اللطيف",
+      "commands": [
+        "تشغيل الهواء اللطيف",
+        "إطفاء الهواء اللطيف"
+      ]
+    },
+    {
+      "id": "DisplayControl",
+      "title": "مفتاح الضوء",
+      "commands": [
+        "شغل الشاشة",
+        "اطفئ الشاشة"
+      ]
+    },
+    {
+      "id": "EcoModeControl",
+      "title": "مفتاح توفير الطاقة",
+      "commands": [
+        "تشغيل الوضع الاقتصادي",
+        "إطفاء الوضع الاقتصادي"
+      ]
+    },
+    {
+      "id": "SleepModeControl",
+      "title": "مفتاح وضعية النوم",
+      "commands": [
+        "تشغيل وضع النوم",
+        "إطفاء وضع النوم"
+      ]
+    },
+    {
+      "id": "AutoCleanFunctionControl",
+      "title": "مفتاح التنظيف الذاتي",
+      "commands": [
+        "تشغيل التنظيف التلقائي",
+        "إيقاف التنظيف التلقائي"
+      ]
+    },
+    {
+      "id": "VolumeControl",
+      "title": "مفتاح التحكم بالصوت",
+      "commands": [
+        "رفع الصوت",
+        "اعلى صوت",
+        "خفض الصوت",
+        "أقل صوت"
+      ]
+    },
+    {
+      "id": "FreshAirControl",
+      "title": "نظام التحكم بالهواء النقي",
+      "commands": [
+        "تشغيل هواء نقي",
+        "أقفل الهواء النقي",
+        "زيادة الهوا النقي",
+        "قلل الهوا النقي",
+        "اضبط الهواء النقي على وضع منخفض",
+        "اضبط الهواء النقي على وضع متوسط",
+        "اضبط الهواء النقي على وضع عالي",
+        "اضبط الهواء النقي على وضع تلقائي"
+      ]
+    },
+    {
+      "id": "HealthModeControl",
+      "title": "مفتاح الوضع الصحي",
+      "commands": [
+        "تشغيل الوضع الصحي",
+        "إطفاء الوضع الصحي"
+      ]
+    },
+    {
+      "id": "SmartAirflowControl",
+      "title": "الهواء سيتبع الأمر الصوتي",
+      "commands": [
+        "توجيه الهواء نحوي",
+        "اتبعني",
+        "توجيه الهواء بعيداً عني",
+        "ضربة بعيدا عني"
+      ]
+    },
+    {
+      "id": "GeneratorModeControl",
+      "title": "التحكم بالأمبير / المُولدة",
+      "commands": [
+        "تشغيل وضع التحكم بالأمبيرية",
+        "إيقاف وضع التحكم بالأمبيرية",
+        "ثبت درجة التحكم بالأمبيرية على المستوى الأول ~ السادس"
+      ]
+    }
+  ],
+  "Thai": [
+    {
+      "id": "Wake-up word",
+      "title": "เรียก",
+      "commands": [
+        "เฮ้ทีซีแอล"
+      ]
+    },
+    {
+      "id": "acOnOff",
+      "title": "เปิด-ปิดเครื่องปรับอากาศ",
+      "commands": [
+        "เย็นสิบหกองศา ~ เย็นสามสิบเอ็ดองศา",
+        "เพิ่มอุณหภูมิ",
+        "เพิ่มแอร์",
+        "ลดอุณหภูมิ",
+        "เพิ่มความเย็น",
+        "หนาวไป",
+        "ร้อนเกิน"
+      ]
+    },
+    {
+      "id": "temperature",
+      "title": "ปรับเพิ่ม-ลดอุณหภูมิ",
+      "commands": [
+        "เย็นสิบหกองศา ~ เย็นสามสิบเอ็ดองศา",
+        "เพิ่มอุณหภูมิ",
+        "เพิ่มแอร์",
+        "ลดอุณหภูมิ",
+        "เพิ่มความเย็น",
+        "หนาวไป",
+        "ร้อนเกิน"
+      ]
+    },
+    {
+      "id": "windSpeed",
+      "title": "ปรับความเร็วพัดลม",
+      "commands": [
+        "พัดลมเทอร์โบ",
+        "ความเร็วพัดลมสูง",
+        "ลมกลาง",
+        "ความเร็วพัดลมต่ำ",
+        "ความเร็วพัดลมเงียบ",
+        "ลมออโต้",
+        "เพิ่มความเร็วพัดลม",
+        "ลดความเร็วพัดลม",
+        "ความเร็วพัดลมสูงสุด",
+        "ความเร็วพัดลมต่ำสุด"
+      ]
+    },
+    {
+      "id": "ModeSwitch",
+      "title": "ปรับโหมดการทำงาน",
+      "commands": [
+        "โหมดทำความเย็น",
+        "โหมดทำความร้อน",
+        "โหมดพัดลม",
+        "ลดความชื้น",
+        "เปิดโหมดอัตโนมัติ"
+      ]
+    },
+    {
+      "id": "SwingAdjustment",
+      "title": "ควบคุมบานสวิง",
+      "commands": [
+        "เปิดส่าย",
+        "ปิดการส่าย",
+        "เปิดส่ายขึ้นลง",
+        "ปิดส่ายขึ้นลง",
+        "เปิดส่ายซ้ายขวา",
+        "ปิดส่ายซ้ายขวา",
+        "เป่าลมขึ้น",
+        "เป่าลมลง",
+        "เป่าลมกลาง",
+        "เป่าลมซ้าย",
+        "เป่าลมขวา"
+      ]
+    },
+    {
+      "id": "GentleWindControl",
+      "title": "เปิด-ปิดโหมดลมไม่ปะทะตัว ",
+      "commands": [
+        "เปิดลมเบา",
+        "ลมเบา",
+        "ปิดลมเบา",
+        "ปิดโหมดสบาย"
+      ]
+    },
+    {
+      "id": "DisplayControl",
+      "title": "เปิด-ปิดไฟหน้าจอ",
+      "commands": [
+        "เปิดหน้าจอ",
+        "เปิดจอ",
+        "ปิดหน้าจอ",
+        "ปิดจอ"
+      ]
+    },
+    {
+      "id": "EcoModeControl",
+      "title": "เปิด-ปิดโหมดประหยัดพลังงาน",
+      "commands": [
+        "เปิดโหมดประหยัดพลังงาน",
+        "ประหยัดพลังงาน",
+        "ปิดโหมดประหยัดพลังงาน",
+        "ปิดโหมดประหยัด"
+      ]
+    },
+    {
+      "id": "SleepModeControl",
+      "title": "เปิด-ปิดโหมดนอนหลับ",
+      "commands": [
+        "เปิดโหมดนอนหลับ",
+        "ปิดโหมดนอนหลับ"
+      ]
+    },
+    {
+      "id": "AutoCleanFunctionControl",
+      "title": "เปิด-ปิดโหมดทำความสะอาดตัวเอง",
+      "commands": [
+        "เปิดโหมดทำความสะอาด",
+        "ปิดโหมดทำความสะอาด"
+      ]
+    },
+    {
+      "id": "SupplementaryHeatControl",
+      "title": "เพิ่ม-ลดระดับเสียง",
+      "commands": [
+        "เพิ่มเสียง",
+        "เพิ่มระดับเสียง",
+        "ลดเสียง",
+        "ลดระดับเสียง",
+        "ปรับเสียงไปที่ดังสุด",
+        "ลดเสียงไปที่ต่ำที่สุด"
+      ]
+    },
+    {
+      "id": "VolumeControl",
+      "title": "เพิ่ม-ลดระดับเสียง",
+      "commands": [
+        "เพิ่มเสียง",
+        "เพิ่มระดับเสียง",
+        "ลดเสียง",
+        "ลดระดับเสียง",
+        "ปรับเสียงไปที่ดังสุด",
+        "ลดเสียงไปที่ต่ำที่สุด"
+      ]
+    },
+    {
+      "id": "FreshAirControl",
+      "title": "เปิด-ปิดโหมดอากาศบริสุทธิ์",
+      "commands": [
+        "เปิดโหมดอากาศบริสุทธิ์",
+        "ปิดโหมดอากาศบริสุทธิ์",
+        "เพิ่มอากาศบริสุทธิ์",
+        "ลดอากาศบริสุทธิ์",
+        "อากาศบริสุทธิ์ต่ำ",
+        "ปรับอากาศบริสุทธิ์ไปที่ระดับกลาง",
+        "ปรับอากาศบริสุทธิ์ไปที่ระดับสูงสุด",
+        "ปรับอากาศบริสุทธิ์แบบอัตโนมัติ"
+      ]
+    },
+    {
+      "id": "HealthModeControl",
+      "title": "โหมดเพื่อสุขภาพ",
+      "commands": [
+        "เปิดโหมดสุขภาพ",
+        "เปิดโหมดเพื่อสุขภาพ",
+        "ปิดโหมดสุขภาพ",
+        "ปิดโหมดเพื่อสุขภาพ"
+      ]
+    },
+    {
+      "id": "SmartAirflowControl",
+      "title": "เปิด-ปิดโหมดลมติดตามตัว",
+      "commands": [
+        "เปิดโหมดติดตาม",
+        "เป่าลมมาทางฉัน",
+        "ไม่ตามฉัน",
+        "เป่าลมออกจากฉัน"
+      ]
+    },
+    {
+      "id": "AntiDirectBlowFunctionControl",
+      "title": "เปิด-ปิดโหมดลมตรง",
+      "commands": [
+        "เปิดโหมดป้องกันลมตรง",
+        "เปิดโหมดป้องกันลมแรง",
+        "ปิดโหมดป้องกันลมตรง",
+        "ปิดโหมดป้องกันลมแรง"
+      ]
+    },
+    {
+      "id": "SterilizationModeControl",
+      "title": "โหมดฆ่าเชื้อ",
+      "commands": [
+        "เปิดโหมดฆ่าเชื้อ",
+        "ปิดโหมดฆ่าเชื้อ"
+      ]
+    },
+    {
+      "id": "GeneratorModeControl",
+      "title": "เปิด-ปิดเจนโหมด",
+      "commands": [
+        "ใช้งานโหมดเครื่องกำเนิดไฟฟ้า",
+        "ปิดโหมดเครื่องกำเนิดไฟฟ้า",
+        "เพิ่มระดับเจนโหมด",
+        "ลดระดับเจนโหมด",
+        "ลดการกินกระแสไฟระดับที่หนึ่ง ~ ลดการกินกระแสไฟระดับที่หก"
+      ]
+    }
+  ],
+  "Chinese": [
+    {
+      "id": "Wake-up word",
+      "title": "唤醒词",
+      "commands": [
+        "小T小T"
+      ]
+    },
+    {
+      "id": "acOnOff",
+      "title": "空调开关机",
+      "commands": [
+        "开机",
+        "打开空调",
+        "开空调",
+        "开启空调",
+        "空调开机",
+        "关机",
+        "关闭空调",
+        "关空调",
+        "空调关掉",
+        "关上空调"
+      ]
+    },
+    {
+      "id": "temperature",
+      "title": "温度控制",
+      "commands": [
+        "十六度",
+        "十七度",
+        "调高温度",
+        "升高温度",
+        "调高一度",
+        "增大温度",
+        "调大温度",
+        "有点冷",
+        "太冷了",
+        "好冷啊",
+        "我好冷",
+        "非常冷",
+        "调低温度",
+        "降低温度",
+        "调低一度",
+        "减小温度",
+        "调小温度",
+        "有点热",
+        "太热了",
+        "好热啊",
+        "我好热",
+        "非常热"
+      ]
+    },
+    {
+      "id": "windSpeed",
+      "title": "风速控制",
+      "commands": [
+        "最大风",
+        "风速最大",
+        "最大风量",
+        "最高风速",
+        "风速调到最大",
+        "最小风",
+        "风速调到最低",
+        "最低风速",
+        "风速最小",
+        "风速最低",
+        "强劲档",
+        "强力风速",
+        "强力模式",
+        "强力风",
+        "开强力",
+        "高风档",
+        "高风",
+        "大风",
+        "调到高风速",
+        "打开高风速",
+        "中风档",
+        "调到中风速",
+        "中风",
+        "风速调到中速",
+        "调到中风",
+        "低风档",
+        "低风",
+        "调到低风速",
+        "打开低风",
+        "小风",
+        "静音档",
+        "自动档",
+        "自动风速",
+        "调成自动风",
+        "打开自动风",
+        "开一下自动风",
+        "增大风速",
+        "加大风速",
+        "调高风速",
+        "调大风速",
+        "风速大一点",
+        "减小风速",
+        "降低风速",
+        "调低风速",
+        "调小风速",
+        "风速小一点"
+      ]
+    },
+    {
+      "id": "ModeSwitch",
+      "title": "模式控制",
+      "commands": [
+        "制冷模式",
+        "制冷",
+        "打开制冷模式",
+        "打开空调制冷",
+        "空调制冷",
+        "制热模式",
+        "制热",
+        "打开制热模式",
+        "打开暖风",
+        "打开热风",
+        "送风模式",
+        "打开送风",
+        "送风",
+        "打开送风功能",
+        "开启送风模式",
+        "除湿模式",
+        "打开除湿模式",
+        "除湿",
+        "打开空调除湿",
+        "开启除湿模式",
+        "自动模式",
+        "打开自动",
+        "调到自动模式",
+        "打开自动模式",
+        "开一下自动"
+      ]
+    },
+    {
+      "id": "SwingAdjustment",
+      "title": "摆风控制",
+      "commands": [
+        "打开扫风",
+        "打开摆风",
+        "开扫风",
+        "打开摇摆",
+        "打开导风板",
+        "关闭扫风",
+        "关闭摆风",
+        "关摆风",
+        "关摇摆",
+        "摆风关掉",
+        "上下风",
+        "上下摆风",
+        "上下扫风",
+        "打开上下扫风",
+        "上下摇摆",
+        "关闭上下扫风",
+        "关闭上下摆风",
+        "停止上下扫风",
+        "停止上下摇摆",
+        "左右风",
+        "左右摆风",
+        "左右扫风",
+        "打开左右扫风",
+        "左右摇摆",
+        "关闭左右扫风",
+        "关闭左右摆风",
+        "停止左右扫风",
+        "不要左右摆风",
+        "向上吹",
+        "往上吹",
+        "向上摆风",
+        "往上吹风",
+        "风往上吹",
+        "向下吹",
+        "风向下吹",
+        "往下吹",
+        "向下摆风",
+        "往下吹风",
+        "向中间吹",
+        "往中间吹",
+        "向中间摆风",
+        "风往中间吹",
+        "往中间吹风",
+        "向左吹",
+        "风向左吹",
+        "往左吹",
+        "向左摆风",
+        "风向朝左",
+        "向右吹",
+        "风向右吹",
+        "往右吹",
+        "向右摆风",
+        "往右吹风"
+      ]
+    },
+    {
+      "id": "GentleWindControl",
+      "title": "柔风",
+      "commands": [
+        "打开柔风",
+        "柔风开启",
+        "打开柔风感",
+        "调到柔风",
+        "关闭柔风",
+        "关掉柔风感",
+        "柔风关掉",
+        "停止柔风"
+      ]
+    },
+    {
+      "id": "DisplayControl",
+      "title": "灯光",
+      "commands": [
+        "打开灯光",
+        "打开显示",
+        "开启屏显",
+        "开灯光",
+        "打开屏幕",
+        "关闭灯光",
+        "关闭显示",
+        "灯关了",
+        "关一下显示灯光",
+        "关屏显"
+      ]
+    },
+    {
+      "id": "EcoModeControl",
+      "title": "节能",
+      "commands": [
+        "打开节能",
+        "节能模式",
+        "打开省电模式",
+        "空调节能模式",
+        "打开经济模式",
+        "关闭节能",
+        "节能关掉",
+        "关一下节能",
+        "关闭省电模式",
+        "关掉省电模式"
+      ]
+    },
+    {
+      "id": "SleepModeControl",
+      "title": "睡眠",
+      "commands": [
+        "打开睡眠",
+        "睡眠模式",
+        "调成睡眠模式",
+        "我要睡觉",
+        "睡眠状态",
+        "关闭睡眠",
+        "关闭睡眠模式",
+        "取消睡眠模式",
+        "退出睡眠",
+        "睡觉模式关闭"
+      ]
+    },
+    {
+      "id": "AutoCleanFunctionControl",
+      "title": "自清洁",
+      "commands": [
+        "打开自清洁",
+        "清洗空调",
+        "空调自清洁",
+        "自清洁模式",
+        "开自清洁",
+        "关闭自清洁",
+        "关闭清洁",
+        "自清洁关掉",
+        "关掉自清洁",
+        "退出自清洁"
+      ]
+    },
+    {
+      "id": "SupplementaryHeatControl",
+      "title": "辅热",
+      "commands": [
+        "打开辅热",
+        "辅热模式",
+        "开启辅热",
+        "电辅热模式",
+        "打开电加热",
+        "关闭辅热",
+        "关闭电加热",
+        "关掉电辅热",
+        "辅热关闭",
+        "辅热关掉"
+      ]
+    },
+    {
+      "id": "VolumeControl",
+      "title": "音量",
+      "commands": [
+        "增大音量",
+        "调大音量",
+        "加大音量",
+        "调高音量",
+        "音量增大",
+        "减小音量",
+        "调小音量",
+        "音量减小",
+        "降低音量",
+        "音量小点",
+        "最大音量",
+        "音量最大",
+        "音量调至最大",
+        "声音最大",
+        "最大声",
+        "最小音量",
+        "最小声",
+        "最小声音",
+        "音量最小",
+        "音量调至最小"
+      ]
+    },
+    {
+      "id": "FreshAirControl",
+      "title": "新风",
+      "commands": [
+        "开新风",
+        "打开新风",
+        "新风模式",
+        "空气太闷",
+        "打开小蓝翼",
+        "关新风",
+        "关闭新风",
+        "关闭小蓝翼",
+        "关闭独立新风",
+        "关一下新风",
+        "增大新风",
+        "加大新风",
+        "调大新风",
+        "调高新风",
+        "升高新风",
+        "减小新风",
+        "调小新风",
+        "降低新风",
+        "调低新风",
+        "新风小一点",
+        "新风低风",
+        "新风调到低风",
+        "新风调到最小",
+        "新风最小风",
+        "最小新风",
+        "新风中风",
+        "新风设为中风",
+        "新风设置中风",
+        "新风中等风",
+        "新风调到中风",
+        "新风高风",
+        "新风设为高风",
+        "新风升到高风",
+        "新风调到高风",
+        "新风高风档",
+        "新风自动",
+        "自动新风",
+        "新风智能",
+        "新风设为自动档",
+        "新风自动风",
+        "净化模式",
+        "打开净化模式",
+        "净化模式开一下",
+        "空气净化模式",
+        "呼吸模式",
+        "开启呼吸模式",
+        "呼吸模式打开",
+        "呼吸模式开一下",
+        "空调呼吸模式",
+        "排气模式",
+        "开排气模式",
+        "排气模式开一下",
+        "排气模式开启",
+        "排气模式打开"
+      ]
+    },
+    {
+      "id": "HealthModeControl",
+      "title": "健康",
+      "commands": [
+        "打开健康",
+        "健康模式",
+        "开启健康",
+        "开一下健康",
+        "开开健康",
+        "关闭健康",
+        "关掉健康",
+        "健康关一下",
+        "关健康",
+        "取消健康"
+      ]
+    },
+    {
+      "id": "SmartAirflowControl",
+      "title": "声源定位",
+      "commands": [
+        "对我吹",
+        "对着我吹",
+        "风随声动",
+        "向我吹风",
+        "对我摆",
+        "别吹我",
+        "不要吹我",
+        "不要对我吹",
+        "别对我吹",
+        "别向我吹风",
+        "别吹我",
+        "不要吹我",
+        "不要对我吹",
+        "别对我吹",
+        "别向我吹风"
+      ]
+    },
+    {
+      "id": "AntiDirectBlowFunctionControl",
+      "title": "防直吹",
+      "commands": [
+        "打开防直吹",
+        "防直吹模式",
+        "防直吹功能打开",
+        "防直吹开启",
+        "开防直吹",
+        "关闭防直吹",
+        "防直吹功能关闭",
+        "退出防直吹",
+        "关一下防直吹",
+        "取消防直吹"
+      ]
+    },
+    {
+      "id": "SterilizationModeControl",
+      "title": "除菌",
+      "commands": [
+        "打开除菌",
+        "除菌模式",
+        "杀菌模式",
+        "除菌开启",
+        "开一下除菌",
+        "关闭除菌",
+        "除菌关掉",
+        "除菌关一下",
+        "关关除菌",
+        "取消除菌"
+      ]
+    }
+  ],
+  "Portuguese": [
+    {
+      "id": "Wake-up word",
+      "title": "palavra da ativação",
+      "commands": [
+        "Hey，TCL"
+      ]
+    },
+    {
+      "id": "",
+      "title": "interruptor de ar-condicionado",
+      "commands": [
+        "ligar ar-condicionado",
+        "ativar ar-condicionado",
+        "desligar ar-condicionado",
+        "desativar ar-condicionado"
+      ]
+    },
+    {
+      "id": "",
+      "title": "ajuste de temperatura",
+      "commands": [
+        "quero dezesseis graus - quero trinta e um graus (ºC)",
+        "dezesseis graus - trinta e um graus (ºC)",
+        "diminua a temperatura",
+        "está muito quente",
+        "aumente a temperatura",
+        "estou com frio",
+        "temperatura máxima",
+        "temperatura mínima"
+      ]
+    },
+    {
+      "id": "",
+      "title": "controle da velocidade do ventilador",
+      "commands": [
+        "ventilação turbo",
+        "ventilação forte",
+        "ventilação média",
+        "ventilação baixa",
+        "modo silencioso",
+        "ventilação automática",
+        "ventilação mínima",
+        "ventilador no máximo",
+        "mais ventilação",
+        "menos ventilação"
+      ]
+    },
+    {
+      "id": "",
+      "title": "controle do modo",
+      "commands": [
+        "modo frio",
+        "modo quente",
+        "ligar ventilador",
+        "reduzir umidade",
+        "ativar modo automático"
+      ]
+    },
+    {
+      "id": "",
+      "title": "ajuste de oscilação",
+      "commands": [
+        "ligar oscilação",
+        "desligar oscilação",
+        "ativar oscilação vertical",
+        "desligar oscilação vertical",
+        "ligar oscilação horizontal",
+        "desativar oscilação horizontal",
+        "fluxo para cima",
+        "fluxo para baixo",
+        "centralize o fluxo",
+        "fluxo para esquerda",
+        "fluxo para a direita"
+      ]
+    },
+    {
+      "id": "",
+      "title": "interruptor de vento suave",
+      "commands": [
+        "brisa suave",
+        "vento suave",
+        "desligar vento suave",
+        "desativar vento suave"
+      ]
+    },
+    {
+      "id": "",
+      "title": "interruptor de display",
+      "commands": [
+        "ligar display",
+        "ativar display",
+        "desligar display",
+        "desligar tela"
+      ]
+    },
+    {
+      "id": "",
+      "title": "interruptor de modo eco",
+      "commands": [
+        "ativar modo econômico",
+        "ligar modo eco",
+        "desligar modo eco",
+        "desativar modo econômico"
+      ]
+    },
+    {
+      "id": "",
+      "title": "interruptor de modo IA eco",
+      "commands": [
+        "ativar o modo AI eco",
+        "ligar o modo AI eco",
+        "desligar o modo AI eco",
+        "desativar o modo AI eco"
+      ]
+    },
+    {
+      "id": "",
+      "title": "interruptor de modo sono",
+      "commands": [
+        "ativar modo sono",
+        "ligar modo sono",
+        "desativar modo sono",
+        "desligar modo sono"
+      ]
+    },
+    {
+      "id": "",
+      "title": "interruptor de autolimpeza",
+      "commands": [
+        "ativar autolimpeza",
+        "ligar autolimpeza",
+        "desativar autolimpeza",
+        "desligar autolimpeza"
+      ]
+    },
+    {
+      "id": "",
+      "title": "interruptor de calor auxiliar",
+      "commands": [
+        "ativar calor auxiliar",
+        "ligar calor auxiliar",
+        "desativar calor auxiliar",
+        "desligar calor auxiliar"
+      ]
+    },
+    {
+      "id": "",
+      "title": "ajuste de volume",
+      "commands": [
+        "aumentar volume",
+        "subir volume",
+        "baixar volume",
+        "diminua o volume",
+        "volume mínimo",
+        "volume máximo"
+      ]
+    },
+    {
+      "id": "",
+      "title": "controle do ar fresco",
+      "commands": [
+        "ativar ar fresco",
+        "ligar ar fresco",
+        "desligar ar fresco",
+        "desativar ar fresco",
+        "aumentar ar fresco",
+        "diminuir ar fresco",
+        "ar fresco baixo",
+        "ar fresco médio",
+        "ar fresco mais alto",
+        "ar fresco automático",
+        "ativar modo purificação",
+        "ativar modo respiração",
+        "ativar modo exaustão"
+      ]
+    },
+    {
+      "id": "",
+      "title": "interruptor de saúde",
+      "commands": [
+        "ligar modo saúde",
+        "ativar modo saúde",
+        "desligar modo saúde",
+        "desativar modo saúde"
+      ]
+    },
+    {
+      "id": "",
+      "title": "controle inteligente de fluxo de ar",
+      "commands": [
+        "ventile em mim",
+        "ventilar em mim",
+        "pare de soprar em mim",
+        "não sopre em mim"
+      ]
+    },
+    {
+      "id": "",
+      "title": "interruptor de antissopro",
+      "commands": [
+        "ativar modo antissopro direto",
+        "ligar modo antissopro direto",
+        "desativar modo antissopro direto",
+        "desativar modo antissopro"
+      ]
+    },
+    {
+      "id": "",
+      "title": "interruptor de esterilização",
+      "commands": [
+        "ligar esterilização",
+        "ativar esterilização",
+        "desligar esterilização",
+        "desativar esterilização"
+      ]
+    },
+    {
+      "id": "",
+      "title": "aprendizagem da palavra da ativação",
+      "commands": [
+        "aprender nova palavra de ativação",
+        "esquecer palavra de ativação",
+        "novo nome"
+      ]
+    },
+    {
+      "id": "",
+      "title": "controle de gerador",
+      "commands": [
+        "ativar modo gerador",
+        "ligar modo gerador",
+        "desligar modo gerador",
+        "desativar modo gerador",
+        "aumente o nível do gerador",
+        "subir o nível do gerador",
+        "diminuir nível do gerador",
+        "baixe o nível do gerador",
+        "gerador nível um",
+        "gerador no nível um",
+        "gerador nível dois",
+        "gerador no nível dois",
+        "gerador nível três",
+        "gerador no nível três",
+        "gerador nível quatro",
+        "gerador no nível quatro",
+        "gerador nível cinco",
+        "gerador no nível cinco",
+        "gerador nível seis",
+        "gerador no nível seis"
+      ]
+    }
+  ],
+  "Russian": [
+    {
+      "id": "Wake-up word",
+      "title": "Команда активации",
+      "commands": [
+        "привет tcl"
+      ]
+    },
+    {
+      "id": "",
+      "title": "включение/выключение кондиционера",
+      "commands": [
+        "включись",
+        "включи кондиционер",
+        "выключись",
+        "выключи кондиционер"
+      ]
+    },
+    {
+      "id": "",
+      "title": "контроль температуры",
+      "commands": [
+        "шестнадцать градусов — тридцать один градус (℃)",
+        "Температура установлена на уровне от 16 до 31 градуса Цельсия",
+        "понизь температуру",
+        "мне жарко",
+        "мне холодно",
+        "сделай теплее",
+        "максимальная температура",
+        "минимальная температура"
+      ]
+    },
+    {
+      "id": "",
+      "title": "контроль скорости вентилятора",
+      "commands": [
+        "режим турбо",
+        "высокая скорость",
+        "средняя скорость",
+        "низкая скорость",
+        "бесшумный режим",
+        "автоматический обдув",
+        "минимальная скорость",
+        "максимальная скорость",
+        "скорость выше",
+        "обдув меньше"
+      ]
+    },
+    {
+      "id": "",
+      "title": "контроль режима",
+      "commands": [
+        "режим охлаждения",
+        "обогрев",
+        "режим вентилятора",
+        "режим осушения",
+        "режим авто"
+      ]
+    },
+    {
+      "id": "",
+      "title": "контроль качания воздушных жалюзи",
+      "commands": [
+        "качание",
+        "выключи автокачание",
+        "вертикальный обдув",
+        "отключить обдув вверх вниз",
+        "включи обдув влево вправо",
+        "отключи обдув влево вправо",
+        "воздух вверх",
+        "воздух вниз",
+        "дуть в центр",
+        "дуть влево",
+        "дуть вправо"
+      ]
+    },
+    {
+      "id": "",
+      "title": "включение/выключение мягкого ветра",
+      "commands": [
+        "включить мягкий обдув",
+        "бережный обдув",
+        "выключи бережный обдув",
+        "отключить бережный обдув"
+      ]
+    },
+    {
+      "id": "",
+      "title": "включение/выключение света",
+      "commands": [
+        "включи экран",
+        "включи дисплей",
+        "выключи экран",
+        "выключи дисплей"
+      ]
+    },
+    {
+      "id": "",
+      "title": "включение/выключение энергосберегающего режима",
+      "commands": [
+        "эко",
+        "включи эко",
+        "выключи экорежим",
+        "стоп эко"
+      ]
+    },
+    {
+      "id": "",
+      "title": "включение/выключение режима сна",
+      "commands": [
+        "режим сна",
+        "включи режим сна",
+        "выключи режим сна",
+        "выйти из спящего режима"
+      ]
+    },
+    {
+      "id": "",
+      "title": "включение/выключение самоочистки",
+      "commands": [
+        "самоочистка",
+        "включи самоочистку",
+        "выключи самоочистку",
+        "отключи самоочистку"
+      ]
+    },
+    {
+      "id": "",
+      "title": "включение/выключение дополнительного обогрева",
+      "commands": [
+        "активировать вспомогательный нагрев",
+        "включи дополнительный обогрев",
+        "выключи обогрев",
+        "выключи нагрев"
+      ]
+    },
+    {
+      "id": "",
+      "title": "контроль громкости",
+      "commands": [
+        "громче",
+        "сделай громче",
+        "тише",
+        "сделай тише",
+        "минимальная громкость",
+        "максимальная громкость"
+      ]
+    },
+    {
+      "id": "",
+      "title": "контроль свежего воздуха",
+      "commands": [
+        "включи приток воздуха",
+        "выключи приток воздуха",
+        "больше воздуха",
+        "меньше свежего воздуха",
+        "минимум свежего воздуха",
+        "средний приток",
+        "максимум свежего воздуха",
+        "авто воздух"
+      ]
+    },
+    {
+      "id": "",
+      "title": "включение/выключение здорового режима",
+      "commands": [
+        "режим здоровья",
+        "включи режим здоровья",
+        "выключи режим здоровья",
+        "отключи режим здоровья"
+      ]
+    },
+    {
+      "id": "",
+      "title": "ветер следует за голосом",
+      "commands": [
+        "воздух на меня",
+        "дуй на меня",
+        "не дуй на меня",
+        "воздух от меня"
+      ]
+    },
+    {
+      "id": "",
+      "title": "включение/выключение защиты от прямого потока воздуха",
+      "commands": [
+        "включи антипрямой поток",
+        "антипрямой поток",
+        "выключи антипрямой поток",
+        "отключи антипрямой поток"
+      ]
+    },
+    {
+      "id": "",
+      "title": "включение/выключение дезинфекции",
+      "commands": [
+        "включи стерилизацию",
+        "режим обеззараживания",
+        "выключи стерилизацию",
+        "отключи стерилизацию"
+      ]
+    },
+    {
+      "id": "",
+      "title": "контроль функций генератора",
+      "commands": [
+        "режим генератора",
+        "генераторный режим",
+        "отключи режим генератора",
+        "выключи режим генератора",
+        "увеличить уровень генератора",
+        "увеличь уровень генератора",
+        "понизь уровень генератора",
+        "снизить уровень генератора",
+        "первый уровень генератора",
+        "генератор на первый уровень",
+        "второй уровень генератора",
+        "генератор на второй уровень",
+        "третий уровень генератора",
+        "генератор на третий уровень",
+        "четвёртый уровень генератора",
+        "генератор на четвёртый уровень",
+        "пятый уровень генератора",
+        "генератор на пятый уровень",
+        "шестой уровень генератора",
+        "генератор на шестой уровень"
+      ]
+    }
+  ],
+  "French": [
+    {
+      "id": "Wake-up word",
+      "title": "Mot d'Activation",
+      "commands": [
+        "hey，TCL"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Air conditionné on/off",
+      "commands": [
+        "allume la clim",
+        "allumer la clim",
+        "éteins la clim",
+        "coupe la clim"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle de la température",
+      "commands": [
+        "seize degrés-trente et un degrés(℃)",
+        "mets la température à seize degrés-mets la température à trente et un degrés(℃)",
+        "baisse la température",
+        "il fait chaud",
+        "augmente la température",
+        "il fait froid",
+        "mets la température au maximum",
+        "mets la température au minimum"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle de la vitesse du ventilateur",
+      "commands": [
+        "vitesse turbo",
+        "vitesse du ventilateur élevée",
+        "vitesse modérée",
+        "vitesse du ventilateur basse",
+        "silence le ventilateur",
+        "vitesse auto",
+        "ventilateur au minimum",
+        "ventilateur au maximum",
+        "augmente la vitesse du ventilateur",
+        "diminuer la vitesse du ventilateur"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle du mode",
+      "commands": [
+        "mode froid",
+        "mode chaud",
+        "mode ventilateur",
+        "mode anti-humidité",
+        "mode auto"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle de l'oscillation",
+      "commands": [
+        "activer le balayage",
+        "désactiver le balayage",
+        "balayage vertical",
+        "arrêter le balayage vertical",
+        "activer le balayage horizontal",
+        "stop balayage horizontal",
+        "flux vers le haut",
+        "flux vers le bas",
+        "flux au centre",
+        "flux à gauche",
+        "flux à droite"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle du mode vent doux",
+      "commands": [
+        "vent doux",
+        "mode vent doux",
+        "désactiver vent doux",
+        "stop vent doux"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle de l'affichage",
+      "commands": [
+        "affichage on",
+        "allumer l'écran",
+        "affichage off",
+        "éteindre l'écran"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle du mode éco",
+      "commands": [
+        "mode éco",
+        "activer mode éco",
+        "supprimer le mode éco",
+        "mode éco off"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle du mode Nuit",
+      "commands": [
+        "mode nuit",
+        "activer le mode nuit",
+        "désactiver le mode nuit",
+        "supprimer le mode nuit"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle de la fonction auto-nettoyage",
+      "commands": [
+        "nettoyage automatique",
+        "lancer le nettoyage automatique",
+        "arrêter le nettoyage automatique",
+        "désactiver le nettoyage automatique"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle du chauffage d'appoint",
+      "commands": [
+        "chauffage d'appoint",
+        "chauffage d'appoint on",
+        "arrêter le chauffage d'appoint",
+        "éteindre le chauffage d'appoint"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle du volume",
+      "commands": [
+        "augmenter le volume",
+        "augmente le volume",
+        "baisser le volume",
+        "baisse le son",
+        "son au maximum",
+        "volume minimum"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle de l'air frais",
+      "commands": [
+        "mode air frais",
+        "arrêter l'air frais",
+        "augmenter l'air frais",
+        "diminuer l'air frais",
+        "très peu d'air frais",
+        "un peu d'air frais",
+        "beaucoup d'air frais",
+        "air frais auto"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle du mode Santé",
+      "commands": [
+        "mode santé",
+        "mode santé on",
+        "arrêter le mode santé",
+        "désactiver le mode santé"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle du flux d'air",
+      "commands": [
+        "suivre ma position",
+        "diriger le flux vers moi",
+        "ne pas me suivre",
+        "éloigner le flux de moi"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle de la fonction anti-courant d'air direct",
+      "commands": [
+        "mode anti-courant d'air",
+        "lance le mode anti-courant d'air",
+        "arrêter le mode anti-courant d'air",
+        "mode anti-courant d'air off"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle du mode Stérilisation",
+      "commands": [
+        "mode stérilisation",
+        "lance la stérilisation",
+        "arrêter le mode stérilisation",
+        "désactiver le mode stérilisation"
+      ]
+    },
+    {
+      "id": "",
+      "title": "Contrôle du mode Générateur",
+      "commands": [
+        "mode générateur on",
+        "mode générateur",
+        "arrêter le mode générateur",
+        "mode générateur off",
+        "augmente le niveau du générateur",
+        "élever niveau du générateur",
+        "réduire le niveau du générateur",
+        "baisser la puissance du générateur",
+        "générateur niveau un",
+        "niveau un du générateur",
+        "générateur niveau deux",
+        "niveau deux du générateur",
+        "générateur niveau trios",
+        "niveau trois du générateur",
+        "générateur niveau quatre",
+        "niveau quatre du générateur",
+        "générateur niveau cinq",
+        "niveau cinq du générateur",
+        "générateur niveau six",
+        "niveau six du générateur"
+      ]
+    }
+  ],
+  "Japanese": [
+    {
+      "id": "Wake-up word",
+      "title": "ウェイクアップワード",
+      "commands": [
+        "おっ、TCL"
+      ]
+    },
+    {
+      "id": "",
+      "title": "エアコンのスイッチ",
+      "commands": [
+        "エアコンつけて",
+        "エアコンをつけて",
+        "エアコン消して",
+        "エアコン切って"
+      ]
+    },
+    {
+      "id": "",
+      "title": "温度調整",
+      "commands": [
+        "16度~31度（℃）",
+        "温度上げて",
+        "寒い",
+        "温度下げて",
+        "暑いから温度下げて",
+        "一番高い温度にして",
+        "一番低い温度にして"
+      ]
+    },
+    {
+      "id": "",
+      "title": "ファンスピードコントロール",
+      "commands": [
+        "パワフルモードで",
+        "強風にして",
+        "風量中",
+        "弱風にして",
+        "静音モードにして",
+        "風量自動",
+        "風量アップ",
+        "風量ダウン",
+        "風量を最大にして",
+        "微風にして"
+      ]
+    },
+    {
+      "id": "",
+      "title": "モード切替",
+      "commands": [
+        "冷房にして",
+        "暖房にして",
+        "送風にして",
+        "除湿にして",
+        "自動モードにして"
+      ]
+    },
+    {
+      "id": "",
+      "title": "スイング調整",
+      "commands": [
+        "首振りにして",
+        "首振り止めて",
+        "上下スイングにして",
+        "上下スイング停止",
+        "左右スイング開始",
+        "左右スイングオフ",
+        "風向きを上にして",
+        "風向きを下にして",
+        "風向を中央にして",
+        "風向きを左にして",
+        "風向きを右にして"
+      ]
+    },
+    {
+      "id": "",
+      "title": "やさしい風の制御",
+      "commands": [
+        "ソフト風にして",
+        "優しい風にして",
+        "ソフト風止めて",
+        "優しい風を止めて"
+      ]
+    },
+    {
+      "id": "",
+      "title": "表示制御",
+      "commands": [
+        "表示ランプをオンにして",
+        "表示ランプつけて",
+        "表示ランプ消して",
+        "表示ランプを消して"
+      ]
+    },
+    {
+      "id": "",
+      "title": "エコモード制御",
+      "commands": [
+        "エコモードにして",
+        "エコモード",
+        "エコモードオフ",
+        "エコモード停止"
+      ]
+    },
+    {
+      "id": "",
+      "title": "スリープモード制御",
+      "commands": [
+        "おやすみモードにして",
+        "おやすみモード開始",
+        "おやすみモード停止",
+        "おやすみモードオフ"
+      ]
+    },
+    {
+      "id": "",
+      "title": "内部クリーン",
+      "commands": [
+        "内部クリーン開始",
+        "内部クリーンスタート",
+        "内部クリーン運転停止",
+        "内部クリーン停止"
+      ]
+    },
+    {
+      "id": "",
+      "title": "音量調節",
+      "commands": [
+        "音量アップ",
+        "音量上げて",
+        "音量下げて",
+        "音量ダウン",
+        "音量を最小にして",
+        "音量最大"
+      ]
+    },
+    {
+      "id": "",
+      "title": "換気の制御",
+      "commands": [
+        "換気運転にして",
+        "換気オフ",
+        "換気風量を上げてください",
+        "換気の風量を下げて",
+        "換気風量を低段階",
+        "換気風量を中段階",
+        "換気風量を高段階",
+        "換気風速自動"
+      ]
+    },
+    {
+      "id": "",
+      "title": "ヘルスモード制御",
+      "commands": [
+        "健康モードオン",
+        "クリーン機能オン",
+        "健康モードオフ",
+        "クリーン機能オフ"
+      ]
+    },
+    {
+      "id": "",
+      "title": "音源定位",
+      "commands": [
+        "こっち向けて",
+        "風をこっちに向けて",
+        "風よけ",
+        "風をそちらに向けて"
+      ]
+    },
+    {
+      "id": "",
+      "title": "防直吹きモード制御",
+      "commands": [
+        "風よけにして",
+        "直吹き防止モードにして",
+        "直風防止解除",
+        "直風防止オフ"
+      ]
+    },
+    {
+      "id": "",
+      "title": "除菌モード制御",
+      "commands": [
+        "除菌モードにして",
+        "除菌モードオン",
+        "除菌モードオフ",
+        "除菌モード停止"
+      ]
+    },
+    {
+      "id": "",
+      "title": "発電機モード制御",
+      "commands": [
+        "パワーセーブオン",
+        "パワーセーブにして",
+        "パワーセーブオフ",
+        "パワーセーブ停止"
+      ]
+    }
+  ],
+  "Spanish": [
+    {
+      "id": "Wake-up word",
+      "title": "palabra de activación",
+      "commands": [
+        "oye TCL"
+      ]
+    },
+    {
+      "id": "",
+      "title": "encendido/apagado del aire acondicionado",
+      "commands": [
+        "encender aire",
+        "encender aire acondicionado",
+        "apagar aire acondicionado",
+        "apaga el aire"
+      ]
+    },
+    {
+      "id": "",
+      "title": "ajuste de temperatura",
+      "commands": [
+        "dieciséis grados-treinta y un grados(℃)",
+        "pon dieciséis grados-treinta y un grados(℃)",
+        "baja la temperatura",
+        "hace calor",
+        "sube la temperatura",
+        "hace frío",
+        "pon la temperatura al máximo",
+        "baja la temperatura al mínimo"
+      ]
+    },
+    {
+      "id": "",
+      "title": "control de velocidad del ventilador",
+      "commands": [
+        "ventilación turbo",
+        "ventilación alta",
+        "velocidad media",
+        "ventilación baja",
+        "silencia el ventilador",
+        "ventilador automático",
+        "ventilador al mínimo",
+        "ventilador al máximo",
+        "sube velocidad ventilador",
+        "baja la velocidad del ventilador"
+      ]
+    },
+    {
+      "id": "",
+      "title": "control de mode",
+      "commands": [
+        "modo frío",
+        "modo calor",
+        "modo ventilador",
+        "modo secado",
+        "modo auto"
+      ]
+    },
+    {
+      "id": "",
+      "title": "ajuste de oscilación",
+      "commands": [
+        "modo barrido",
+        "apagar barrido",
+        "modo vertical",
+        "apagar modo vertical",
+        "modo horizontal",
+        "apaga modo horizontal",
+        "aire hacia arriba",
+        "aire hacia abajo",
+        "aire al centro",
+        "aire hacia la izquierda",
+        "aire hacia la derecha"
+      ]
+    },
+    {
+      "id": "",
+      "title": "control de brisa suave",
+      "commands": [
+        "brisa suave",
+        "modo brisa suave",
+        "apaga brisa suave",
+        "desactiva brisa suave"
+      ]
+    },
+    {
+      "id": "",
+      "title": "control de luz",
+      "commands": [
+        "enciende la luz del aire",
+        "encender pantalla",
+        "apaga la luz del aire",
+        "apaga pantalla"
+      ]
+    },
+    {
+      "id": "",
+      "title": "control de modo eco",
+      "commands": [
+        "modo eco",
+        "activar modo eco",
+        "desactiva modo eco",
+        "apaga modo eco"
+      ]
+    },
+    {
+      "id": "",
+      "title": "control de modo sueño",
+      "commands": [
+        "modo sueño",
+        "activar modo sueño",
+        "desactiva modo sueño",
+        "apagar modo sueño"
+      ]
+    },
+    {
+      "id": "",
+      "title": "control de autolimpieza",
+      "commands": [
+        "autolimpieza",
+        "activa autolimpieza",
+        "desactiva autolimpieza",
+        "desactivar autolimpieza"
+      ]
+    },
+    {
+      "id": "",
+      "title": "control de calor auxiliar",
+      "commands": [
+        "enciende calor auxiliar",
+        "activar calor auxiliar",
+        "desactiva calor auxiliar",
+        "apaga calor auxiliar"
+      ]
+    },
+    {
+      "id": "",
+      "title": "control de volumen",
+      "commands": [
+        "sube el volumen",
+        "sube volumen",
+        "baja el volumen",
+        "bajar volumen",
+        "volumen mínimo",
+        "volumen al máximo"
+      ]
+    },
+    {
+      "id": "",
+      "title": "control de aire fresco",
+      "commands": [
+        "activar aire fresco",
+        "desactivar aire fresco",
+        "más aire fresco",
+        "menos aire fresco",
+        "aire fresco bajo",
+        "aire fresco medio",
+        "aire fresco alto",
+        "aire fresco automático"
+      ]
+    },
+    {
+      "id": "",
+      "title": "control de modo salud",
+      "commands": [
+        "modo salud",
+        "activar modo salud",
+        "desactiva modo salud",
+        "apaga modo salud"
+      ]
+    },
+    {
+      "id": "",
+      "title": "control inteligente del aire",
+      "commands": [
+        "aire hacia mí",
+        "sígueme",
+        "no me sigas",
+        "no seguirme"
+      ]
+    },
+    {
+      "id": "",
+      "title": "control de modo antirráfaga",
+      "commands": [
+        "activa antirráfaga",
+        "modo antirráfaga",
+        "desactiva antirráfaga",
+        "apaga antirráfaga"
+      ]
+    },
+    {
+      "id": "",
+      "title": "control de modo esterilización",
+      "commands": [
+        "modo esterilización",
+        "activar modo esterilización",
+        "apagar modo esterilización",
+        "desactivar esterilización"
+      ]
+    },
+    {
+      "id": "",
+      "title": "control de modo generador",
+      "commands": [
+        "modo generador",
+        "activa modo generador",
+        "desactivar modo generador",
+        "apagar generador",
+        "subir generador",
+        "más generador",
+        "bajar generador",
+        "menos generador",
+        "generador uno",
+        "nivel uno generador",
+        "generador dos",
+        "nivel dos generador",
+        "generador tres",
+        "nivel tres generador",
+        "generador cuatro",
+        "nivel cuatro generador",
+        "generador cinco",
+        "nivel cinco generador",
+        "generador seis",
+        "nivel seis generador"
+      ]
+    }
+  ],
+  "Korean": [
+    {
+      "id": "",
+      "title": "웨이크업 워드",
+      "commands": [
+        "Hey, TCL"
+      ]
+    },
+    {
+      "id": "",
+      "title": "에어컨 전원 스위치",
+      "commands": [
+        "에어컨 켜줘",
+        "에어컨 켜",
+        "에어컨 꺼줘",
+        "에어컨 꺼"
+      ]
+    },
+    {
+      "id": "",
+      "title": "온도 조절",
+      "commands": [
+        "16도로 해줘 ~ 31도로 해줘",
+        "16도로 맞춰줘 ~ 31도로 맞춰줘",
+        "온도 좀 올려줘",
+        "조금 추워",
+        "온도 제일 높게 해줘",
+        "온도 제일 낮게 해줘",
+        "온도 좀 내려줘",
+        "조금 더워"
+      ]
+    },
+    {
+      "id": "",
+      "title": "풍속 제어",
+      "commands": [
+        "높은 풍속으로 해줘",
+        "바람 세기 중간으로 해줘",
+        "낮은 풍속",
+        "바람 세기 자동으로 해줘",
+        "바람 좀 더 세게 해줘",
+        "바람 좀 줄여줘",
+        "바람 제일 세게 해줘",
+        "바람 제일 약하게 해줘"
+      ]
+    },
+    {
+      "id": "",
+      "title": "모드 전환",
+      "commands": [
+        "냉방 틀어줘",
+        "난방 틀어줘",
+        "바람만 나오게 해줘",
+        "제습 켜줘",
+        "자동 모드 해줘"
+      ]
+    },
+    {
+      "id": "",
+      "title": "스윙 조절",
+      "commands": [
+        "회전 켜줘",
+        "회전 멈춰줘",
+        "위아래 회전 켜줘",
+        "위아래 회전 멈춰줘",
+        "좌우 회전 켜줘",
+        "좌우 회전 멈춰줘",
+        "바람 위로 올려줘",
+        "바람 아래로 보내줘",
+        "바람 가운데로 보내줘",
+        "바람 왼쪽으로 보내줘",
+        "바람 오른쪽으로 보내줘"
+      ]
+    },
+    {
+      "id": "",
+      "title": "부드러운 바람 제어",
+      "commands": [
+        "부드러운 바람 켜줘",
+        "바람 부드럽게 해줘",
+        "부드러운 바람 꺼줘",
+        "부드러운 바람 꺼"
+      ]
+    },
+    {
+      "id": "",
+      "title": "디스플레이 제어",
+      "commands": [
+        "화면 불 켜줘",
+        "조명 켜줘",
+        "화면 불 꺼줘",
+        "조명 꺼줘"
+      ]
+    },
+    {
+      "id": "",
+      "title": "에코 모드 제어",
+      "commands": [
+        "절전 모드 켜줘",
+        "절전 모드 꺼줘",
+        "AI 절전 켜줘",
+        "AI 절전 꺼줘"
+      ]
+    },
+    {
+      "id": "",
+      "title": "수면 모드 제어",
+      "commands": [
+        "수면 모드 켜줘",
+        "수면 모드 켜",
+        "수면 모드 꺼줘",
+        "수면 모드 꺼"
+      ]
+    },
+    {
+      "id": "",
+      "title": "자동 청소 기능 제어",
+      "commands": [
+        "자동 청소 시작해줘",
+        "자동 청소 시작",
+        "자동 청소 멈춰줘",
+        "자동 청소 멈춰"
+      ]
+    },
+    {
+      "id": "",
+      "title": "음량 제어",
+      "commands": [
+        "소리 키워줘",
+        "소리 제일 크게 해줘",
+        "소리 줄여줘",
+        "소리 제일 작게 해줘"
+      ]
+    },
+    {
+      "id": "",
+      "title": "신선한 공기 제어",
+      "commands": [
+        "환기 시켜줘",
+        "환기 멈춰줘",
+        "환기 더 세게 해줘",
+        "환기 좀 줄여줘",
+        "환기 저풍속으로 해줘",
+        "환기 중풍속으로 해줘",
+        "환기 고풍속으로 해줘",
+        "환기 자동풍속으로 해줘"
+      ]
+    },
+    {
+      "id": "",
+      "title": "건강 모드 제어",
+      "commands": [
+        "건강 모드 켜줘",
+        "건강 기능 활성화해줘",
+        "건강 모드 꺼줘",
+        "건강 모드 꺼"
+      ]
+    },
+    {
+      "id": "",
+      "title": "스마트 바람 제어",
+      "commands": [
+        "나에게 바람",
+        "나에게 바람 보내줘",
+        "나에게 바람 안 오게 해줘",
+        "나에게 바람 안 해"
+      ]
+    },
+    {
+      "id": "",
+      "title": "직접바람 방지 기능 제어",
+      "commands": [
+        "직접바람 방지 켜줘",
+        "직접바람 방지 켜기",
+        "직접바람 방지 꺼줘",
+        "직접바람 방지 끄기"
+      ]
+    },
+    {
+      "id": "",
+      "title": "살균 모드 제어",
+      "commands": [
+        "살균 켜줘",
+        "살균 기능 켜줘",
+        "살균 꺼줘",
+        "살균 기능 꺼줘"
+      ]
+    },
+    {
+      "id": "",
+      "title": "발전기 모드 제어",
+      "commands": [
+        "발전기 모드 켜줘",
+        "발전기 모드 켜",
+        "발전기 모드 꺼줘",
+        "발전기 모드 꺼"
+      ]
+    }
+  ]
+}

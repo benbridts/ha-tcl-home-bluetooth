@@ -1,0 +1,54 @@
+[
+  {
+    "category": "Setup",
+    "data": [
+      {
+        "question": "I\u0027m having issues starting my air conditioner.",
+        "answer":"• Ensure the plug is pushed completely into the outlet. Appliances should be plugged directly into a wall outlet.\n• Press the reset button on the plug to reset the current. If the reset button stays engaged, please unplug the unit and contact our support team.\n• Check to see if your home\u0027s circuit breaker or fuse is working properly."
+      }
+    ]
+  },
+  {
+    "category": "Operations",
+    "data": [
+      {
+        "question": "The air conditioner is dripping water outside.",
+        "answer":"• In hot and humid weather this is normal."
+      },
+      {
+        "question": "The air conditioner is dripping water inside.",
+        "answer":"• Make sure the unit is tilted backward slightly so excess water can drain outside."
+      },
+      {
+        "question": "Water is collecting in the base pan.",
+        "answer":"• This is normal for a short time in areas with low humidity and normal for a longer time in areas with high humidity.  The water in the base pan is used to keep the appliance running efficiently."
+      }
+    ]
+  },
+  {
+    "category": "Cooling",
+    "data": [
+      {
+        "question": "My air conditioner is not as cool as it should be.",
+        "answer":"• Make sure there are no curtains, blinds, or furniture blocking the air intake.\n• The air filter may be dirty. We recommend cleaning it and trying again once it has completely dried.\n• Make sure to allow some time for the room to cool down after turning on the air conditioner."
+      },
+      {
+        "question": "The air conditioner is freezing up.",
+        "answer":"• Set the mode to HIGH FAN or HIGH COOL and set the thermostat to a higher temperature."
+      }
+    ]
+  },
+  {
+    "category": "Display",
+    "data": [
+      {
+        "question": "My digital display reads \"E1\" or \"E2\".",
+        "answer":"• Please contact our customer advocacy team using the \"Contact Us\" option located in the 'Service' tab."
+      },
+      {
+        "question": "The Filter LED is on and the filter has been cleaned.",
+        "answer":"• The filter LED turns on as a reminder to check and clean the filter if necessary.  To turn it off hold down the button for a couple of seconds."
+      }
+    ]
+  }
+]

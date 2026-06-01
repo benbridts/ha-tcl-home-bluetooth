@@ -1,0 +1,29 @@
+[
+  {
+    "category": "Setup",
+    "data": [
+      {
+        "question": "I\u0027m having issues starting my dehumidifier.",
+        "answer":"• Ensure the plug is pushed completely into the outlet. Appliances should be plugged directly into a wall outlet.\n• The humidity level has already reached the pre-set level.\n• Ensure the bucket is empty and that it is in the proper position.\n• Check to see if your home’s circuit breaker or fuse is working properly.\n• If there was a power failure, please allow 3 minutes for the unit to continue working as normal."
+       }
+    ]
+  },
+  {
+    "category": "Dehumidifying",
+    "data": [
+      {
+        "question": "The dehumidifier is not drying the air as it should.",
+        "answer":"• Please allow at least 24 hours to reach desired humidity level.\n• Make sure there are no curtains, blinds, or furniture blocking the air intake.\n• The air filter may be dirty. We recommend cleaning it and trying again once it has completely dried.\n• Ensure all doors and windows are closed properly and the unit is away from a dryer leaking moisture.\n• This model is designed to operate in temperatures above 41 degrees Fahrenheit."
+      }
+    ]
+  },
+  {
+    "category": "Display",
+    "data": [
+      {
+        "question": "The Filter LED is on and the filter has been cleaned.",
+        "answer":"• The filter LED turns on as a reminder to check and clean the filter if necessary.  To turn it off hold down the button for a couple of seconds."
+      }
+    ]
+  }
+]

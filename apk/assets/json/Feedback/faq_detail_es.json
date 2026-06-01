@@ -1,0 +1,10 @@
+[
+    {
+        "category": "Account",
+        "content": "Si elimina la cuenta de TCL no se podrá recuperar. Si confirma que quiere eliminarla, visite esta URL: http://www.tcl.com/deleteaccount",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Si elimina la cuenta de TCL no se podrá recuperar. Si confirma que quiere eliminarla, visite esta URL: http://www.tcl.com/deleteaccount</p>",
+        "id": "1",
+        "tagName": "Cuenta",
+        "title": "¿Cómo se elimina la cuenta de TCL?"
+    }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "category": "Setup",
+    "data": [
+      {
+        "question": "I\u0027m having connectivity issues during setup.",
+        "answer":"• Relocate your device closer to your router.\n• Also, you can try restarting your device, router, and mobile phone."
+      },
+      {
+        "question": "TCL Home cannot find my device.",
+        "answer":"• Ensure your mobile device is on the 2.4 GHz WiFi network (all routers have a 2.4 GHz band).\n• Make sure the WiFi password is correct and try again.\n• Also, you can try restarting your device, router, and mobile phone."
+      },
+      {
+        "question": "I am unable to find or connect to a wireless network.",
+        "answer":"• Enable location permissions for the TCL Home app through your phone\u0027s settings."
+      },
+      {
+        "question": "I get the notification \"Cannot operate. The device is disconnected.\"",
+        "answer":"• This may be a network issue. Please give the app a few moments to connect with the network."
+      }
+    ]
+  },
+  {
+    "category": "Voice Assistant Setup",
+    "data": [
+      {
+        "question": "How can I connect my device withAlexa or Google Assistant?",
+        "answer":"• First, add your TCL smart device in the app.\n• Next, select the settings button at the top right-hand corner of the device’s home screen.\n• Then, click on the voice assistant you would like to link and follow the on-screen instructions."
+      },
+      {
+        "question": "Do I need a voice assistant device like Alexa Echo or Google Home to use voice commands?",
+        "answer":"• Surprisingly, no! If you download the Alexa or Google Assistant app and link it with your TCL Home account, you can use the voice commands feature in the assistants’ app to control your TCL Devices."
+      }
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "category": "Account",
+        "tagList": [
+            {
+                "faqList": [
+                    {
+                        "faqId": "1",
+                        "faqTitle": "How to delete your TCL Account?"
+                    }
+                ],
+                "tagId": "T1",
+                "tagName": "Account"
+            }
+        ]
+    },
+    {
+        "category": "Membership",
+        "tagList": [
+            {
+                "faqList": [
+                    {
+                        "faqId": "2",
+                        "faqTitle": "What is TCL VIP Club?"
+                    },
+                    {
+                        "faqId": "3",
+                        "faqTitle": "How to join TCL VIP Club?"
+                    }
+                ],
+                "tagId": "T2",
+                "tagName": "TCL VIP Club"
+            },
+            {
+                "faqList": [
+                    {
+                        "faqId": "4",
+                        "faqTitle": "What is TCL VIP point and how can I get it?"
+                    },
+                    {
+                        "faqId": "5",
+                        "faqTitle": "How can I upgrade to the next level?"
+                    },
+                    {
+                        "faqId": "6",
+                        "faqTitle": "When will I downgrade to the lower level?"
+                    }
+                ],
+                "tagId": "T3",
+                "tagName": "VIP point"
+            }
+        ]
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "category": "Account",
+        "tagList": [
+            {
+                "faqList": [
+                    {
+                        "faqId": "1",
+                        "faqTitle": "Paano burahin ang iyong TCL Account?"
+                    }
+                ],
+                "tagId": "T1",
+                "tagName": "Account"
+            }
+        ]
+    },
+    {
+        "category": "Membership",
+        "tagList": [
+            {
+                "faqList": [
+                    {
+                        "faqId": "2",
+                        "faqTitle": "Ano ang TCL VIP Club?"
+                    },
+                    {
+                        "faqId": "3",
+                        "faqTitle": "Paano sumali sa TCL VIP Club?"
+                    }
+                ],
+                "tagId": "T2",
+                "tagName": "TCL VIP Club"
+            },
+            {
+                "faqList": [
+                    {
+                        "faqId": "4",
+                        "faqTitle": "Ano ang puntos ng TCL VIP at paano ko ito makukuha?"
+                    },
+                    {
+                        "faqId": "5",
+                        "faqTitle": "Paano ako makakapag-upgrade sa susunod na antas?"
+                    },
+                    {
+                        "faqId": "6",
+                        "faqTitle": "Kailan ako bababa sa mas mababang antas?"
+                    }
+                ],
+                "tagId": "T3",
+                "tagName": "VIP point"
+            }
+        ]
+    }
+]

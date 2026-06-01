@@ -1,0 +1,10 @@
+[
+    {
+        "category": "Account",
+        "content": "La suppression du Compte TCL est une opération irrécupérable. Si vous confirmez la suppression de votre compte TCL, veuillez suivre l’URL suivante : http://www.tcl.com/deleteaccount.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>La suppression du Compte TCL est une opération irrécupérable. Si vous confirmez la suppression de votre compte TCL, veuillez suivre l’URL suivante : http://www.tcl.com/deleteaccount.</p>",
+        "id": "1",
+        "tagName": "Compte",
+        "title": "Comment supprimer votre compte TCL ?"
+    }
+]

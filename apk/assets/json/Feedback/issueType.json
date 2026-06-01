@@ -1,0 +1,110 @@
+{
+  "status": 1,
+  "msg": null,
+  "data": [
+    {
+      "id": "1",
+      "creator": null,
+      "createTime": null,
+      "modifier": null,
+      "modifiedTime": null,
+      "isDeleted": false,
+      "categoryIds": null,
+      "status": true,
+      "tag": "Device issue",
+      "languages": null,
+      "type": 2
+    },
+    {
+      "id": "2",
+      "creator": null,
+      "createTime": null,
+      "modifier": null,
+      "modifiedTime": null,
+      "isDeleted": false,
+      "categoryIds": null,
+      "status": true,
+      "tag": "Connection issue",
+      "languages": null,
+      "type": 2
+    },
+    {
+      "id": "3",
+      "creator": null,
+      "createTime": null,
+      "modifier": null,
+      "modifiedTime": null,
+      "isDeleted": false,
+      "categoryIds": null,
+      "status": true,
+      "tag": "Service issue",
+      "languages": null,
+      "type": 2
+    },
+    {
+      "id": "4",
+      "creator": null,
+      "createTime": null,
+      "modifier": null,
+      "modifiedTime": null,
+      "isDeleted": false,
+      "categoryIds": null,
+      "status": true,
+      "tag": "Google Assistant",
+      "languages": null,
+      "type": 2
+    },
+    {
+      "id": "5",
+      "creator": null,
+      "createTime": null,
+      "modifier": null,
+      "modifiedTime": null,
+      "isDeleted": false,
+      "categoryIds": null,
+      "status": true,
+      "tag": "Amazon Alexa",
+      "languages": null,
+      "type": 2
+    },
+    {
+      "id": "6",
+      "creator": null,
+      "createTime": null,
+      "modifier": null,
+      "modifiedTime": null,
+      "isDeleted": false,
+      "categoryIds": null,
+      "status": true,
+      "tag": "Suggestion",
+      "languages": null,
+      "type": 2
+    },
+    {
+      "id": "7",
+      "creator": null,
+      "createTime": null,
+      "modifier": null,
+      "modifiedTime": null,
+      "isDeleted": false,
+      "categoryIds": null,
+      "status": true,
+      "tag": "APP usage issue",
+      "languages": null,
+      "type": 2
+    },
+    {
+      "id": "8",
+      "creator": null,
+      "createTime": null,
+      "modifier": null,
+      "modifiedTime": null,
+      "isDeleted": false,
+      "categoryIds": null,
+      "status": true,
+      "tag": " Other issue",
+      "languages": null,
+      "type": 2
+    }
+  ]
+}

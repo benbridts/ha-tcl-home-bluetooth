@@ -1,0 +1,79 @@
+[
+  {
+    "category": "Setup",
+    "data": [
+      {
+        "question": "I\u0027m having issues starting my robot vacuum.",
+        "answer":"Charging Base\n • Ensure the charging base\u0027s plug is pushed completely into the outlet. Appliances should be plugged directly into a wall outlet.\n • The charging base’s indicator will light up blue or white when connected to power.\n\nSweeva 1000 and 2000\n • Make sure you powered on the vacuum using the rocker switch on the underside of the unit.\n • Make sure the device is completely charged before first use (the power light indicator on the device will be solid blue)\n • Make sure the device is on a flat surface in order to start operating.\n\nSweeva 6000 and 6500\n • Make sure you powered on the vacuum by pressing the power button on top of the unit for 3 seconds (make sure to wait a few seconds after to confirm device startup).\n • Make sure the device is on a flat surface in order to start operating."
+      }
+    ]
+  },
+  {
+    "category": "Installation",
+    "data": [
+      {
+        "question": "I am having trouble with my robot vacuum connecting to the charging base.",
+        "answer":"• Make sure you have placed the charging base in an area with appropriate clearance in the front and on both sides (recommended 3 ft; however, it may work with less clearance, but some object surfaces may cause interference).\n• Verify the charging base has power and is displaying a blue or white indicator."
+      }
+    ]
+  },
+  {
+    "category": "Cleaning",
+    "data": [
+      {
+        "question": "My roller brush or side brushes are no longer spinning.",
+        "answer":"• Remove hair and foreign substances from the brushes."
+      },
+      {
+        "question": "I am unable to start the robot.",
+        "answer":"• Confirm whether the robot is fully charged.\n• For 1000 and 2000 models, confirm whether the power button on the bottom of the robot is in the “on” position."
+      },
+      {
+        "question": "My vacuum is not picking up as much as it used to.",
+        "answer": "• Check whether the fan suction port is blocked by any foreign substances.\n• Empty the dustbin and clean or replace the high efficiency filter."
+      },
+      {
+        "question": "My robot is louder than usual.",
+        "answer":"• Confirm whether the dustbin is installed correctly.\n• Confirm whether the high-efficiency filter is installed.\n• Check if there are any foreign substances stuck on the roller brush or side brushes."
+      },
+      {
+        "question": "My vacuum is unable to charge.",
+        "answer":"• Verify the charging station has power.\n• Remove the objects around the charging base and make sure that the power supply is connected to the charging base.\n• Please wipe the charging contacts of the charging base with a dry cloth.\n• Please wipe the charging contacts of the main machine with a dry cloth."
+      },
+      {
+        "question": "My robot stopped and I am not sure why.",
+        "answer":"• The roller brush, side brush, or side wheels may become stuck. Ensure these parts are clean before continuing to clean."
+      }
+    ]
+  },
+  {
+    "category": "Power Indicator",
+    "data": [
+      {
+        "question": "My power button light is blue.",
+        "answer":"• Your robot is either fully charged or operating normally."
+      },
+      {
+        "question": "My power button light is red.",
+        "answer":"• There is an error with your device. Please check to make sure all brushes, wheels, ports, and the dustbin are clean and clear of any substances.\n• Please refer to the user manual located on TCL.com for additional information."
+      },
+      {
+        "question": "My power button light is orange.",
+        "answer":"• The vacuum is low on power or is in standby mode."
+      },
+      {
+        "question": "My power light is flashing orange.",
+        "answer":"• The vacuum is charging."
+      }
+    ]
+  },
+  {
+    "category": "Replacement Parts",
+    "data": [
+      {
+        "question": "I need replacements for my Robot Vacuum.",
+        "answer":"• To purchase replacement parts for your unit, go to TCL.com or refer to the unit\u0027s user manual that was included in the box (also available on the product page at TCL.com) and scan the QR code using your phone. The QR code takes you directly to your product part\u0027s page, where you can choose to purchase."
+      }
+    ]
+  }
+]

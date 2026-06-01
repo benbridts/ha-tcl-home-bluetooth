@@ -1,0 +1,420 @@
+{
+  "disableList": [
+    {
+      "condition": [
+        {
+          "identifier": "xLocalDeviceNetworkStatus",
+          "operator": "==",
+          "value": "0"
+        }
+      ],
+      "disabled": [
+        "targetTemperature",
+        "targetFahrenheitTemp",
+        "powerSwitch",
+        "workMode",
+        "windSpeedPercentage",
+        "windSpeedAutoSwitch",
+        "ECO",
+        "AIECOSwitch",
+        "degerm",
+        "healthy",
+        "antiDirectBlow",
+        "newWindSwitch",
+        "xLocalTimer",
+        "VoiceSwitch",
+        "sleep",
+        "bodyDetecetSwitch",
+        "bodyDetecetWindMode",
+        "nearSoftWindSwitch",
+        "bodyDetecetWindControlSwitch",
+        "bodyDetecetWindControlDistance",
+        "bodyDetecetBlowSwitch",
+        "bodyDetecetECOSwitch",
+        "nearScreenSwitch",
+        "verticalDirection",
+        "horizontalDirection",
+        "verticalWind",
+        "horizontalWind",
+        "softWind",
+        "screen",
+        "PTC",
+        "antiMoldew",
+        "lightBarSwitch",
+        "sleep",
+        "selfLearn",
+        "lightSense",
+        "beepSwitch",
+        "xLocalBootCustomization",
+        "selfClean",
+        "xLocalFilterClean",
+        "xLocalDiagnosis",
+        "xLocalElectricityStatistics",
+        "xLocalElderMode",
+        "xLocalCommonFunctionTitle",
+        "volume",
+        "sleepVolume",
+        "continuousConversation",
+        "purifyModeSwitch",
+        "newWindPercentage",
+        "newWindAutoSwitch",
+        "purifyModeWindSpeed",
+        "newWindEcoSwitch",
+        "blueLightSwitch",
+        "roomSize",
+        "wakeupNearby",
+        "pickupTimeout",
+        "timeoutNotifySwitch",
+        "wakeupToneType",
+        "voiceTone",
+        "xLocalAlarmClock",
+        "xLocalHomeBroadcast",
+        "xLocalHomeMessage",
+        "vocalPrintSwitch",
+        "cantoneseToneSwitch",
+        "sichuaneseToneSwitch",
+        "englishSwitch",
+        "xLocalCommandWordLearn",
+        "customWakeupWord",
+        "defaultWakeWordDisable",
+        "helpSleepMusicState",
+        "pickupTimeout",
+        "timeoutNotifySwitch",
+        "wakeupToneType",
+        "fastControlSwitch",
+        "xLocalDeepSeek",
+        "xLocalSelfClean",
+        "xLocalFreshAir",
+        "xLocalSmartSavingEnergy",
+        "xLocalSleep",
+        "xLocalSmartFreshAir",
+        "saveMoney",
+        "purifyDeodorizeSwitch",
+        "aiSleepSwitch",
+        "xLocalScene",
+        "newWindSetMode",
+        "generatorMode",
+        "xLocalFreshAirReport",
+        "windSpeed7Gear",
+        "xLocalSmartLearning",
+        "xLocalWindHotCold",
+        "xLocalArriveLeaveHome",
+        "specialTimer",
+        "weekTimer1",
+        "weekTimer2",
+        "xLocalPVElectricityStatistics",
+        "OpenADRSwitch",
+        "AISleepSwitch"
+      ]
+    },
+    {
+      "pks": ["nn2ooaacswz6uyi0"],
+      "condition": [
+        {
+          "identifier": "accessCardInsert",
+          "operator": "==",
+          "value": "0"
+        }
+      ],
+      "disabled": [
+        "xLocalTimer",
+        "xLocalBootCustomization",
+        "xLocalFilterClean",
+        "xLocalDiagnosis",
+        "xLocalElectricityStatistics",
+        "xLocalElderMode",
+        "xLocalCommonFunctionTitle",
+        "xLocalAlarmClock",
+        "xLocalHomeBroadcast",
+        "xLocalHomeMessage",
+        "xLocalCommandWordLearn",
+        "xLocalDeepSeek",
+        "xLocalSelfClean",
+        "xLocalFreshAir",
+        "xLocalSmartSavingEnergy",
+        "xLocalSleep",
+        "xLocalSmartFreshAir",
+        "xLocalScene",
+        "xLocalFreshAirReport",
+        "xLocalSmartLearning",
+        "xLocalWindHotCold",
+        "xLocalArriveLeaveHome",
+        "xLocalPVElectricityStatistics"
+      ]
+    },
+    {
+      "pks": ["nn2ooaacswz6uyi0"],
+      "condition": [
+        {
+          "identifier": "powerSwitch",
+          "operator": "==",
+          "value": "0"
+        }
+      ],
+      "disabled": [
+        "xLocalSmartLearning"
+      ]
+    },
+    {
+      "pks": ["nn2ooaacswz6uyi0"],
+      "condition": [
+        {
+          "identifier": "capabilities",
+          "operator": "doesNotContain",
+          "value": "11"
+        },
+        {
+          "identifier": "workMode",
+          "operator": "==",
+          "value": "0"
+        },
+        {
+          "identifier": "powerSwitch",
+          "operator": "==",
+          "value": "1"
+        }
+      ],
+      "disabled": [
+        "targetTemperature",
+        "targetFahrenheitTemp"
+      ]
+    },
+    {
+      "pks": ["nn2ooaacswz6uyi0"],
+      "condition": [
+        {
+          "identifier": "capabilities",
+          "operator": "doesNotContain",
+          "value": "12"
+        },
+        {
+          "identifier": "workMode",
+          "operator": "==",
+          "value": "2"
+        },
+        {
+          "identifier": "powerSwitch",
+          "operator": "==",
+          "value": "1"
+        }
+      ],
+      "disabled": [
+        "targetTemperature",
+        "targetFahrenheitTemp"
+      ]
+    },
+    {
+      "pks": ["nn2ooaacswz6uyi0"],
+      "condition": [
+        {
+          "identifier": "capabilities",
+          "operator": "doesNotContain",
+          "value": "13"
+        },
+        {
+          "identifier": "workMode",
+          "operator": "==",
+          "value": "3"
+        },
+        {
+          "identifier": "powerSwitch",
+          "operator": "==",
+          "value": "1"
+        }
+      ],
+      "disabled": [
+        "targetTemperature",
+        "targetFahrenheitTemp"
+      ]
+    },
+    {
+      "pks": ["nn2ooaacswz6uyi0"],
+      "condition": [
+        {
+          "identifier": "powerSwitch",
+          "operator": "==",
+          "value": "1"
+        },
+        {
+          "identifier": "workMode",
+          "operator": "==",
+          "value": "4"
+        },
+        {
+          "identifier": "capabilities",
+          "operator": "doesNotContain",
+          "value": "47"
+        }
+      ],
+      "disabled": [
+        "softWind"
+      ]
+    },
+    {
+      "pks": ["nn2ooaacswz6uyi0"],
+      "condition": [
+        {
+          "identifier": "powerSwitch",
+          "operator": "==",
+          "value": "0"
+        },
+        {
+          "identifier": "newWindSwitch",
+          "operator": "==",
+          "value": "1"
+        },
+        {
+          "identifier": "capabilities",
+          "operator": "doesNotContain",
+          "value": "47"
+        }
+      ],
+      "disabled": [
+        "softWind"
+      ]
+    },
+    {
+      "pks": ["nn2ooaacswz6uyi0"],
+      "condition": [
+        {
+          "identifier": "powerSwitch",
+          "operator": "==",
+          "value": "1"
+        },
+        {
+          "identifier": "newWindSwitch",
+          "operator": "==",
+          "value": "1"
+        },
+        {
+          "identifier": "workMode",
+          "operator": "==",
+          "value": "0"
+        },
+        {
+          "identifier": "capabilities",
+          "operator": "contains",
+          "value": "47"
+        }
+      ],
+      "disabled": [
+        "softWind/1,4"
+      ]
+    },
+    {
+      "pks": ["nn2ooaacswz6uyi0"],
+      "condition": [
+        {
+          "identifier": "powerSwitch",
+          "operator": "==",
+          "value": "1"
+        },
+        {
+          "identifier": "newWindSwitch",
+          "operator": "==",
+          "value": "1"
+        },
+        {
+          "identifier": "workMode",
+          "operator": "==",
+          "value": "3"
+        },
+        {
+          "identifier": "capabilities",
+          "operator": "contains",
+          "value": "47"
+        }
+      ],
+      "disabled": [
+        "softWind/1,4"
+      ]
+    },
+    {
+      "pks": ["nn2ooaacswz6uyi0"],
+      "condition": [
+        {
+          "identifier": "powerSwitch",
+          "operator": "==",
+          "value": "1"
+        },
+        {
+          "identifier": "workMode",
+          "operator": "==",
+          "value": "4"
+        },
+        {
+          "identifier": "capabilities",
+          "operator": "contains",
+          "value": "47"
+        }
+      ],
+      "disabled": [
+        "softWind/1,4"
+      ]
+    },
+    {
+      "pks": ["nn2ooaacswz6uyi0"],
+      "condition": [
+        {
+          "identifier": "powerSwitch",
+          "operator": "==",
+          "value": "0"
+        },
+        {
+          "identifier": "newWindSwitch",
+          "operator": "==",
+          "value": "1"
+        },
+        {
+          "identifier": "capabilities",
+          "operator": "contains",
+          "value": "47"
+        }
+      ],
+      "disabled": [
+        "softWind/1,4"
+      ]
+    },
+    {
+      "pks": ["nn2ooaacswz6uyi0"],
+      "condition": [
+        {
+          "identifier": "powerSwitch",
+          "operator": "==",
+          "value": "1"
+        },
+        {
+          "identifier": "workMode",
+          "operator": "==",
+          "value": "2"
+        }
+      ],
+      "disabled": [
+        "newWindSetMode/1,2"
+      ]
+    },
+    {
+      "pks": ["nn2ooaacswz6uyi0"],
+      "condition": [
+        {
+          "identifier": "powerSwitch",
+          "operator": "==",
+          "value": "1"
+        },
+        {
+          "identifier": "workMode",
+          "operator": "==",
+          "value": "2"
+        },
+        {
+          "identifier": "capabilities",
+          "operator": "doesNotContain",
+          "value": "45"
+        }
+      ],
+      "disabled": [
+        "newWindSwitch"
+      ]
+    }
+  ]
+}

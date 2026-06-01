@@ -1,0 +1,659 @@
+[
+  {
+    "eventName": "app_start",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "app_end",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "app_pageview",
+    "page_ids": [
+      "H1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "M1",
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "LD1",
+      "SH",
+      "TC1",
+      "TC20",
+      "TC21",
+      "NMD1",
+      "T1",
+      "T2",
+      "T3",
+      "T6",
+      "WG1",
+      "ME1",
+      "ME3",
+      "LP1",
+      "IS1",
+      "IS2",
+      "IS3",
+      "IS4",
+      "Ads",
+      "Hbanner",
+      "Sbanner",
+      "Topic",
+      "events"
+    ],
+    "supportRegion": [
+      "IN",
+      "MM",
+      "SG",
+      "US",
+      "BR",
+      "AU",
+      "EC",
+      "LY",
+      "PH",
+      "PK",
+      "TH",
+      "VN",
+      "SA",
+      "CL",
+      "AE",
+      "HK",
+      "ID",
+      "DO",
+      "IQ",
+      "TN",
+      "KE",
+      "CR",
+      "NZ",
+      "KW",
+      "TT",
+      "SV",
+      "IL",
+      "BO"
+    ]
+  },
+  {
+    "eventName": "app_eleclick",
+    "element_ids": [
+      "L12-2",
+      "H1-2",
+      "H1-6",
+      "H1-15",
+      "H1-21",
+      "H1-30",
+      "H1-34",
+      "H1-35",
+      "H1-36",
+      "H1-37",
+      "H1-41",
+      "H1-42",
+      "H3-1",
+      "S2-1",
+      "S2-2",
+      "S2-3",
+      "S2-4",
+      "S2-5",
+      "S2-6",
+      "S2-8",
+      "S2-9",
+      "S2-10",
+      "S2-11",
+      "S2-12",
+      "S3-1",
+      "S3-2",
+      "S3-3",
+      "S4-1",
+      "S4-2",
+      "S4-3",
+      "S4-4",
+      "S4-5",
+      "S4-6",
+      "S4-7",
+      "S4-8",
+      "S4-9",
+      "S5-2",
+      "S5-3",
+      "S5-4",
+      "S5-5",
+      "S5-6",
+      "S5-7",
+      "S5-9",
+      "S5-10",
+      "S5-11",
+      "S6-1",
+      "S6-2",
+      "M1-23",
+      "M1-30",
+      "M1-31",
+      "M1-32",
+      "M1-33",
+      "M4-1",
+      "M1-7",
+      "VH1-1",
+      "VH1-2",
+      "VH1-3",
+      "VH2-1",
+      "VH2-7",
+      "VH2-8",
+      "VH3-1",
+      "VH3-2",
+      "VH3-3",
+      "VH3-4",
+      "VH3-5",
+      "VH3-6",
+      "VH4-1",
+      "VH5-1",
+      "qy20201110081549606",
+      "qy20201110082790365",
+      "qy20201110082181188",
+      "pr20201117065342252",
+      "pr20201117065397709",
+      "qy20210419054023662",
+      "qy20210420074113655",
+      "qy20210425085475112",
+      "qy20210526032028436",
+      "PT0001",
+      "PT0002",
+      "PT0003",
+      "PT0004",
+      "PT0005",
+      "PT0008",
+      "PR0001",
+      "PR0002",
+      "PR0003",
+      "PR0004",
+      "PR0005",
+      "PR0006",
+      "PR0009",
+      "T1-0",
+      "T1-1",
+      "T1-2",
+      "T1-3",
+      "T1-4",
+      "T1-5",
+      "T1-6",
+      "T1-7",
+      "T1-8",
+      "T1-9",
+      "T1-10",
+      "T1-12",
+      "T1-13",
+      "T1-14",
+      "T1-15",
+      "T1-16",
+      "T1-17",
+      "T1-18",
+      "T1-19",
+      "T2-1",
+      "T2-2",
+      "T3-1",
+      "T3-2",
+      "T3-3",
+      "T4-1",
+      "T5-1",
+      "T5-2",
+      "T6-1",
+      "SH-0",
+      "SH-10",
+      "SH-11",
+      "LD1",
+      "LD6",
+      "CO1-5",
+      "MD1-1",
+      "TC3-2",
+      "TC20-1",
+      "TC21-1",
+      "NMD1-1",
+      "NMD1-2",
+      "NMD3-1",
+      "NMD11-1",
+      "NMD13-1",
+      "WG1-1",
+      "WG1-15",
+      "WG1-16",
+      "ME1-1",
+      "ME3-1",
+      "LP1",
+      "IS1_1",
+      "IS2_1",
+      "IS3_1",
+      "IS4_1",
+      "IS4_2",
+      "Topic-1",
+      "TVCT1-1",
+      "TVCT1-3",
+      "TVCT1-4",
+      "TVCT1-5",
+      "TVCT1-6",
+      "TVCT1-7",
+      "TVCT1-8",
+      "TVCT1-9",
+      "TVCT1-10",
+      "TVCT1-11",
+      "TVCT1-12",
+      "TVCT1-13",
+      "TVCT1-14"
+    ],
+    "supportRegion": [
+      "IN",
+      "MM",
+      "SG",
+      "US",
+      "BR",
+      "AU",
+      "EC",
+      "LY",
+      "PH",
+      "PK",
+      "TH",
+      "VN",
+      "SA",
+      "CL",
+      "AE",
+      "HK",
+      "ID",
+      "DO",
+      "IQ",
+      "TN",
+      "KE",
+      "CR",
+      "NZ",
+      "KW",
+      "TT",
+      "SV",
+      "IL",
+      "BO"
+    ]
+  },
+  {
+    "eventName": "select_device_click",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "reset_device_page",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "reset_device_result",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_search_start",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_search_result",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_wifi_input_page",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_connect_start",
+    "filterElementKeys": [
+      "extra_desc"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_connect_result",
+    "filterElementKeys": [
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_wifi_connect_start",
+    "filterElementKeys": [
+      "extra_desc"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_wifi_connect_result",
+    "filterElementKeys": [
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_bind_start",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_bind_result",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_bind_opt_out",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_bind_remind",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "RN_page_open",
+    "filterElementKeys": [
+      "bind_device_id",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_confignet_feedback",
+    "filterElementKeys": [
+      "feedback_reasoncode",
+      "bind_device_id",
+      "extra_desc"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "tv_search_start",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "tv_search_result",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "tv_connect_start",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "tv_connect_result",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "tv_bind_start",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "tv_bind_result",
+    "filterElementKeys": [
+      "device_id",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "share_device_result",
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "app_request_bindcode",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "app_request_bindcode_result",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "click_wifi_name",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "input_wifi_passwd",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_wifi_input_end",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "send_device_wifi_start",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "send_device_wifi_result",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_connect_router",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_connect_router_result",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_bind_process_status",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "APP_ScanQR_result",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "input_QR",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "input_QR_result",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "reset_device_handle_result",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "device_bind_remind_click",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "auto_search_devicelist",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "discovery_service_result",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "find_device_features_result",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  },
+  {
+    "eventName": "rn_page_load_result",
+    "filterElementKeys": [
+      "bind_device_id",
+      "extra_desc",
+      "reason"
+    ],
+    "supportRegion": [
+      "ALL"
+    ]
+  }
+]

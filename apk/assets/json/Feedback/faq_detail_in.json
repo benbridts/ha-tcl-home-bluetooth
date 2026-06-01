@@ -1,0 +1,50 @@
+[
+    {
+        "category": "Account",
+        "content": "Akun TCL yang dihapus tidak dapat dipulihkan lagi. Jika Anda mengonfirmasikan untuk menghapus Akun TCL , silakan kunjungi URL berikut: http://www.tcl.com/deleteaccount",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Akun TCL yang dihapus tidak dapat dipulihkan lagi. Jika Anda mengonfirmasikan untuk menghapus Akun TCL , silakan kunjungi URL berikut: http://www.tcl.com/deleteaccount</p>",
+        "id": "1",
+        "tagName": "Akun",
+        "title": "Bagaimana cara menghapus akun TCL?"
+    },
+    {
+        "category": "Membership",
+        "content": "Di TCL, kami selalu berusaha menyediakan produk dan layanan berkualitas tinggi kepada para pelanggan yang menyukai kehidupan dan mengejar pengalaman IoT. Menyediakan produk yang cerdas dan layanan yang hebat selalu menjadi arah dari upaya kami. Untuk mencapai tujuan tersebut, kami membentuk Klub VIP TCL. Dengan bergabung ke klub VIP TCL, Anda dapat menikmati status keanggotaan yang berbeda, mendapatkan hadiah keanggotaan, menikmati hak istimewa eksklusif dan layanan cerdas, mengikuti kegiatan anggota, memenangi hadiah TCL, dan mendapatkan tren merek dan berita terbaru.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Di TCL, kami selalu berusaha menyediakan produk dan layanan berkualitas tinggi kepada para pelanggan yang menyukai kehidupan dan mengejar pengalaman IoT. Menyediakan produk yang cerdas dan layanan yang hebat selalu menjadi arah dari upaya kami. Untuk mencapai tujuan tersebut, kami membentuk Klub VIP TCL. Dengan bergabung ke klub VIP TCL, Anda dapat menikmati status keanggotaan yang berbeda, mendapatkan hadiah keanggotaan, menikmati hak istimewa eksklusif dan layanan cerdas, mengikuti kegiatan anggota, memenangi hadiah TCL, dan mendapatkan tren merek dan berita terbaru.</p>",
+        "id": "2",
+        "tagName": "Klub VIP TCL",
+        "title": "Apa itu Klub VIP TCL?"
+    },
+    {
+        "category": "Membership",
+        "content": "Setelah Anda mendaftarkan Akun TCL di situs web resmi TCL, TCL Home APP, TCL TV, atau perangkat IoT lainnya, Anda akan otomatis bergabung dengan Klub VIP TCL. Ketika pertama kali bergabung, Anda akan menjadi anggota perak dan dapat mengecek hak istimewa Anda di Klub VIP TCL. Saat ini, kami menyediakan 2 level (Perak dan Emas) di Klub VIP TCL dengan hak istimewanya masing-masing. Level dan hak istimewa lainnya akan segera hadir.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Setelah Anda mendaftarkan Akun TCL di situs web resmi TCL, TCL Home APP, TCL TV, atau perangkat IoT lainnya, Anda akan otomatis bergabung dengan Klub VIP TCL. Ketika pertama kali bergabung, Anda akan menjadi anggota perak dan dapat mengecek hak istimewa Anda di Klub VIP TCL. Saat ini, kami menyediakan 2 level (Perak dan Emas) di Klub VIP TCL dengan hak istimewanya masing-masing. Level dan hak istimewa lainnya akan segera hadir.</p>",
+        "id": "3",
+        "tagName": "Klub VIP TCL",
+        "title": "Bagaimana cara bergabung dengan Klub VIP TCL?"
+    },
+    {
+        "category": "Membership",
+        "content": "Poin VIP TCL menunjukkan nilai pertumbuhan yang didapatkan oleh anggota TCL melalui registrasi, check-in, mengisi informasi, membeli dan mendaftarkan produk, referensi, dan partisipasi dalam kegiatan anggota. Poin tersebut akan disimpan di dalam sistem loyalitas anggota TCL. Makin banyak poin yang diperoleh, makin tinggi level keanggotaan dan makin besar manfaat yang dirasakan.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Poin VIP TCL menunjukkan nilai pertumbuhan yang didapatkan oleh anggota TCL melalui registrasi, check-in, mengisi informasi, membeli dan mendaftarkan produk, referensi, dan partisipasi dalam kegiatan anggota. Poin tersebut akan disimpan di dalam sistem loyalitas anggota TCL. Makin banyak poin yang diperoleh, makin tinggi level keanggotaan dan makin besar manfaat yang dirasakan.</p>",
+        "id": "4",
+        "tagName": "Klub VIP TCL",
+        "title": "Apa itu poin VIP TCL dan bagaimana cara mendapatkannya?"
+    },
+    {
+        "category": "Membership",
+        "content": "Setelah poin mencapai batas untuk level selanjutnya, Anda akan naik level dan otomatis mendapatkan hak istimewa lainnya.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Setelah poin mencapai batas untuk level selanjutnya, Anda akan naik level dan otomatis mendapatkan hak istimewa lainnya.</p>",
+        "id": "5",
+        "tagName": "titik VIP",
+        "title": "Bagaimana cara naik ke level selanjutnya?"
+    },
+    {
+        "category": "Membership",
+        "content": "Level keanggotaan bagi anggota perak dan emas tidak akan turun. Tapi, nantinya keanggotaan Anda bisa turun jika poin Anda tidak mencapai poin minimum untuk level yang bersangkutan. TCL memiliki hak interpretasi akhir.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Level keanggotaan bagi anggota perak dan emas tidak akan turun. Tapi, nantinya keanggotaan Anda bisa turun jika poin Anda tidak mencapai poin minimum untuk level yang bersangkutan. TCL memiliki hak interpretasi akhir.</p>",
+        "id": "6",
+        "tagName": "titik VIP",
+        "title": "Kapan saya turun level?"
+    }
+]

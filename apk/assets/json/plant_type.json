@@ -1,0 +1,7 @@
+{
+  "list": [
+    "PV+Battery",
+    "PV+Grid+Consumption",
+    "PV+Grid+Consumption+Battery"
+  ]
+}

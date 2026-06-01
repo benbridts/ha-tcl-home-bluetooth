@@ -1,0 +1,38 @@
+[
+  {
+    "category": "Connection issue",
+    "data": [
+      {
+        "question": "Bluetooth paired connection cannot be completed",
+        "answer":"Another mobile device may be connected to the soundbar. Disconnected the other connected bluetooth device. Once the device is diconnected,you device should pair automatically-provided it was previously paired."
+       }
+    ]
+  },
+  {
+    "category": "Low Volume",
+    "data": [
+      {
+        "question": "Volume of Bluetooth playback is low",
+        "answer":"1. After connections with mobile deviced, the bolume of Bluetooth device is not up-but at the default out put level. Turn up the mobile device volume. \n2.Output volume of Blutooth device is low itself."
+      }
+    ]
+  },
+  {
+    "category": "Short Distance",
+    "data": [
+      {
+        "question": "Short Bluetooth connection distance",
+        "answer":"Obstruction exists between mobile devices and Bluetooth device. Remove obstructions."
+      }
+    ]
+  },
+  {
+    "category": "Broken sound",
+    "data": [
+      {
+        "question": "Bluetooth connection plays normally, sometimes with broken sound.",
+        "answer":"1.Obstruction exists between mobile devices and Bluetooth device. Remove obstructions.\n2. Too far away from Bluetooth device to connected mobile devices,beyond the connection range. Shorten the distance between the Bluetooth device and mobile devices."
+      }
+    ]
+  }
+]

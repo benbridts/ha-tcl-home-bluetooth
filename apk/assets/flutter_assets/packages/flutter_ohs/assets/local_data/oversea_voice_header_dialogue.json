@@ -1,0 +1,57 @@
+{
+  "English": {
+    "human": "Hey TCL, increase the temperature",
+    "machine": "OK, the temperature is raised",
+    "commandTip": "Please say \"Hey TCL\" to me, then speak after hearing the reply:"
+  },
+  "Arabic & English": {
+    "human": "مرحباً TCL، ارفع درجة الحرارة",
+    "machine": "حسناً، تم رفع درجة الحرارة",
+    "commandTip": "قل \"مرحبًا تيسي إل\"، ثم تحدث بعد سماع الرد:"
+  },
+  "Arabic": {
+    "human": "مرحباً TCL، ارفع درجة الحرارة",
+    "machine": "حسناً، تم رفع درجة الحرارة",
+    "commandTip": "قل \"مرحبًا تيسي إل\"، ثم تحدث بعد سماع الرد:"
+  },
+  "Thai": {
+    "human": "เฮ TCL เพิ่มอุณหภูมิ",
+    "machine": "ตกลง อุณหภูมิถูกเพิ่มขึ้น",
+    "commandTip": "พูด \"เฮ้ทีซีแอล\" แล้วพูดต่อเมื่อได้ยินคำตอบ:"
+  },
+  "Chinese": {
+    "human": "小T小T，温度调高一点",
+    "machine": "好的，已增大温度",
+    "commandTip": "请对我说 \"小T小T\" , 听到回复后，再说:"
+  },
+  "Portuguese": {
+    "human": "Hey, TCL. Aumente a temperatura.",
+    "machine": "Ok, a temperatura foi aumentada.",
+    "commandTip": "Por favor, diga \"Hey, TCL\" para mim e, em seguida, fale após ouvir a resposta:"
+  },
+  "Russian": {
+    "human": "привет tcl, сделай теплее.",
+    "machine": "Окей, температура увеличена.",
+    "commandTip": "Пожалуйста, скажи «привет tcl», а потом говори после того, как услышишь ответ:"
+  },
+  "French": {
+    "human": "Hey TCL, augmente la température",
+    "machine": "Ok , la température a été augenmentée",
+    "commandTip": "S'il vous plaît, dites \"hey TCL\", puis parlez après avoir entendu la réponse:"
+  },
+  "Japanese": {
+    "human": "おっ、TCL, 温度上げて",
+    "machine": "オッケー、温度を上げました",
+    "commandTip": "私に”おっ、TCL”と言って、答えを聞いた後に話してください:"
+  },
+  "Spanish": {
+    "human": "oye TCL, sube la temperatura.",
+    "machine": "OK, la temperatura fue aumentada.",
+    "commandTip": "Por favor, dime\"oye TCL\", luego habla después de escuchar la respuesta:"
+  },
+  "Korean":{
+    "human": "Hey TCL.온도 좀 올려줘",
+    "machine": "온도를 한 도 높였습니다",
+    "commandTip": "저에게 ‘Hey TCL’이라고 말해 주시고, 응답을 들으면 이어서 말해 주세요:"
+  }
+}

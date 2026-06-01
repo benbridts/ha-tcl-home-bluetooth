@@ -1,0 +1,15 @@
+{
+  "disableList": [
+    {
+      "condition": [
+        {
+          "identifier": "xLocalDeviceNetworkStatus",
+          "operator": "==",
+          "value": "0"
+        }
+      ],
+      "disabled": [
+      ]
+    }
+  ]
+}

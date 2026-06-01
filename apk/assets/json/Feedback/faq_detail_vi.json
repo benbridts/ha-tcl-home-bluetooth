@@ -1,0 +1,50 @@
+[
+    {
+        "category": "Account",
+        "content": "Xóa Tài khoản TCL là một thao tác không thể khôi phục được. Nếu bạn xác nhận xóa Tài khoản TCL của mình, vui lòng truy cập URL sau: http://www.tcl.com/deleteaccount",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Xóa Tài khoản TCL là một thao tác không thể khôi phục được. Nếu bạn xác nhận xóa Tài khoản TCL của mình, vui lòng truy cập URL sau: http://www.tcl.com/deleteaccount</p>",
+        "id": "1",
+        "tagName": "Tài khoản",
+        "title": "Làm cách nào để xóa Tài khoản TCL của bạn?"
+    },
+    {
+        "category": "Membership",
+        "content": "Tại TCL, chúng tôi luôn cung cấp các sản phẩm và dịch vụ chất lượng cao đến những khách hàng yêu thích cuộc sống và theo đuổi trải nghiệm Internet Vạn vật (IoT). Cung cấp các sản phẩm thông minh và các dịch vụ tuyệt vời luôn là định hướng trong nỗ lực của chúng tôi. Vì mục tiêu này, chúng tôi thành lập Câu lạc bộ TCL VIP. Khi tham gia Câu lạc bộ TCL VIP, bạn có thể tận hưởng tư cách thành viên khác biệt, nhận các quà tặng thành viên, trải nghiệm các đặc quyền đặc biệt và dịch vụ thông minh, tham gia vào các hoạt động dành cho thành viên, giành các giải thưởng của TCL và nhận các xu hướng và tin tức mới nhất về thương hiệu.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Tại TCL, chúng tôi luôn cung cấp các sản phẩm và dịch vụ chất lượng cao đến những khách hàng yêu thích cuộc sống và theo đuổi trải nghiệm Internet Vạn vật (IoT). Cung cấp các sản phẩm thông minh và các dịch vụ tuyệt vời luôn là định hướng trong nỗ lực của chúng tôi. Vì mục tiêu này, chúng tôi thành lập Câu lạc bộ TCL VIP. Khi tham gia Câu lạc bộ TCL VIP, bạn có thể tận hưởng tư cách thành viên khác biệt, nhận các quà tặng thành viên, trải nghiệm các đặc quyền đặc biệt và dịch vụ thông minh, tham gia vào các hoạt động dành cho thành viên, giành các giải thưởng của TCL và nhận các xu hướng và tin tức mới nhất về thương hiệu.</p>",
+        "id": "2",
+        "tagName": "Câu lạc bộ VIP của TCL",
+        "title": "Câu lạc bộ TCL VIP là gì?"
+    },
+    {
+        "category": "Membership",
+        "content": "Khi bạn đăng ký Tài khoản TCL trên trang web chính thức của TCL, ỨNG DỤNG TCL Home, TV TCL hoặc các thiết bị IoT khác, bạn sẽ tự động tham gia Câu lạc bộ TCL VIP. Bạn sẽ trở thành thành viên bạc khi đăng nhập lần đầu tiên và bạn có thể xem các đặc quyền của mình trên Câu lạc bộ TCL VIP. Hiện tại, chúng tôi thiết lập 2 cấp độ (Bạc và Vàng) trong Câu lạc bộ TCL VIP với các đặc quyền khác nhau. Chúng tôi đang chuẩn bị cho nhiều cấp độ và đặc quyền hơn.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Khi bạn đăng ký Tài khoản TCL trên trang web chính thức của TCL, ỨNG DỤNG TCL Home, TV TCL hoặc các thiết bị IoT khác, bạn sẽ tự động tham gia Câu lạc bộ TCL VIP. Bạn sẽ trở thành thành viên bạc khi đăng nhập lần đầu tiên và bạn có thể xem các đặc quyền của mình trên Câu lạc bộ TCL VIP. Hiện tại, chúng tôi thiết lập 2 cấp độ (Bạc và Vàng) trong Câu lạc bộ TCL VIP với các đặc quyền khác nhau. Chúng tôi đang chuẩn bị cho nhiều cấp độ và đặc quyền hơn.</p>",
+        "id": "3",
+        "tagName": "Câu lạc bộ VIP của TCL",
+        "title": "Làm thế nào để tham gia Câu lạc bộ TCL VIP?"
+    },
+    {
+        "category": "Membership",
+        "content": "Điểm TCL VIP là giá trị tăng trưởng mà thành viên TCL đạt được thông qua việc đăng ký, đăng nhập, điền thông tin, mua và đăng ký sản phẩm, giới thiệu và tham gia các hoạt động dành cho thành viên. Điểm này ghi nhận sự tăng trưởng trong hệ thống khách hàng thân thiết của các thành viên TCL. Bạn càng nhận được nhiều điểm, cấp độ thành viên càng cao và bạn càng được hưởng nhiều quyền lợi.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Điểm TCL VIP là giá trị tăng trưởng mà thành viên TCL đạt được thông qua việc đăng ký, đăng nhập, điền thông tin, mua và đăng ký sản phẩm, giới thiệu và tham gia các hoạt động dành cho thành viên. Điểm này ghi nhận sự tăng trưởng trong hệ thống khách hàng thân thiết của các thành viên TCL. Bạn càng nhận được nhiều điểm, cấp độ thành viên càng cao và bạn càng được hưởng nhiều quyền lợi.</p>",
+        "id": "4",
+        "tagName": "Câu lạc bộ VIP của TCL",
+        "title": "Điểm TCL VIP là gì và làm cách nào để nhận được?"
+    },
+    {
+        "category": "Membership",
+        "content": "Sau khi điểm của bạn đạt đến điểm chuẩn của cấp độ tiếp theo, bạn sẽ tự động được nâng cấp và trao nhiều đặc quyền hơn.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Sau khi điểm của bạn đạt đến điểm chuẩn của cấp độ tiếp theo, bạn sẽ tự động được nâng cấp và trao nhiều đặc quyền hơn.</p>",
+        "id": "5",
+        "tagName": "Điểm VIP",
+        "title": "Làm cách nào để tôi nâng cấp lên cấp độ tiếp theo?"
+    },
+    {
+        "category": "Membership",
+        "content": "Cấp độ thành viên sẽ không bị hạ đối với thành viên bạc và vàng. Nhưng trong tương lai, tư cách thành viên của bạn có thể bị hạ cấp nếu điểm của bạn không thể đạt đến mức tối thiểu của cấp độ hiện tại. TCL sẽ nắm quyền diễn giải cuối cùng.",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Cấp độ thành viên sẽ không bị hạ đối với thành viên bạc và vàng. Nhưng trong tương lai, tư cách thành viên của bạn có thể bị hạ cấp nếu điểm của bạn không thể đạt đến mức tối thiểu của cấp độ hiện tại. TCL sẽ nắm quyền diễn giải cuối cùng.</p>",
+        "id": "6",
+        "tagName": "Điểm VIP",
+        "title": "Khi nào thì tôi sẽ bị hạ cấp?"
+    }
+]

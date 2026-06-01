@@ -1,0 +1,10 @@
+[
+    {
+        "category": "Account",
+        "content": "刪除 TCL 帳戶是不可還原的操作。如果您確認刪除您的 TCL 帳戶，請訪問以下網址：http://www.tcl.com/deleteaccount",
+        "htmlContent": "<p id=\"textHolder\"></p><p>刪除 TCL 帳戶是不可還原的操作。如果您確認刪除您的 TCL 帳戶，請訪問以下網址：http://www.tcl.com/deleteaccount</p>",
+        "id": "1",
+        "tagName": "賬號",
+        "title": "如何刪除您的 TCL 帳戶？"
+    }
+]

@@ -1,0 +1,221 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: fXty4KX/knjOdpQTfjTsFaQyRJw=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA1-Digest: 0bVYtMitGFx0qiJU65adPDoyA5E=
+
+Name: lib/armeabi-v7a/libCHIPController.so
+SHA1-Digest: Qqbwlmr87KxrPzX6oqQ/lh96PvU=
+
+Name: lib/armeabi-v7a/libSetupPayloadParser.so
+SHA1-Digest: YLhaZBXNEn8cI4Qid76+82XfM3I=
+
+Name: lib/armeabi-v7a/libapp.so
+SHA1-Digest: 1QJj2qIKwzYfCIAWV66xSoqyCdk=
+
+Name: lib/armeabi-v7a/libbarhopper_v3.so
+SHA1-Digest: nMHg6mvqpTVfnonUvWP7Afpm3oQ=
+
+Name: lib/armeabi-v7a/libc++_shared.so
+SHA1-Digest: f4yj8XE12HSOxPWByvwu01n8Q5c=
+
+Name: lib/armeabi-v7a/libconscrypt_jni.so
+SHA1-Digest: TU8KTz+PNzgj76AmInzyeCNaN+E=
+
+Name: lib/armeabi-v7a/libfabricjni.so
+SHA1-Digest: Wg1xrgc3I1JPN26FGbeRHjiX78w=
+
+Name: lib/armeabi-v7a/libfb.so
+SHA1-Digest: ZixsSRPXVJ99gTU71XESDp6kAFk=
+
+Name: lib/armeabi-v7a/libfbjni.so
+SHA1-Digest: nSOR+QF4F4oQmIOG1LS6wzm4AU0=
+
+Name: lib/armeabi-v7a/libflutter.so
+SHA1-Digest: RS7CUYsykQToBgGtkt/90mJ2t0Q=
+
+Name: lib/armeabi-v7a/libfolly_runtime.so
+SHA1-Digest: 41o1kLcMzzO8nG4BWzxfU7zv8xg=
+
+Name: lib/armeabi-v7a/libframesequence.so
+SHA1-Digest: JZDVjzjLq+tDLmSZ2Pn4TAcLSqY=
+
+Name: lib/armeabi-v7a/libfree-reflection.so
+SHA1-Digest: Jl6na9sr24xydmceQCWO3FXl4iQ=
+
+Name: lib/armeabi-v7a/libglog.so
+SHA1-Digest: fI6cM7epc2agk91IOl3Ipt13Zcg=
+
+Name: lib/armeabi-v7a/libglog_init.so
+SHA1-Digest: lxAmM/MF9pgRYlNqQ9RPD7LgNMo=
+
+Name: lib/armeabi-v7a/libhermes-executor-release.so
+SHA1-Digest: eOIK+18TozBgK6iH+wfYLaGc+SY=
+
+Name: lib/armeabi-v7a/libimagepipeline.so
+SHA1-Digest: vxJtPpgN52tj4wv2HKODbXr7Qf0=
+
+Name: lib/armeabi-v7a/libjsc.so
+SHA1-Digest: Ye7i4qvW/92I3f3CfSBj0k1capU=
+
+Name: lib/armeabi-v7a/libjscexecutor.so
+SHA1-Digest: Rl/j0tuoB5WKpKbi36WTMkqViOI=
+
+Name: lib/armeabi-v7a/libjsi.so
+SHA1-Digest: 9F1YTH5oksWXwwI3ZEwr0w5Erz4=
+
+Name: lib/armeabi-v7a/libjsijniprofiler.so
+SHA1-Digest: +TGwDKXmnVzsTnY6d+GVPh59tUc=
+
+Name: lib/armeabi-v7a/libjsinspector.so
+SHA1-Digest: pMYJ7q/Avatu/rZX32pYsmuOg9U=
+
+Name: lib/armeabi-v7a/libkeys.so
+SHA1-Digest: 7X/Mi+aWy0D5fcF2MHAHTTVvfuk=
+
+Name: lib/armeabi-v7a/libliteavsdk.so
+SHA1-Digest: YPHSpArpsMyYraQkb4yMHkcPIrA=
+
+Name: lib/armeabi-v7a/liblog4a-lib.so
+SHA1-Digest: bjAalXylXpYc4pSHD2DW7JMkrW8=
+
+Name: lib/armeabi-v7a/liblogger.so
+SHA1-Digest: ySDQ3LX6W4rqLiNLe+ewOCoiMvA=
+
+Name: lib/armeabi-v7a/libmapbufferjni.so
+SHA1-Digest: LDbgtrtGGMyaLjmBRV6DowGYyew=
+
+Name: lib/armeabi-v7a/libmmkv.so
+SHA1-Digest: b8NCHWGl/iwdjH+MACeupK1ZKhU=
+
+Name: lib/armeabi-v7a/libnative-filters.so
+SHA1-Digest: ed1Ecr1NMaekERgDZWN12TsRuII=
+
+Name: lib/armeabi-v7a/libnative-imagetranscoder.so
+SHA1-Digest: /p1h2Sy2Eq/qZoYCFvewvFzsBlw=
+
+Name: lib/armeabi-v7a/libreact_codegen_rncore.so
+SHA1-Digest: +m5KLciitP/p2rW+hsfZkCO9gdw=
+
+Name: lib/armeabi-v7a/libreact_config.so
+SHA1-Digest: cpJmLhPZHIb/AIxsDjMZawUJLms=
+
+Name: lib/armeabi-v7a/libreact_debug.so
+SHA1-Digest: AripWHoUDepxkEsZv3tCCSAfE4k=
+
+Name: lib/armeabi-v7a/libreact_nativemodule_core.so
+SHA1-Digest: cT77LSdLyE9SXol6AAblQBikC1w=
+
+Name: lib/armeabi-v7a/libreact_render_animations.so
+SHA1-Digest: lGtuOpeW+Y0fx5VASn6GBcTkwkc=
+
+Name: lib/armeabi-v7a/libreact_render_attributedstring.so
+SHA1-Digest: d2T27Bvw3qLfjTMvapSqziT0zvk=
+
+Name: lib/armeabi-v7a/libreact_render_componentregistry.so
+SHA1-Digest: 8+xjClQ1KDkGXJId4NLRDBlOATw=
+
+Name: lib/armeabi-v7a/libreact_render_core.so
+SHA1-Digest: +0QxZ1hMgLMC3Z9UNvNHm4BMhIQ=
+
+Name: lib/armeabi-v7a/libreact_render_debug.so
+SHA1-Digest: KP9QVb+LZZvy+GDu44H6GAn5QZE=
+
+Name: lib/armeabi-v7a/libreact_render_graphics.so
+SHA1-Digest: 2+dXfyfOJk0JWE6boUbyk6psKKk=
+
+Name: lib/armeabi-v7a/libreact_render_imagemanager.so
+SHA1-Digest: SA9Zw+Qm86cWeaIOFHuE4sKhJF8=
+
+Name: lib/armeabi-v7a/libreact_render_leakchecker.so
+SHA1-Digest: 18DfXwpooAJt+iwS3Et9nrJZCug=
+
+Name: lib/armeabi-v7a/libreact_render_mapbuffer.so
+SHA1-Digest: a5V5PZVM8kbUQdrRO2iwoRqO+jI=
+
+Name: lib/armeabi-v7a/libreact_render_mounting.so
+SHA1-Digest: CBh+FBOA3ogPwWm5llUuEUj1QeQ=
+
+Name: lib/armeabi-v7a/libreact_render_runtimescheduler.so
+SHA1-Digest: LPgCgvgkg3yjO9ixeW9c307kt+k=
+
+Name: lib/armeabi-v7a/libreact_render_scheduler.so
+SHA1-Digest: Wrpn3izbfbRb479WQVgCHQEjmH0=
+
+Name: lib/armeabi-v7a/libreact_render_telemetry.so
+SHA1-Digest: QQrBqSKhm6iJdBqFbD7oxj6LZmU=
+
+Name: lib/armeabi-v7a/libreact_render_templateprocessor.so
+SHA1-Digest: vTyYSQpnVmjM210VXt0czpwASOg=
+
+Name: lib/armeabi-v7a/libreact_render_textlayoutmanager.so
+SHA1-Digest: vW401h6YCXyaw915Mrw+0aGWEQo=
+
+Name: lib/armeabi-v7a/libreact_render_uimanager.so
+SHA1-Digest: Veaf66WQR6iCkXMQV1GM6LaaI+0=
+
+Name: lib/armeabi-v7a/libreact_utils.so
+SHA1-Digest: 8dgF98S9voQzbJaJTv/tQ24qxfs=
+
+Name: lib/armeabi-v7a/libreactnativeblob.so
+SHA1-Digest: ulkyG67Fb4Tp571npYga3uOC4RU=
+
+Name: lib/armeabi-v7a/libreactnativejni.so
+SHA1-Digest: sZCAFEFItp3RjI0ktNiLGyTVK4Y=
+
+Name: lib/armeabi-v7a/libreactperfloggerjni.so
+SHA1-Digest: 8M7WkPLdPQ45MnzAxSPLN5OLwB8=
+
+Name: lib/armeabi-v7a/librrc_image.so
+SHA1-Digest: Xa06fr2wNvMW6rsC1cE/WF8Fl5k=
+
+Name: lib/armeabi-v7a/librrc_root.so
+SHA1-Digest: gf1RrfIs0x+PsQddfFiXPRMJSJY=
+
+Name: lib/armeabi-v7a/librrc_scrollview.so
+SHA1-Digest: 8FIIZZQuDiqZxvS9Cro1pFO74gc=
+
+Name: lib/armeabi-v7a/librrc_text.so
+SHA1-Digest: cbdl9Di/ZL/L0Y4JhgA03B6ezPI=
+
+Name: lib/armeabi-v7a/librrc_textinput.so
+SHA1-Digest: 8Z3hfdPSJNXvPMj/arc5Ov10lJ4=
+
+Name: lib/armeabi-v7a/librrc_unimplementedview.so
+SHA1-Digest: i/UWfFTPFCXe22/s2WLxvgs6Flc=
+
+Name: lib/armeabi-v7a/librrc_view.so
+SHA1-Digest: 8ypZ+dbArbWdxNgkIuk7qmdxu/Y=
+
+Name: lib/armeabi-v7a/libruntimeexecutor.so
+SHA1-Digest: 14zQzsB5iqd20GhtKpiHsm/4AJ0=
+
+Name: lib/armeabi-v7a/libsoundtouch.so
+SHA1-Digest: KoAKv32TZSGPlkDOfqkNsIOlbI4=
+
+Name: lib/armeabi-v7a/libsqlcipher.so
+SHA1-Digest: UX2UcvZo3qlVv1ywdncVMyFE44s=
+
+Name: lib/armeabi-v7a/libtkmc.so
+SHA1-Digest: yCuSjkZGku1A2H1XG+6AwJmcYbE=
+
+Name: lib/armeabi-v7a/libturbomodulejsijni.so
+SHA1-Digest: zp2F3EZInNAHlLZkyqmu7PPZNAg=
+
+Name: lib/armeabi-v7a/libtxffmpeg.so
+SHA1-Digest: Rd0zmV+wS5IP4wTIZmt0KWet0/A=
+
+Name: lib/armeabi-v7a/libtxsoundtouch.so
+SHA1-Digest: Qhhl+5O8SR6ls2swp4XiR5ozmCE=
+
+Name: lib/armeabi-v7a/libucrop.so
+SHA1-Digest: FlSCq2QCV707wF0R5rNC+59htiI=
+
+Name: lib/armeabi-v7a/libyoga.so
+SHA1-Digest: gr1czZZULfGHhOgv2x3OR4GhLvM=
+
+Name: stamp-cert-sha256
+SHA1-Digest: Bs40BvDZ1xrbgQrPTD2x5w/NfHQ=
+

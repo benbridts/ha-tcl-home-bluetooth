@@ -1,0 +1,79 @@
+[
+  {
+    "category": "Phụ kiện",
+    "data": [
+      {
+        "question": "Không thể tìm kiếm điểm phát sóng Wi-Fi",
+        "answer": "Trong trường hợp TV của bạn không tìm thấy điểm phát sóng Wi-Fi, vui lòng làm theo các bước dưới đây để kiểm tra và thiết lập TV.\n1. Trước hết, kiểm tra các thiết bị khác (bao gồm điện thoại, máy tính, v.v.) xung quanh xem có tìm thấy điểm phát sóng không dây này không.\n2. Nếu điện thoại hoặc máy tính của bạn không tìm thấy điểm phát sóng không dây này, hãy kiểm tra bộ định tuyến xem: Đã bật tính năng không dây chưa? SSID có bị ẩn không? Nếu đã bật chức năng không dây của bộ định tuyến, nhưng bạn chọn ẩn SSID, bạn sẽ không thể tìm thấy tên mạng của bộ định tuyến; do đó, bạn phải cài đặt bộ định tuyến không được ẩn SSID, sau đó tắt nguồn và khởi động lại bộ định tuyến, khi đó thiết bị mới có thể tìm thấy các điểm phát sóng không dây.\n3. Nếu điện thoại hoặc máy tính của bạn có thể tìm thấy điểm phát sóng không dây, hãy kiểm tra xem TV có nằm trong vùng phủ sóng của tín hiệu Wi-Fi không. Nếu TV của bạn cách xa bộ định tuyến thì nó sẽ nằm ngoài vùng phủ sóng Wi-Fi; do đó, bạn phải điều chỉnh vị trí của bộ định tuyến hoặc TV để chắc chắn TV nằm trong phạm vi phủ sóng của tín hiệu không dây. Không được để bộ định tuyến và TV ngăn cách bởi nhiều bức tường, như vậy tín hiệu Wi-Fi sẽ bị ảnh hưởng.\n4. Tắt và khởi động lại bộ định tuyến. Bạn nên tắt bộ định tuyến, rút nguồn điện và đợi trong 30 giây. Sau đó cắm nguồn điện và khởi động lại để dò lại tín hiệu Wi-Fi.\n5. Hãy tắt và khởi động lại TV. Bạn nên tắt TV, rút nguồn điện, và đợi trong 30 giây. Sau đó cắm nguồn điện và khởi động lại TV để dò lại tín hiệu Wi-Fi.\n6. Nếu bạn đã thử tất cả các bước trên, nhưng vẫn không khắc phục được sự cố, vui lòng gọi cho bộ phận chăm sóc khách hàng."
+      }
+    ]
+  },
+  {
+    "category": "Âm thanh",
+    "data": [
+      {
+        "question": "Âm thanh ngắt quãng",
+        "answer": "1. Nếu nguồn tín hiệu hiện tại từ USB, hãy xem có sự cố tương tự khi phát (các) tệp đa phương tiện tương ứng trên PC không. Nếu có, vấn đề là ở (các) tệp đa phương tiện; nếu không, vui lòng liên hệ trực tiếp với  điểm dịch vụ hậu mãi  của TCL địa phương, chúng tôi sẽ giúp bạn xử lý vấn đề.\n2. Nếu nguồn tín hiệu hiện tại từ TV, hãy xem có sự cố tương tự khi phát các chương trình khác không. Nếu không có sự cố tương tự khi phát các chương trình khác, vấn đề này là do ở chương trình."
+      },
+      {
+        "question": "Biến dạng âm thanh nghiêm trọng",
+        "answer": "1. Nếu nguồn tín hiệu hiện tại từ USB, hãy xem có sự cố tương tự khi phát (các) tệp đa phương tiện tương ứng trên PC không. Nếu có, vấn đề là ở (các) tệp đa phương tiện; nếu không, vui lòng liên hệ trực tiếp với  điểm dịch vụ hậu mãi  của TCL địa phương, chúng tôi sẽ giúp bạn xử lý vấn đề.\n2. Nếu nguồn tín hiệu hiện tại từ TV, hãy xem có sự cố tương tự khi phát các chương trình khác không. Nếu không có sự cố tương tự khi phát các chương trình khác, vấn đề này là do ở chương trình."
+      }
+    ]
+  },
+  {
+    "category": "Hiển thị video",
+    "data": [
+      {
+        "question": "Màu sắc hình ảnh không bình thường, với diện tích hình mờ lớn",
+        "answer": "1. Nếu nguồn tín hiệu hiện tại từ USB, hãy xem có sự cố tương tự khi phát (các) tệp đa phương tiện tương ứng trên PC không. Nếu có, vấn đề là ở (các) tệp đa phương tiện; nếu không, vui lòng liên hệ trực tiếp với  điểm dịch vụ hậu mãi  của TCL địa phương, chúng tôi sẽ giúp bạn xử lý vấn đề.\n2. Nếu nguồn tín hiệu hiện tại từ TV, hãy xem có sự cố tương tự khi phát các chương trình khác không. Nếu không có sự cố tương tự khi phát các chương trình khác, vấn đề này là do ở chương trình."
+      }
+    ]
+  },
+  {
+    "category": "Vấn đề mạng",
+    "data": [
+      {
+        "question": "Màn hình màu đen hoặc hỏng sau khi nâng cấp USB",
+        "answer": "Sự cố này thường là do sử dụng  sai gói nâng cấp phần mềm.\n1. Nhận gói nâng cấp bắt buộc mới nhất để nâng cấp TV của bạn.\n2. Trường hợp không thể khắc phục được, vui lòng phản hồi cho Trung tâm Dịch vụ TCL, chúng tôi sẽ giúp bạn xử lý vấn đề."
+      },
+      {
+        "question": "Nâng cấp mạng chưa hoàn thiện",
+        "answer": "Nâng cấp mạng chưa hoàn thiện có thể là do mất điện hoặc ngắt kết nối mạng trong quá trình nâng cấp.\n1. Vui lòng tắt nguồn trong 30 giây, sau đó khởi động lại và kiểm tra xem TV có hoạt động bình thường hay không.\n2. Nếu TV có thể khởi động bình thường, vui lòng thử lại nâng cấp mạng bằng kết nối mạng tốt. Không tắt nguồn trong quá trình nâng cấp.\n3. Trong trường hợp vấn đề này không thể khắc phục, vui lòng phản hồi lại cho điểm dịch vụ hậu mãi của TCL địa phương, chúng tôi sẽ giúp bạn xử lý vấn đề."
+      },
+      {
+        "question": "Nâng cấp mạng thất bại",
+        "answer": "1. Vui lòng kiểm tra xem kết nối mạng TV có ở trạng thái bình thường hay không.\n2. Thử thao tác TV bằng tay để nâng cấp lại mạng.\n3. Nếu thao tác nâng cấp mạng thất bại quá ba lần, bạn nên nâng cấp lại mạng vào khoảng thời gian khác. Trong trường hợp vấn đề này không thể khắc phục, vui lòng phản hồi lại cho điểm dịch vụ hậu mãi của TCL địa phương, chúng tôi sẽ giúp bạn xử lý vấn đề."
+      },
+      {
+        "question": "Không có lời nhắc nâng cấp mạng",
+        "answer": "1. Vui lòng kiểm tra xem kết nối mạng TV có bình thường không.\n2. Thử thao tác TV bằng tay để nâng cấp lại mạng.\n3. Nếu thao tác nâng cấp mạng được thực hiện nhiều hơn ba lần và vẫn không có lời nhắc nâng cấp mạng, bạn nên nâng cấp lại mạng vào khoảng thời gian khác.\n4. Trong trường hợp vấn đề này không thể xử lý theo ba bước trên, vui lòng phản hồi cho Trung tâm Dịch vụ hậu mãi của TCL địa phương, và chúng tôi sẽ giúp bạn giải quyết vấn đề này."
+      },
+      {
+        "question": "Không thể bật TV sau khi nâng cấp mạng",
+        "answer": "1. Vui lòng tắt nguồn trong 30 giây, sau đó khởi động lại và kiểm tra xem TV có hoạt động bình thường hay không.\n2. Trong trường hợp vẫn không bật được TV, vui lòng gửi phản hồi đến điểm dịch vụ hậu mãi của TCL địa phương, chúng tôi sẽ giúp bạn xử lý sự cố."
+      },
+      {
+        "question": "Bật và tắt nguồn chu kỳ TV sau khi nâng cấp USB",
+        "answer": "Sự cố này thường là do sử dụng  sai gói nâng cấp phần mềm.\n1. Nhận gói nâng cấp bắt buộc mới nhất để nâng cấp TV của bạn.\n2. Trường hợp không thể khắc phục được, vui lòng phản hồi cho Trung tâm Dịch vụ TCL, chúng tôi sẽ giúp bạn xử lý vấn đề."
+      },
+      {
+        "question": "Không thể xác định tệp nâng cấp bằng phần mềm nâng cấp USB",
+        "answer": "1. Vui lòng thử một ổ USB khác để kiểm tra xem TV có nhận dạng được đúng gói nâng cấp không. Nếu sự cố vẫn chưa được xử lý, vui lòng làm theo bước 2 để kiểm tra sự cố.\n2. Hãy xác nhận sử dụng đúng gói nâng cấp trong ổ đĩa USB, bao gồm loại gói nâng cấp (gói nâng cấp người dùng / gói nâng cấp bắt buộc) / phương pháp đặt tên gói nâng cấp."
+      }
+    ]
+  },
+  {
+    "category": "Quyền lực",
+    "data": [
+      {
+        "question": "TV hiển thị màn hình màu đen và đèn LED chờ bị tắt.",
+        "answer": "(1) Kiểm tra xem kết nối đường dây điện giữa TV và ổ cắm có tốt không;\n(2) Nếu TV được cấp nguồn điện AC đầy đủ và kết nối đường dây điện giữa TV và ổ cắm bình thường, vui lòng liên hệ với điểm dịch vụ hậu mãi của TCL địa phương để sửa chữa."
+      },
+      {
+        "question": "TV hiển thị màn hình màu đen và đèn LED chờ sáng.",
+        "answer": "Trường hợp 1： Nguồn điện AC cho TV hoạt động tốt, TV hiển thị màn hình màu đen và đèn báo chờ sáng.\nKiểm tra pin của điều khiển từ xa để đảm bảo điều khiển từ xa hoạt động tốt khi bạn nhấn nút “Power” trên điều khiển từ xa.\nNếu vẫn không thể khởi động TV sau khi nhấn nút “Power” trên điều khiển từ xa, hãy nhấn nút “Power” trên TV để kiểm tra xem TV có hoạt động bình thường hay không.\nNếu vẫn không thể bật TV sau khi làm theo các bước trên, vui lòng liên hệ với điểm dịch vụ hậu mãi của TCL địa phương để sửa chữa."
+      }
+    ]
+  }
+]

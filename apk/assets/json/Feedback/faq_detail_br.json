@@ -1,0 +1,10 @@
+[
+    {
+        "category": "Account",
+        "content": "A eliminação da conta TCL é uma operação irrecuperável. Se confirmar a eliminação da sua conta TCL, visite o seguinte URL: http://www.tcl.com/deleteaccount",
+        "htmlContent": "<p id=\"textHolder\"></p><p>A eliminação da conta TCL é uma operação irrecuperável. Se confirmar a eliminação da sua conta TCL, visite o seguinte URL: http://www.tcl.com/deleteaccount</p>",
+        "id": "1",
+        "tagName": "Conta",
+        "title": "Como eliminar a sua conta TCL?"
+    }
+]

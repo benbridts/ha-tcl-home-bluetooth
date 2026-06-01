@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--保证动态模块用到的资源不会被缩减-->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@string/module_matter,@layout/matter_*"/>

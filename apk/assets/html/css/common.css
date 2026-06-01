@@ -1,0 +1,449 @@
+/*
+* @Author: mcclcm
+* @Date:   2019-06-20 15:19:38
+* @Last Modified by:   mcclcm
+* @Last Modified time: 2019-11-13 11:44:06
+*/
+*{box-sizing:border-box;-webkit-box-sizing:border-box;font-family:Helvetica}
+body,html{height:100%;width:100%}
+body{background-color:#f4f4f4;font-family:Helvetica;color:#222}
+input,input:active,input:focus{user-select:text;-webkit-appearance:none}
+a{color:#222;text-decoration:none}
+body.toggle-hide{overflow:hidden!important;position:relative!important}
+.w100p{width:100%}
+.h100p{height:100%}
+.fl{float:left}
+.fr{float:right}
+.cf::after,.cf::before{content:"";display:table}
+.mt10{margin-top:.133333rem}
+.cf::after{clear:both}
+.cf{zoom:1}
+.table{display:table!important}
+.table-cell{display:table-cell!important}
+.ver-top{vertical-align:top}
+.ver-middle{vertical-align:middle}
+.txt-center{text-align:center;-webkit-justify-content:center;justify-content:center;display:-webkit-box;display:-webkit-flex;display:flex}
+.txt-fixed{table-layout:fixed;word-wrap:break-word}
+.bdr16,.bdr16:active{border-radius:.213333rem;-webkit-border-radius:.213333rem;transform:translateY(0);-webkit-transform:translateY(0)}
+.bgfff{background-color:#fff!important}
+[v-cloak]{display:none!important}
+.btn-image{background-image:linear-gradient(right,#f44d0a 0,#f3290d 30%,#f44d0a 100%);background-image:-webkit-linear-gradient(right,#f44d0a 0,#f3290d 30%,#f3130a 100%)}
+.btn-image.disabled{background-image:none!important}
+.btn-image:active{border-color:#f3130a;color:#f3130a;background-color:#fff!important;background-image:none}
+.md-scroll-view-refresh{line-height:.4267rem}
+.bgccc{background-color:#ccc}
+.bg-fafafa{background-color:#fafafa}
+.red{color:#f3130a}
+
+/**
+ * active Css
+ */
+.touch-active:active{opacity:.8!important}
+.reset-more-class .md-activity-indicator-rolling .rolling{width:.4267rem!important;height:.4267rem!important}
+.reset-more-class .md-activity-indicator .indicator-text{color:#999;margin-left:.2rem;font-size:.32rem!important}
+
+/**
+ * layout
+ */
+.TLife-layout{position:relative;height:100%;font-size-adjust:none;-webkit-text-size-adjust:100%;-webkit-overflow-scrolling:touch;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:color-primary-background}
+
+/**
+ * padding
+ */
+.TLife-home-banner,.TLife-md-base,.TLife-update-btn,.TLife-update-content,.TLife-update-title,.TLife-weather{padding-left:.4rem;padding-right:.4rem}
+.TLife-layout-con.pt88 .scroll-view-container{padding-top:1.173333rem}
+.is-opacity{opacity:0!important}
+
+/**
+ * header demo
+ */
+.TLife-header{height:1.173333rem;padding-left:.4rem;padding-right:.4rem;position:relative}
+.TLife-header-in{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;min-width:100%;height:100%}
+.TLife-header-item{-webkit-flex-shrink:0;flex-shrink:0;-webkit-box-flex:0;-webkit-flex:0 0 25%;-ms-flex:0 0 25%;flex:0 0 25%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;color:inherit;box-sizing:border-box;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}
+.TLife-header-item:first-child{-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}
+.TLife-header-item:last-child{-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end}
+.TLife-header-item-center{height:100%;max-width:50%;overflow:hidden;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+.TLife-header-item-in{width:100%;height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;height:inherit;font-size:.48rem;overflow:hidden}
+.header-usernames{white-space:nowrap;text-transform:ellipsis;font-family:Helvetica-Bold;font-size:.586667rem;color:#222;max-width:65%;min-width:40%}
+.header-addDevice,.header-news{width:.64rem;height:.64rem;background-position:center center;background-size:.586667rem .586667rem;background-repeat:no-repeat}
+.header-news{margin-right:.5rem;background-image:url(../images/icon/icon-news.png)}
+.header-addDevice{background-image:url(../images/icon/icon-adds.png);background-size:.54rem .54rem}
+.TLife-back-btn{display:inline-block;width:.48rem;height:.48rem;background-position:center center;background-repeat:no-repeat;background-size:auto .426667rem;background-image:url(../images/icon/icon-back.png);margin-left:-.133333rem}
+
+/**
+ * weather
+ */
+.TLife-weather{margin-bottom:.4rem}
+.TLife-weather-t{padding-top:.213333rem;padding-bottom:.213333rem}
+.TLife-weather-icon{display:inline-block;padding-left:1.6rem;height:1.333333rem;line-height:1.333333rem;font-size:.586667rem;font-family:Helvetica-Bold;color:#222;background-position:.01rem center;background-size:1.333333rem 1.333333rem;background-repeat:no-repeat}
+.TLife-weather-b{overflow:hidden;font-size:0}
+.air-quality,.humidity{display:inline-block;padding-left:.693333rem;min-height:.453333rem;line-height:.453333rem;background-position:left 0;background-repeat:no-repeat;background-size:.453333rem .453333rem;font-size:.373333rem}
+.air-quality{background-image:url(../images/icon/icon-air-quality.png)}
+.humidity{background-image:url(../images/icon/icon-humidity.png)}
+.TLife-weather-b span:nth-of-type(2n){float:right}
+.TLife-weather-refresh{overflow:hidden}
+.TLife-weather-refresh-icon{display:block;width:1.333333rem;height:1.333333rem;margin-top:.213333rem;margin-bottom:.266667rem;margin-left:auto;margin-right:auto;background-position:center center;background-size:100% 100%;background-repeat:no-repeat;background-image:url(../images/icon/icon-none-weather.png)}
+.TLife-weather-refresh-txt{text-align:center;color:#222;font-size:.373333rem}
+.weather-loading{padding:.533333rem 0 .266667rem}
+
+/**
+ * TLife-weather-icon
+ */
+.w-i1{background-image:url(../images/icon/weather/1.png)}
+.w-i2{background-image:url(../images/icon/weather/2.png)}
+.w-i3{background-image:url(../images/icon/weather/3.png)}
+.w-i4{background-image:url(../images/icon/weather/4.png)}
+.w-i5{background-image:url(../images/icon/weather/5.png)}
+.w-i6{background-image:url(../images/icon/weather/6.png)}
+.w-i7{background-image:url(../images/icon/weather/7.png)}
+.w-i8{background-image:url(../images/icon/weather/8.png)}
+.w-i11{background-image:url(../images/icon/weather/11.png)}
+.w-i12{background-image:url(../images/icon/weather/12.png)}
+.w-i13{background-image:url(../images/icon/weather/13.png)}
+.w-i14{background-image:url(../images/icon/weather/14.png)}
+.w-i15{background-image:url(../images/icon/weather/15.png)}
+.w-i16{background-image:url(../images/icon/weather/16.png)}
+.w-i17{background-image:url(../images/icon/weather/17.png)}
+.w-i18{background-image:url(../images/icon/weather/18.png)}
+.w-i19{background-image:url(../images/icon/weather/19.png)}
+.w-i20{background-image:url(../images/icon/weather/20.png)}
+.w-i21{background-image:url(../images/icon/weather/21.png)}
+.w-i22{background-image:url(../images/icon/weather/22.png)}
+.w-i23{background-image:url(../images/icon/weather/23.png)}
+.w-i24{background-image:url(../images/icon/weather/24.png)}
+.w-i25{background-image:url(../images/icon/weather/25.png)}
+.w-i26{background-image:url(../images/icon/weather/26.png)}
+.w-i29{background-image:url(../images/icon/weather/29.png)}
+.w-i30{background-image:url(../images/icon/weather/30.png)}
+.w-i31{background-image:url(../images/icon/weather/31.png)}
+.w-i32{background-image:url(../images/icon/weather/32.png)}
+.w-i33{background-image:url(../images/icon/weather/33.png)}
+.w-i34{background-image:url(../images/icon/weather/34.png)}
+.w-i35{background-image:url(../images/icon/weather/35.png)}
+.w-i36{background-image:url(../images/icon/weather/36.png)}
+.w-i37{background-image:url(../images/icon/weather/37.png)}
+.w-i38{background-image:url(../images/icon/weather/38.png)}
+.w-i39{background-image:url(../images/icon/weather/39.png)}
+.w-i40{background-image:url(../images/icon/weather/40.png)}
+.w-i41{background-image:url(../images/icon/weather/41.png)}
+.w-i42{background-image:url(../images/icon/weather/42.png)}
+.w-i43{background-image:url(../images/icon/weather/43.png)}
+.w-i44{background-image:url(../images/icon/weather/44.png)}
+
+/**
+ * banner
+ */
+.TLife-home-banner{height:3.733333rem;overflow:hidden}
+.TLife-home-banner .TLife-home-banner-item,.TLife-home-banner .TLife-home-banner-item:active,.TLife-home-banner .md-swiper,.TLife-home-banner .md-swiper-box,.TLife-home-banner .md-swiper-box:active,.TLife-home-banner .md-swiper-container,.TLife-home-banner .md-swiper-container:active,.TLife-home-banner .md-swiper-item,.TLife-home-banner .md-swiper-item:active,.TLife-home-banner .md-swiper:active{border-radius:.213333rem;-webkit-border-radius:.213333rem;transform:translateY(0);-webkit-transform:translateY(0)}
+.TLife-home-banner-list{height:100%!important}
+.TLife-home-banner-item{float:left;width:100%;height:100%;line-height:3.733333rem;text-align:center;font-size:.373333rem;color:#fff;box-align:center;align-items:center;box-pack:center;justify-content:center;text-decoration-line:none;background-color:#fafafa;background-position:center center;background-size:100% 100%;background-repeat:no-repeat}
+.TLife-home-banner .md-swiper-indicator{width:.213333rem;height:.08rem;background-color:#fff;opacity:.3;border-radius:.1rem;-webkit-border-radius:.1rem;margin:0 .053333rem;transition:all .25s ease;-webkit-transition:all .25s ease}
+.TLife-home-banner .md-swiper-indicator.md-swiper-indicator-active{width:.426667rem;opacity:1}
+.banner-errors{background-color:#fafafa}
+
+/**
+ * control start
+ */
+.TLife-control{letter-spacing:0}
+.TLife-md-base{margin-top:.8rem}
+.TLife-md-title{padding-bottom:.266667rem;line-height:.533333rem;font-family:Helvetica-Bold}
+.TLife-md-title span{font-family:Helvetica-Bold;font-size:.426667rem}
+.TLife-md-content{position:relative;width:100%}
+.TLife-md-list{width:100%;height:100%}
+.TLife-md-item{width:50%;height:4.933333rem;float:left;text-align:center;font-family:Helvetica-Bold;color:#111;margin-bottom:.293333rem;table-layout:fixed}
+.TLife-md-item .table-cell{background-color:#fff;padding-top:.8rem;padding-bottom:.8rem}
+.TLife-md-item:nth-of-type(even){padding-left:.16rem}
+.TLife-md-item:nth-of-type(odd){padding-right:.16rem}
+.TLife-md-item-img .img{display:inline-block;width:1.066667rem;height:1.066667rem;background-size:100% 100%;background-position:center center;background-repeat:no-repeat}
+
+/**
+ * product icons start
+ */
+.TLife-md-item-img .img.tv{background-image:url(../images/icon/product/tv.png)}
+.TLife-md-item-img .img.washin{background-image:url(../images/icon/product/iot_icon_washer.png)}
+.TLife-md-item-img .img.pendant{background-image:url(../images/icon/product/pendant-lamp.png)}
+.TLife-md-item-img .img.air-conditioning{background-image:url(../images/icon/product/air-conditioning.png)}
+
+/**
+ * product icons end
+ */
+ /* 将 去除   由于用户需要自己看到自己所输入的 */
+.TLife-md-item-title{font-family:Helvetica;margin-top:.373333rem;font-size:.41rem;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;word-wrap:break-word;white-space:normal;padding-left:.2rem;padding-right:.2rem;height:.853333rem}
+.TLife-md-item-tags{margin-top:.266667rem;font-size:.32rem;color:#999}
+.TLife-md-item-content{margin-top:.266667rem;height:.533333rem;line-height:.533333rem;text-align:center}
+.TLife-md-item-content *{vertical-align:middle}
+.TLift-on-off-icon{display:inline-block;width:.533333rem;height:.533333rem;background-repeat:no-repeat;background-position:center center;background-size:90% 90%;background-image:url(../images/icon/icon-on-off.png)}
+.TLift-on-off-icon.off{opacity:.5}
+.TLift-on-off-icon.touch-active.off:active{opacity:.5!important}
+.TLife-control-add-btn{width:100%;height:2.4rem}
+.TLife-control-add-btn .table-cell{background-color:#fff;vertical-align:middle;text-align:center}
+.TLife-control-add-btn .table-cell span{display:inline-block;font-size:.373333rem;vertical-align:middle}
+.TLife-control-add-btn .table-cell span.icons{position:relative;width:.64rem;height:.64rem;margin-right:.32rem;border-radius:1rem;-webkit-border-radius:1rem;background-position:center center;background-repeat:no-repeat;background-size:98% 98%;background-image:url(../images/icon/icon-addd.png)}
+
+/**
+ * Community activities
+ */
+.TLife-community-list{width:100%;white-space:nowrap}
+.TLife-community-item{cursor:pointer;display:inline-block;position:relative;box-sizing:border-box;-webkit-box-sizing:border-box;width:6.026667rem;min-height:4.533333rem;margin-left:.266667rem;overflow:hidden}
+.TLife-community-item:nth-of-type(1){margin-left:0}
+.TLife-community-item .imgs{display:block;width:6.026667rem;height:3.413333rem;background-color:#ccc;overflow:hidden;color:#999;background-size:100% 100%;background-position:center center;background-repeat:no-repeat}
+.TLife-community-item .titles{width:100%;height:.853333rem;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;word-wrap:break-word;white-space:normal;font-size:.32rem;color:#222;line-height:.426667rem;margin-top:.266667rem}
+.communityver-error{text-align:center;font-size:.426667rem;color:#666;padding:3rem .8rem}
+.communityver-error .tips{line-height:1.456}
+.communityver-error .btns{margin-top:1rem}
+.communityver-error .btns .md-button-content{font-size:.32rem}
+
+/**
+ * Community activities vertical
+ */
+.TLife-community-ver-item{table-layout:fixed;padding:.373333rem .266667rem;background-color:#fff;margin-bottom:.266667rem}
+.TLife-community-ver-item .imgs{display:inline-block;width:3.066667rem;height:1.893333rem;background-color:#fafafa;background-repeat:no-repeat;background-position:center center;background-size:cover}
+.TLife-community-ver-item .contents{width:100%;vertical-align:middle;padding-left:.266667rem;}
+.TLife-community-ver-item .contents .title{width:100%;font-family:Helvetica-Bold;font-size:.373333rem;line-height:.453333rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#111}
+.TLife-community-ver-item .contents .descs{height:.853333rem;line-height:.453333rem;margin-top:.133333rem;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;word-wrap:break-word;white-space:normal;color:#222;font-size:.32rem}
+
+.TLife-home-banner-item[lazy=loading],.TLife-community-ver-item .imgs[lazy=loading] {background-size: contain;}
+/**
+ * loading eyes
+ */
+.loading-eyes{position:fixed;top:0;left:0;right:0;bottom:0;z-index:10000;width:100%;height:100%;transition:all .3s ease-out;-webkit-transition:all .3s ease-out}
+.loading-eyes-layout{position:relative;z-index:2;display:table-cell;width:100%;height:100%;vertical-align:middle;text-align:center}
+.loading-eyes-filter{background-color:#f4f4f4;width:100%;height:100%}
+.loading-eyesed{position:relative;z-index:2;display:inline-block;width:20px;height:20px;background-color:#fff;border:1px solid #eee;border-radius:50%;-webkit-border-radius:50%;position:relative;margin:0 .1rem}
+.loading-eyesed:after{background-color:#59488b;width:10px;height:10px;border-radius:50%;left:9px;top:8px;position:absolute;content:"";-webkit-transform:translateY(0);transform:translateY(0);-webkit-animation:eyeball 2s linear infinite alternate;-moz-animation:eyeball 2s linear infinite alternate;animation:eyeball 2s linear infinite alternate}
+@-webkit-keyframes eyeball{0%{left:9px} 100%{left:1px}}
+@-moz-keyframes eyeball{0%{left:9px} 100%{left:1px}}
+@keyframes eyeball{0%{left:9px} 100%{left:1px}}
+
+/**
+ * tcl loading new
+ */
+.th-loading{position:fixed;top:0;left:0;right:0;bottom:0;z-index:10000;width:100%;height:100%;background-color:#f4f4f4}
+.th-loading-layout{position:relative;z-index:2;display:table-cell;width:100%;height:100%;vertical-align:middle;text-align:center}
+.loading{font-family:'Helvetica-Bold','MS Sans Serif',Helvetica;font-weight:bold;font-size:.75rem;text-align:center;height:.8rem;vertical-align:top;display:block;-webkit-transform:scale(1.2,1) translate3d(0,0,0);transform:scale(1.2,1) translate3d(0,0,0);margin-bottom:.533333rem}
+.wave{background-image:url(../images/bg.png);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 rgba(0,0,0,.06);-webkit-text-shadow:0 0 rgba(0,0,0,.06);animation:wave-animation 1s infinite linear,loading-animation 8s infinite linear;-webkit-animation:wave-animation 1s infinite linear,loading-animation 4.5s infinite linear;/* // alternate; */background-size:1.1rem 1rem;background-repeat:repeat-x;opacity:1}
+.loading-css{text-align:center;color:#999;font-size:.346667rem}
+@keyframes wave-animation{
+    0%{background-position:0 bottom} 100%{background-position:1.1rem bottom}
+}
+@-webkit-keyframes wave-animation{
+    0%{background-position:0 bottom} 100%{background-position:1.1rem bottom}
+}
+@keyframes loading-animation{
+    0%{background-size:1.1rem 0;opacity:1} 96%{opacity:1} 100%{background-size:1.1rem 1.1rem;/* opacity:0 */}
+}
+@-webkit-keyframes loading-animation{
+    0%{background-size:1.1rem 0;opacity:1} 96%{opacity:1} 100%{background-size:1.1rem 1.1rem;/* opacity:0 */}
+}
+
+/**
+ * pulldown loading
+ */
+.pulldown-loading{display:flex;flex-direction:column;align-items:center;padding-top:.666667rem;padding-bottom:.666667rem}
+/**
+ * tcl switch tab
+ */
+.switch-tab {
+    display: inline-block;
+    position: relative;
+    /* width: 0.8rem; */
+    width:1.2rem;
+    /* height: 0.266667rem; */
+    height:0.38rem;
+    background-color: #e2e4ea;
+    color: #e2e4ea;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    transition: background-color .3s;
+    -webkit-transition: background-color .3s;
+}
+.switch-tab span {
+    position: absolute;
+    height: 0.6rem;
+    width: 0.6rem;
+    top: 21%;
+    margin-top: -0.186667rem;
+    left: 0;
+    background-color: white;
+    color: currentcolor;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    box-shadow: 0 0 4px 0 rgb(226, 228, 234);
+    -webkit-box-shadow: 0 0 4px 0 rgb(226, 228, 234);
+    transition: transform .3s;
+    -webkit-transition: transform .3s;
+}
+.switch-tab span:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    width: 0.053333rem;
+    height: 0.16rem;
+    background-color: currentcolor;
+}
+.switch-tab.active {
+    color: #F3130A;
+    background-color: #F3130A;
+}
+.switch-tab.active span {
+    box-shadow: 0 0 4px 0 rgba(243,19,10,0.17);
+    -webkit-box-shadow: 0 0 4px 0 rgba(243,19,10,0.17);
+    -webkit-transform: translateX(120%);
+    transform: translateX(120%);
+}
+/**
+ * new end
+ */
+/**
+ * update
+ */
+.TLife-update-icons{display:inline-block;background-color:#f44d0a;background-image:linear-gradient(right,#f44d0a 0,#f3290d 50%,#f3130a 100%);background-image:-webkit-linear-gradient(right,#f44d0a 0,#f3290d 50%,#f3130a 100%);font-size:.133333rem;color:#fff;border-radius:.12rem;-webkit-border-radius:.12rem;border-bottom:1px solid #795548;padding:.04rem .12rem;font-style:normal;line-height:1.4;overflow:hidden}
+.TLife-update{overflow:hidden;line-height:1.54;padding-bottom:.32rem}
+.TLife-update-icon{width:1.6rem;height:1.6rem;margin:.96rem auto .533333rem}
+.TLife-update-icon img{display:block;width:100%;height:100%}
+.TLife-update-title{font-size:.533333rem;text-align:center}
+.TLife-update-version{text-align:center;margin-top:.266667rem;font-size:.373333rem;line-height:1.54}
+.TLife-update-version .red{color:#f3130a}
+.TLife-update-content{font-size:.373333rem;margin-top:.266667rem;font-size:.373333rem;color:#666}
+.TLife-update-btn{margin-top:1.333333rem;margin-bottom:1rem}
+.TLife-update-btn button:not(:last-child){margin-bottom:.533333rem}
+.md-button.plain.update-btn{color:#f3130a;background-color:transparent;background-image:none}
+.md-button.plain.update-btn:after,.md-button.update-btn:after{border-color:#f3130a}
+.md-button.plain.update-btn:active,.md-button.update-btn{background-image:linear-gradient(right,#f44d0a 0,#f3290d 50%,#f3130a 100%);background-image:-webkit-linear-gradient(right,#f44d0a 0,#f3290d 50%,#f3130a 100%);color:#fff}
+.md-button.update-btn:active{opacity:.8}
+
+/**
+ * privacy
+ */
+.TLife-link{color:#f3130a}
+.TLife-app-privacy{color:#666;padding:.266667rem .533333rem}
+.TLife-app-privacy p{line-height:1.564;font-size:.373333rem}
+.TLife-app-privacy .fs-min{font-size:.32rem}
+.TLife-app-privacy p:not(:last-child){margin-bottom:.266667rem}
+.TLife-app-privacy .title{font-size:.426667rem;color:#222;margin-bottom:.5rem}
+.TLife-app-privacy .min-title{position:relative;font-size:.4rem;font-family:Helvetica-Bold;margin-top:.4rem;padding-left:.2rem}
+.min-title:before{position:absolute;content:"";width:.053333rem;background-color:#e50013;height:.4rem;top:.098rem;left:0}
+.TLife-app-privacy dl{margin-bottom:.266667rem}
+.TLife-app-privacy dl dt{margin-top:.133333rem;margin-bottom:.133333rem}
+.TLife-app-privacy dl dd,.TLife-app-privacy dl dt{position:relative;line-height:1.4;font-size:.32rem;vertical-align:middle}
+.TLife-app-privacy dl dd{color:#333}
+.TLife-app-privacy dl dd:before{display:inline-block;font-size:0;content:"";width:.106667rem;height:.106667rem;background-color:currentColor;border-radius:50%;-webkit-border-radius:50%;vertical-align:middle;margin-right:.213333rem}
+
+/**
+ * news detail
+ */
+.TLife-app-news-detail{height:100%;background-color:#fff}
+.hbds .TLife-header:after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background-color:#f5f5f5;-webkit-transform:scaleY(.5);transform:scaleY(.5)}
+.TLife-news-detail{padding:.266667rem .533333rem}
+.TLife-news-detail-header{position:relative;padding-top:.266667rem;padding-bottom:.266667rem}
+.TLife-news-detail-header:after{position:absolute;content:"";left:0;bottom:0;width:100%;height:1px;background-color:#f5f5f5;transform:scaleY(.5);-webkit-transform:scaleY(.5)}
+.TLife-news-detail-title{font-family:Helvetica-Bold;font-size:.48rem;line-height:1.4;min-height:1.173333rem;text-transform:uppercase}
+.TLife-news-detail-date{margin-top:.266667rem;font-size:.32rem;color:#999}
+.TLife-news-detail-date .times{margin-left:.266667rem}
+.TLife-news-detail-content{padding-top:.266667rem;line-height:1.546;font-size:.373333rem}
+.TLife-news-detail-content .titles{padding-top:.266667rem;padding-bottom:.266667rem}
+.TLife-news-detail-content .contents,.TLife-news-detail-content p{color:#666}
+.TLife-news-detail-content .contents:not(:last-child){padding-bottom:.266667rem}
+
+/* .TLife-news-detail-content .pictures {
+    display: block;
+    width: 100%;
+    height: auto;
+} */
+.TLife-news-detail-content img{display:block;max-width:100%;margin:0 auto}
+.TLife-news-detail-content .pictures:not(:last-child){margin-bottom:.533333rem}
+.min-5em{min-width:5em;display:inline-block}
+.min-6em{min-width:6em;display:inline-block}
+
+
+.skeleton{animation-duration:1.5s;animation-fill-mode:forwards;animation-iteration-count:infinite;animation-name:flashing;animation-timing-function:linear;-webkit-animation-duration:1.5s;-webkit-animation-fill-mode:forwards;-webkit-animation-iteration-count:infinite;-webkit-animation-name:flashing;-webkit-animation-timing-function:linear;background-color:#f6f7f8;background-image:linear-gradient(to right,#eee 8%,#ddd 18%,#eee 33%);background-image:-webkit-linear-gradient(to right,#eee 8%,#ddd 18%,#eee 33%);background-size:800px 204px;opacity:.8}
+
+/**
+ * video
+ */
+.TLife-app-video-title{line-height:1;padding:.266667rem .32rem;font-size:0}
+.TLife-app-video-tag{position:relative;display:inline-block;padding-left:.213333rem;font-family:Roboto-Medium;font-size:.426667rem;color:#333;text-transform:capitalize}
+.TLife-app-video-tag:before{position:absolute;content:"";left:0;top:10%;bottom:10%;width:.053333rem;background-color:#f03d37}
+.TLife-app-video-content{padding-top:.32rem;padding-left:.16rem;padding-right:.16rem}
+.TLife-app-video-item{display:block;float:left;width:50%;padding-left:.16rem;padding-right:.16rem;margin-bottom:.32rem}
+.TLife-app-video-item:nth-last-child(1){margin-bottom:0}
+.TLife-app-video-item-in{background-color:#ccc;position:relative;display:block;width:100%;height:3.733333rem;overflow:hidden;border-radius:.133333rem;-webkit-border-radius:.133333rem;background-size:cover;background-position:center center;background-repeat:no-repeat}
+.TLife-app-video-item-in .titles{position:absolute;left:0;bottom:0;right:0;padding-top:.24rem;padding-bottom:.24rem;padding-left:.186667rem;padding-right:.186667rem;background-color:#fff;font-size:.32rem;color:#222;font-family:PingFangSC-Semibold;line-height:.43rem}
+.TLife-app-video-item-in .titles p{height:.8rem;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;word-wrap:break-word;white-space:normal}
+.TLife-app-video-item-in.ad .titles{background-color:transparent;background-image:linear-gradient(-90deg,rgba(0,0,0,0) 0,#000 100%);background-image:-webkit-linear-gradient(-90deg,rgba(0,0,0,0) 0,#000 100%);padding-top:.8rem;color:#fff}
+.TLife-app-video-item-in .ad-icons{display:none;position:absolute;top:.16rem;right:.16rem;background-color:#000;opacity:.4;color:#fff;font-size:.28rem;height:.48rem;line-height:1;padding:.06rem .2rem;border-radius:.133333rem;-webkit-border-radius:.133333rem;font-style:normal}
+.TLife-app-video-item-in.ad .ad-icons{display:block}
+.video-index-more{padding:.32rem;text-align:center;line-height:1}
+.video-index-more-in{display:inline-block;font-size:12px;color:#999}
+.tlife-none-data{padding:1.066667rem .4rem;text-align: center;}
+.tlife-none-data-img{display:block;width:5.333333rem;height:4.933333rem;margin:0 auto .266667rem;background-size:cover;background-position:center center;background-repeat:no-repeat}
+.tlife-none-data-img.video-nones{background-image:url(../images/none/video-none.png)}
+.tlife-none-data-img.errors{background-image:url(../images/none/error.png)}
+.tlife-none-data .v-items{padding:.1rem .2rem;font-size:.4rem;color:#999;text-align:center}
+.tlife-none-data .v-items.tits{color:#666}
+.video-retry{font-size:.373333rem;color:#222;margin-top:.666667rem}
+
+/**
+ * lazyload
+ */
+.TLife-community-ver-item .imgs[lazy=loading],.TLife-community-ver-item .imgs[lazy=error] {background-size: 1rem auto}
+
+/**
+ * flashing
+ */
+
+@-webkit-keyframes flashing{0%{background-position:-468px 0}100%{background-position:468px 0}}
+@keyframes flashing{0%{background-position:-468px 0}100%{background-position:468px 0}}
+
+
+/*@3*/
+@media only screen and (-webkit-device-pixel-ratio : 3) {
+    .w-i1 {background-image: url('../images/icon/weather/1-1.png')}
+    .w-i2 {background-image: url('../images/icon/weather/2-1.png')}
+    .w-i3 {background-image: url('../images/icon/weather/3-1.png')}
+    .w-i4 {background-image: url('../images/icon/weather/4-1.png')}
+    .w-i5 {background-image: url('../images/icon/weather/5-1.png')}
+    .w-i6 {background-image: url('../images/icon/weather/6-1.png')}
+    .w-i7 {background-image: url('../images/icon/weather/7-1.png')}
+    .w-i8 {background-image: url('../images/icon/weather/8-1.png')}
+    .w-i11 {background-image: url('../images/icon/weather/11-1.png')}
+    .w-i12 {background-image: url('../images/icon/weather/12-1.png')}
+    .w-i13 {background-image: url('../images/icon/weather/13-1.png')}
+    .w-i14 {background-image: url('../images/icon/weather/14-1.png')}
+    .w-i15 {background-image: url('../images/icon/weather/15-1.png')}
+    .w-i16 {background-image: url('../images/icon/weather/16-1.png')}
+    .w-i17 {background-image: url('../images/icon/weather/17-1.png')}
+    .w-i18 {background-image: url('../images/icon/weather/18-1.png')}
+    .w-i19 {background-image: url('../images/icon/weather/19-1.png')}
+    .w-i20 {background-image: url('../images/icon/weather/20-1.png')}
+    .w-i21 {background-image: url('../images/icon/weather/21-1.png')}
+    .w-i22 {background-image: url('../images/icon/weather/22-1.png')}
+    .w-i23 {background-image: url('../images/icon/weather/23-1.png')}
+    .w-i24 {background-image: url('../images/icon/weather/24-1.png')}
+    .w-i25 {background-image: url('../images/icon/weather/25-1.png')}
+    .w-i26 {background-image: url('../images/icon/weather/26-1.png')}
+    .w-i29 {background-image: url('../images/icon/weather/29-1.png')}
+    .w-i30 {background-image: url('../images/icon/weather/30-1.png')}
+    .w-i31 {background-image: url('../images/icon/weather/31-1.png')}
+    .w-i32 {background-image: url('../images/icon/weather/32-1.png')}
+    .w-i33 {background-image: url('../images/icon/weather/33-1.png')}
+    .w-i34 {background-image: url('../images/icon/weather/34-1.png')}
+    .w-i35 {background-image: url('../images/icon/weather/35-1.png')}
+    .w-i36 {background-image: url('../images/icon/weather/36-1.png')}
+    .w-i37 {background-image: url('../images/icon/weather/37-1.png')}
+    .w-i38 {background-image: url('../images/icon/weather/38-1.png')}
+    .w-i39 {background-image: url('../images/icon/weather/39-1.png')}
+    .w-i40 {background-image: url('../images/icon/weather/40-1.png')}
+    .w-i41 {background-image: url('../images/icon/weather/41-1.png')}
+    .w-i42 {background-image: url('../images/icon/weather/42-1.png')}
+    .w-i43 {background-image: url('../images/icon/weather/43-1.png')}
+    .w-i44 {background-image: url('../images/icon/weather/44-1.png')}
+    .TLife-control-add-btn .table-cell span.icons {background-image: url('../images/icon/icon-addd-1.png')}
+    .tlife-none-data-img.video-nones {background-image: url('../images/none/video-none-1.png')}
+    .tlife-none-data-img.errors {background-image: url('../images/none/error-1.png')}
+}

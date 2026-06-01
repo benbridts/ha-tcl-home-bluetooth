@@ -1,0 +1,54 @@
+[
+    {
+        "category": "Account",
+        "tagList": [
+            {
+                "faqList": [
+                    {
+                        "faqId": "1",
+                        "faqTitle": "Bagaimana cara menghapus akun TCL?"
+                    }
+                ],
+                "tagId": "T1",
+                "tagName": "Akun"
+            }
+        ]
+    },
+    {
+        "category": "Membership",
+        "tagList": [
+            {
+                "faqList": [
+                    {
+                        "faqId": "2",
+                        "faqTitle": "Apa itu Klub VIP TCL?"
+                    },
+                    {
+                        "faqId": "3",
+                        "faqTitle": "Bagaimana cara bergabung dengan Klub VIP TCL?"
+                    }
+                ],
+                "tagId": "T2",
+                "tagName": "Klub VIP TCL"
+            },
+            {
+                "faqList": [
+                    {
+                        "faqId": "4",
+                        "faqTitle": "Apa itu poin VIP TCL dan bagaimana cara mendapatkannya?"
+                    },
+                    {
+                        "faqId": "5",
+                        "faqTitle": "Bagaimana cara naik ke level selanjutnya?"
+                    },
+                    {
+                        "faqId": "6",
+                        "faqTitle": "Kapan saya turun level?"
+                    }
+                ],
+                "tagId": "T3",
+                "tagName": "titik VIP"
+            }
+        ]
+    }
+]

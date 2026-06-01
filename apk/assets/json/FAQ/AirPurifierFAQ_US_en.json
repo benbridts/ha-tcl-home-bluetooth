@@ -1,0 +1,76 @@
+[
+  {
+    "category": "Setup",
+    "data": [
+      {
+        "question": "I\u0027m having issues starting my air purifier.",
+        "answer":"• Ensure the plug is pushed completely into the outlet. Appliances should be plugged directly into a wall outlet."
+       }
+    ]
+  },
+  {
+    "category": "Air Purifying",
+    "data": [
+      {
+        "question": "No air is coming out of the top of the unit.",
+        "answer":"• Verify the plastic bag has been removed from the filter.\n• Make sure there are no curtains, blinds, or furniture blocking the air intake."
+      },
+      {
+        "question": "My air quality has not improved after running for a long time.",
+        "answer":"• Verify the plastic bag has been removed from the filter.\n• Make sure the filter is installed correctly.\n• Lower your home’s humidity or place the unit in a less humid area.\n• Make sure there are no curtains, blinds, or furniture blocking the air intake.\n• The room may be too large. Check the product’s recommended coverage."
+       },
+      {
+        "question": "The unit has issues removing particles from the air.",
+        "answer":"• Verify the plastic bag has been removed from the filter.\n• Depending on your environment, the filter may need to be replaced earlier. Try replacing filter for better results."
+      },
+      {
+        "question": "The air coming out of the air purifier has a particular smell.",
+        "answer":"• In environments with strong smoke and other odors, the filter may need to be replaced earlier. Try replacing filter for better results."
+      },
+      {
+        "question":"The unit has issues removing particles from the air.",
+        "answer":"• Verify the plastic bag has been removed from the filter.\n• Depending on your environment, the filter may need to be replaced earlier. Try replacing the filter for better results."
+      },
+      {
+        "question":"The air coming out of the air purifier has a particular smell.",
+        "answer":"• In environments with strong smoke and other odors, the filter may need to be replaced earlier. Try replacing the filter for better results."
+      }
+    ]
+  },
+  {
+    "category": "Display",
+    "data": [
+      {
+        "question": "There is a red indicator flashing for a long time.",
+        "answer":"• The red-light indicator (flashing or solid) means you should replace the filter. Press the light key for 3 seconds to reset the filter lights."
+       }
+    ]
+  },
+  {
+    "category": "Special Features",
+    "data": [
+      {
+        "question": "I am not sure what Anion and UV-C technology is.",
+        "answer":"• Anion technology helps to settler finer particles in your air when the feature is enabled.\n• UV-C technology helps to eliminate bacteria and viruses in your air when the feature is enabled.\n• Note: These features are only available on select models."
+      },
+      {
+        "question": "How does the Breeva A2humidification work?",
+        "answer":"• Breeva A2 features a built-in evaporative humidifier that uses a tank of water that can be filled by opening the head of the unit.\n• It uses a humidifying filter that absorbs the water, which is then dispersed into the air as the air passes over the humidifying filter."
+      },
+      {
+        "question": "How often do I need to add water to the Breeva A2 for the humidifier feature?",
+        "answer": "• Depending on the use and conditions it is advisable to check every 24 hours."
+      }
+    ]
+  }
+,
+  {
+    "category": "Replacement Parts",
+    "data": [
+      {
+        "question": "I need replacements for my Air Purifier.",
+        "answer": "• To purchase replacement parts for your unit, go to TCL.com or refer to the unit’s user manual that was included in the box (also available on the product page at TCL.com) and scan theQR code using your phone. The QR code takes you directly to your product part’s page, where you can choose to purchase."
+      }
+    ]
+  }
+]

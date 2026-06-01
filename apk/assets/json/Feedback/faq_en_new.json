@@ -1,0 +1,63 @@
+[
+    {
+        "category": "Account",
+        "tagList": [
+            {
+                "faqList": [
+                    {
+                        "faqId": "1",
+                        "faqTitle": "How to delete your TCL Account?",
+                        "faqTitleId": "how_to_delete_your_tcl_account"
+                    }
+                ],
+                "tagId": "T1",
+                "tagName": "Account",
+                "tagNameId": "account"
+            }
+        ]
+    },
+    {
+        "category": "Membership",
+        "tagList": [
+            {
+                "faqList": [
+                    {
+                        "faqId": "2",
+                        "faqTitle": "What is TCL VIP Club?",
+                        "faqTitleId": "what_is_tcl_vip_club"
+                    },
+                    {
+                        "faqId": "3",
+                        "faqTitle": "How to join TCL VIP Club?",
+                        "faqTitleId": "how_to_join_tcl_vip_club"
+                    }
+                ],
+                "tagId": "T2",
+                "tagName": "TCL VIP Club",
+                "tagNameId": "th_vip_club"
+            },
+            {
+                "faqList": [
+                    {
+                        "faqId": "4",
+                        "faqTitle": "What is TCL VIP point and how can I get it?",
+                        "faqTitleId": "what_is_tcl_vip_point_and_how_can_i_get_"
+                    },
+                    {
+                        "faqId": "5",
+                        "faqTitle": "How can I upgrade to the next level?",
+                        "faqTitleId": "how_can_i_upgrade_to_the_next_level"
+                    },
+                    {
+                        "faqId": "6",
+                        "faqTitle": "When will I downgrade to the lower level?",
+                        "faqTitleId": "when_will_i_downgrade_to_the_lower_level"
+                    }
+                ],
+                "tagId": "T3",
+                "tagName": "VIP point",
+                "tagNameId": "th_vip_point"
+            }
+        ]
+    }
+]

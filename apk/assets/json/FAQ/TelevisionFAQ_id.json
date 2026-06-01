@@ -1,0 +1,79 @@
+[
+  {
+    "category": "Aksesoris",
+    "data": [
+      {
+        "question": "Tidak bisa mencari hotspot Wi-Fi",
+        "answer": "Pada keadaan dimana TV anda tidak bisa mencari hotspot Wi-Fi, mohon ikuti langkah-langkah di bawah ini untuk memeriksa dan mempersiapkan TV anda.\n1. Pertama, periksa bila perangkat lain (meliputi smartphone, computer, dll.) di sekitar anda bisa mencari hotspot nirkabel ini.\n2. Bila smartphone atau computer tidak bisa mencari hotspot nirkabel, mohon periksa router nirkabel anda. Apakah fitur nirkabelnya menyala?Apakah SSID tersembunyi?Bila fungsi nirkabel pada router nirkabel ada sudah diatur untuk menyala, tetapi anda memilih untuk menyembunyikan SSID, anda tidak ada bisa mencari nama jaringan router nirkabel tersebut, oleh karena itu, anda harus mengaur router nirkabel anda agar tidak menyembunyikan SSID, lalu matikan dan mulai ulang router nirkabel, kemudian perangkan akan bisa mencari hotspot nirkabel.\n3. Bila smartphone atau computer anda bisa mencari hotspot nirkabel, mohon periksa bila TV berada dalam cakupan sinyal Wi-Fi.Bila TV anda berada jauh dari router nirkabel, tidak ada jangkauan Wi-Fi; oleh karena itu, anda harus menyesuaikan lokasi router nirkabel atau TV anda untuk memastikan agar TV anda berada dalam rentang cakupan dari sinyal nirkabel.Mohon jangan letakkan router nirkabel dan TV terpisah dalam jarak beberapa dinding, untuk mencegah alat memengaruhi sinyal Wi-Fi.\n4. Mohon matikan dan mulai ulang router nirkabel anda.Direkomendasikan untuk mematikan router nirkabel, putuskan daya, dan tunggu selama 30 detik.Kemudian sambungkan daya dan mulai ulang untuk mencari kembali sinyal Wi-Fi.\n5. Mohon matikan dan mulai ulang TV.Direkomendasikan untuk mematikan TV, putuskan daya dan tunggu selama 30 detik.Kemudian sambungkan daya dan mulai ulang TV untuk mencari kembali sinyal Wi-Fi.\n6. Bila anda sudah mencoba semua langkah di atas, namun masalah ini tidak bisa diselesaikan, mohon telepon layanan pelanggan."
+      }
+    ]
+  },
+  {
+    "category": "Audio",
+    "data": [
+      {
+        "question": "Suara putus-putus",
+        "answer": "1. Bila sumber sinyal saat ini adalah USB, mohon pastikan bila ada masalah serupa saat sedang memainkan berkas multimedia yang sama pada PC. Bila ya, masalah tersebut disebabkan oleh berkas multimedia tersebut; sebaliknya, mohon hubungi tempat layanan purnajual TCL daerah anda secara langsung, kami akan membantu anda memecahkan masalah tersebut.\n2. Bila sumber sinyal saat ini adalah TV, mohon pastikan bila ada masalah serupa saat sedang memainkan program lainnya.Bila tidak ada masalah, masalah ini disebabkan oleh program tersebut."
+      },
+      {
+        "question": "Distorsi suara yang serius",
+        "answer": "1. Bila sumber sinyal saat ini adalah USB, mohon pastikan bila ada masalah serupa saat sedang memainkan berkas multimedia yang sama pada PC. Bila ya, masalah tersebut disebabkan oleh berkas multimedia tersebut; sebaliknya, mohon hubungi tempat layanan purnajual TCL daerah anda secara langsung, kami akan membantu anda memecahkan masalah tersebut.\n2. Bila sumber sinyal saat ini adalah TV, mohon pastikan bila ada masalah serupa saat sedang memainkan program lainnya.Bila tidak ada masalah, masalah ini disebabkan oleh program tersebut."
+      }
+    ]
+  },
+  {
+    "category": "tampilan video",
+    "data": [
+      {
+        "question": "Warna gambar tidak normal, dengan luas watermark yang besar",
+        "answer": "1. Bila sumber sinyal saat ini adalah USB, mohon pastikan bila ada masalah serupa saat sedang memainkan berkas multimedia yang sama pada PC. Bila ya, masalah tersebut disebabkan oleh berkas multimedia tersebut; sebaliknya, mohon hubungi tempat layanan purnajual TCL daerah anda secara langsung, kami akan membantu anda memecahkan masalah tersebut.\n2. Bila sumber sinyal saat ini adalah TV, mohon pastikan bila ada masalah serupa saat sedang memainkan program lainnya.Bila tidak ada masalah, masalah ini disebabkan oleh program tersebut."
+      }
+    ]
+  },
+  {
+    "category": "masalah jaringan",
+    "data": [
+      {
+        "question": "Layar hitam atau crash setelah perbaruan USB",
+        "answer": "Masalah ini biasanya disebabkan oleh penggunaan paket pembaruan piranti lunak yang salah.\n1. Dapatkan paket pembaruan paksa terbaru untuk memperbarui TV anda.\n2. Bila masalah ini tidak bisa diselesaikan, mohon berikan umpan balik pada Pusat Layanan TCL, kami akan membantu anda memecahkan masalah ini."
+      },
+      {
+        "question": "Pembaruan jaringan tidak selesai",
+        "answer": "Pembaruan jaringan yang tidak selesai bisa disebabkan karena mati listrik atau terputusnya jaringan selama proses pembaruan.\n1. Mohon matikan daya selama 30 detik, lalu reboot dan periksa bila TV bekerja dengan baik.\n2. Bila TV bisa menyala dengan normal, mohon coba lagi pembaruan jaringan dengan jaringan yang baik.Jangan matikan daya selama proses pembaruan.\n3. Bila masalah ini masih tidak bisa diselesaikan, mohon berikan umpan balik pada tempat layanan purnajual TCL daerah anda, dan kami akan membantu anda memecahkan masalah tersebut."
+      },
+      {
+        "question": "Pembaruan jaringan gagal",
+        "answer": "1. Mohon periksa bila koneksi jaringan TV berada dalam keadaan yang normal.\n2. Coba jalankan TV secara manual untuk pembaruan jaringan kembali.\n3. Bila pelaksanaan pembaruan jaringan gagal lebih dari tiga kali, direkomendasikan untuk mencoba kembali pembaruan jaringan lain kali.Bila masalah ini masih tidak bisa diselesaikan, mohon berikan umpan balik pada tempat layanan purnajual TCL daerah anda, dan kami akan membantu anda memecahkan masalah tersebut."
+      },
+      {
+        "question": "Tidak ada perintah pembaruan jaringan",
+        "answer": "1. Mohon periksa bila koneksi jaringan TV normal.\n2. Coba jalankan TV secara manual untuk pembaruan jaringan kembali.\n3. Bila pelaksanaan pembaruan jaringan dilakukan lebih dari tiga kali dan masih tidak ada perintah pembaruan jaringan, direkomendasikan untuk mencoba kembali pembaruan jaringan lain kali.\n4. Bila masalah ini tidak bisa diselesaikan setelah mengikuti tiga langkah di atas, mohon berikan umpan balik pada Pusat Layanan purnajual TCL daerah anda, dan kami akan membantu anda memecahkan masalah ini."
+      },
+      {
+        "question": "TV tidak bisa dinyalakan setelah pembaruan jaringan",
+        "answer": "1. Mohon matikan daya selama 30 detik, lalu reboot dan periksa bila TV bekerja dengan baik.\n2. Bila TV masih tidak bisa dinyalakan, mohon berikan umpan balik pada tempat layanan purnajual TCL daerah anda, dan kami akan membantu anda memecahkan masalah ini."
+      },
+      {
+        "question": "Daya siklus TV menyala dan mati setelah perbaruan USB",
+        "answer": "Masalah ini biasanya disebabkan oleh penggunaan paket pembaruan piranti lunak yang salah.\n1. Dapatkan paket pembaruan paksa terbaru untuk memperbarui TV anda.\n2. Bila masalah ini tidak bisa diselesaikan, mohon berikan umpan balik pada Pusat Layanan TCL, kami akan membantu anda memecahkan masalah ini."
+      },
+      {
+        "question": "Tidak bisa mengidentifikasi berkas pembaruan dengan piranti lunak pembaruan USB",
+        "answer": "1. Mohon coba USB disk lain untuk memeriksa bila TV bisa mengidentifikasi paket pembaruan dengan benar.Bila masalah masih ada, mohon ikuti langkah 2 untuk memeriksa masalah tersebut.\n2. Mohon konfirmasi bila paket pembaruan pada USB disk sudah tepat, termasuk jenis paket pembaruan (paket pembaruan pengguna / paket pembaruan paksa) / metode penamaan paket pembaruan."
+      }
+    ]
+  },
+  {
+    "category": "kekuasaan",
+    "data": [
+      {
+        "question": "TV menampilkan layar hitam dan cahaya LED standby mati",
+        "answer": "(1) Periksa bila sambungan saluran listrik antara TV dan stop kontak berada dalam kondisi yang baik;\n(2) Bila terkonfrimasi bahwa TV didayai dengan baik oleh catu daya AC dan sambungan saluran listrik antara TV dan stop kontak berada dalam kondisi yang baik, mohon hubungi tempat layanan purnajual TCL daerah anda untuk perbaikan."
+      },
+      {
+        "question": "TV menampilkan layar hitam dan cahaya LED standby menyala.",
+        "answer": "Kasus 1 : Catu daya AC untuk TV bekerja dengan baik, TV menampilkan layar hitam dan indikator standby menyala.\nPeriksa baterai remot kontrol untuk memastikan bahwa remot kontrol bekerja dengan baik saat anda menekan tombol “Power” pada remot kontrol.\nBila TV masih tidak bisa hidup setelah menekan tombol “Power” pada remot kontrol, tekan tombol “Power” pada TV, untuk memeriksa bila TV bekerja dengan normal.\nBila TV masih tidak bisa hidup setelah mengikuti langkah-langkah di atas, mohon hubungi tempat layanan purnajual TCL daerah anda untuk perbaikan."
+      }
+    ]
+  }
+]

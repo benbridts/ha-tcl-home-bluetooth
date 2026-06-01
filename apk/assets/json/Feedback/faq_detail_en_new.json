@@ -1,0 +1,80 @@
+[
+    {
+        "category": "Account",
+        "content": "Deletion of TCL Account is an unrecoverable operation. If you confirm to delete your TCL Account, please visit the following URL: http://www.tcl.com/deleteaccount",
+        "contentId": "deletion_of_tcl_account_is_an_unrecovera",
+        "htmlContentStart": "<p id=\"textHolder\"></p><p>",
+        "htmlContentEnd": "</p>",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Deletion of TCL Account is an unrecoverable operation. If you confirm to delete your TCL Account, please visit the following URL: http://www.tcl.com/deleteaccount</p>",
+        "id": "1",
+        "tagName": "Account",
+        "tagNameId": "account",
+        "title": "How to delete your TCL Account?",
+        "titleId": "how_to_delete_your_tcl_account"
+    },
+    {
+        "category": "Membership",
+        "content": "At TCL, we always provide high-quality products and services to customers who love life and pursue IoT experience. Providing intelligent products and great services has always been the direction of our efforts. For the goal, we establish TCL VIP Club. By joining TCL VIP Club, you can enjoy distinguished membership status, get membership gifts, experience exclusive privileges and intelligent services, participate in member activities, win TCL prizes, and get the latest brand trends and news.",
+        "contentId": "at_tcl_we_always_provide_highquality_pro",
+        "htmlContentStart": "<p id=\"textHolder\"></p><p>",
+        "htmlContentEnd": "</p>",
+        "htmlContent": "<p id=\"textHolder\"></p><p>At TCL, we always provide high-quality products and services to customers who love life and pursue IoT experience. Providing intelligent products and great services has always been the direction of our efforts. For the goal, we establish TCL VIP Club. By joining TCL VIP Club, you can enjoy distinguished membership status, get membership gifts, experience exclusive privileges and intelligent services, participate in member activities, win TCL prizes, and get the latest brand trends and news.</p>",
+        "id": "2",
+        "tagName": "TCL VIP Club",
+        "tagNameId": "th_vip_club",
+        "title": "What is TCL VIP Club?",
+        "titleId": "what_is_tcl_vip_club"
+    },
+    {
+        "category": "Membership",
+        "content": "Once you register TCL Account on TCL official website, TCL Home APP, TCL TV or other IoT devices, you will join TCL VIP Club automatically. You will become the silver member when you sign in at the first time and you can check your privileges on TCL VIP Club. Currently, we set 2 levels (Silver and Gold) in TCL VIP Club with different privileges. More levels and privileges are on the way.",
+        "contentId": "once_you_register_tcl_account_on_tcl_off",
+        "htmlContentStart": "<p id=\"textHolder\"></p><p>",
+        "htmlContentEnd": "</p>",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Once you register TCL Account on TCL official website, TCL Home APP, TCL TV or other IoT devices, you will join TCL VIP Club automatically. You will become the silver member when you sign in at the first time and you can check your privileges on TCL VIP Club. Currently, we set 2 levels (Silver and Gold) in TCL VIP Club with different privileges. More levels and privileges are on the way.</p>",
+        "id": "3",
+        "tagName": "TCL VIP Club",
+        "tagNameId": "th_vip_club",
+        "title": "How to join TCL VIP Club?",
+        "titleId": "how_to_join_tcl_vip_club"
+    },
+    {
+        "category": "Membership",
+        "content": "TCL VIP points refer to the growth value obtained by TCL members through registration, check-in, filling in information, purchasing and registering products, referral and participating in member activities. The points record the growth in the loyalty system of TCL members. The more points you get, the higher membership level and the greater benefits you can enjoy.",
+        "contentId": "tcl_vip_points_refer_to_the_growth_value",
+        "htmlContentStart": "<p id=\"textHolder\"></p><p>",
+        "htmlContentEnd": "</p>",
+        "htmlContent": "<p id=\"textHolder\"></p><p>TCL VIP points refer to the growth value obtained by TCL members through registration, check-in, filling in information, purchasing and registering products, referral and participating in member activities. The points record the growth in the loyalty system of TCL members. The more points you get, the higher membership level and the greater benefits you can enjoy.</p>",
+        "id": "4",
+        "tagName": "TCL VIP Club",
+        "tagNameId": "th_vip_club",
+        "title": "What is TCL VIP point and how can I get it?",
+        "titleId": "what_is_tcl_vip_point_and_how_can_i_get_"
+    },
+    {
+        "category": "Membership",
+        "content": "Once your points reach the next level benchmark, you will be upgraded and granted with more privileges automatically.",
+        "contentId": "once_your_points_reach_the_next_level_be",
+        "htmlContentStart": "<p id=\"textHolder\"></p><p>",
+        "htmlContentEnd": "</p>",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Once your points reach the next level benchmark, you will be upgraded and granted with more privileges automatically.</p>",
+        "id": "5",
+        "tagName": "VIP point",
+        "tagNameId": "th_vip_point",
+        "title": "How can I upgrade to the next level?",
+        "titleId": "how_can_i_upgrade_to_the_next_level"
+    },
+    {
+        "category": "Membership",
+        "content": "The membership level will not downgrade for silver and gold members. But in the future, your membership may be downgraded if your points cannot reach the minimum of current level. TCL reserves the right of final interpretation.",
+        "contentId": "the_membership_level_will_not_downgrade_",
+        "htmlContentStart": "<p id=\"textHolder\"></p><p>",
+        "htmlContentEnd": "</p>",
+        "htmlContent": "<p id=\"textHolder\"></p><p>The membership level will not downgrade for silver and gold members. But in the future, your membership may be downgraded if your points cannot reach the minimum of current level. TCL reserves the right of final interpretation.</p>",
+        "id": "6",
+        "tagName": "VIP point",
+        "tagNameId": "th_vip_point",
+        "title": "When will I downgrade to the lower level?",
+        "titleId": "when_will_i_downgrade_to_the_lower_level"
+    }
+]

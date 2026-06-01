@@ -1,0 +1,1993 @@
+{
+  "countries": [
+    {
+      "abbr": "AR",
+      "cnName": "阿根廷",
+      "countryCode": "54",
+      "enName": "Argentina",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "AU",
+      "cnName": "澳大利亚",
+      "countryCode": "61",
+      "enName": "Australia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "CL",
+      "cnName": "智利",
+      "countryCode": "56",
+      "enName": "Czech Republic",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "FR",
+      "cnName": "法国",
+      "countryCode": "33",
+      "enName": "France",
+      "isOnline": "1",
+      "language": [
+        "fr",
+        "en"
+      ]
+    },
+    {
+      "abbr": "DE",
+      "cnName": "德国",
+      "countryCode": "49",
+      "enName": "Germany",
+      "isOnline": "1",
+      "language": [
+        "de",
+        "en"
+      ]
+    },
+    {
+      "abbr": "IN",
+      "cnName": "印度",
+      "countryCode": "91",
+      "enName": "India",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "KW",
+      "cnName": "科威特",
+      "countryCode": "965",
+      "enName": "Kuwait",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "MA",
+      "cnName": "摩洛哥",
+      "countryCode": "212",
+      "enName": "Morocco",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "abbr": "MM",
+      "cnName": "缅甸",
+      "countryCode": "95",
+      "enName": "Myanmar",
+      "isOnline": "1",
+      "language": [
+        "my",
+        "en"
+      ]
+    },
+    {
+      "abbr": "NG",
+      "cnName": "尼日利亚",
+      "countryCode": "234",
+      "enName": "Nigeria",
+      "isOnline": "1",
+      "language": [
+        "fr",
+        "en"
+      ]
+    },
+    {
+      "abbr": "PH",
+      "cnName": "菲律宾",
+      "countryCode": "63",
+      "enName": "Philippines",
+      "isOnline": "1",
+      "language": [
+        "fil",
+        "en"
+      ]
+    },
+    {
+      "abbr": "SG",
+      "cnName": "新加坡",
+      "countryCode": "65",
+      "enName": "Singapore",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "TH",
+      "cnName": "泰国",
+      "countryCode": "66",
+      "enName": "Thailand",
+      "isOnline": "1",
+      "language": [
+        "th",
+        "en"
+      ]
+    },
+    {
+      "abbr": "AE",
+      "cnName": "阿联酋",
+      "countryCode": "971",
+      "enName": "United Arab Emirates",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "GB",
+      "cnName": "英国",
+      "countryCode": "44",
+      "enName": "United Kingdom",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MX",
+      "cnName": "墨西哥",
+      "countryCode": "52",
+      "enName": "Mexico",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "GR",
+      "cnName": "希腊",
+      "countryCode": "30",
+      "enName": "Greece",
+      "isOnline": "1",
+      "language": [
+        "el",
+        "en"
+      ]
+    },
+    {
+      "abbr": "EE",
+      "cnName": "爱沙尼亚",
+      "countryCode": "372",
+      "enName": "Estonia",
+      "isOnline": "1",
+      "language": [
+        "et",
+        "en"
+      ]
+    },
+    {
+      "abbr": "BR",
+      "cnName": "巴西",
+      "countryCode": "55",
+      "enName": "Brazil",
+      "isOnline": "1",
+      "language": [
+        "pt",
+        "en"
+      ]
+    },
+    {
+      "abbr": "FI",
+      "cnName": "芬兰",
+      "countryCode": "358",
+      "enName": "Finland",
+      "isOnline": "1",
+      "language": [
+        "fi",
+        "en"
+      ]
+    },
+    {
+      "abbr": "SE",
+      "cnName": "瑞典",
+      "countryCode": "46",
+      "enName": "Sweden",
+      "isOnline": "1",
+      "language": [
+        "sv",
+        "en"
+      ]
+    },
+    {
+      "abbr": "NO",
+      "cnName": "挪威",
+      "countryCode": "47",
+      "enName": "Norway",
+      "isOnline": "1",
+      "language": [
+        "nb",
+        "en"
+      ]
+    },
+    {
+      "abbr": "DK",
+      "cnName": "丹麦",
+      "countryCode": "45",
+      "enName": "Denmark",
+      "isOnline": "1",
+      "language": [
+        "da",
+        "en"
+      ]
+    },
+    {
+      "abbr": "VN",
+      "cnName": "越南",
+      "countryCode": "84",
+      "enName": "Vietnam",
+      "isOnline": "1",
+      "language": [
+        "vi",
+        "en"
+      ]
+    },
+    {
+      "abbr": "IT",
+      "cnName": "意大利",
+      "countryCode": "39",
+      "enName": "Italy",
+      "isOnline": "1",
+      "language": [
+        "it",
+        "en"
+      ]
+    },
+    {
+      "abbr": "UA",
+      "cnName": "乌克兰",
+      "countryCode": "380",
+      "enName": "Ukraine",
+      "isOnline": "1",
+      "language": [
+        "uk",
+        "en"
+      ]
+    },
+    {
+      "abbr": "ES",
+      "cnName": "西班牙",
+      "countryCode": "34",
+      "enName": "Spain",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "EC",
+      "cnName": "厄瓜多尔",
+      "countryCode": "593",
+      "enName": "Ecuador",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "PT",
+      "cnName": "葡萄牙",
+      "countryCode": "351",
+      "enName": "Portugal",
+      "isOnline": "1",
+      "language": [
+        "pt",
+        "en"
+      ]
+    },
+    {
+      "abbr": "PL",
+      "cnName": "波兰",
+      "countryCode": "48",
+      "enName": "Poland",
+      "language": [
+        "pl",
+        "en"
+      ]
+    },
+    {
+      "abbr": "CZ",
+      "cnName": "捷克",
+      "countryCode": "420",
+      "enName": "Czech Republic",
+      "isOnline": "1",
+      "language": [
+        "cs",
+        "en"
+      ]
+    },
+    {
+      "abbr": "HU",
+      "cnName": "匈牙利",
+      "countryCode": "36",
+      "enName": "Hungary",
+      "isOnline": "1",
+      "language": [
+        "hu",
+        "en"
+      ]
+    },
+    {
+      "abbr": "PK",
+      "cnName": "巴基斯坦",
+      "countryCode": "92",
+      "enName": "Pakistan",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "ID",
+      "cnName": "印尼",
+      "countryCode": "62",
+      "enName": "Indonesia",
+      "isOnline": "1",
+      "language": [
+        "id",
+        "en"
+      ]
+    },
+    {
+      "abbr": "NZ",
+      "cnName": "新西兰",
+      "countryCode": "64",
+      "enName": "New Zealand",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "SK",
+      "cnName": "斯洛伐克",
+      "countryCode": "421",
+      "enName": "Slovakia",
+      "isOnline": "1",
+      "language": [
+        "sk",
+        "en"
+      ]
+    },
+    {
+      "abbr": "SA",
+      "cnName": "沙特",
+      "countryCode": "966",
+      "enName": "Saudi Arabia",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "BH",
+      "cnName": "巴林",
+      "countryCode": "973",
+      "enName": "Bahrain",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "TN",
+      "cnName": "突尼斯",
+      "countryCode": "216",
+      "enName": "Tunisia",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "abbr": "DZ",
+      "cnName": "阿尔及利亚",
+      "countryCode": "213",
+      "enName": "Algeria",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "abbr": "KM",
+      "cnName": "科摩罗",
+      "countryCode": "269",
+      "enName": "Comoros",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "DJ",
+      "cnName": "吉布提",
+      "countryCode": "253",
+      "enName": "Djibouti",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "EG",
+      "cnName": "埃及",
+      "countryCode": "20",
+      "enName": "Egypt",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "IQ",
+      "cnName": "伊拉克",
+      "countryCode": "964",
+      "enName": "Iraq",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "JO",
+      "cnName": "约旦",
+      "countryCode": "962",
+      "enName": "Jordan",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "LB",
+      "cnName": "黎巴嫩",
+      "countryCode": "961",
+      "enName": "Lebanon",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "abbr": "LY",
+      "cnName": "利比亚",
+      "countryCode": "218",
+      "enName": "Libya",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "MR",
+      "cnName": "毛里塔尼亚",
+      "countryCode": "222",
+      "enName": "Mauritania",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "OM",
+      "cnName": "阿曼",
+      "countryCode": "968",
+      "enName": "Oman",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "PS",
+      "cnName": "巴勒斯坦",
+      "countryCode": "970",
+      "enName": "Palestine",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "he",
+        "en"
+      ]
+    },
+    {
+      "abbr": "QA",
+      "cnName": "卡塔尔",
+      "countryCode": "974",
+      "enName": "Qatar",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "SO",
+      "cnName": "索马里",
+      "countryCode": "252",
+      "enName": "Somalia",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "SD",
+      "cnName": "苏丹",
+      "countryCode": "249",
+      "enName": "Sudan",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "SY",
+      "cnName": "叙利亚",
+      "countryCode": "963",
+      "enName": "Syria",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "YE",
+      "cnName": "也门",
+      "countryCode": "967",
+      "enName": "Yemen",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "IS",
+      "cnName": "冰岛",
+      "countryCode": "354",
+      "enName": "Iceland",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "GH",
+      "cnName": "加纳",
+      "countryCode": "233",
+      "enName": "Ghana",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "KE",
+      "cnName": "肯尼亚",
+      "countryCode": "254",
+      "enName": "Kenya",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MU",
+      "cnName": "毛里求斯",
+      "countryCode": "230",
+      "enName": "Mauritius",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "ZA",
+      "cnName": "南非",
+      "countryCode": "27",
+      "enName": "South Africa",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "NL",
+      "cnName": "荷兰",
+      "countryCode": "31",
+      "enName": "Netherlands",
+      "isOnline": "1",
+      "language": [
+        "nl",
+        "en"
+      ]
+    },
+    {
+      "abbr": "AT",
+      "cnName": "奥地利",
+      "countryCode": "43",
+      "enName": "Austria",
+      "isOnline": "1",
+      "language": [
+        "de",
+        "en"
+      ]
+    },
+    {
+      "abbr": "BE",
+      "cnName": "比利时",
+      "countryCode": "32",
+      "enName": "Belgium",
+      "isOnline": "1",
+      "language": [
+        "nl",
+        "fr",
+        "de",
+        "en"
+      ]
+    },
+    {
+      "abbr": "GA",
+      "cnName": "加蓬",
+      "countryCode": "241",
+      "enName": "Gabon",
+      "isOnline": "1",
+      "language": [
+        "fr",
+        "en"
+      ]
+    },
+    {
+      "abbr": "CI",
+      "cnName": "科特迪瓦",
+      "countryCode": "225",
+      "enName": "Cote d'Ivoire",
+      "isOnline": "1",
+      "language": [
+        "fr",
+        "en"
+      ]
+    },
+    {
+      "abbr": "LR",
+      "cnName": "利比里亚",
+      "countryCode": "231",
+      "enName": "Liberia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "LU",
+      "cnName": "卢森堡",
+      "countryCode": "352",
+      "enName": "Luxembourg",
+      "isOnline": "1",
+      "language": [
+        "fr",
+        "de",
+        "en"
+      ]
+    },
+    {
+      "abbr": "CH",
+      "cnName": "瑞士",
+      "countryCode": "41",
+      "enName": "Switzerland",
+      "isOnline": "1",
+      "language": [
+        "de",
+        "fr",
+        "it",
+        "en"
+      ]
+    },
+    {
+      "abbr": "IE",
+      "cnName": "爱尔兰",
+      "countryCode": "353",
+      "enName": "Ireland",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "RO",
+      "cnName": "罗马尼亚",
+      "countryCode": "40",
+      "enName": "Romania",
+      "isOnline": "1",
+      "language": [
+        "ro",
+        "en"
+      ]
+    },
+    {
+      "abbr": "LV",
+      "cnName": "拉脱维亚",
+      "countryCode": "371",
+      "enName": "Latvia",
+      "isOnline": "1",
+      "language": [
+        "lv",
+        "en"
+      ]
+    },
+    {
+      "abbr": "RS",
+      "cnName": "塞尔维亚",
+      "countryCode": "381",
+      "enName": "Republic of Serbia",
+      "isOnline": "1",
+      "language": [
+        "sr",
+        "en"
+      ]
+    },
+    {
+      "abbr": "HK",
+      "cnName": "中国香港",
+      "countryCode": "852",
+      "enName": "Hong Kong, China",
+      "isOnline": "1",
+      "language": [
+        "zh-HK",
+        "en"
+      ]
+    },
+    {
+      "abbr": "IL",
+      "cnName": "以色列",
+      "countryCode": "972",
+      "enName": "Israel",
+      "isOnline": "1",
+      "language": [
+        "he",
+        "en"
+      ]
+    },
+    {
+      "abbr": "BO",
+      "cnName": "玻利维亚",
+      "countryCode": "591",
+      "enName": "Bolivia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "DO",
+      "cnName": "多米尼加",
+      "countryCode": "1890",
+      "enName": "Dominican Republish",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "PR",
+      "cnName": "波多黎各",
+      "countryCode": "1787",
+      "enName": "Puerto Rico",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "PA",
+      "cnName": "巴拿马",
+      "countryCode": "507",
+      "enName": "Panama",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "CW",
+      "cnName": "库拉索",
+      "countryCode": "599-9",
+      "enName": "Curacao",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "TR",
+      "cnName": "土耳其",
+      "countryCode": "90",
+      "enName": "Turkey",
+      "isOnline": "1",
+      "language": [
+        "tr",
+        "en"
+      ]
+    },
+    {
+      "abbr": "CY",
+      "cnName": "塞浦路斯",
+      "countryCode": "357",
+      "enName": "Cyprus",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "CO",
+      "cnName": "哥伦比亚",
+      "countryCode": "57",
+      "enName": "Colombia",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "HN",
+      "cnName": "洪都拉斯",
+      "countryCode": "504",
+      "enName": "Honduras",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "GT",
+      "cnName": "危地马拉",
+      "countryCode": "502",
+      "enName": "Guatemala",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "SV",
+      "cnName": "萨尔瓦多",
+      "countryCode": "503",
+      "enName": "Salvador",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "NP",
+      "cnName": "尼泊尔",
+      "countryCode": "977",
+      "enName": "Nepal",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "US",
+      "cnName": "美国",
+      "countryCode": "1",
+      "enName": "United States",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "CA",
+      "cnName": "加拿大",
+      "countryCode": "001",
+      "enName": "Canada",
+      "isOnline": "1",
+      "language": [
+        "fr",
+        "en"
+      ]
+    },
+    {
+      "abbr": "UY",
+      "cnName": "乌拉圭",
+      "countryCode": "598",
+      "enName": "Uruguay",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "HR",
+      "cnName": "克罗地亚",
+      "countryCode": "385",
+      "enName": "Croatia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "AL",
+      "cnName": "阿尔巴尼亚",
+      "countryCode": "355",
+      "enName": "Albania",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "BG",
+      "cnName": "保加利亚",
+      "countryCode": "359",
+      "enName": "Bulgaria",
+      "isOnline": "1",
+      "language": [
+        "en",
+        "bg"
+      ]
+    },
+    {
+      "abbr": "XK",
+      "cnName": "科索沃",
+      "countryCode": "383",
+      "enName": "Kosovo",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "LT",
+      "cnName": "立陶宛",
+      "countryCode": "370",
+      "enName": "Lithuania",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MK",
+      "cnName": "北马其顿",
+      "countryCode": "389",
+      "enName": "North Macedonia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MD",
+      "cnName": "摩尔多瓦",
+      "countryCode": "373",
+      "enName": "Republica Moldova",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "BA",
+      "cnName": "波斯尼亚和黑塞哥维那",
+      "countryCode": "55",
+      "enName": "Bosnia and Herzegovina",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "SI",
+      "cnName": "斯洛文尼亚",
+      "countryCode": "386",
+      "enName": "Slovenia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "ME",
+      "cnName": "黑山",
+      "countryCode": "382",
+      "enName": "Montenegro",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "LI",
+      "cnName": "列支敦士登",
+      "countryCode": "423",
+      "enName": "Liechtenst",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MC",
+      "cnName": "摩纳哥",
+      "countryCode": "377",
+      "enName": "Monaco",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "BY",
+      "cnName": "白俄罗斯",
+      "countryCode": "375",
+      "enName": "Belarus",
+      "isOnline": "1",
+      "language": [
+        "en",
+        "ru"
+      ]
+    },
+    {
+      "abbr": "CR",
+      "cnName": "哥斯达黎加",
+      "countryCode": "506",
+      "enName": "Costa Rica",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "NI",
+      "cnName": "尼加拉瓜",
+      "countryCode": "505",
+      "enName": "Nicaragua",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "TW",
+      "cnName": "中国台湾",
+      "countryCode": "886",
+      "enName": "Taiwan, China",
+      "isOnline": "1",
+      "language": [
+        "zh-TW",
+        "en"
+      ]
+    },
+    {
+      "abbr": "HT",
+      "cnName": "海地",
+      "countryCode": "509",
+      "enName": "Haiti",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "AG",
+      "cnName": "安提瓜和巴布达",
+      "countryCode": "1268",
+      "enName": "Antigua and Barbuda",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "KN",
+      "cnName": "圣基茨和尼维斯",
+      "countryCode": "1869",
+      "enName": "Saint Kitts and Nevis",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "LC",
+      "cnName": "圣卢西亚",
+      "countryCode": "1758",
+      "enName": "Saint Lucia",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "VC",
+      "cnName": "圣文森特和格林纳丁斯",
+      "countryCode": "1784",
+      "enName": "Saint Vincent and the Grenadines",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "TT",
+      "cnName": "特立尼达和多巴哥",
+      "countryCode": "1809",
+      "enName": "Trinidad and Tobago",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "AW",
+      "cnName": "阿鲁巴",
+      "countryCode": "297",
+      "enName": "Aruba",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "BB",
+      "cnName": "巴巴多斯",
+      "countryCode": "1246",
+      "enName": "Barbados",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "GY",
+      "cnName": "圭亚那",
+      "countryCode": "592",
+      "enName": "Guyana",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "GD",
+      "cnName": "格林纳达",
+      "countryCode": "1809",
+      "enName": "Grenada",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "JM",
+      "cnName": "牙买加",
+      "countryCode": "1876",
+      "enName": "Jamaica",
+      "isOnline": "1",
+      "language": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "abbr": "RU",
+      "cnName": "俄罗斯",
+      "countryCode": "7",
+      "enName": "Russia",
+      "isOnline": "1",
+      "language": [
+        "ru",
+        "en"
+      ]
+    },
+    {
+      "abbr": "MY",
+      "cnName": "马来西亚",
+      "countryCode": "60",
+      "enName": "Malaysia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "JP",
+      "cnName": "日本",
+      "countryCode": "81",
+      "enName": "Japan",
+      "isOnline": "1",
+      "language": [
+        "en",
+        "ja"
+      ]
+    },
+    {
+      "abbr": "SR",
+      "cnName": "苏里南共和国",
+      "countryCode": "597",
+      "enName": "The Republic of Suriname",
+      "isOnline": "1",
+      "language": [
+        "nl",
+        "en"
+      ]
+    },
+    {
+      "abbr": "LK",
+      "cnName": "斯里兰卡",
+      "countryCode": "94",
+      "enName": "Sri Lanka",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "GE",
+      "cnName": "格鲁吉亚",
+      "countryCode": "995",
+      "enName": "Georgia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "AZ",
+      "cnName": "阿塞拜疆",
+      "countryCode": "994",
+      "enName": "Azerbaijan",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "KR",
+      "cnName": "韩国",
+      "countryCode": "82",
+      "enName": "Korea (Republic of)",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "PY",
+      "cnName": "巴拉圭",
+      "countryCode": "595",
+      "enName": "Paraguay",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "AF",
+      "cnName": "阿富汗",
+      "countryCode": "93",
+      "enName": "Afghanistan",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "AO",
+      "cnName": "安哥拉",
+      "countryCode": "244",
+      "enName": "Angola",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "BJ",
+      "cnName": "贝宁",
+      "countryCode": "229",
+      "enName": "Benin",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "BW",
+      "cnName": "博茨瓦纳",
+      "countryCode": "267",
+      "enName": "Botswana",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "BF",
+      "cnName": "布基纳法索",
+      "countryCode": "226",
+      "enName": "Burkina Faso",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "CV",
+      "cnName": "佛得角",
+      "countryCode": "238",
+      "enName": "Cabo Verde",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "GM",
+      "cnName": "冈比亚",
+      "countryCode": "220",
+      "enName": "Gambia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "CG",
+      "cnName": "刚果（布）",
+      "countryCode": "242",
+      "enName": "Congo",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "CD",
+      "cnName": "刚果（金）",
+      "countryCode": "243",
+      "enName": "Congo (Democratic Republic of the)",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "GW",
+      "cnName": "几内亚比绍",
+      "countryCode": "245",
+      "enName": "Guinea-Bissau",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "ZW",
+      "cnName": "津巴布韦",
+      "countryCode": "263",
+      "enName": "Zimbabwe",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "CM",
+      "cnName": "喀麦隆",
+      "countryCode": "237",
+      "enName": "Cameroon",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "RW",
+      "cnName": "卢旺达",
+      "countryCode": "250",
+      "enName": "Rwanda",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MG",
+      "cnName": "马达加斯加",
+      "countryCode": "261",
+      "enName": "Madagascar",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MW",
+      "cnName": "马拉维",
+      "countryCode": "265",
+      "enName": "Malawi",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "ML",
+      "cnName": "马里",
+      "countryCode": "223",
+      "enName": "Mali",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MZ",
+      "cnName": "莫桑比克",
+      "countryCode": "258",
+      "enName": "Mozambique",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "NA",
+      "cnName": "纳米比亚",
+      "countryCode": "264",
+      "enName": "Namibia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "NE",
+      "cnName": "尼日尔",
+      "countryCode": "977",
+      "enName": "Niger",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "SL",
+      "cnName": "塞拉利昂",
+      "countryCode": "232",
+      "enName": "Sierra Leone",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "SN",
+      "cnName": "塞内加尔",
+      "countryCode": "221",
+      "enName": "Senegal",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "SC",
+      "cnName": "塞舌尔",
+      "countryCode": "248",
+      "enName": "Seychelles",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "ST",
+      "cnName": "圣多美和普林西比",
+      "countryCode": "239",
+      "enName": "Sao Tome and Principe",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "SZ",
+      "cnName": "斯威士兰",
+      "countryCode": "268",
+      "enName": "Eswatini",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "TZ",
+      "cnName": "坦桑尼亚",
+      "countryCode": "255",
+      "enName": "Tanzania, United Republic of",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "UG",
+      "cnName": "乌干达",
+      "countryCode": "256",
+      "enName": "Uganda",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "ZM",
+      "cnName": "赞比亚",
+      "countryCode": "260",
+      "enName": "Zambia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "TD",
+      "cnName": "乍得",
+      "countryCode": "235",
+      "enName": "Chad",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "AI",
+      "cnName": "安圭拉",
+      "countryCode": "1264",
+      "enName": "Anguilla",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "BS",
+      "cnName": "巴哈马",
+      "countryCode": "1242",
+      "enName": "Bahamas",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "BM",
+      "cnName": "百慕大",
+      "countryCode": "1441",
+      "enName": "Bermuda",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "PE",
+      "cnName": "秘鲁",
+      "countryCode": "51",
+      "enName": "Peru",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "BZ",
+      "cnName": "伯利兹",
+      "countryCode": "501",
+      "enName": "Belize",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "DM",
+      "cnName": "多米尼克",
+      "countryCode": "1767",
+      "enName": "Dominica",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "KY",
+      "cnName": "开曼群岛",
+      "countryCode": "1345",
+      "enName": "Cayman Islands",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MS",
+      "cnName": "蒙特塞拉特",
+      "countryCode": "1664",
+      "enName": "Montserrat",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "TC",
+      "cnName": "特克斯和凯科斯群岛",
+      "countryCode": "1-649",
+      "enName": "Turks and Caicos Islands",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "VE",
+      "cnName": "委内瑞拉",
+      "countryCode": "58",
+      "enName": "Venezuela (Bolivarian Republic of)",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "VG",
+      "cnName": "英属维尔京群岛",
+      "countryCode": "1284",
+      "enName": "Virgin Islands (British)",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MO",
+      "cnName": "中国澳门",
+      "countryCode": "853",
+      "enName": "Macao, China",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "BT",
+      "cnName": "不丹",
+      "countryCode": "975",
+      "enName": "Bhutan",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "PG",
+      "cnName": "巴布亚新几内亚",
+      "countryCode": "675",
+      "enName": "Papua New Guinea",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "FJ",
+      "cnName": "斐济",
+      "countryCode": "679",
+      "enName": "Fiji",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "KZ",
+      "cnName": "哈萨克斯坦",
+      "countryCode": "327",
+      "enName": "Kazakhstan",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "KG",
+      "cnName": "吉尔吉斯斯坦",
+      "countryCode": "331",
+      "enName": "Kyrgyzstan",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "KH",
+      "cnName": "柬埔寨",
+      "countryCode": "855",
+      "enName": "Cambodia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "LA",
+      "cnName": "老挝",
+      "countryCode": "856",
+      "enName": "Lao People's Democratic Republic",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MV",
+      "cnName": "马尔代夫",
+      "countryCode": "960",
+      "enName": "Maldives",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MN",
+      "cnName": "蒙古国",
+      "countryCode": "976",
+      "enName": "Mongolia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "FM",
+      "cnName": "密克罗尼西亚联邦",
+      "countryCode": "691",
+      "enName": "Micronesia (Federated States of)",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "NR",
+      "cnName": "瑙鲁",
+      "countryCode": "674",
+      "enName": "Nauru",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "PW",
+      "cnName": "帕劳",
+      "countryCode": "680",
+      "enName": "Palau",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "SB",
+      "cnName": "所罗门群岛",
+      "countryCode": "677",
+      "enName": "Solomon Islands",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "TJ",
+      "cnName": "塔吉克斯坦",
+      "countryCode": "992",
+      "enName": "Tajikistan",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "TO",
+      "cnName": "汤加",
+      "countryCode": "676",
+      "enName": "Tonga",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "TM",
+      "cnName": "土库曼斯坦",
+      "countryCode": "993",
+      "enName": "Turkmenistan",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "VU",
+      "cnName": "瓦努阿图",
+      "countryCode": "00678",
+      "enName": "Vanuatu",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "BN",
+      "cnName": "文莱",
+      "countryCode": "673",
+      "enName": "Brunei Darussalam",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "UZ",
+      "cnName": "乌兹别克斯坦",
+      "countryCode": "233",
+      "enName": "Uzbekistan",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "MT",
+      "cnName": "马耳他",
+      "countryCode": "356",
+      "enName": "Malta",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "AM",
+      "cnName": "亚美尼亚",
+      "countryCode": "374",
+      "enName": "Armenia",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "GP",
+      "cnName": "瓜德罗普",
+      "countryCode": "374",
+      "enName": "France - Guadeloupe"
+    },
+    {
+      "abbr": "CE",
+      "cnName": "休达",
+      "countryCode": "374",
+      "enName": "Ceuta"
+    },
+    {
+      "abbr": "IC",
+      "cnName": "加那利群岛",
+      "countryCode": "374",
+      "enName": "Canary Islands"
+    },
+    {
+      "abbr": "RE",
+      "cnName": "留尼旺",
+      "countryCode": "374",
+      "enName": "France - La Reunion"
+    },
+    {
+      "abbr": "SM",
+      "cnName": "圣马力诺",
+      "countryCode": "374",
+      "enName": "San Marino"
+    }
+  ]
+}

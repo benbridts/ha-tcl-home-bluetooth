@@ -1,0 +1,79 @@
+[
+  {
+    "category": "Accessories",
+    "data": [
+      {
+        "question": "Unable to search for Wi-Fi hotspot",
+        "answer": "In case that your TV cannot search for Wi-Fi hotspot, please follow the steps below to check and set up your TV.\n1、First, please check whether other devices (including smartphone, computer, etc.) around you can search for this wireless hotspot.\n2、If your smartphone or computer cannot search for the wireless hotspot, please check your wireless router: Is the wireless feature on? Is SSID hidden? If the wireless function of your wireless router is set to on, but you select to hide the SSID, you will not be able to search for the wireless router's network name; therefore, you should set your wireless router not to hide the SSID, then power off and restart the wireless router, then your devices will be able to search for wireless hotspots.\n3、If your smartphone or computer can search for the wireless hotspot, please check whether the TV is within the coverage of the Wi-Fi signal. If your TV is away from the wireless router, there is no Wi-Fi coverage; therefore, you have to adjust the location of your wireless router or TV to make sure that your TV is within coverage range of the wireless signal. Please do not have your wireless router and TV be separated by several walls, preventing for affecting the Wi-Fi signal.\n4、Please turn off and restart your wireless router. It is recommended to turn off the wireless router, cut off the power, and wait for 30 seconds. Then connect the power and restart to search Wi-Fi signal again.\n5、Please turn off and restart the TV. It is recommended to turn off the TV, cut off the power, and wait for 30 seconds. Then connect the power and restart the TV to search Wi-Fi signal again.\n6、If you have tried all the steps above, but this problem cannot be solved, please call customer service."
+      }
+    ]
+  },
+  {
+    "category": "Audio",
+    "data": [
+      {
+        "question": "Intermittent sound",
+        "answer": "1. If the current signal source is USB, please confirm whether there is a similar problem when playing the corresponding multimedia file(s) on the PC. If yes, the problem is due to the multimedia file(s); otherwise, please contact the local TCL after-sales service point directly, we will help you solve the problem.\n2. If the current signal source is TV, please confirm whether there is a similar problem when playing other programs. If there is no any problem, this problem is due to the programs."
+      },
+      {
+        "question": "Serious distortion of sound",
+        "answer": "1. If the current signal source is USB, please confirm whether there is a similar problem when playing the corresponding multimedia file(s) on the PC. If yes, the problem is due to the multimedia file(s); otherwise, please contact the local TCL after-sales service point directly, we will help you solve the problem.\n2. If the current signal source is TV, please confirm whether there is a similar problem when playing other programs. If there is no any problem, this problem is due to the programs."
+      }
+    ]
+  },
+  {
+    "category": "Display video",
+    "data": [
+      {
+        "question": "The picture color is abnormal, with large area of watermarks",
+        "answer": "1. If the current signal source is USB, please confirm whether there is a similar problem when playing the corresponding multimedia file(s) on the PC. If yes, the problem is due to the multimedia file(s); otherwise, please contact the local TCL after-sales service point directly, we will help you solve the problem.\n2. If the current signal source is TV, please confirm whether there is a similar problem when playing other programs. If there is no any problem, this problem is due to the programs."
+      }
+    ]
+  },
+  {
+    "category": "Network issue",
+    "data": [
+      {
+        "question": "Black or crash screen after USB upgrading",
+        "answer": "This problem is generally caused by the use of the wrong software upgrade package.\n1. Get the latest forced upgrade package to upgrade your TV.\n2. In case this problem cannot be solved, please give feedback to TCL Service Center, we will help you solve this problem."
+      },
+      {
+        "question": "Incomplete network upgrade",
+        "answer": "Incomplete network upgrade may be caused by a power outage or network disconnection during the upgrade process.\n1. Please turn off the power for 30 seconds, then reboot and check if the TV is working properly.\n2. If the TV can be started normally, please try network upgrade again with good network. Do not power off during the upgrade process.\n3. In case that this problem cannot be solved, please give feedback to the local TCL after-sales service point, and we will help you solve the problem."
+      },
+      {
+        "question": "Network upgrade failed",
+        "answer": "1. Please check whether the TV network connection is in normal condition.\n2. Try to manually operate the TV for network upgrade again.\n3. If the network upgrade operation fails more than three times, it is recommended to try the network upgrade again in other time periods. In case that this problem cannot be solved, please give feedback to the local TCL after-sales service point, and we will help you solve the problem."
+      },
+      {
+        "question": "No network upgrade prompt",
+        "answer": "1. Please check whether the TV network connection is normal.\n2. Try to manually operate the TV for network upgrade again.\n3. If the network upgrade operation is performed more than three times and there is still no network upgrade prompt, it is recommended to try the network upgrade again in other time periods.\n4. In case that this problem cannot be solved following the above three steps, please give feedback to the local TCL after-sales Service Center, and we will help you solve this problem."
+      },
+      {
+        "question": "TV cannot be turned on after network upgrade",
+        "answer": "1. Please turn off the power for 30 seconds, then reboot and check if the TV is working properly.\n2. In case that TV still cannot be turned on, please give feedback to the local TCL after-sales service point, and we will help you solve the problem."
+      },
+      {
+        "question": "TV cycle power on and off after USB upgrading",
+        "answer": "This problem is generally caused by the use of the wrong software upgrade package.\n1. Get the latest forced upgrade package to upgrade your TV.\n2. In case this problem cannot be solved, please give feedback to TCL Service Center, we will help you solve this problem."
+      },
+      {
+        "question": "Unable to identify upgrade file with USB upgrade software",
+        "answer": "1. Please try another USB disk to check whether TV can properly identify upgrade package. If problem still occurs, please follow step 2 to check the problem.\n2. Please confirm whether the upgrade package in the USB disk is correct, including the upgrade package type (user upgrade package / forced upgrade package) / upgrade package naming method."
+      }
+    ]
+  },
+  {
+    "category": "Power",
+    "data": [
+      {
+        "question": "TV displays a black screen and the standby LED lights off.",
+        "answer": "（1）Check whether the power line connection between the TV and socket is in good condition;\n（2）If it is confirmed that the TV is well supplied by AC power supply and the power line connection between the TV and socket is in good condition, please contact your local TCL after-sales service point for repair."
+      },
+      {
+        "question": "TV displays a black screen and the standby LED lights up.",
+        "answer": "Case 1： AC power supply for TV works well, TV displays a black screen and the standby indicator lights up.\nCheck the battery of the remote control to ensure that the remote control works well when you press the \"Power\" button on the remote control.\nIf the TV still cannot be started after pressing the “Power” button on remote control, press the “Power” button on TV, to check whether the TV works normally.\nIf TV still can not be started after following the above steps, please contact your local TCL after-sales service point for repair."
+      }
+    ]
+  }
+]

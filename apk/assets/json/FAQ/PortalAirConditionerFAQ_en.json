@@ -1,0 +1,37 @@
+[
+  {
+    "category": "Setup",
+    "data": [
+      {
+        "question": "I\u0027m having issues starting my air conditioner.",
+        "answer":"• Ensure the plug is pushed completely into the outlet. Appliances should be plugged directly into a wall outlet.\n• Press the reset button on the plug to reset the current. If the reset button stays engaged, please unplug the unit and select \"Contact Us\" under the 'Service' tab.\n• Check to see if your home\u0027s circuit breaker or fuse is working properly."
+      }
+    ]
+  },
+  {
+    "category": "Cooling",
+    "data": [
+      {
+        "question": "My air conditioner is not as cool as it should be.",
+        "answer":"• Make sure there are no curtains, blinds, or furniture blocking the air intake.\n• The air filter may be dirty. We recommend cleaning it and trying again once it has completely dried.\n• Make sure to allow some time for the room to cool down after turning on the air conditioner.\n• Ensure the exhaust hose is properly attached to the unit and window slider."
+      },
+      {
+        "question": "The air conditioner is freezing up.",
+        "answer":"• Set the mode to HIGH FAN or HIGH COOL and set the thermostat to a higher temperature."
+      }
+    ]
+  },
+  {
+    "category": "Display",
+    "data": [
+      {
+        "question": "My display reads \"Ft\"?",
+        "answer":"• Drain excess moisture in the unit by removing the drain cap on the rear of the appliance."
+      },
+      {
+        "question": "The Filter LED is on and the filter has been cleaned.",
+        "answer":"• The filter LED turns on as a reminder to check and clean the filter if necessary.To turn it off hold down the button for a couple of seconds."
+      }
+    ]
+  }
+]

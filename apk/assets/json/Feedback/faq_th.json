@@ -1,0 +1,54 @@
+[
+    {
+        "category": "Account",
+        "tagList": [
+            {
+                "faqList": [
+                    {
+                        "faqId": "1",
+                        "faqTitle": "การลบบัญชี TCL ของคุณทำอย่างไร"
+                    }
+                ],
+                "tagId": "T1",
+                "tagName": "บัญชี"
+            }
+        ]
+    },
+    {
+        "category": "Membership",
+        "tagList": [
+            {
+                "faqList": [
+                    {
+                        "faqId": "2",
+                        "faqTitle": "TCL VIP Club คืออะไร"
+                    },
+                    {
+                        "faqId": "3",
+                        "faqTitle": "วิธีการเข้าร่วม TCL VIP Club ทำอย่างไร"
+                    }
+                ],
+                "tagId": "T2",
+                "tagName": "ทีซีแอล วีไอพี คลับ"
+            },
+            {
+                "faqList": [
+                    {
+                        "faqId": "4",
+                        "faqTitle": "คะแนน TCL VIP คืออะไร และฉันจะได้รับคะแนนได้อย่างไร"
+                    },
+                    {
+                        "faqId": "5",
+                        "faqTitle": "ฉันจะอัปเกรดระดับขึ้นไปได้อย่างไร"
+                    },
+                    {
+                        "faqId": "6",
+                        "faqTitle": "ฉันจะถูกลดระดับลงเมื่อใด"
+                    }
+                ],
+                "tagId": "T3",
+                "tagName": "จุดวีไอพี"
+            }
+        ]
+    }
+]

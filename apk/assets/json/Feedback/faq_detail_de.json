@@ -1,0 +1,10 @@
+[
+    {
+        "category": "Account",
+        "content": "Die Löschung eines TCL-Kontos ist ein unwiederbringlicher Vorgang. Wenn Sie bestätigen, dass Sie Ihr TCL-Konto löschen möchten, besuchen Sie bitte die folgende URL: http://www.tcl.com/deleteaccount",
+        "htmlContent": "<p id=\"textHolder\"></p><p>Die Löschung eines TCL-Kontos ist ein unwiederbringlicher Vorgang. Wenn Sie bestätigen, dass Sie Ihr TCL-Konto löschen möchten, besuchen Sie bitte die folgende URL: http://www.tcl.com/deleteaccount</p>",
+        "id": "1",
+        "tagName": "Konto",
+        "title": "Wie lösche ich mein TCL-Konto?"
+    }
+]

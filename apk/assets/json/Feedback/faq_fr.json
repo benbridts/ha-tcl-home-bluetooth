@@ -1,0 +1,17 @@
+[
+    {
+        "category": "Account",
+        "tagList": [
+            {
+                "faqList": [
+                    {
+                        "faqId": "1",
+                        "faqTitle": "Comment supprimer votre compte TCL ?"
+                    }
+                ],
+                "tagId": "T1",
+                "tagName": "Compte"
+            }
+        ]
+    }
+]

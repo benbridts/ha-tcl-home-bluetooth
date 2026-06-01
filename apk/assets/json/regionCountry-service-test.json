@@ -1,0 +1,1503 @@
+{
+  "version": "5",
+  "config": [
+    {
+      "version": "default",
+      "widget": [],
+      "region": {
+        "tDelete": [],
+        "tAdd": [],
+        "tReplace": [
+          {
+            "abbr": "DO",
+            "language": [
+              "es",
+              "en"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "A3.8.0",
+      "widget": [
+        {
+          "widgetId": "500001",
+          "regionLang": [
+            ""
+          ]
+        },
+        {
+          "widgetId": "500002",
+          "regionLang": [
+            ""
+          ]
+        },
+        {
+          "widgetId": "500003",
+          "regionLang": [
+            ""
+          ]
+        }
+      ],
+      "region": {
+        "tDelete": [],
+        "tAdd": [],
+        "tReplace": []
+      }
+    },
+    {
+      "version": "I3.8.0",
+      "widget": [
+        {
+          "widgetId": "500001",
+          "regionLang": [
+            ""
+          ]
+        },
+        {
+          "widgetId": "500002",
+          "regionLang": [
+            ""
+          ]
+        },
+        {
+          "widgetId": "500003",
+          "regionLang": [
+            ""
+          ]
+        }
+      ],
+      "region": {
+        "tDelete": [],
+        "tAdd": [],
+        "tReplace": []
+      }
+    },
+    {
+      "version": "A3.8.3",
+      "widget": [
+        {
+          "widgetId": "30005",
+          "regionLang": [
+            "AR",
+            "AU",
+            "CL",
+            "FR",
+            "DE",
+            "KW",
+            "MA",
+            "MM",
+            "NG",
+            "PH",
+            "SG",
+            "TH",
+            "AE",
+            "GB",
+            "MX",
+            "GR",
+            "EE",
+            "BR",
+            "FI",
+            "SE",
+            "NO",
+            "DK",
+            "VN",
+            "IT",
+            "UA",
+            "ES",
+            "EC",
+            "PL",
+            "CZ",
+            "HU",
+            "PK",
+            "ID",
+            "NZ",
+            "SK",
+            "SA",
+            "BH",
+            "TN",
+            "DZ",
+            "KM",
+            "DJ",
+            "EG",
+            "IQ",
+            "JO",
+            "LB",
+            "LY",
+            "MR",
+            "OM",
+            "PS",
+            "QA",
+            "SD",
+            "SY",
+            "YE",
+            "IS",
+            "GH",
+            "KE",
+            "MU",
+            "ZA",
+            "NL",
+            "AT",
+            "BE",
+            "GA",
+            "CI",
+            "LR",
+            "LU",
+            "CH",
+            "IE",
+            "RO",
+            "LV",
+            "RS",
+            "CA",
+            "HK",
+            "TW",
+            "IL",
+            "BO",
+            "DO",
+            "PR",
+            "PA",
+            "CW",
+            "TR",
+            "CY",
+            "HR",
+            "US",
+            "PT",
+            "SO",
+            "CO",
+            "HN",
+            "GT",
+            "SV",
+            "UY",
+            "AL",
+            "BG",
+            "XK",
+            "LT",
+            "MK",
+            "MD",
+            "BA",
+            "SI",
+            "ME",
+            "LI",
+            "MC",
+            "BY"
+          ]
+        }
+      ],
+      "region": {
+        "tDelete": [],
+        "tAdd": [
+          {
+            "abbr": "AL",
+            "cnName": "阿尔巴尼亚",
+            "countryCode": "355",
+            "enName": "Albania",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BG",
+            "cnName": "保加利亚",
+            "countryCode": "359",
+            "enName": "Bulgaria",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "XK",
+            "cnName": "科索沃",
+            "countryCode": "383",
+            "enName": "Kosovo",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "LT",
+            "cnName": "立陶宛",
+            "countryCode": "370",
+            "enName": "Lithuania",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MK",
+            "cnName": "北马其顿",
+            "countryCode": "389",
+            "enName": "North Macedonia",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MD",
+            "cnName": "摩尔多瓦",
+            "countryCode": "373",
+            "enName": "Moldova",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BA",
+            "cnName": "波斯尼亚和黑塞哥维那",
+            "countryCode": "55",
+            "enName": "Bosnia and Herzegovina",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "SI",
+            "cnName": "斯洛文尼亚",
+            "countryCode": "386",
+            "enName": "Slovenia",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "ME",
+            "cnName": "黑山",
+            "countryCode": "382",
+            "enName": "Montenegro",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "LI",
+            "cnName": "列支敦士登",
+            "countryCode": "423",
+            "enName": "Liechtenstein",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MC",
+            "cnName": "摩纳哥",
+            "countryCode": "377",
+            "enName": "Monaco",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BY",
+            "cnName": "白俄罗斯",
+            "countryCode": "375",
+            "enName": "Belarus",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          }
+        ],
+        "tReplace": []
+      }
+    },
+    {
+      "version": "I3.8.3",
+      "widget": [
+        {
+          "widgetId": "30005",
+          "regionLang": [
+            "AR",
+            "AU",
+            "CL",
+            "FR",
+            "DE",
+            "KW",
+            "MA",
+            "MM",
+            "NG",
+            "PH",
+            "SG",
+            "TH",
+            "AE",
+            "GB",
+            "MX",
+            "GR",
+            "EE",
+            "BR",
+            "FI",
+            "SE",
+            "NO",
+            "DK",
+            "VN",
+            "IT",
+            "UA",
+            "ES",
+            "EC",
+            "PL",
+            "CZ",
+            "HU",
+            "PK",
+            "ID",
+            "NZ",
+            "SK",
+            "SA",
+            "BH",
+            "TN",
+            "DZ",
+            "KM",
+            "DJ",
+            "EG",
+            "IQ",
+            "JO",
+            "LB",
+            "LY",
+            "MR",
+            "OM",
+            "PS",
+            "QA",
+            "SD",
+            "SY",
+            "YE",
+            "IS",
+            "GH",
+            "KE",
+            "MU",
+            "ZA",
+            "NL",
+            "AT",
+            "BE",
+            "GA",
+            "CI",
+            "LR",
+            "LU",
+            "CH",
+            "IE",
+            "RO",
+            "LV",
+            "RS",
+            "CA",
+            "HK",
+            "TW",
+            "IL",
+            "BO",
+            "DO",
+            "PR",
+            "PA",
+            "CW",
+            "TR",
+            "CY",
+            "HR",
+            "US",
+            "PT",
+            "SO",
+            "CO",
+            "HN",
+            "GT",
+            "SV",
+            "UY",
+            "AL",
+            "BG",
+            "XK",
+            "LT",
+            "MK",
+            "MD",
+            "BA",
+            "SI",
+            "ME",
+            "LI",
+            "MC",
+            "BY"
+          ]
+        }
+      ],
+      "region": {
+        "tDelete": [],
+        "tAdd": [
+          {
+            "abbr": "AL",
+            "cnName": "阿尔巴尼亚",
+            "countryCode": "355",
+            "enName": "Albania",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BG",
+            "cnName": "保加利亚",
+            "countryCode": "359",
+            "enName": "Bulgaria",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "XK",
+            "cnName": "科索沃",
+            "countryCode": "383",
+            "enName": "Kosovo",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "LT",
+            "cnName": "立陶宛",
+            "countryCode": "370",
+            "enName": "Lithuania",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MK",
+            "cnName": "北马其顿",
+            "countryCode": "389",
+            "enName": "North Macedonia",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MD",
+            "cnName": "摩尔多瓦",
+            "countryCode": "373",
+            "enName": "Moldova",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BA",
+            "cnName": "波斯尼亚和黑塞哥维那",
+            "countryCode": "55",
+            "enName": "Bosnia and Herzegovina",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "SI",
+            "cnName": "斯洛文尼亚",
+            "countryCode": "386",
+            "enName": "Slovenia",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "ME",
+            "cnName": "黑山",
+            "countryCode": "382",
+            "enName": "Montenegro",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "LI",
+            "cnName": "列支敦士登",
+            "countryCode": "423",
+            "enName": "Liechtenstein",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MC",
+            "cnName": "摩纳哥",
+            "countryCode": "377",
+            "enName": "Monaco",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BY",
+            "cnName": "白俄罗斯",
+            "countryCode": "375",
+            "enName": "Belarus",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          }
+        ],
+        "tReplace": []
+      }
+    },
+    {
+      "version": "A3.8.4",
+      "widget": [
+        {
+          "widgetId": "30005",
+          "regionLang": [
+            "AR",
+            "AU",
+            "CL",
+            "FR",
+            "DE",
+            "KW",
+            "MA",
+            "MM",
+            "NG",
+            "PH",
+            "SG",
+            "TH",
+            "AE",
+            "GB",
+            "MX",
+            "GR",
+            "EE",
+            "BR",
+            "FI",
+            "SE",
+            "NO",
+            "DK",
+            "VN",
+            "IT",
+            "UA",
+            "ES",
+            "EC",
+            "PL",
+            "CZ",
+            "HU",
+            "PK",
+            "ID",
+            "NZ",
+            "SK",
+            "SA",
+            "BH",
+            "TN",
+            "DZ",
+            "KM",
+            "DJ",
+            "EG",
+            "IQ",
+            "JO",
+            "LB",
+            "LY",
+            "MR",
+            "OM",
+            "PS",
+            "QA",
+            "SD",
+            "SY",
+            "YE",
+            "IS",
+            "GH",
+            "KE",
+            "MU",
+            "ZA",
+            "NL",
+            "AT",
+            "BE",
+            "GA",
+            "CI",
+            "LR",
+            "LU",
+            "CH",
+            "IE",
+            "RO",
+            "LV",
+            "RS",
+            "CA",
+            "HK",
+            "TW",
+            "IL",
+            "BO",
+            "DO",
+            "PR",
+            "PA",
+            "CW",
+            "TR",
+            "CY",
+            "HR",
+            "US",
+            "PT",
+            "SO",
+            "CO",
+            "HN",
+            "GT",
+            "SV",
+            "UY",
+            "AL",
+            "BG",
+            "XK",
+            "LT",
+            "MK",
+            "MD",
+            "BA",
+            "SI",
+            "ME",
+            "LI",
+            "MC",
+            "BY"
+          ]
+        }
+      ],
+      "region": {
+        "tDelete": [],
+        "tAdd": [
+          {
+            "abbr": "AL",
+            "cnName": "阿尔巴尼亚",
+            "countryCode": "355",
+            "enName": "Albania",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BG",
+            "cnName": "保加利亚",
+            "countryCode": "359",
+            "enName": "Bulgaria",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "XK",
+            "cnName": "科索沃",
+            "countryCode": "383",
+            "enName": "Kosovo",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "LT",
+            "cnName": "立陶宛",
+            "countryCode": "370",
+            "enName": "Lithuania",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MK",
+            "cnName": "北马其顿",
+            "countryCode": "389",
+            "enName": "North Macedonia",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MD",
+            "cnName": "摩尔多瓦",
+            "countryCode": "373",
+            "enName": "Moldova",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BA",
+            "cnName": "波斯尼亚和黑塞哥维那",
+            "countryCode": "55",
+            "enName": "Bosnia and Herzegovina",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "SI",
+            "cnName": "斯洛文尼亚",
+            "countryCode": "386",
+            "enName": "Slovenia",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "ME",
+            "cnName": "黑山",
+            "countryCode": "382",
+            "enName": "Montenegro",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "LI",
+            "cnName": "列支敦士登",
+            "countryCode": "423",
+            "enName": "Liechtenstein",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MC",
+            "cnName": "摩纳哥",
+            "countryCode": "377",
+            "enName": "Monaco",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BY",
+            "cnName": "白俄罗斯",
+            "countryCode": "375",
+            "enName": "Belarus",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          }
+        ],
+        "tReplace": []
+      }
+    },
+    {
+      "version": "I3.8.4",
+      "widget": [
+        {
+          "widgetId": "30005",
+          "regionLang": [
+            "AR",
+            "AU",
+            "CL",
+            "FR",
+            "DE",
+            "KW",
+            "MA",
+            "MM",
+            "NG",
+            "PH",
+            "SG",
+            "TH",
+            "AE",
+            "GB",
+            "MX",
+            "GR",
+            "EE",
+            "BR",
+            "FI",
+            "SE",
+            "NO",
+            "DK",
+            "VN",
+            "IT",
+            "UA",
+            "ES",
+            "EC",
+            "PL",
+            "CZ",
+            "HU",
+            "PK",
+            "ID",
+            "NZ",
+            "SK",
+            "SA",
+            "BH",
+            "TN",
+            "DZ",
+            "KM",
+            "DJ",
+            "EG",
+            "IQ",
+            "JO",
+            "LB",
+            "LY",
+            "MR",
+            "OM",
+            "PS",
+            "QA",
+            "SD",
+            "SY",
+            "YE",
+            "IS",
+            "GH",
+            "KE",
+            "MU",
+            "ZA",
+            "NL",
+            "AT",
+            "BE",
+            "GA",
+            "CI",
+            "LR",
+            "LU",
+            "CH",
+            "IE",
+            "RO",
+            "LV",
+            "RS",
+            "CA",
+            "HK",
+            "TW",
+            "IL",
+            "BO",
+            "DO",
+            "PR",
+            "PA",
+            "CW",
+            "TR",
+            "CY",
+            "HR",
+            "US",
+            "PT",
+            "SO",
+            "CO",
+            "HN",
+            "GT",
+            "SV",
+            "UY",
+            "AL",
+            "BG",
+            "XK",
+            "LT",
+            "MK",
+            "MD",
+            "BA",
+            "SI",
+            "ME",
+            "LI",
+            "MC",
+            "BY"
+          ]
+        }
+      ],
+      "region": {
+        "tDelete": [],
+        "tAdd": [
+          {
+            "abbr": "AL",
+            "cnName": "阿尔巴尼亚",
+            "countryCode": "355",
+            "enName": "Albania",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BG",
+            "cnName": "保加利亚",
+            "countryCode": "359",
+            "enName": "Bulgaria",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "XK",
+            "cnName": "科索沃",
+            "countryCode": "383",
+            "enName": "Kosovo",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "LT",
+            "cnName": "立陶宛",
+            "countryCode": "370",
+            "enName": "Lithuania",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MK",
+            "cnName": "北马其顿",
+            "countryCode": "389",
+            "enName": "North Macedonia",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MD",
+            "cnName": "摩尔多瓦",
+            "countryCode": "373",
+            "enName": "Moldova",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BA",
+            "cnName": "波斯尼亚和黑塞哥维那",
+            "countryCode": "55",
+            "enName": "Bosnia and Herzegovina",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "SI",
+            "cnName": "斯洛文尼亚",
+            "countryCode": "386",
+            "enName": "Slovenia",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "ME",
+            "cnName": "黑山",
+            "countryCode": "382",
+            "enName": "Montenegro",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "LI",
+            "cnName": "列支敦士登",
+            "countryCode": "423",
+            "enName": "Liechtenstein",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MC",
+            "cnName": "摩纳哥",
+            "countryCode": "377",
+            "enName": "Monaco",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BY",
+            "cnName": "白俄罗斯",
+            "countryCode": "375",
+            "enName": "Belarus",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          }
+        ],
+        "tReplace": []
+      }
+    },
+    {
+      "version": "A3.8.5",
+      "widget": [
+        {
+          "widgetId": "30005",
+          "regionLang": [
+            "AR",
+            "AU",
+            "CL",
+            "FR",
+            "DE",
+            "KW",
+            "MA",
+            "MM",
+            "NG",
+            "PH",
+            "SG",
+            "TH",
+            "AE",
+            "GB",
+            "MX",
+            "GR",
+            "EE",
+            "BR",
+            "FI",
+            "SE",
+            "NO",
+            "DK",
+            "VN",
+            "IT",
+            "UA",
+            "ES",
+            "EC",
+            "PL",
+            "CZ",
+            "HU",
+            "PK",
+            "ID",
+            "NZ",
+            "SK",
+            "SA",
+            "BH",
+            "TN",
+            "DZ",
+            "KM",
+            "DJ",
+            "EG",
+            "IQ",
+            "JO",
+            "LB",
+            "LY",
+            "MR",
+            "OM",
+            "PS",
+            "QA",
+            "SD",
+            "SY",
+            "YE",
+            "IS",
+            "GH",
+            "KE",
+            "MU",
+            "ZA",
+            "NL",
+            "AT",
+            "BE",
+            "GA",
+            "CI",
+            "LR",
+            "LU",
+            "CH",
+            "IE",
+            "RO",
+            "LV",
+            "RS",
+            "CA",
+            "HK",
+            "TW",
+            "IL",
+            "BO",
+            "DO",
+            "PR",
+            "PA",
+            "CW",
+            "TR",
+            "CY",
+            "HR",
+            "US",
+            "PT",
+            "SO",
+            "CO",
+            "HN",
+            "GT",
+            "SV",
+            "UY",
+            "AL",
+            "BG",
+            "XK",
+            "LT",
+            "MK",
+            "MD",
+            "BA",
+            "SI",
+            "ME",
+            "LI",
+            "MC",
+            "BY"
+          ]
+        }
+      ],
+      "region": {
+        "tDelete": [],
+        "tAdd": [
+          {
+            "abbr": "AL",
+            "cnName": "阿尔巴尼亚",
+            "countryCode": "355",
+            "enName": "Albania",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BG",
+            "cnName": "保加利亚",
+            "countryCode": "359",
+            "enName": "Bulgaria",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "XK",
+            "cnName": "科索沃",
+            "countryCode": "383",
+            "enName": "Kosovo",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "LT",
+            "cnName": "立陶宛",
+            "countryCode": "370",
+            "enName": "Lithuania",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MK",
+            "cnName": "北马其顿",
+            "countryCode": "389",
+            "enName": "North Macedonia",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MD",
+            "cnName": "摩尔多瓦",
+            "countryCode": "373",
+            "enName": "Moldova",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BA",
+            "cnName": "波斯尼亚和黑塞哥维那",
+            "countryCode": "55",
+            "enName": "Bosnia and Herzegovina",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "SI",
+            "cnName": "斯洛文尼亚",
+            "countryCode": "386",
+            "enName": "Slovenia",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "ME",
+            "cnName": "黑山",
+            "countryCode": "382",
+            "enName": "Montenegro",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "LI",
+            "cnName": "列支敦士登",
+            "countryCode": "423",
+            "enName": "Liechtenstein",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MC",
+            "cnName": "摩纳哥",
+            "countryCode": "377",
+            "enName": "Monaco",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BY",
+            "cnName": "白俄罗斯",
+            "countryCode": "375",
+            "enName": "Belarus",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          }
+        ],
+        "tReplace": []
+      }
+    },
+    {
+      "version": "I3.8.5",
+      "widget": [
+        {
+          "widgetId": "30005",
+          "regionLang": [
+            "AR",
+            "AU",
+            "CL",
+            "FR",
+            "DE",
+            "KW",
+            "MA",
+            "MM",
+            "NG",
+            "PH",
+            "SG",
+            "TH",
+            "AE",
+            "GB",
+            "MX",
+            "GR",
+            "EE",
+            "BR",
+            "FI",
+            "SE",
+            "NO",
+            "DK",
+            "VN",
+            "IT",
+            "UA",
+            "ES",
+            "EC",
+            "PL",
+            "CZ",
+            "HU",
+            "PK",
+            "ID",
+            "NZ",
+            "SK",
+            "SA",
+            "BH",
+            "TN",
+            "DZ",
+            "KM",
+            "DJ",
+            "EG",
+            "IQ",
+            "JO",
+            "LB",
+            "LY",
+            "MR",
+            "OM",
+            "PS",
+            "QA",
+            "SD",
+            "SY",
+            "YE",
+            "IS",
+            "GH",
+            "KE",
+            "MU",
+            "ZA",
+            "NL",
+            "AT",
+            "BE",
+            "GA",
+            "CI",
+            "LR",
+            "LU",
+            "CH",
+            "IE",
+            "RO",
+            "LV",
+            "RS",
+            "CA",
+            "HK",
+            "TW",
+            "IL",
+            "BO",
+            "DO",
+            "PR",
+            "PA",
+            "CW",
+            "TR",
+            "CY",
+            "HR",
+            "US",
+            "PT",
+            "SO",
+            "CO",
+            "HN",
+            "GT",
+            "SV",
+            "UY",
+            "AL",
+            "BG",
+            "XK",
+            "LT",
+            "MK",
+            "MD",
+            "BA",
+            "SI",
+            "ME",
+            "LI",
+            "MC",
+            "BY"
+          ]
+        }
+      ],
+      "region": {
+        "tDelete": [],
+        "tAdd": [
+          {
+            "abbr": "AL",
+            "cnName": "阿尔巴尼亚",
+            "countryCode": "355",
+            "enName": "Albania",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BG",
+            "cnName": "保加利亚",
+            "countryCode": "359",
+            "enName": "Bulgaria",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "XK",
+            "cnName": "科索沃",
+            "countryCode": "383",
+            "enName": "Kosovo",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "LT",
+            "cnName": "立陶宛",
+            "countryCode": "370",
+            "enName": "Lithuania",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MK",
+            "cnName": "北马其顿",
+            "countryCode": "389",
+            "enName": "North Macedonia",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MD",
+            "cnName": "摩尔多瓦",
+            "countryCode": "373",
+            "enName": "Moldova",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BA",
+            "cnName": "波斯尼亚和黑塞哥维那",
+            "countryCode": "55",
+            "enName": "Bosnia and Herzegovina",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "SI",
+            "cnName": "斯洛文尼亚",
+            "countryCode": "386",
+            "enName": "Slovenia",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "ME",
+            "cnName": "黑山",
+            "countryCode": "382",
+            "enName": "Montenegro",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "LI",
+            "cnName": "列支敦士登",
+            "countryCode": "423",
+            "enName": "Liechtenstein",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "MC",
+            "cnName": "摩纳哥",
+            "countryCode": "377",
+            "enName": "Monaco",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          },
+          {
+            "abbr": "BY",
+            "cnName": "白俄罗斯",
+            "countryCode": "375",
+            "enName": "Belarus",
+            "isOnline": "1",
+            "language": [
+              "en"
+            ]
+          }
+        ],
+        "tReplace": []
+      }
+    }
+  ],
+  "host": {
+
+  }
+}

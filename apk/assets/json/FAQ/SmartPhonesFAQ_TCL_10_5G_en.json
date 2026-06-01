@@ -1,0 +1,252 @@
+[
+  {
+    "category": "Basic Settings",
+    "data": [
+      {
+        "question":"How can I set up my device when I turn it on for the first time?(same as android 10)",
+        "answer":"The first time you turn on the device, you will see a welcome screen. You can start to set up your device by following the instructions.\nA series of screens will lead you through the set-up process. You also have the option to skip some steps during the process."
+      },
+      {
+        "question":"How can I change the language of the device? (same as android 10)",
+        "answer":"The first time in setup wizard interface to scroll the pop-up menu to choose a language as your device language.\nOr you can change the language by accessing the main menu -> “Settings” -> “System”-> “Languages & input” -> “Languages” -> “Add a language” -> Choose the language that you want to add -> Press and drag the language to the top to select it."
+      },
+      {
+        "question":"How can I check the IMEI number of my device?",
+        "answer":"You have 3 ways to check the IMEI information:\nMethod 1: Check the IMEI information from the IMEI label which is stuck to the battery cover.\nMethod 2: Enter *#06# in the dialing keypad.\nMethod 3: Go to the main menu -> “Settings” -> “System” -> “About phone” -> “Status” -> “IMEI information”."
+      },
+      {
+        "question":"How can I check the device’s model number, Android version, CPU information, RAM & Storage information, battery capacity? (same as android 10)",
+        "answer":"You can check this information by accessing it from the main menu -> “Settings” -> “System”-> “About phone”."
+      },
+      {
+        "question":"How can I take a screenshot? (same as android 10)",
+        "answer":"You can easily share what's on your screens by taking screenshots. Hardware buttons let you snap a screenshot and store it locally. Afterwards, you can view, edit, and share the screen shot in Gallery or a similar app.\nMethod 1: Push the power button and Volume down button at the same time for a couple of seconds.\nMethod 2: Go to “Settings” -> “Advanced features” -> “Gestures” -> Enable 3 fingers screenshot, then swipe down with 3 fingers.\nMethod 3: Swipe down to access the quick settings from any screen, and then click the screenshot icon to take a screenshot.\nYou should then see an animation showing you the screenshot, and view the screenshot by tapping on the thumbnail in the notification tray or by visiting your Gallery application."
+      },
+      {
+        "question":"How can I change the permissions for my apps?",
+        "answer":"You can change the “app permission” in “Settings” -> “Apps” -> “Permissions manager” -> selecting a topic. Check the choice-box to allow or deny individual permissions."
+      },
+      {
+        "question":"What is the Autofill function? (new) (same as android 10)",
+        "answer":"Go to “Settings” -> “System” -> “Languages & input” -> “Autofill service”.\nHaving your phone automatically type out your information is pretty useful, and Google’s giving Android 10 the ability to make it work with a wider variety of methods that apps and sites could use to prompt you for your password, and will recognize when you enter the last digits of your credit card number and save them too. Also, when you update a password, Android 10 will be smart enough to update the relevant entry, rather than saving a fresh one and leaving you confused as to which one’s the correct one."
+      },
+      {
+        "question":"What is Google Lens?",
+        "answer":"Google Lens can automatically recognize and search within the content which appears in the lens. There’re 3 ways to use the Google Lens function.\nNote that Google Lens works only when you login with Google account and your device must be connected to a network.\nMethod 1: touch the “Camera” app -> touch the Google Lens icon.\nMethod 2: press and hold the home button or press Google Assistant Button to enter Google assistant -> touch the Google Lens icon at the bottom of the screen.\nMethod 3: touch the “Photos” app -> select a photo -> touch the Google Lens icon at the bottom of the screen.\nWhen you open the Google lens viewfinder, the lens will continually analyze what you see to show you results in real time. Options include:\n1) Scan text: Look up a word, save contact info, copy text: dates, and address.\n2) Shop Smarter: Find products & compare prices, search similar products: try clothing and furniture.\n3) Discover new places: Get info on points of interest.\n4) Identify Plants and Animals: Try flowers and dog breeds.\n5) Discover Books & Media: Try books, movies, music albums, and video games.\n6) Scan Codes: Try barcodes and QR codes"
+      },
+      {
+        "question":"How can I use App Actions & Slices? (same as android 10)",
+        "answer":"App Actions is a simple and effective way to help users quickly get what they need using artificial intelligence and machine learning. This is a prediction entirely based on the user's own usage habits.\n1)    Actions in all APPs\nLong press an app icon -> touch the widget icon at the top right corner in the pop-up window, then all the widgets of this app will be displayed -> long press any of the widgets to create a shortcut.\n2)    Actions in Selection\nActions for selected text:\nDate / Time, Movie / TV shows, Restaurant, Sports Team / Athlete, Musician\nOverview\nAvailable in overview even when text selection is taken over by app\n3)    Android Actions in Assistant\nAutomatically get Assistant-enabled:\nBuilt-in intents\nExtensible\nCompatible Actions on Google\nSlices can implement interoperability between each installed program in Google search. Its interface has shortcuts to certain features of the application, so users can more quickly and easily manipulate a specific feature in an application without opening it."
+      },
+      {
+        "question":"How can I activate the accessibility menu? (same as android 10)",
+        "answer":"Go to “Settings” -> “Accessibility” -> “Accessibility Menu” ->touch the toggle to “On” position->touch “OK” -> the accessibility menu icon   will appear on the navigation bar.\nThe Accessibility Menu provides a large on-screen menu to control your phone. You can control gestures, hardware buttons, navigation, and so on."
+      },
+      {
+        "question":"How can I manage app notification quick and easy?(new) ",
+        "answer":"When you touch and hold a notification on status bar, there will be two options appear “Alerting” and “Silent”.\n1)    Select “Alerting” to allow sound alert for this app at subsequent new notifications.\n2)    Select “Silent” to mute all notifications from this app\nYou can go to “Settings”->”Apps”->select the app you want to set->”App notifications” to further setup."
+      },
+      {
+        "question":"What can I do if my app show “App paused” when I touch it?(new) (same as android 10)",
+        "answer":"In Android 10, there is a new menu “Digital Wellbeing & parental controls”, you can customize the time limit for using the phone so that have a healthy and balanced life. Set daily timers for most apps, when the app timer ends, the app is paused for the rest of the day.\nTouch “Settings” from main menu->touch “Digital Wellbeing & parental controls”->touch “Dashboard” (touch “show your data” first if it is the first time to access this setting)->touch the app which you want to cancel app timer-> touch trash can icon to delete timer."
+      },
+      {
+        "question":"What can I do if my phone screen become black item?(new) (same as android 10)",
+        "answer":"Your screen will become black in dark mode, which makes it easier to look at your screen or read in dim light.\n1)    Go to “Settings”->”Display”->touch “Dark mode”->touch the trigger to activate /deactivate it.\n2)    Drag down quick settings bar in any interface ->touch \"Dark mode icon\" to activate/deactivate it."
+      },
+      {
+        "question":"What can I do if my phone screen is yellowing? (same as android 10)",
+        "answer":"a.    Check whether “Eye comfort mode” is active. Eye comfort mode will filter out blue light and adjust the colour temperature of your display to reduce eye strain.\n1)    Go to “Settings”->”Display”-> “Eye comfort mode”->touch the trigger to activate /deactivate it.\n2)    Drag down quick settings bar in any interface ->touch \"Eye comfort mode\" icon to activate/deactivate it.\nb.    In reading mode, the screen will become monochromic to imitate physical books. Go to “Settings”->”NXTVISION”->”Reading mode”, touch the trigger to activate/deactivate it."
+      },
+      {
+        "question":"What can I do if the Google Assistant Button of my device does not work while phone screen is locked?(new) (same as android 10)",
+        "answer":"Google Assistant Button only work while phone screen is unlocked."
+      }
+    ]
+  },
+  {
+    "category":"Home screen",
+    "data": [
+      {
+        "question":"How can I active gesture navigation (hide the navigation bar)?(new) (same as android 10)",
+        "answer":"Android has always featured navigation buttons, including a back button — but they’re now going away with Android 10 in favor of a new gesture-based navigation system.\nThere’s no gesture indicator on the screen under new gesture navigation mode, but you can switch back to the three-button navigation system of old if you want to.\nJust go to “Settings” -> “Advanced features”-> “System Navigation” to choose the right option for you"
+      },
+      {
+        "question":"When I quickly touch on display three times the smartphone makes a zoom on display. How can I stop this feature? (New)",
+        "answer":"Please go to “Settings”->”Accessibility”->”Magnification”, disable “Magnify with tripe-tap”"
+      },
+      {
+        "question":"How can I change font size on display?",
+        "answer":"Please go to “Settings”->”Display”->”Font size”."
+      }
+    ]
+  },
+  {
+    "category":"Phone call",
+    "data": [
+      {
+        "question":"How can I silence the ringtone of an incoming call? (same as android 10)",
+        "answer":"There’re 4 ways to silence the ringer before answering a call.\nMethod 1: Press the Volume Down/Up or Power button on the side of your device.\nMethod 2：Enable the Gesture function by going to the “Phone” app and pressing the menu key  in the top right corner of the screen. Then go to “Settings” -> “Accessibility” and activate “Turn over to mute”. You can then mute incoming calls by turning the phone over when a call is being received.\nMethod 3: Go to menu -> “Settings” -> “Sound”-> activate “Silent mode”.\nMethod 4: Drag the Status Bar down with your finger and then touch the “Notification” icon to change to “Vibrate”.\nNote: Press the “power” key and “volume up” key at the same time to switch to vibration mode quickly."
+      },
+      {
+        "question":"How can I activate three way calling?",
+        "answer":"You can activate three way calling as follows:\n1)    Call the first person.\n2)    Touch “Add call” (this function may under menu according to the different phones), then you can choose the third person you want to call.\n3)    When you get through to the second or the third person (depending on how many calls you want to merge), you can touch “Merge calls” to make a conference call.\n* Three way calling requires network/SIM card support, please contact your SIM operator to make sure you have the three way calling service."
+      },
+      {
+        "question":"What should I do if I cannot receive calls or miss calls constantly?",
+        "answer":"1) If this issue only occurs in certain places, move to a location with a strong signal and try again.\n2) Check whether there are smudges or scratches on your SIM card's metal surface as a defective SIM card may affect signal stability. If necessary, contact your operator to obtain a replacement SIM.\n3) Check whether “Blocked numbers” or “Filter spam calls” is active on your phone: touch “Phone” app-> touch settings icon   at the top right corner->”Settings”->check “Blocked numbers” & “Caller ID & spam”.\n4) Please try to recovery with turn on and off Airplane mode or reboot the device;\n5) Please contact your service provider to check if any re-activate process needed for your service account."
+      },
+      {
+        "question":"How can I use a SIM card to do video calls? (new)",
+        "answer":"To use SIM card video call, you should check the requirements below:\n1)    Video call requires network/SIM card support, please contact your SIM operator to make sure you have the video call service.\n2)    Please go to “Settings”->”Network & internet”->”Mobile network”, touch trigger to active “VoLTE”\n3)    Go to “Phone” app->touch menu key at the top right corner on the screen->touch “Settings”->”Calls”->touch trigger to active “Turn on video calling”.\n4)    Make sure called party also support video call and his/her SIM operator is the same as yours\nVideo call option will appear during voice call is connecting when above requirements are met."
+      }
+    ]
+  },
+  {
+    "category":"Contact",
+    "data": [
+      {
+        "question":"How to import your contacts directly into your Google Account? (same as android 10)",
+        "answer":"Method 1:\n1)    Install the SIM card with your contacts on it in your new phone.\n2)    Touch “Contacts” app.\n3)    Touch the settings icon at the top left corner of the screen.\n4)    Touch “Settings”.\n5)    Touch “Import”.\n6)    Choose a place where you want to copy your contacts from, take phone for example and touch “OK”.\n7)    Choose the contacts you want to copy and touch the   icon in the top right corner of the screen."
+      }
+    ]
+  },
+  {
+    "category":"Ringtone & Sounds",
+    "data": [
+      {
+        "question":"How can I change the default ringtone and adjust the volume for incoming calls?",
+        "answer":"Your phone uses sounds and vibrations to notify you of some events, using ringtones, notifications, alarms and navigation feedback. You can customize any of these sounds, as well as control their volumes.\na.    Change default ringtone for incoming calls.\n1)    Touch the “Settings” icon from the Home screen or under the main menu.\n2)    Touch “Sound”.\n3)    Touch “Phone ringtone”.\n4)    You will see a list of ringtones.\n5)    Touch a ringtone to select and hear it. Or you can touch “Add ringtone”, choose an MP3 you like from music app and touch “OK”.\n6)    Touch “OK” to confirm your final selection.\nb.    Adjust volume for incoming calls.\n1)    Touch the “Settings” icon from the Home screen or under the main menu.\n2)    Touch “Sound”.\n3)    You will see a Volume Bar. Drag to adjust the volume."
+      }
+    ]
+  },
+  {
+    "category":"Internet & Applications",
+    "data": [
+      {
+        "question":"Why there is no 5G signal icon on my screen?(new)",
+        "answer":"If there is no 5G indicator:\n1)    Contact your SIM card operator to check whether 5G service availability\n2)    If this issue only occurs in certain place, move to a location with strong signal and try again.\nNote: You can check network and signal status by “Settings”-> “System” -> “About phone” -> “Status” -> “SIM Status”."
+      },
+      {
+        "question":"How can I use split screen? (same as android 10)",
+        "answer":"You can swipe up with 3 fingers on the screen to active split mode.\nGo the “Settings”->”Advanced features”->”Gestures” to active/inactive split-screen gesture"
+      },
+      {
+        "question":"How does my phone connect to a Wi-Fi network? (new) (same as android 10)",
+        "answer":"There have been some under-the-hood changes to Wi-Fi in Android 10, which make it faster and more secure to connect to other devices\nMethod1: Turn on Wi-Fi by following these steps:\n1)    Touch the “Settings” icon from the Home screen or under the main menu.\n2)    Touch “Network & internet”.\n3)    Touch Wi-Fi.\n4)    Turn the switch to “On” position, the device will scan for available networks and display their names.\n*Secured networks are indicated with a lock icon.\n*If the device finds a network that you connected to previously, it connects to it.\n5)    Touch a network name to see more details or connect to it.\n6)    Enter a password or other credentials to connect to the network.\nMethod 2:\nIt’s now also easier to give your Wi-Fi password to someone else via the Settings menu. Under the Wi-Fi section, you can share the password in the form of a QR code, or read one such QR code to connect to Wi-Fi. No more turning your router this way and that to find the sticker with the password on it.\n1)    Please refer to Method 1 step1 to step 4\n2)    Touch a network name\n3)    Touch icon beside password input line.\n4)    Scan the QR code to connect the Wi-Fi network."
+      },
+      {
+        "question":"Why can’t I connect to a specific Wi-Fi router? (New) (same as android 10)",
+        "answer":"The Android 10 includes security tools that limit apps’ access to device IMEI, serial number, and other identifying information. It will also give you a little more protection when using Wi-Fi networks by randomizing your device’s MAC (media access control) address.\nIf you use your device for business, your organization might require Wi-Fi mac address of your device for wireless connection. In Android 10, privacy setting of Wi-Fi use randomized MAC by default, you need to change it to “Use device MAC” manually, follow steps below to change:\n1)    Touch “Settings”\n2)    Touch “Network & internet”\n3)    Touch “Wi-Fi”\n4)    Touch and hold the Wi-Fi name with connected status in the list\n5)    Touch “Modify network” in the dialog that opens\n6)    Touch “Advanced options”\n7)    Touch “Use randomized MAC” under privacy, then touch “Use device MAC” in the pop-up menu."
+      },
+      {
+        "question":"What can I do if there is “Family Link” prompt in notification bar? (New)",
+        "answer":"If you’re a parent, this new Android 10 feature is exactly for you. Family Link is a set of tools that parents can use to set daily screen time limits, device bedtime, time limits on specific apps, and more for their kids. They can also review the apps children install on their devices and see their usage.\nYou can exit parental management mode by touching “Settings”->”Digital Wellbeing & parental controls”-> touch menu icon at the top left corner->touch “Remove account”, a series of screens will lead you exit the parental management settings process."
+      }
+    ]
+  },
+  {
+    "category":"Bluetooth",
+    "data": [
+      {
+        "question":"How many bluetooth devices are supported at the same time?",
+        "answer":"In Android 10.0, you can pair with five bluetooth devices at the same time and seamlessly switch between them. If there is an incoming call, it will automatically switch to any bluetooth speaker or other audio accessory that can handle the call.\nThe system will remember the volume of each bluetooth device automatically."
+      }
+    ]
+  },
+  {
+    "category":"Music & Video",
+    "data": [
+      {
+        "question":"How can I active Live Caption on my device? (new) (same as android 10)",
+        "answer":"Android 10 will bring native support for captions, which can show up in real-time over videos that might not have support for captions. For example, if you are scrolling through Instagram and suddenly a video starts auto-playing, Android will show you captions on the screen.\nWhat’s more, Live Caption will work even if you’ve put your device in Airplane Mode, or if you don’t have internet access.\nGo to “Settings”->”Accessibility”->”Captions”, touch toggle to active captions function"
+      }
+    ]
+  },
+  {
+    "category":"Back up & Reset",
+    "data": [
+      {
+        "question":"How can I back up my data on the device? (same as android 10)",
+        "answer":"a.    You can back up your data to google drive using the following steps.\n1)    Go “Settings”.\n2)    Touch “System”\n3)    Touch “Backup”.\n4)    Activate “Back up to Google Drive” in the open window.\n5)    Touch “Back up Now”\n* App data, SMS text messages, Device settings, Call history, Contacts will be backed up.\nFor more back up & sync help, please continue touch “Google Photos”->”Back up & sync help”.\nb.    You can also transfer content from your phone to another one, to back up data. Go “Settings”->”Advanced features”->”Switch Phone”, a series of screens will lead you through the data transfer process."
+      },
+      {
+        "question":"How can I perform a factory reset on my phone?",
+        "answer":"You can use the following steps to reset your phone in the boot status.\n1)    Go to “Settings”.\n2)    Touch “System”\n3)    Touch “Reset”.\n4)    Touch “Factory data reset” to start.\n5)    Touch “RESET PHONE” in the open window.\n6)    Touch “ERASE EVERTHING”.\nWarning: this action will erase all your personal information and downloaded apps.\nFactory reset while your phone is in in Shutdown state.\n1)    Power off the phone. Long press the “power” key and “volume up” key until enter the Android system recovery mode.\n2)    Press the “volume” key to select “wipe data / factory reset”, then press the “power” key to confirm factory reset;\n3)    Press the “volume” key to select “Factory data reset”, then press the “power” key to confirm the deletion of all user data;\n4)    When the factory reset is complete, press the “volume” key to select “reboot system now” then press the “power” key to confirm."
+      }
+    ]
+  },
+  {
+    "category":"Storage",
+    "data": [
+      {
+        "question":"How can I set up my SD card? (same as android 10)",
+        "answer":"Go to “Settings” ->  “Storage” -> touch Portable storage “xxx SD card”, then you can browse the contents of SD card, such as downloads, musics, pictures, etc."
+      },
+      {
+        "question":"How can I transfer data from the internal storage to the SD card? (same as android 10)",
+        "answer":"Touch “File Manager” -> touch “Internal storage” -> select which data such as downloads, files, pictures, etc. you want to move -> touch the icon at the right side of the data -> touch “Move” -> touch the   icon (SD card) -> touch the icon at the bottom right corner."
+      },
+      {
+        "question":"How can I format SD card as portable after SD card has been set as internal memory in my device? (same as android 10)",
+        "answer":"If you want to format SD card as portable after it has been set as internal in your device, go to “Settings” -> “Storage” -> “xxx SD card” -> touch the icon at the top right corner-> “Storage settings” -> “Format”->”ERASE & FORMAT."
+      }
+    ]
+  },
+  {
+    "category":"Security",
+    "data": [
+      {
+        "question":"What can I do if my phone asks me to enter Google account data after a factory reset has been made? (same as android 10)",
+        "answer":"You may need to enter the original Google account that was used on this phone after you execute a factory data reset, otherwise you will not be able to use the phone. This is the FRP (Factory Reset Protection) function.\nIf you don’t remember your Google account data, please complete the Google account recovery procedure. In case you can’t recover it, please apply to a repair center."
+      },
+      {
+        "question":"Why does my face unlock function work slowly or fail? (same as android 10)",
+        "answer":"1)    In conditions when bright sunlight is behind you, the speed of unlocking can be slow or maybe fail.\n2)    When the ambient light is dark, the speed of unlocking can be slow or maybe fail.\n3)    When you are wearing sunglasses or something which covers your face, it can also fail to unlock."
+      }
+    ]
+  },
+  {
+    "category":"Device",
+    "data": [
+      {
+        "question":"How can I turn on USB debugging? (same as android 10)",
+        "answer":"To turn on the USB debugging, you can use the following steps.\n1)    Go to “Settings” -> “System”-> “About phone” -> “Build number”.\n2)    Touch the Build number no less than 7 times.\n3)    You will see a warning that mentions that developer mode is already turned on.\n4)    Go back to “System” again, you will now find the “Developer options”.\n5)    Activate “Developer options”.\n6)    Activate “USB debugging”."
+      },
+      {
+        "question":"What should I do when I insert or remove a SIM card?",
+        "answer":"This phone support SIM card hot swap, you can insert or remove your SIM card while your device is power on."
+      }
+    ]
+  },
+  {
+    "category":"Troubleshooting",
+    "data": [
+      {
+        "question":"What should I do if my device cannot charge or charges slowly? (same as android 10)",
+        "answer":"1)  Check if the device has any battery drain issues. When the device consumes battery too fast, it results in slow charging.\n2)  Verify whether there are any third-party power management software apps downloaded. If so, please uninstall these.\n3)  Only use the official charger to charge your device.\n4)  Please don't use the device for a long time while it is charging.\n5)  Please back up your personal data, then reset or update your device to the latest system version and try again.\nIf the problem persists, back up your data and take your device and proof of purchase to one of our repair centres to get more professional technical assistance."
+      },
+      {
+        "question":"Why couldn’t I use three ways calling / multi-conference call function? Why does it say “Can’t conference calls” when I use the conference call function? (same as android 10)",
+        "answer":"The Three way calling / multi-conference call function requires network/SIM card support. If your SIM card isn’t activated to provide these functions by your service provider, the device will show an “Unable to make conference calls” message if you try to use them. Please contact your service provider to enable multi-conference call service for your SIM card."
+      },
+      {
+        "question":"How can I connect my phone to a PC via a USB cable? (same as android 10)",
+        "answer":"When your device connects to a PC, the device will ask you which mode you want to use.\nTo transfer data between the device and computer, select “Transfer files” mode.\nTo transfer photos or files if MTP is not supported (PTP), select “Transfer photos(PTP)”.\nTo disable all data and file transfer connections with the computer and put device in charging only mode, select “Charge this device”.\nComputers that use Windows XP might not connect properly, because they don’t have the proper drivers installed by default. To fix this, download and install Windows Media Player 11 or higher which contains the proper drivers.\nComputers that use Mac OS X 10.5 or later might not connect properly, because they don’t have the proper drivers installed by default. To fix this, download and install Android File Transfer which contains the proper drivers."
+      },
+      {
+        "question":"What kinds of inappropriate phone use may potentially damage the battery? (same as android 10)",
+        "answer":"1)    Using a non-standard charger instead of the official charger.\n2)    Using damaged cables or chargers, or charging when moisture is present, which can cause fire, electric shock, injury, or damage your phone or other property.\n3)    Exposing your phone or battery to heat sources.\n4)    We recommend that you do not use the phone for long periods of time while it is charging, as it will harm your battery.\n**When you use the official charger to charge your phone, make sure the USB cable is inserted into the power adapter fully before you plug the adapter into a power outlet."
+      }
+    ]
+  },
+  {
+    "category":"Others",
+    "data": [
+      {
+        "question":"How can I use the Talkback feature?",
+        "answer":"TalkBack is a screen reader primarily for people with blindness and low vision. It allows interaction with the device using spoken feedback. In this mode, you need to quickly touch the button twice to choose the button.\nPlease go to “Settings”->”Accessibility”->”Talkback”, touch the toggle to turn on/off it.\nTo navigate using TalkBack:\n-Swipe right or left to move between items\n-Double –tap to activate an item\n-Drag two finger to scroll"
+      }
+    ]
+  }
+]

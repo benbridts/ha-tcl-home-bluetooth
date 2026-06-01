@@ -1,0 +1,692 @@
+{
+  "version": "1.0",
+  "countries": [
+    {
+      "abbr": "KW",
+      "cnName": "科威特",
+      "countryCode": "965",
+      "enName": "Kuwait",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "AE",
+      "cnName": "阿联酋",
+      "countryCode": "971",
+      "enName": "United Arab Emirates",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "GR",
+      "cnName": "希腊",
+      "countryCode": "30",
+      "enName": "Greece",
+      "isOnline": "1",
+      "language": [
+        "el",
+        "en"
+      ]
+    },
+    {
+      "abbr": "EE",
+      "cnName": "爱沙尼亚",
+      "countryCode": "372",
+      "enName": "Estonia",
+      "isOnline": "1",
+      "language": [
+        "et",
+        "en"
+      ]
+    },
+    {
+      "abbr": "BH",
+      "cnName": "巴林",
+      "countryCode": "973",
+      "enName": "Bahrain",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "OM",
+      "cnName": "阿曼",
+      "countryCode": "968",
+      "enName": "Oman",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "QA",
+      "cnName": "卡塔尔",
+      "countryCode": "974",
+      "enName": "Qatar",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "YE",
+      "cnName": "也门",
+      "countryCode": "967",
+      "enName": "Yemen",
+      "isOnline": "1",
+      "language": [
+        "ar",
+        "en"
+      ]
+    },
+    {
+      "abbr": "HK",
+      "cnName": "中国香港",
+      "countryCode": "852",
+      "enName": "Hong Kong, China",
+      "isOnline": "1",
+      "language": [
+        "zh-HK",
+        "en"
+      ]
+    },
+    {
+      "abbr": "TR",
+      "cnName": "土耳其",
+      "countryCode": "90",
+      "enName": "Turkey",
+      "isOnline": "1",
+      "language": [
+        "tr",
+        "en"
+      ]
+    },
+    {
+      "abbr": "MO",
+      "cnName": "中国澳门",
+      "countryCode": "853",
+      "enName": "Macao, China",
+      "isOnline": "1",
+      "language": [
+        "en"
+      ]
+    },
+    {
+      "abbr": "TW",
+      "cnName": "中国台湾",
+      "countryCode": "886",
+      "enName": "Taiwan, China",
+      "isOnline": "1",
+      "language": [
+        "zh-TW",
+        "en"
+      ]
+    }
+  ],
+  "widget": {
+    "40003": {
+      "widgetId": "40003",
+      "widgetName": "Password",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "40002": {
+      "widgetId": "40002",
+      "widgetName": "Phone",
+      "regionLang": [
+      ]
+    },
+    "20012": {
+      "widgetId": "20012",
+      "widgetName": "Messaging",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "40001": {
+      "widgetId": "40001",
+      "widgetName": "Email",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "100044": {
+      "widgetId": "100044",
+      "widgetName": "Live Chat",
+      "regionLang": [
+      ]
+    },
+    "30002": {
+      "widgetId": "30002",
+      "widgetName": "Language",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "30001": {
+      "widgetId": "30001",
+      "widgetName": "Account security",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "30003": {
+      "widgetId": "30003",
+      "widgetName": "Region",
+      "regionLang": [
+      ]
+    },
+    "10010": {
+      "widgetId": "10010",
+      "widgetName": "Home",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "20002": {
+      "widgetId": "20002",
+      "widgetName": "Settings",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "100006": {
+      "widgetId": "100006",
+      "widgetName": "Profile 基本版",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "20013": {
+      "widgetId": "20013",
+      "widgetName": "会员中心",
+      "regionLang": []
+    },
+    "20017": {
+      "widgetId": "20017",
+      "widgetName": "Room management",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "20011": {
+      "widgetId": "20011",
+      "widgetName": "Share devices",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "20018": {
+      "widgetId": "20018",
+      "widgetName": "Voice assistant",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "20019": {
+      "widgetId": "20019",
+      "widgetName": "About",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "50001": {
+      "widgetId": "50001",
+      "widgetName": "Messaging type system",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "50002": {
+      "widgetId": "50002",
+      "widgetName": "Messaging type devices",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "50003": {
+      "widgetId": "50003",
+      "widgetName": "Messaging type activities",
+      "regionLang": [
+      ]
+    },
+    "60001": {
+      "widgetId": "60001",
+      "widgetName": "About: Terms of TCL Account",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "60002": {
+      "widgetId": "60002",
+      "widgetName": "About: Terms of TCL Home App",
+      "regionLang": [
+      ]
+    },
+    "60003": {
+      "widgetId": "60003",
+      "widgetName": "About: Global Privacy Notice",
+      "regionLang": [
+        "US"
+      ]
+    },
+    "60004": {
+      "widgetId": "60004",
+      "widgetName": "About: Local Privacy Notice / Privacy Notice",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "60005": {
+      "widgetId": "60005",
+      "widgetName": "About: Terms of Loyalty Program",
+      "regionLang": [
+      ]
+    },
+    "60006": {
+      "widgetId": "60006",
+      "widgetName": "About: Subscribe",
+      "regionLang": [
+      ]
+    },
+    "60007": {
+      "widgetId": "60007",
+      "widgetName": "About: Join the User Experience Program",
+      "regionLang": [
+      ]
+    },
+    "60008": {
+      "widgetId": "60008",
+      "widgetName": "About: contact us",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "110001": {
+      "widgetId": "110001",
+      "widgetName": "subscribe message 营销邮件订阅",
+      "regionLang": [
+      ]
+    },
+    "110002": {
+      "widgetId": "110002",
+      "widgetName": "BI 数据埋点",
+      "regionLang": [
+      ]
+    },
+    "100016": {
+      "widgetId": "100016",
+      "widgetName": "Member coins",
+      "regionLang": [
+      ]
+    },
+    "20020": {
+      "widgetId": "20020",
+      "widgetName": "Firmware update 固件升级",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "20021": {
+      "widgetId": "20021",
+      "widgetName": "ODM FAQ",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "60010": {
+      "widgetId": "60010",
+      "widgetName": "About: IPC",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "60011": {
+      "widgetId": "60011",
+      "widgetName": "About: IPC",
+      "regionLang": [
+        "ALL"
+      ]
+    },
+    "60012": {
+      "widgetId": "60012",
+      "widgetName": "About: IPC",
+      "regionLang": [
+        "ALL"
+      ]
+    }
+  },
+  "language": {
+    "de": {
+      "cnName": "德语",
+      "enName": "Deutsch",
+      "nameCode": "de",
+      "androidNameCode": "de_DE",
+      "iso639Code": "de"
+    },
+    "fi": {
+      "cnName": "芬兰语",
+      "enName": "Suomi",
+      "nameCode": "fi",
+      "androidNameCode": "fi_FI",
+      "iso639Code": "fi"
+    },
+    "fil": {
+      "cnName": "菲律宾语",
+      "enName": "Tagalog",
+      "nameCode": "fil",
+      "androidNameCode": "fil_PH",
+      "iso639Code": "tl"
+    },
+    "lv": {
+      "cnName": "拉脱维亚语",
+      "enName": "Latviešu",
+      "nameCode": "lv",
+      "androidNameCode": "lv_LV",
+      "iso639Code": "lv"
+    },
+    "fr": {
+      "cnName": "法语",
+      "enName": "Français",
+      "nameCode": "fr",
+      "androidNameCode": "fr_FR",
+      "iso639Code": "fr"
+    },
+    "hu": {
+      "cnName": "匈牙利语",
+      "enName": "Magyar",
+      "nameCode": "hu",
+      "androidNameCode": "hu_HU",
+      "iso639Code": "hu"
+    },
+    "uk": {
+      "cnName": "乌克兰语",
+      "enName": "Українська",
+      "nameCode": "uk",
+      "androidNameCode": "uk_UA",
+      "iso639Code": "uk"
+    },
+    "sk": {
+      "cnName": "斯洛伐克语",
+      "enName": "Slovenčina",
+      "nameCode": "sk",
+      "androidNameCode": "sk_SK",
+      "iso639Code": "sk"
+    },
+    "id": {
+      "cnName": "印尼语",
+      "enName": "Bahasa Indonesia",
+      "nameCode": "id",
+      "androidNameCode": "in_ID",
+      "iso639Code": "id"
+    },
+    "sr": {
+      "cnName": "塞尔维亚语",
+      "enName": "Српски",
+      "nameCode": "sr",
+      "androidNameCode": "sr_RS",
+      "iso639Code": "sr"
+    },
+    "sv": {
+      "cnName": "瑞典语",
+      "enName": "Svenska",
+      "nameCode": "sv",
+      "androidNameCode": "sv_SE",
+      "iso639Code": "sv"
+    },
+    "zh-HK": {
+      "cnName": "繁体中文",
+      "enName": "繁體中文",
+      "nameCode": "zh-HK",
+      "androidNameCode": "zh_HK",
+      "iso639Code": "zh-HK"
+    },
+    "zh-TW": {
+      "cnName": "台湾繁体中文",
+      "enName": "繁体中文（台湾）",
+      "nameCode": "zh-TW",
+      "androidNameCode": "zh_TW",
+      "iso639Code": "zh-TW"
+    },
+    "el": {
+      "cnName": "希腊语",
+      "enName": "Ελληνικά",
+      "nameCode": "el",
+      "androidNameCode": "el_GR",
+      "iso639Code": "el"
+    },
+    "en": {
+      "cnName": "英语",
+      "enName": "English",
+      "nameCode": "en",
+      "androidNameCode": "en_US",
+      "iso639Code": "en"
+    },
+    "it": {
+      "cnName": "意大利语",
+      "enName": "Italiano",
+      "nameCode": "it",
+      "androidNameCode": "it_IT",
+      "iso639Code": "it"
+    },
+    "my": {
+      "cnName": "缅甸语(官方)",
+      "enName": "မြန်မာမာ",
+      "nameCode": "my",
+      "androidNameCode": "my_MM",
+      "iso639Code": "my"
+    },
+    "es": {
+      "cnName": "西班牙语",
+      "enName": "Español",
+      "nameCode": "es",
+      "androidNameCode": "es_ES",
+      "iso639Code": "es"
+    },
+    "et": {
+      "cnName": "爱沙尼亚语",
+      "enName": "Eesti",
+      "nameCode": "et",
+      "androidNameCode": "et_EE",
+      "iso639Code": "et"
+    },
+    "cs": {
+      "cnName": "捷克语",
+      "enName": "Čeština",
+      "nameCode": "cs",
+      "androidNameCode": "cs_CZ",
+      "iso639Code": "cs"
+    },
+    "ar": {
+      "cnName": "阿拉伯语(埃及)",
+      "enName": "العربية",
+      "nameCode": "ar",
+      "androidNameCode": "ar_EG",
+      "iso639Code": "ar"
+    },
+    "pt": {
+      "cnName": "葡萄牙语（巴西）",
+      "enName": "Português",
+      "nameCode": "pt",
+      "androidNameCode": "pt_BR",
+      "iso639Code": "pt"
+    },
+    "vi": {
+      "cnName": "越南语",
+      "enName": "Tiếng việt",
+      "nameCode": "vi",
+      "androidNameCode": "vi_VN",
+      "iso639Code": "vi"
+    },
+    "th": {
+      "cnName": "泰语",
+      "enName": "ภาษาไทย",
+      "nameCode": "th",
+      "androidNameCode": "th_TH",
+      "iso639Code": "th"
+    },
+    "nb": {
+      "cnName": "挪威语",
+      "enName": "Norsk",
+      "nameCode": "nb",
+      "androidNameCode": "nb_NO",
+      "iso639Code": "nb"
+    },
+    "pl": {
+      "cnName": "波兰语",
+      "enName": "Polski",
+      "nameCode": "pl",
+      "androidNameCode": "pl_PL",
+      "iso639Code": "pl"
+    },
+    "da": {
+      "cnName": "丹麦语",
+      "enName": "Dansk",
+      "nameCode": "da",
+      "androidNameCode": "da_DK",
+      "iso639Code": "da"
+    },
+    "ro": {
+      "cnName": "罗马尼亚语",
+      "enName": "Română",
+      "nameCode": "ro",
+      "androidNameCode": "ro_RO",
+      "iso639Code": "ro"
+    },
+    "nl": {
+      "cnName": "荷兰语",
+      "enName": "Nederlands",
+      "nameCode": "nl",
+      "androidNameCode": "nl_NL",
+      "iso639Code": "nl"
+    },
+    "he": {
+      "cnName": "希伯来语",
+      "enName": "עִברִית",
+      "nameCode": "he",
+      "androidNameCode": "iw_IL",
+      "iso639Code": "he"
+    },
+    "tr": {
+      "cnName": "土耳其语",
+      "enName": "Türkiye",
+      "nameCode": "tr-TR",
+      "androidNameCode": "tr_TR",
+      "iso639Code": "tr"
+    },
+    "ru": {
+      "cnName": "俄语",
+      "enName": "русский",
+      "nameCode": "ru",
+      "androidNameCode": "ru_RU",
+      "iso639Code": "ru"
+    },
+    "bg": {
+      "cnName": "保加利亚语",
+      "enName": "Bulgarian",
+      "nameCode": "bg",
+      "androidNameCode": "bg_BG",
+      "iso639Code": "bg"
+    },
+    "ja": {
+      "cnName": "日语",
+      "enName": "日本語 (にほんご)",
+      "nameCode": "ja",
+      "androidNameCode": "ja_JP",
+      "iso639Code": "ja"
+    }
+  },
+  "tabBar": {
+    "10010": {
+      "widgetId": "10010",
+      "widgetName": "Home"
+    },
+    "100006": {
+      "widgetId": "100006",
+      "widgetName": "Profile",
+      "subWidgetId": [
+        [
+          "20011",
+          "20017",
+          "20020",
+          "20018"
+        ],
+        [
+          "20021",
+          "20002",
+          "20019"
+        ]
+      ]
+    }
+  },
+  "widgetExtra": {
+    "20002": {
+      "widgetId": "20002",
+      "widgetName": "settings",
+      "subWidgetId": [
+        [
+          "30001"
+        ]
+      ]
+    },
+    "30001": {
+      "widgetId": "30001",
+      "widgetName": "Account security",
+      "subWidgetId": [
+        [
+          "40001",
+          "40002",
+          "40003"
+        ]
+      ]
+    },
+    "20012": {
+      "widgetId": "20012",
+      "widgetName": "Messaging",
+      "subWidgetId": [
+        [
+          "50001",
+          "50002"
+        ]
+      ]
+    },
+    "20019": {
+      "widgetId": "20019",
+      "widgetName": "About",
+      "subWidgetId": [
+        [
+          "60001",
+          "60002",
+          "60003",
+          "60004",
+          "60005",
+          "60006",
+          "60007",
+          "60008",
+          "60010",
+          "60011",
+          "60012"
+        ]
+      ]
+    },
+    "110001": {
+      "widgetId": "110001",
+      "widgetName": "subscribe message 营销邮件订阅"
+    },
+    "110002": {
+      "widgetId": "110002",
+      "widgetName": "BI 数据埋点"
+    }
+  }
+}

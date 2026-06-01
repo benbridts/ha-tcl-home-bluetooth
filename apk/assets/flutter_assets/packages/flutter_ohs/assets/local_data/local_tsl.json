@@ -1,0 +1,642 @@
+[
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "离线",
+        "1": "在线"
+      }
+    },
+    "identifier": "xLocalDeviceNetworkStatus",
+    "name": "设备离在线状态",
+    "productKeys": "all"
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalCommonFunctionTitle",
+    "name": "是否存在常用功能标题展示",
+    "productKeys": "all"
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalScene",
+    "name": "是否存在场景展示",
+    "productKeys": "all"
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalBootCustomization",
+    "name": "是否存在开机自定义",
+    "productKeys": "all"
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalDiagnosis",
+    "name": "是否存在空调诊断",
+    "productKeys": "all"
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalElderMode",
+    "name": "是否存在长辈模式",
+    "productKeys": "all"
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalFilterClean",
+    "name": "是否存在滤网清洗",
+    "productKeys": "all"
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalTimer",
+    "name": "是否存在定时功能",
+    "productKeys": "all"
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalWallMounted",
+    "name": "挂机",
+    "productKeys": [
+      "1112017519N",
+      "1112014082N",
+      "1112013742N",
+      "1112014069N",
+      "1112012763N",
+      "1112013595N",
+      "1112014406N",
+      "1112014401N",
+      "1112013431N",
+      "1112014403N",
+      "1112013830N",
+      "1112017807N",
+      "1112017939N",
+      "1112017964N",
+      "1112014376N",
+      "1112013960N",
+      "1112014475N",
+      "1112014788N",
+      "1112010010N",
+      "1112014789N",
+      "1112014508N",
+      "1112014657N",
+      "1112014691N",
+      "1112014662N",
+      "1112014688N",
+      "1112014966N",
+      "1112014703N",
+      "1112015063N",
+      "1112015135N",
+      "1112015418N",
+      "1112015291N",
+      "1112014526N",
+      "1112015441N",
+      "1112015506N",
+      "1112015657N",
+      "1112015649N",
+      "1112019211N",
+      "1112014681N",
+      "1112014083N",
+      "1112017356N",
+      "1112018296N",
+      "1112017331N",
+      "1112013827N",
+      "1112017938N",
+      "nn2ooaacswz6uyi0"
+    ]
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalCabinet",
+    "name": "柜机",
+    "productKeys": [
+      "1112040644N",
+      "1112040318N",
+      "1112033384N",
+      "1112033047N",
+      "1112033046N",
+      "1112043200N",
+      "1112037630N",
+      "1112037516N",
+      "1112044467N",
+      "1112044652N",
+      "1112044478N",
+      "1112044480N",
+      "1112044844N",
+      "1112044776N",
+      "1112045068N",
+      "1112045217N",
+      "1112045257N",
+      "1112043857N",
+      "1112041333N",
+      "1112034352N",
+      "1112044090N",
+      "1112031076N",
+      "1112038045N",
+      "1112031937N",
+      "1112043222N",
+      "1112034672N",
+      "1112040563N",
+      "1112046040N"
+    ]
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalElectricityStatistics",
+    "name": "是否存在电量统计",
+    "productKeys": [
+      "1112017519N",
+      "1112014082N",
+      "1112013742N",
+      "1112014069N",
+      "1112012763N",
+      "1112013595N",
+      "1112014406N",
+      "1112014401N",
+      "1112013431N",
+      "1112014403N",
+      "1112013830N",
+      "1112017807N",
+      "1112017939N",
+      "1112017964N",
+      "1112014376N",
+      "1112014475N",
+      "1112014788N",
+      "1112010010N",
+      "1112014789N",
+      "1112014508N",
+      "1112014657N",
+      "1112014691N",
+      "1112014662N",
+      "1112014688N",
+      "1112014966N",
+      "1112014703N",
+      "1112015063N",
+      "1112015135N",
+      "1112015418N",
+      "1112015291N",
+      "1112014526N",
+      "1112015441N",
+      "1112015506N",
+      "1112015657N",
+      "1112015649N",
+      "1112043857N",
+      "1112019211N",
+      "1112014681N",
+      "1112014083N",
+      "1112017356N",
+      "1112018296N",
+      "1112017331N",
+      "1112013827N",
+      "1112017938N",
+      "nn2ooaacswz6uyi0",
+      "wrz1s0oltemvo6t8"
+    ]
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalSmartFreshAir",
+    "name": "是否存在智慧新风",
+    "productKeys": [
+      "1112017519N",
+      "1112013742N",
+      "1112014069N",
+      "1112012763N",
+      "1112017964N",
+      "1112014376N",
+      "1112043200N",
+      "1112037630N",
+      "1112044467N",
+      "1112014475N",
+      "1112014788N",
+      "1112044652N",
+      "1112010010N",
+      "1112014789N",
+      "1112015063N",
+      "1112045068N",
+      "1112015135N",
+      "1112015418N",
+      "1112015291N",
+      "1112015441N",
+      "1112019211N",
+      "1112014681N",
+      "1112034352N",
+      "1112044090N",
+      "1112046040N"
+    ]
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalAlarmClock",
+    "name": "是否存在闹钟提醒（在语音功能内，有语音就有，所以直接配置all）",
+    "productKeys": "all"
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalHomeBroadcast",
+    "name": "是否存在家庭广播（在语音功能内，有语音就有，所以直接配置all）",
+    "productKeys": "all"
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalHomeMessage",
+    "name": "是否存在家庭留言（在语音功能内，有语音就有，所以直接配置all）",
+    "productKeys": "all"
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalCommandWordLearn",
+    "name": "是否存在命令词学习（在语音功能内，有语音就有，所以直接配置all）",
+    "productKeys": "all"
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalDeepSeek",
+    "name": "是否存在DeepSeek",
+    "productKeys": [
+      "1112015063N",
+      "1112045068N"
+    ]
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalSelfClean",
+    "name": "是否存在自清洁功能",
+    "productKeys": "all"
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalFreshAir",
+    "name": "是否存在新风功能",
+    "productKeys": [
+      "1112017519N",
+      "1112013742N",
+      "1112014069N",
+      "1112012763N",
+      "1112017964N",
+      "1112014376N",
+      "1112043200N",
+      "1112037630N",
+      "1112044467N",
+      "1112014475N",
+      "1112014788N",
+      "1112044652N",
+      "1112010010N",
+      "1112014789N",
+      "1112015063N",
+      "1112045068N",
+      "1112015135N",
+      "1112015418N",
+      "1112015291N",
+      "1112015441N",
+      "1112019211N",
+      "1112014681N",
+      "1112034352N",
+      "1112044090N",
+      "nn2ooaacswz6uyi0",
+      "wrz1s0oltemvo6t8"
+    ]
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalFreshAirReport",
+    "name": "是否存在新风报告功能",
+    "productKeys": [
+      "1112017519N",
+      "1112013742N",
+      "1112014069N",
+      "1112012763N",
+      "1112017964N",
+      "1112014376N",
+      "1112043200N",
+      "1112037630N",
+      "1112044467N",
+      "1112014475N",
+      "1112014788N",
+      "1112044652N",
+      "1112010010N",
+      "1112014789N",
+      "1112015063N",
+      "1112045068N",
+      "1112015135N",
+      "1112015418N",
+      "1112015291N",
+      "1112015441N",
+      "1112019211N",
+      "1112014681N",
+      "1112034352N",
+      "1112044090N",
+      "nn2ooaacswz6uyi0",
+      "wrz1s0oltemvo6t8"
+    ]
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalSmartSavingEnergy",
+    "name": "是否存在智慧节能",
+    "productKeys": "all"
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalSleep",
+    "name": "是否存在睡眠或者智慧睡眠(AI睡眠)",
+    "productKeys": "all"
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalNonStandard",
+    "name": "是否是非标准单品（指P7/C7以外的单品）",
+    "productKeys": [
+      "1112017519N",
+      "1112014082N",
+      "1112013742N",
+      "1112014069N",
+      "1112012763N",
+      "1112013595N",
+      "1112014406N",
+      "1112014401N",
+      "1112013431N",
+      "1112014403N",
+      "1112013830N",
+      "1112017807N",
+      "1112017939N",
+      "1112017964N",
+      "1112014376N",
+      "1112013960N",
+      "1112040644N",
+      "1112040318N",
+      "1112033384N",
+      "1112033047N",
+      "1112033046N",
+      "1112043200N",
+      "1112037630N",
+      "1112037516N",
+      "1112019211N",
+      "1112014681N",
+      "1112014083N",
+      "1112017356N",
+      "1112018296N",
+      "1112017331N",
+      "1112013827N",
+      "1112017938N",
+      "1112034352N",
+      "1112044090N",
+      "1112031076N",
+      "1112038045N",
+      "1112031937N",
+      "1112043222N",
+      "1112034672N",
+      "1112040563N",
+      "1112046040N"
+    ]
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalScheduleManagement",
+    "name": "是否存全天日程管理",
+    "productKeys": [
+      "1112046040N"
+    ]
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalVoiceLanguage",
+    "name": "语音是否存在切换语言",
+    "productKeys": [
+      "nn2ooaacswz6uyi0",
+      "wrz1s0oltemvo6t8"
+    ]
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalArriveLeaveHome",
+    "name": "是否存在离家/回家模式",
+    "productKeys": [
+      "nn2ooaacswz6uyi0",
+      "wrz1s0oltemvo6t8"
+    ]
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalSmartLearning",
+    "name": "Smart Learning",
+    "productKeys": [
+      "nn2ooaacswz6uyi0",
+      "wrz1s0oltemvo6t8"
+    ]
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalWindHotCold",
+    "name": "是否存高温风或者凉感风",
+    "productKeys": [
+      "nn2ooaacswz6uyi0",
+      "wrz1s0oltemvo6t8"
+    ]
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalPVElectricityStatistics",
+    "name": "是否存在光伏电量统计",
+    "productKeys": [
+      "nn2ooaacswz6uyi0",
+      "wrz1s0oltemvo6t8"
+    ]
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier":"xLocalAIEnergySavingDisable",
+    "name": "是否在电量统计页面预估省电量被禁用（预估省电量没有能力值判断，要么就是这个PK都做，要么就是这个PK都不做）",
+    "productKeys": [
+      "wrz1s0oltemvo6t8"
+    ]
+  },
+  {
+    "dataType": {
+      "type": "enum",
+      "specs": {
+        "0": "不存在",
+        "1": "存在"
+      }
+    },
+    "identifier": "xLocalMorningBroadcast",
+    "name": "是否存在晨起播报",
+    "productKeys": [
+      "1112015063N"
+    ]
+  }
+]
