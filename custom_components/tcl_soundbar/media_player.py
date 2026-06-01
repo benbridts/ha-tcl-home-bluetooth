@@ -44,7 +44,7 @@ async def async_setup_entry(
     address = entry.data["address"]
     _LOGGER.debug("Setting up TCL Soundbar media player at %s", address)
 
-    entity = TCLSoundbarMediaPlayer(entry, address)
+    entity = TCLSoundbarMediaPlayer(hass, entry, address)
     async_add_entities([entity])
 
 
@@ -62,8 +62,9 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         | MediaPlayerEntityFeature.SELECT_SOURCE
     )
 
-    def __init__(self, entry: ConfigEntry, address: str) -> None:
+    def __init__(self, hass: HomeAssistant, entry: ConfigEntry, address: str) -> None:
         """Initialize the TCL Soundbar media player."""
+        self.hass = hass
         self._entry = entry
         self._address = address
         self._client: BleakClient | None = None
@@ -88,7 +89,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         }
 
         self._connected = False
-        self._connecting = False
+        self._connect_lock = asyncio.Lock()
 
     async def async_added_to_hass(self) -> None:
         """Run when entity is added to hass."""
@@ -101,18 +102,20 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
     async def _ensure_connected(self) -> bool:
         """Ensure BLE connection is established.
 
+        Uses an asyncio.Lock so concurrent callers wait for the connection
+        attempt rather than failing immediately.
+
         Returns:
             True if connected, False otherwise.
         """
         if self._connected and self._client and self._client.is_connected:
             return True
 
-        if self._connecting:
-            _LOGGER.debug("Already attempting to connect")
-            return False
+        async with self._connect_lock:
+            # Re-check after acquiring the lock (another caller may have connected)
+            if self._connected and self._client and self._client.is_connected:
+                return True
 
-        self._connecting = True
-        try:
             for attempt in range(1, MAX_CONNECT_ATTEMPTS + 1):
                 try:
                     _LOGGER.debug(
@@ -127,6 +130,10 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                     await self._start_notifications()
                     self._connected = True
                     _LOGGER.debug("Connected to %s", self._address)
+
+                    # Poll initial state from device
+                    await self._poll_initial_state()
+
                     return True
                 except (BleakError, asyncio.TimeoutError, OSError) as err:
                     _LOGGER.warning(
@@ -143,10 +150,20 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                         self._attr_state = None
                         self.async_write_ha_state()
                         return False
-        finally:
-            self._connecting = False
 
         return False
+
+    async def _poll_initial_state(self) -> None:
+        """Send a get-status command to request current state from device."""
+        if self._client and self._write_characteristic:
+            try:
+                frame = TCLSoundbarProtocol.build_get_status()
+                _LOGGER.debug("Polling initial state: %s", frame.hex())
+                await self._client.write_gatt_char(
+                    self._write_characteristic, frame
+                )
+            except (BleakError, asyncio.TimeoutError, OSError) as err:
+                _LOGGER.warning("Failed to poll initial state: %s", err)
 
     async def _discover_characteristics(self) -> None:
         """Discover write and notify characteristics within the FFF6 service."""
@@ -183,7 +200,11 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
     def _notification_callback(
         self, _sender: Any, data: bytearray
     ) -> None:
-        """Handle incoming BLE notifications."""
+        """Handle incoming BLE notifications.
+
+        This callback is invoked from Bleak's background thread, so we
+        must schedule state updates on the event loop thread-safely.
+        """
         _LOGGER.debug("Received notification: %s", data.hex())
 
         complete_frame = self._data_merger.add_data(bytes(data))
@@ -204,7 +225,6 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             if payload:
                 volume = payload[0]
                 self._attr_volume_level = volume / 100.0
-                self._attr_is_volume_muted = volume == 0
                 _LOGGER.debug("Volume report: %d%%", volume)
 
         elif command == CMD_REPORT_POWER:
@@ -229,7 +249,8 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         else:
             _LOGGER.debug("Unhandled report command: 0x%02X", command)
 
-        self.async_write_ha_state()
+        # Schedule state update on the event loop (thread-safe)
+        self.hass.loop.call_soon_threadsafe(self.async_write_ha_state)
 
     async def _disconnect(self) -> None:
         """Disconnect from the device."""
@@ -243,11 +264,15 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         self._write_characteristic = None
         self._notify_characteristic = None
 
-    async def _send_command(self, frame: bytes) -> None:
-        """Send a command frame to the device."""
+    async def _send_command(self, frame: bytes) -> bool:
+        """Send a command frame to the device.
+
+        Returns:
+            True if the command was sent successfully, False otherwise.
+        """
         if not await self._ensure_connected():
             _LOGGER.error("Cannot send command: not connected")
-            return
+            return False
 
         assert self._client is not None
         assert self._write_characteristic is not None
@@ -257,6 +282,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             await self._client.write_gatt_char(
                 self._write_characteristic, frame
             )
+            return True
         except (BleakError, asyncio.TimeoutError, OSError) as err:
             _LOGGER.error("Failed to send command: %s", err)
             self._connected = False
@@ -266,33 +292,36 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                     await self._client.write_gatt_char(
                         self._write_characteristic, frame
                     )
+                    return True
                 except (BleakError, asyncio.TimeoutError, OSError) as retry_err:
                     _LOGGER.error("Retry also failed: %s", retry_err)
+                    return False
+            return False
 
     async def async_turn_on(self) -> None:
         """Turn the soundbar on."""
         _LOGGER.debug("Turning on TCL Soundbar")
         frame = TCLSoundbarProtocol.build_set_power(on=True)
-        await self._send_command(frame)
-        self._attr_state = MediaPlayerState.ON
-        self.async_write_ha_state()
+        if await self._send_command(frame):
+            self._attr_state = MediaPlayerState.ON
+            self.async_write_ha_state()
 
     async def async_turn_off(self) -> None:
         """Turn the soundbar off."""
         _LOGGER.debug("Turning off TCL Soundbar")
         frame = TCLSoundbarProtocol.build_set_power(on=False)
-        await self._send_command(frame)
-        self._attr_state = MediaPlayerState.OFF
-        self.async_write_ha_state()
+        if await self._send_command(frame):
+            self._attr_state = MediaPlayerState.OFF
+            self.async_write_ha_state()
 
     async def async_set_volume_level(self, volume: float) -> None:
         """Set volume level (0.0 to 1.0)."""
         level = int(volume * 100)
         _LOGGER.debug("Setting volume to %d%%", level)
         frame = TCLSoundbarProtocol.build_set_volume(level)
-        await self._send_command(frame)
-        self._attr_volume_level = volume
-        self.async_write_ha_state()
+        if await self._send_command(frame):
+            self._attr_volume_level = volume
+            self.async_write_ha_state()
 
     async def async_volume_up(self) -> None:
         """Turn volume up."""
@@ -310,9 +339,9 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         """Mute or unmute the soundbar."""
         _LOGGER.debug("Setting mute to %s", mute)
         frame = TCLSoundbarProtocol.build_set_mute(mute)
-        await self._send_command(frame)
-        self._attr_is_volume_muted = mute
-        self.async_write_ha_state()
+        if await self._send_command(frame):
+            self._attr_is_volume_muted = mute
+            self.async_write_ha_state()
 
     async def async_select_source(self, source: str) -> None:
         """Select input source."""
@@ -323,6 +352,6 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
 
         _LOGGER.debug("Selecting source: %s (ID=%d)", source, source_id)
         frame = TCLSoundbarProtocol.build_set_source(source_id)
-        await self._send_command(frame)
-        self._attr_source = source
-        self.async_write_ha_state()
+        if await self._send_command(frame):
+            self._attr_source = source
+            self.async_write_ha_state()

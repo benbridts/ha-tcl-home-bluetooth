@@ -7,7 +7,8 @@
   "documentation": "https://github.com/benbridts/ha-tcl-home-bluetooth",
   "bluetooth": [
     {
-      "service_uuid": "0000fff6-0000-1000-8000-00805f9b34fb"
+      "service_uuid": "0000fff6-0000-1000-8000-00805f9b34fb",
+      "local_name": "TCL*"
     }
   ],
   "iot_class": "local_push",

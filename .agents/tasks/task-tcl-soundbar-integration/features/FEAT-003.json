@@ -1,0 +1,31 @@
+{
+  "id": "FEAT-003",
+  "type": "fix",
+  "description": "Address semantic review findings in media_player.py: make _send_command return bool, fix mute state tracking, fix notification callback thread safety, add initial state poll, fix _ensure_connected reentrancy, and add local_name filter to manifest.",
+  "status": "in_progress",
+  "steps": [
+    "Make _send_command return bool (True on success, False on failure). Guard optimistic state updates behind success check in all command methods.",
+    "Fix mute state tracking: track mute state separately, do not derive is_volume_muted from volume==0.",
+    "Fix notification callback thread safety: use hass.loop.call_soon_threadsafe for async_write_ha_state.",
+    "Add initial state poll: after _start_notifications succeeds, send build_get_status() to request current state.",
+    "Fix _ensure_connected reentrancy: replace boolean _connecting flag with asyncio.Lock.",
+    "Add local_name filter to manifest.json bluetooth matcher."
+  ],
+  "acceptance_criteria": [
+    "_send_command returns True on success, False on failure",
+    "Optimistic state updates are guarded by _send_command return value",
+    "Mute state is tracked independently from volume level",
+    "Notification callback safely schedules state updates on the event loop",
+    "Initial state poll is sent after connection setup",
+    "Concurrent _ensure_connected calls wait rather than fail",
+    "manifest.json includes local_name filter for TCL",
+    "Existing tests still pass",
+    "All Python files compile"
+  ],
+  "verification": [
+    "Run: python -m py_compile custom_components/tcl_soundbar/media_player.py",
+    "Run: python -m pytest tests/test_protocol.py -v"
+  ],
+  "blocked_reason": null,
+  "findings": null
+}
