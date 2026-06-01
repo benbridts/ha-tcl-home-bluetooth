@@ -1,13 +1,17 @@
 """Media player platform for TCL Soundbar."""
 from __future__ import annotations
 
+import asyncio
 import logging
 from typing import Any
 
 from bleak import BleakClient
 from bleak.exc import BleakError
 
-from homeassistant.components.bluetooth import async_ble_device_from_address
+from homeassistant.components.bluetooth import (
+    async_ble_device_from_address,
+    establish_connection,
+)
 from homeassistant.components.media_player import (
     MediaPlayerEntity,
     MediaPlayerEntityFeature,
@@ -67,6 +71,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         self._write_characteristic: Any = None
         self._notify_characteristic: Any = None
         self._data_merger = TDataMerger()
+        self._connect_lock = asyncio.Lock()
 
         # State attributes
         self._attr_state: MediaPlayerState | None = None
@@ -95,8 +100,8 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
     async def _ensure_connected(self) -> bool:
         """Ensure BLE connection is established using HA bluetooth utilities.
 
-        Uses async_ble_device_from_address to get a fresh BLEDevice from
-        Home Assistant's bluetooth manager, then connects via BleakClient.
+        Uses async_ble_device_from_address to get a fresh BLEDevice, then
+        establish_connection for retry, slot management, and disconnect callback.
 
         Returns:
             True if connected, False otherwise.
@@ -104,33 +109,43 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         if self._client and self._client.is_connected:
             return True
 
-        try:
-            ble_device = async_ble_device_from_address(
-                self.hass, self._address, connectable=True
-            )
-            if ble_device is None:
-                _LOGGER.error(
-                    "Could not find BLE device for address %s", self._address
+        async with self._connect_lock:
+            # Double-check after acquiring lock
+            if self._client and self._client.is_connected:
+                return True
+
+            try:
+                ble_device = async_ble_device_from_address(
+                    self.hass, self._address, connectable=True
                 )
+                if ble_device is None:
+                    _LOGGER.error(
+                        "Could not find BLE device for address %s", self._address
+                    )
+                    return False
+
+                _LOGGER.debug("Connecting to %s", self._address)
+                self._client = await establish_connection(
+                    self.hass,
+                    _LOGGER,
+                    ble_device,
+                    self._address,
+                    disconnected_callback=self._handle_disconnect,
+                )
+                await self._discover_characteristics()
+                await self._start_notifications()
+                _LOGGER.debug("Connected to %s", self._address)
+
+                # Poll initial state from device
+                await self._poll_initial_state()
+
+                return True
+            except (BleakError, TimeoutError, OSError) as err:
+                _LOGGER.error("Failed to connect to %s: %s", self._address, err)
+                self._client = None
+                self._attr_state = None
+                self.async_write_ha_state()
                 return False
-
-            _LOGGER.debug("Connecting to %s", self._address)
-            self._client = BleakClient(ble_device)
-            await self._client.connect()
-            await self._discover_characteristics()
-            await self._start_notifications()
-            _LOGGER.debug("Connected to %s", self._address)
-
-            # Poll initial state from device
-            await self._poll_initial_state()
-
-            return True
-        except (BleakError, TimeoutError, OSError) as err:
-            _LOGGER.error("Failed to connect to %s: %s", self._address, err)
-            self._client = None
-            self._attr_state = None
-            self.async_write_ha_state()
-            return False
 
     async def _poll_initial_state(self) -> None:
         """Send a get-status command to request current state from device."""
@@ -175,6 +190,18 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                 self._notify_characteristic, self._notification_callback
             )
             _LOGGER.debug("Started notifications")
+
+    def _handle_disconnect(self) -> None:
+        """Handle unexpected device disconnection.
+
+        Clears client and characteristics, logs the event, and schedules
+        a state update so HA reflects the disconnected state.
+        """
+        _LOGGER.warning("Device %s disconnected unexpectedly", self._address)
+        self._client = None
+        self._write_characteristic = None
+        self._notify_characteristic = None
+        self.hass.loop.call_soon_threadsafe(self.async_write_ha_state)
 
     def _notification_callback(
         self, _sender: Any, data: bytearray
@@ -245,6 +272,9 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
     async def _send_command(self, frame: bytes) -> bool:
         """Send a command frame to the device.
 
+        If the write fails, invalidates the connection and retries once
+        after re-establishing the connection.
+
         Returns:
             True if the command was sent successfully, False otherwise.
         """
@@ -262,9 +292,28 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             )
             return True
         except (BleakError, TimeoutError, OSError) as err:
-            _LOGGER.error("Failed to send command: %s", err)
+            _LOGGER.warning("Failed to send command, retrying: %s", err)
             self._client = None
-            return False
+            self._write_characteristic = None
+            self._notify_characteristic = None
+
+            # Single retry: reconnect and resend
+            if not await self._ensure_connected():
+                _LOGGER.error("Retry failed: could not reconnect")
+                return False
+
+            assert self._client is not None
+            assert self._write_characteristic is not None
+
+            try:
+                await self._client.write_gatt_char(
+                    self._write_characteristic, frame
+                )
+                return True
+            except (BleakError, TimeoutError, OSError) as retry_err:
+                _LOGGER.error("Retry failed: %s", retry_err)
+                self._client = None
+                return False
 
     async def async_turn_on(self) -> None:
         """Turn the soundbar on."""
