@@ -1,0 +1,7 @@
+{
+  "task_id": "task-refactor-ble-connection",
+  "task_description": "Refactor TCL Soundbar integration to use Home Assistant's standard BLE connection management (async_ble_device_from_address + establish_connection) instead of manual BleakClient retry loops, and fix the local import in protocol.py.",
+  "status": "in_progress",
+  "feature_order": ["FEAT-001"],
+  "blocked_reason": null
+}
