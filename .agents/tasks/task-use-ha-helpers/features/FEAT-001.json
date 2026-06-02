@@ -1,0 +1,29 @@
+{
+  "id": "FEAT-001",
+  "type": "refactor",
+  "description": "Replace low-level patterns in media_player.py and config_flow.py with proper Home Assistant helpers",
+  "status": "in_progress",
+  "steps": [
+    "In custom_components/tcl_soundbar/media_player.py: Import DeviceInfo from homeassistant.helpers.device_registry. Replace the raw dict assigned to self._attr_device_info with a DeviceInfo(...) instance using keyword arguments: identifiers, name, manufacturer, model.",
+    "In custom_components/tcl_soundbar/media_player.py: Remove 'self.hass = hass' from __init__ - the MediaPlayerEntity base class sets self.hass when the entity is added to HA. Keep it being passed to __init__ only for use during connection (store it as a different private attribute if needed before async_added_to_hass is called, but actually _send_command is only called from async methods after the entity is added, so self.hass will be available). Also remove 'self._entry = entry' if it's not used elsewhere - currently entry is only used for entry.title in device_info, so capture that value directly.",
+    "In custom_components/tcl_soundbar/media_player.py: Replace all occurrences of 'self.hass.loop.call_soon_threadsafe(self.async_write_ha_state)' with 'self.schedule_update_ha_state()'. The schedule_update_ha_state() method is specifically designed for thread-safe state updates from non-async callbacks (like BLE notification callbacks). It is available on Entity base class and is thread-safe.",
+    "In custom_components/tcl_soundbar/media_player.py: Update the async_setup_entry function signature to no longer pass 'hass' to the entity constructor since it is set automatically. Instead pass only the address and any needed config data (entry.title for device name).",
+    "In custom_components/tcl_soundbar/config_flow.py: Replace the deprecated 'from homeassistant.data_entry_flow import FlowResult' with 'from homeassistant.config_entries import ConfigFlowResult'. Update all return type annotations from 'FlowResult' to 'ConfigFlowResult'.",
+    "Verify all modified files parse correctly with Python AST (python -c \"import ast; ast.parse(open('file').read())\") and run existing tests with pytest."
+  ],
+  "acceptance_criteria": [
+    "media_player.py uses DeviceInfo helper from homeassistant.helpers.device_registry instead of a raw dict",
+    "media_player.py does not manually assign self.hass = hass in __init__",
+    "media_player.py uses self.schedule_update_ha_state() instead of self.hass.loop.call_soon_threadsafe(self.async_write_ha_state)",
+    "config_flow.py uses ConfigFlowResult from homeassistant.config_entries instead of FlowResult from homeassistant.data_entry_flow",
+    "All files parse without syntax errors",
+    "Existing tests in tests/test_protocol.py still pass"
+  ],
+  "verification": [
+    "python -c \"import ast; ast.parse(open('custom_components/tcl_soundbar/media_player.py').read())\"",
+    "python -c \"import ast; ast.parse(open('custom_components/tcl_soundbar/config_flow.py').read())\"",
+    "python -m pytest tests/ -v"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}

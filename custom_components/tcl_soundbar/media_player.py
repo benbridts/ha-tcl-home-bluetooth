@@ -16,6 +16,7 @@ from homeassistant.components.media_player import (
 )
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
+from homeassistant.helpers.device_registry import DeviceInfo
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 
 from .const import (
@@ -41,7 +42,7 @@ async def async_setup_entry(
     address = entry.data["address"]
     _LOGGER.debug("Setting up TCL Soundbar media player at %s", address)
 
-    entity = TCLSoundbarMediaPlayer(hass, entry, address)
+    entity = TCLSoundbarMediaPlayer(entry, address)
     async_add_entities([entity])
 
 
@@ -59,10 +60,8 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         | MediaPlayerEntityFeature.SELECT_SOURCE
     )
 
-    def __init__(self, hass: HomeAssistant, entry: ConfigEntry, address: str) -> None:
+    def __init__(self, entry: ConfigEntry, address: str) -> None:
         """Initialize the TCL Soundbar media player."""
-        self.hass = hass
-        self._entry = entry
         self._address = address
         self._client: BleakClient | None = None
         self._write_characteristic: Any = None
@@ -78,12 +77,12 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
 
         # Entity identifiers
         self._attr_unique_id = f"{DOMAIN}_{address.replace(':', '_')}"
-        self._attr_device_info = {
-            "identifiers": {(DOMAIN, address)},
-            "name": entry.title,
-            "manufacturer": "TCL",
-            "model": "S55HE Soundbar",
-        }
+        self._attr_device_info = DeviceInfo(
+            identifiers={(DOMAIN, address)},
+            name=entry.title,
+            manufacturer="TCL",
+            model="S55HE Soundbar",
+        )
 
     async def async_added_to_hass(self) -> None:
         """Run when entity is added to hass."""
@@ -147,7 +146,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         self._client = None
         self._write_characteristic = None
         self._notify_characteristic = None
-        self.hass.loop.call_soon_threadsafe(self.async_write_ha_state)
+        self.schedule_update_ha_state()
 
     def _notification_callback(
         self, _sender: Any, data: bytearray
@@ -202,7 +201,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             _LOGGER.debug("Unhandled report command: 0x%02X", command)
 
         # Schedule state update on the event loop (thread-safe)
-        self.hass.loop.call_soon_threadsafe(self.async_write_ha_state)
+        self.schedule_update_ha_state()
 
     async def _disconnect(self) -> None:
         """Disconnect from the device."""
