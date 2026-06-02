@@ -7,10 +7,7 @@ from typing import Any
 from bleak import BleakClient
 from bleak.exc import BleakError
 
-from homeassistant.components.bluetooth import (
-    async_ble_device_from_address,
-    establish_connection,
-)
+from homeassistant.components.bluetooth import async_ble_device_from_address
 from homeassistant.components.media_player import (
     MediaPlayerEntity,
     MediaPlayerEntityFeature,
@@ -238,13 +235,11 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                     return False
 
                 _LOGGER.debug("Connecting to %s", self._address)
-                self._client = await establish_connection(
-                    self.hass,
-                    _LOGGER,
+                self._client = BleakClient(
                     ble_device,
-                    self._address,
-                    disconnected_callback=self._handle_disconnect,
+                    disconnected_callback=lambda client: self._handle_disconnect(),
                 )
+                await self._client.connect()
                 await self._discover_characteristics()
                 await self._start_notifications()
                 _LOGGER.debug("Connected to %s", self._address)
