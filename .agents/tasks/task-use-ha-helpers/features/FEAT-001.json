@@ -2,7 +2,7 @@
   "id": "FEAT-001",
   "type": "refactor",
   "description": "Replace low-level patterns in media_player.py and config_flow.py with proper Home Assistant helpers",
-  "status": "in_progress",
+  "status": "completed",
   "steps": [
     "In custom_components/tcl_soundbar/media_player.py: Import DeviceInfo from homeassistant.helpers.device_registry. Replace the raw dict assigned to self._attr_device_info with a DeviceInfo(...) instance using keyword arguments: identifiers, name, manufacturer, model.",
     "In custom_components/tcl_soundbar/media_player.py: Remove 'self.hass = hass' from __init__ - the MediaPlayerEntity base class sets self.hass when the entity is added to HA. Keep it being passed to __init__ only for use during connection (store it as a different private attribute if needed before async_added_to_hass is called, but actually _send_command is only called from async methods after the entity is added, so self.hass will be available). Also remove 'self._entry = entry' if it's not used elsewhere - currently entry is only used for entry.title in device_info, so capture that value directly.",
@@ -25,5 +25,5 @@
     "python -m pytest tests/ -v"
   ],
   "blocked_reason": null,
-  "findings": ""
+  "findings": "Pre-existing test failure: test_protocol.py was missing mocks for homeassistant.const and other submodules needed during import. Fixed by adding the missing sys.modules mocks. All 22 tests pass."
 }
