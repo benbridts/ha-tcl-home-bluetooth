@@ -242,6 +242,16 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                     disconnected_callback=lambda _client: self._handle_disconnect(),
                 )
                 await self._discover_characteristics()
+
+                if not self._write_characteristic:
+                    _LOGGER.error(
+                        "Service discovery failed for %s; "
+                        "write characteristic not found",
+                        self._address,
+                    )
+                    await self._disconnect()
+                    return False
+
                 await self._start_notifications()
                 _LOGGER.debug("Connected to %s", self._address)
 
@@ -253,8 +263,18 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                 self.async_write_ha_state()
                 return False
 
-        assert self._client is not None
-        assert self._write_characteristic is not None
+        if not self._client or not self._client.is_connected:
+            _LOGGER.error("Client not connected after connection attempt")
+            return False
+
+        if not self._write_characteristic:
+            _LOGGER.error(
+                "Write characteristic not available for %s; "
+                "cannot send command",
+                self._address,
+            )
+            await self._disconnect()
+            return False
 
         try:
             _LOGGER.debug("Sending command: %s", frame.hex())
