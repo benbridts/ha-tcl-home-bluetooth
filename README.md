@@ -44,11 +44,9 @@ When adding the integration manually, you will be asked for the **Bluetooth addr
 
 There are several ways to find your soundbar's Bluetooth address:
 
-1. **TCL Home app** - If you have the soundbar connected in the TCL Home app, the device details or settings screen should show the Bluetooth address. The soundbar can be connected to both the TCL Home app and Home Assistant at the same time.
+1. **Home Assistant Bluetooth integration** - Go to **Settings > Devices & Services > Bluetooth**. Your soundbar may show up as multiple devices. Look for the one with a name like `tcl_XXXXXXXX_XXXX` (e.g., `tcl_B14S55H0_1FD6`), not the "LE AUDIO" device. The address is shown alongside the device name.
 
-2. **Home Assistant Bluetooth integration** - Go to **Settings > Devices & Services > Bluetooth**. Look for a device with a name starting with "TCL" or your soundbar model name (e.g., "S55HE"). The address is shown alongside the device name.
-
-3. **BLE scanner** - Use a Bluetooth Low Energy scanner such as a Flipper Zero (Radio > BLE) to scan for nearby devices. Look for one with a name starting with "TCL" or your soundbar model.
+2. **BLE scanner** - Use a Bluetooth Low Energy scanner such as a Flipper Zero (Radio > BLE) to scan for nearby devices. Look for one with a name matching the `tcl_XXXXXXXX_XXXX` pattern.
 
 ## Supported Devices
 
