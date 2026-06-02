@@ -7,8 +7,7 @@ from typing import Any
 import voluptuous as vol
 
 from homeassistant.components.bluetooth import BluetoothServiceInfoBleak
-from homeassistant.config_entries import ConfigFlow
-from homeassistant.data_entry_flow import FlowResult
+from homeassistant.config_entries import ConfigFlow, ConfigFlowResult
 
 from .const import DOMAIN
 
@@ -27,7 +26,7 @@ class TCLSoundbarConfigFlow(ConfigFlow, domain=DOMAIN):
 
     async def async_step_bluetooth(
         self, discovery_info: BluetoothServiceInfoBleak
-    ) -> FlowResult:
+    ) -> ConfigFlowResult:
         """Handle the Bluetooth discovery step."""
         _LOGGER.debug(
             "Discovered TCL Soundbar: %s (%s)",
@@ -45,7 +44,7 @@ class TCLSoundbarConfigFlow(ConfigFlow, domain=DOMAIN):
 
     async def async_step_bluetooth_confirm(
         self, user_input: dict[str, Any] | None = None
-    ) -> FlowResult:
+    ) -> ConfigFlowResult:
         """Confirm the Bluetooth discovery."""
         assert self._discovery_info is not None
 
@@ -62,7 +61,7 @@ class TCLSoundbarConfigFlow(ConfigFlow, domain=DOMAIN):
 
     async def async_step_user(
         self, user_input: dict[str, Any] | None = None
-    ) -> FlowResult:
+    ) -> ConfigFlowResult:
         """Handle the user step for manual configuration."""
         errors: dict[str, str] = {}
 
