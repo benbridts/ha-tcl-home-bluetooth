@@ -11,6 +11,7 @@
       "local_name": "TCL*"
     }
   ],
+  "import_executor": true,
   "iot_class": "local_push",
   "version": "1.0.0"
 }
