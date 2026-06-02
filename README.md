@@ -36,6 +36,18 @@ A Home Assistant custom integration for controlling TCL soundbars that use the T
 
 The integration auto-discovers TCL soundbars via Bluetooth. If your device is not discovered automatically, you can add it manually via **Settings > Devices & Services > Add Integration** and search for "TCL Home Soundbar".
 
+### Manual Configuration
+
+When adding the integration manually, you will be asked for the **Bluetooth address** of your soundbar. This is the BLE MAC address in the format `XX:XX:XX:XX:XX:XX` (for example, `A4:C1:38:00:11:22`).
+
+#### How to find the Bluetooth address
+
+There are several ways to find your soundbar's Bluetooth address:
+
+1. **Home Assistant Bluetooth integration** - Go to **Settings > Devices & Services > Bluetooth**. Your soundbar may show up as multiple devices. Look for the one with a name like `tcl_XXXXXXXX_XXXX` (e.g., `tcl_B14S55H0_1FD6`), not the "LE AUDIO" device. The address is shown alongside the device name.
+
+2. **BLE scanner** - Use a Bluetooth Low Energy scanner such as a Flipper Zero (Radio > BLE) to scan for nearby devices. Look for one with a name matching the `tcl_XXXXXXXX_XXXX` pattern.
+
 ## Supported Devices
 
 ### Known Compatible
