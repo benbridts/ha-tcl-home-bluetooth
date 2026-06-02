@@ -84,6 +84,16 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             model="S55HE Soundbar",
         )
 
+    @property
+    def extra_state_attributes(self) -> dict[str, Any]:
+        """Expose BLE connection debug state as entity attributes."""
+        return {
+            "ble_connected": self._client is not None
+            and self._client.is_connected,
+            "write_characteristic": self._write_characteristic is not None,
+            "notify_characteristic": self._notify_characteristic is not None,
+        }
+
     async def async_added_to_hass(self) -> None:
         """Run when entity is added to hass."""
         _LOGGER.debug("TCL Soundbar entity added to hass: %s", self._address)
@@ -263,17 +273,12 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                 self.async_write_ha_state()
                 return False
 
-        if not self._client or not self._client.is_connected:
-            _LOGGER.error("Client not connected after connection attempt")
-            return False
-
         if not self._write_characteristic:
             _LOGGER.error(
                 "Write characteristic not available for %s; "
                 "cannot send command",
                 self._address,
             )
-            await self._disconnect()
             return False
 
         try:
