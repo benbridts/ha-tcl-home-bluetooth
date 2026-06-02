@@ -1,21 +1,28 @@
 """The TCL Soundbar integration."""
 from __future__ import annotations
 
+import importlib
 import logging
 
 from homeassistant.config_entries import ConfigEntry
+from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant
 
 from .const import DOMAIN  # noqa: F401
 
 _LOGGER = logging.getLogger(__name__)
 
-PLATFORMS: list[str] = ["media_player"]
+PLATFORMS: list[Platform] = [Platform.MEDIA_PLAYER]
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     """Set up TCL Soundbar from a config entry."""
     _LOGGER.debug("Setting up TCL Soundbar integration for %s", entry.title)
+
+    # Pre-import platform modules in the executor to avoid blocking the event loop
+    await hass.async_add_import_executor_job(
+        importlib.import_module, ".media_player", __name__
+    )
 
     await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
     return True
