@@ -1,0 +1,22 @@
+{
+  "project_type": "Home Assistant custom integration (Bluetooth media player for TCL Soundbar)",
+  "language": "Python",
+  "build_system": "None (custom component installed into HA config directory)",
+  "test_framework": "pytest with unittest.mock stubs for homeassistant modules",
+  "build_command": "N/A - no formal build step",
+  "test_command": "cd /projects/sandbox/ha-tcl-home-bluetooth && python -m pytest tests/ -v",
+  "verification_instructions": "1. Run pytest on tests/test_protocol.py. 2. Verify Python import syntax with ast.parse on modified files.",
+  "snapshot_or_generated_files": null,
+  "setup_instructions": "pip install bleak bleak-retry-connector pytest",
+  "environment_constraints": "OPEN_INTERNET network - can install packages. No HA runtime available so full integration testing not possible. Use AST validation and unit tests.",
+  "contribution_requirements": "Standard HA custom component patterns",
+  "key_patterns": "Entity uses _attr_* pattern for state. Protocol is in protocol.py (pure logic). media_player.py has the entity class. config_flow.py handles discovery and manual setup.",
+  "relevant_files": [
+    "custom_components/tcl_soundbar/media_player.py",
+    "custom_components/tcl_soundbar/config_flow.py",
+    "custom_components/tcl_soundbar/__init__.py",
+    "custom_components/tcl_soundbar/const.py",
+    "tests/test_protocol.py"
+  ],
+  "directory_structure": "custom_components/tcl_soundbar/ contains the integration. tests/ contains protocol unit tests. apk/ is a reverse-engineered Android app (not relevant to code changes)."
+}

@@ -1,0 +1,7 @@
+{
+  "task_id": "task-use-ha-helpers",
+  "task_description": "Replace low-level patterns with Home Assistant helpers: DeviceInfo, ConfigFlowResult, thread-safe state updates via schedule_update_ha_state(), and remove redundant self.hass assignment.",
+  "status": "in_progress",
+  "feature_order": ["FEAT-001"],
+  "blocked_reason": null
+}

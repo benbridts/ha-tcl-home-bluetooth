@@ -9,9 +9,15 @@ from unittest.mock import MagicMock
 # Stub out homeassistant so we can import protocol without a full HA install
 sys.modules.setdefault("homeassistant", MagicMock())
 sys.modules.setdefault("homeassistant.config_entries", MagicMock())
+sys.modules.setdefault("homeassistant.const", MagicMock())
 sys.modules.setdefault("homeassistant.core", MagicMock())
 sys.modules.setdefault("homeassistant.components", MagicMock())
 sys.modules.setdefault("homeassistant.components.bluetooth", MagicMock())
+sys.modules.setdefault("homeassistant.components.media_player", MagicMock())
+sys.modules.setdefault("homeassistant.helpers", MagicMock())
+sys.modules.setdefault("homeassistant.helpers.device_registry", MagicMock())
+sys.modules.setdefault("homeassistant.helpers.entity_platform", MagicMock())
+sys.modules.setdefault("homeassistant.data_entry_flow", MagicMock())
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
