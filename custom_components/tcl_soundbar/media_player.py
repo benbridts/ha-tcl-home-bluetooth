@@ -69,7 +69,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         self._data_merger = TDataMerger()
 
         # State attributes
-        self._attr_state: MediaPlayerState | None = None
+        self._attr_state: MediaPlayerState | None = MediaPlayerState.OFF
         self._attr_volume_level: float | None = None
         self._attr_is_volume_muted: bool | None = None
         self._attr_source: str | None = None
@@ -87,10 +87,44 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
     async def async_added_to_hass(self) -> None:
         """Run when entity is added to hass."""
         _LOGGER.debug("TCL Soundbar entity added to hass: %s", self._address)
+        # Attempt initial connection to get device state
+        await self._connect_and_poll()
 
     async def async_will_remove_from_hass(self) -> None:
         """Run when entity is removed from hass."""
         await self._disconnect()
+
+    async def _connect_and_poll(self) -> None:
+        """Establish BLE connection and poll for initial device state."""
+        try:
+            ble_device = async_ble_device_from_address(
+                self.hass, self._address, connectable=True
+            )
+            if ble_device is None:
+                _LOGGER.debug(
+                    "BLE device %s not yet available, will connect on first command",
+                    self._address,
+                )
+                return
+
+            _LOGGER.debug("Initial connect to %s", self._address)
+            self._client = await establish_connection(
+                BleakClient,
+                ble_device,
+                self._address,
+                disconnected_callback=lambda _client: self._handle_disconnect(),
+            )
+            await self._discover_characteristics()
+            await self._start_notifications()
+            await self._poll_initial_state()
+            _LOGGER.debug("Initial connection established for %s", self._address)
+        except (BleakError, TimeoutError, OSError) as err:
+            _LOGGER.debug(
+                "Initial connection to %s failed (will retry on command): %s",
+                self._address,
+                err,
+            )
+            self._client = None
 
     async def _poll_initial_state(self) -> None:
         """Send a get-status command to request current state from device."""
