@@ -2,7 +2,7 @@
   "id": "FEAT-001",
   "type": "fix",
   "description": "Fix incorrect comments, incorrect code, remove unused code, and apply HA/Python best practices across the integration",
-  "status": "in_progress",
+  "status": "completed",
   "steps": [
     "1. media_player.py: Fix the _notification_callback docstring - remove the incorrect claim that it is 'invoked from Bleak's background thread'. In Home Assistant, bleak notification callbacks run on the event loop via the HA bluetooth integration. Update both the docstring and the comment above schedule_update_ha_state() in _handle_report.",
     "2. media_player.py: Replace schedule_update_ha_state() with async_write_ha_state() in both _notification_callback/_handle_report AND _handle_disconnect. Since callbacks run on the event loop in HA's bleak integration, async_write_ha_state() is correct. _handle_disconnect is also called from bleak's disconnected_callback which runs on the event loop in HA.",
@@ -30,5 +30,5 @@
     "cd /projects/sandbox/ha-tcl-home-bluetooth && python -m pytest tests/ -v"
   ],
   "blocked_reason": null,
-  "findings": ""
+  "findings": "All 22 tests pass. No issues encountered during implementation."
 }
