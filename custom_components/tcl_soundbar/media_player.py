@@ -17,7 +17,9 @@ Key design decisions:
 """
 from __future__ import annotations
 
+import asyncio
 import logging
+import time
 from typing import Any
 
 from bleak import BleakClient
@@ -91,6 +93,12 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         # TDataMerger reassembles multi-packet BLE notifications into
         # complete protocol frames before parsing.
         self._data_merger = TDataMerger()
+
+        # Track when we last sent a command and what it was.
+        # Used to log timing context on disconnect so we can observe
+        # whether the device disconnects after commands (and how quickly).
+        self._last_command_time: float = 0.0
+        self._last_command_hex: str = ""
 
         # State attributes
         self._attr_state: MediaPlayerState | None = MediaPlayerState.OFF
@@ -183,8 +191,10 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                 frame = TCLSoundbarProtocol.build_get_status()
                 _LOGGER.debug("Polling initial state: %s", frame.hex())
                 await self._client.write_gatt_char(
-                    self._write_characteristic, frame
+                    self._write_characteristic, frame, response=True
                 )
+                self._last_command_time = time.monotonic()
+                self._last_command_hex = frame.hex()
             except (BleakError, TimeoutError, OSError) as err:
                 _LOGGER.warning("Failed to poll initial state: %s", err)
 
@@ -276,14 +286,27 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             _LOGGER.debug("Started notifications")
 
     def _handle_disconnect(self) -> None:
-        """Handle unexpected device disconnection.
+        """Handle device disconnection.
 
-        Called by bleak when the BLE connection drops (e.g. device went to
-        sleep, moved out of range, or was power cycled). Clears connection
-        state and schedules a HA state update so the UI reflects that the
-        device is no longer reachable.
+        Called by bleak when the BLE connection drops. Logs the elapsed time
+        since the last command so we can observe whether the device initiates
+        disconnect after processing commands. This helps confirm device
+        behavior without making assumptions in the code.
         """
-        _LOGGER.warning("Device %s disconnected unexpectedly", self._address)
+        if self._last_command_time > 0:
+            elapsed = time.monotonic() - self._last_command_time
+            _LOGGER.info(
+                "Device %s disconnected %.2fs after last command (%s)",
+                self._address,
+                elapsed,
+                self._last_command_hex,
+            )
+        else:
+            _LOGGER.warning(
+                "Device %s disconnected (no commands had been sent this session)",
+                self._address,
+            )
+
         self._client = None
         self._write_characteristic = None
         self._notify_characteristic = None
@@ -434,9 +457,18 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
 
         try:
             _LOGGER.debug("Sending command: %s", frame.hex())
+            # Use response=True (BLE Write Request) so bleak waits for
+            # the device to ACK at the ATT layer. Without this, bleak uses
+            # Write Without Response (fire-and-forget) which returns as soon
+            # as the data is buffered locally -- the device may never process it.
             await self._client.write_gatt_char(
-                self._write_characteristic, frame
+                self._write_characteristic, frame, response=True
             )
+            self._last_command_time = time.monotonic()
+            self._last_command_hex = frame.hex()
+            _LOGGER.debug("Command acknowledged by device: %s", frame.hex())
+            # Brief pause to let the device process before we return.
+            await asyncio.sleep(0.2)
             return True
         except (BleakError, TimeoutError, OSError) as err:
             # Invalidate connection so next command triggers a reconnect
