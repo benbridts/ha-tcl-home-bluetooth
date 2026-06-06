@@ -1,4 +1,20 @@
-"""Media player platform for TCL Soundbar."""
+"""Media player platform for TCL Soundbar.
+
+This module implements the Home Assistant media player entity for TCL soundbars
+that communicate over BLE. The soundbar uses a custom GATT protocol where
+commands are sent as framed byte sequences to a write characteristic, and
+state reports are received via BLE notifications on a separate characteristic.
+
+Key design decisions:
+- The device advertises with service UUID FFF6 but uses different UUIDs for
+  actual GATT communication after connection. We look up characteristics
+  directly by their known UUIDs rather than searching by service.
+- BLE connections are established lazily (on first command) if the device
+  isn't available at startup. The device must be powered on and advertising
+  for a connection to succeed.
+- Notifications from the device may arrive in multiple BLE packets for a
+  single logical frame, so we use TDataMerger to reassemble them.
+"""
 from __future__ import annotations
 
 import logging
@@ -24,7 +40,8 @@ from .const import (
     CMD_REPORT_SOURCE,
     CMD_REPORT_VOLUME,
     DOMAIN,
-    SERVICE_UUID,
+    GATT_NOTIFY_CHAR_UUID,
+    GATT_WRITE_CHAR_UUID,
     SOURCE_MAP,
     SOURCE_MAP_REVERSE,
 )
@@ -47,7 +64,11 @@ async def async_setup_entry(
 
 
 class TCLSoundbarMediaPlayer(MediaPlayerEntity):
-    """Representation of a TCL Soundbar as a media player."""
+    """Representation of a TCL Soundbar as a media player.
+
+    Communicates with the soundbar over BLE using a custom protocol.
+    Supports power on/off, volume control, mute, and source selection.
+    """
 
     _attr_has_entity_name = True
     _attr_name = None
@@ -66,6 +87,8 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         self._client: BleakClient | None = None
         self._write_characteristic: Any = None
         self._notify_characteristic: Any = None
+        # TDataMerger reassembles multi-packet BLE notifications into
+        # complete protocol frames before parsing.
         self._data_merger = TDataMerger()
 
         # State attributes
@@ -86,7 +109,11 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
 
     @property
     def extra_state_attributes(self) -> dict[str, Any]:
-        """Expose BLE connection debug state as entity attributes."""
+        """Expose BLE connection debug state as entity attributes.
+
+        These attributes help diagnose connectivity issues without
+        needing to check logs — visible directly on the entity card.
+        """
         return {
             "ble_connected": self._client is not None
             and self._client.is_connected,
@@ -97,7 +124,9 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
     async def async_added_to_hass(self) -> None:
         """Run when entity is added to hass."""
         _LOGGER.debug("TCL Soundbar entity added to hass: %s", self._address)
-        # Attempt initial connection to get device state
+        # Attempt initial connection to get device state.
+        # If the device is asleep/not advertising, this will silently fail
+        # and the connection will be retried on the first user command.
         await self._connect_and_poll()
 
     async def async_will_remove_from_hass(self) -> None:
@@ -105,7 +134,12 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         await self._disconnect()
 
     async def _connect_and_poll(self) -> None:
-        """Establish BLE connection and poll for initial device state."""
+        """Establish BLE connection and poll for initial device state.
+
+        This is a best-effort operation: if the device is not available
+        (e.g. powered off / not advertising), we log at debug level and
+        defer connection to the first user-initiated command.
+        """
         try:
             ble_device = async_ble_device_from_address(
                 self.hass, self._address, connectable=True
@@ -137,7 +171,12 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             self._client = None
 
     async def _poll_initial_state(self) -> None:
-        """Send a get-status command to request current state from device."""
+        """Send a get-status command to request current state from device.
+
+        After connecting, we ask the soundbar to report its current power,
+        volume, and source state so the HA entity shows accurate info
+        without waiting for a user interaction.
+        """
         if self._client and self._write_characteristic:
             try:
                 frame = TCLSoundbarProtocol.build_get_status()
@@ -149,31 +188,56 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                 _LOGGER.warning("Failed to poll initial state: %s", err)
 
     async def _discover_characteristics(self) -> None:
-        """Discover write and notify characteristics within the FFF6 service."""
+        """Look up the write and notify GATT characteristics by their UUIDs.
+
+        The TCL soundbar advertises with service UUID FFF6, but once connected
+        the actual data characteristics live under a different service
+        (e49a25f8-...). We look them up directly by characteristic UUID rather
+        than iterating services, since bleak's get_characteristic() searches
+        across all services.
+
+        These UUIDs were determined empirically by connecting to the device and
+        enumerating its GATT table (see the discover_characteristics action).
+        """
         assert self._client is not None
 
-        for service in self._client.services:
-            if SERVICE_UUID in service.uuid.lower():
-                for char in service.characteristics:
-                    if "write" in char.properties:
-                        self._write_characteristic = char
-                        _LOGGER.debug(
-                            "Found write characteristic: %s", char.uuid
-                        )
-                    if "notify" in char.properties or "indicate" in char.properties:
-                        self._notify_characteristic = char
-                        _LOGGER.debug(
-                            "Found notify characteristic: %s", char.uuid
-                        )
-                break
+        # Look up characteristics directly by UUID — this works across all
+        # services so we don't need to know which service they belong to.
+        self._write_characteristic = self._client.services.get_characteristic(
+            GATT_WRITE_CHAR_UUID
+        )
+        self._notify_characteristic = self._client.services.get_characteristic(
+            GATT_NOTIFY_CHAR_UUID
+        )
 
-        if not self._write_characteristic:
-            _LOGGER.error("Write characteristic not found")
-        if not self._notify_characteristic:
-            _LOGGER.error("Notify characteristic not found")
+        if self._write_characteristic:
+            _LOGGER.debug(
+                "Found write characteristic: %s", GATT_WRITE_CHAR_UUID
+            )
+        else:
+            _LOGGER.warning(
+                "Write characteristic %s not found in services",
+                GATT_WRITE_CHAR_UUID,
+            )
+
+        if self._notify_characteristic:
+            _LOGGER.debug(
+                "Found notify characteristic: %s", GATT_NOTIFY_CHAR_UUID
+            )
+        else:
+            _LOGGER.warning(
+                "Notify characteristic %s not found in services",
+                GATT_NOTIFY_CHAR_UUID,
+            )
 
     async def _start_notifications(self) -> None:
-        """Start listening for notifications from the device."""
+        """Subscribe to BLE notifications from the soundbar.
+
+        The device sends state reports (volume changes, power state, source
+        changes) as notifications on the notify characteristic. We subscribe
+        here so that any change — whether from HA or the physical remote —
+        gets reflected in the entity state.
+        """
         if self._client and self._notify_characteristic:
             await self._client.start_notify(
                 self._notify_characteristic, self._notification_callback
@@ -183,8 +247,10 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
     def _handle_disconnect(self) -> None:
         """Handle unexpected device disconnection.
 
-        Clears client and characteristics, logs the event, and schedules
-        a state update so HA reflects the disconnected state.
+        Called by bleak when the BLE connection drops (e.g. device went to
+        sleep, moved out of range, or was power cycled). Clears connection
+        state and schedules a HA state update so the UI reflects that the
+        device is no longer reachable.
         """
         _LOGGER.warning("Device %s disconnected unexpectedly", self._address)
         self._client = None
@@ -197,13 +263,19 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
     ) -> None:
         """Handle incoming BLE notifications.
 
-        This callback is invoked from Bleak's background thread, so we
-        must schedule state updates on the event loop thread-safely.
+        BLE notifications may arrive as partial frames (due to MTU limits),
+        so we feed them into TDataMerger which buffers and reassembles them.
+        Once a complete frame is received, we parse and handle it.
+
+        This callback is invoked from Bleak's background thread, so we use
+        schedule_update_ha_state() (thread-safe) rather than
+        async_write_ha_state().
         """
         _LOGGER.debug("Received notification: %s", data.hex())
 
         complete_frame = self._data_merger.add_data(bytes(data))
         if complete_frame is None:
+            # Partial frame — waiting for more data
             return
 
         parsed = TCLSoundbarProtocol.parse_frame(complete_frame)
@@ -215,15 +287,22 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         self._handle_report(command, payload)
 
     def _handle_report(self, command: int, payload: bytes) -> None:
-        """Handle a parsed report from the device."""
+        """Handle a parsed report from the device.
+
+        The soundbar sends unsolicited reports when its state changes (e.g.
+        volume adjusted via remote, source switched, powered off). We update
+        our internal state to match and notify HA.
+        """
         if command == CMD_REPORT_VOLUME:
             if payload:
+                # Volume is reported as 0-100 integer, we normalize to 0.0-1.0
                 volume = payload[0]
                 self._attr_volume_level = volume / 100.0
                 _LOGGER.debug("Volume report: %d%%", volume)
 
         elif command == CMD_REPORT_POWER:
             if payload:
+                # Power state: 0 = off, non-zero = on
                 power_on = payload[0] != 0
                 if power_on:
                     self._attr_state = MediaPlayerState.ON
@@ -233,6 +312,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
 
         elif command == CMD_REPORT_SOURCE:
             if payload:
+                # Source ID maps to a human-readable name via SOURCE_MAP_REVERSE
                 source_id = payload[0]
                 source_name = SOURCE_MAP_REVERSE.get(source_id)
                 if source_name:
@@ -244,11 +324,12 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         else:
             _LOGGER.debug("Unhandled report command: 0x%02X", command)
 
-        # Schedule state update on the event loop (thread-safe)
+        # Schedule state update on the event loop (thread-safe from
+        # bleak's notification callback thread)
         self.schedule_update_ha_state()
 
     async def _disconnect(self) -> None:
-        """Disconnect from the device."""
+        """Disconnect from the device and clear connection state."""
         if self._client and self._client.is_connected:
             try:
                 await self._client.disconnect()
@@ -261,12 +342,16 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
     async def _send_command(self, frame: bytes) -> bool:
         """Send a command frame to the device.
 
-        Connects inline if needed. If the write fails, invalidates the
-        connection and returns False; the next call will reconnect.
+        Handles the full connection lifecycle:
+        1. If not connected, establishes a new BLE connection
+        2. Discovers characteristics and starts notifications
+        3. Writes the command frame to the write characteristic
+        4. On failure, invalidates the connection so next call reconnects
 
         Returns:
             True if the command was sent successfully, False otherwise.
         """
+        # Reconnect if we don't have an active connection
         if not (self._client and self._client.is_connected):
             try:
                 ble_device = async_ble_device_from_address(
@@ -299,6 +384,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                 await self._start_notifications()
                 _LOGGER.debug("Connected to %s", self._address)
 
+                # Poll state after reconnecting so we have up-to-date info
                 await self._poll_initial_state()
             except (BleakError, TimeoutError, OSError) as err:
                 _LOGGER.error("Failed to connect to %s: %s", self._address, err)
@@ -322,9 +408,15 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             )
             return True
         except (BleakError, TimeoutError, OSError) as err:
+            # Invalidate connection so next command triggers a reconnect
             _LOGGER.error("Failed to send command: %s", err)
             self._client = None
             return False
+
+    # --- Media player action implementations ---
+    # Each action builds a protocol frame and sends it. On success, we
+    # optimistically update local state for immediate UI feedback. The
+    # device will also send a notification confirming the change.
 
     async def async_turn_on(self) -> None:
         """Turn the soundbar on."""
@@ -344,6 +436,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
 
     async def async_set_volume_level(self, volume: float) -> None:
         """Set volume level (0.0 to 1.0)."""
+        # Convert HA's 0.0-1.0 float to the device's 0-100 integer range
         level = int(volume * 100)
         _LOGGER.debug("Setting volume to %d%%", level)
         frame = TCLSoundbarProtocol.build_set_volume(level)
@@ -352,13 +445,13 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             self.async_write_ha_state()
 
     async def async_volume_up(self) -> None:
-        """Turn volume up."""
+        """Turn volume up by 5%."""
         current = self._attr_volume_level or 0.0
         new_level = min(1.0, current + 0.05)
         await self.async_set_volume_level(new_level)
 
     async def async_volume_down(self) -> None:
-        """Turn volume down."""
+        """Turn volume down by 5%."""
         current = self._attr_volume_level or 0.0
         new_level = max(0.0, current - 0.05)
         await self.async_set_volume_level(new_level)
@@ -372,7 +465,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             self.async_write_ha_state()
 
     async def async_select_source(self, source: str) -> None:
-        """Select input source."""
+        """Select input source by name (e.g. 'HDMI', 'Bluetooth')."""
         source_id = SOURCE_MAP.get(source)
         if source_id is None:
             _LOGGER.error("Unknown source: %s", source)
