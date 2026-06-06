@@ -190,8 +190,9 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             try:
                 frame = TCLSoundbarProtocol.build_get_status()
                 _LOGGER.debug("Polling initial state: %s", frame.hex())
+                use_response = "write" in self._write_characteristic.properties
                 await self._client.write_gatt_char(
-                    self._write_characteristic, frame, response=True
+                    self._write_characteristic, frame, response=use_response
                 )
                 self._last_command_time = time.monotonic()
                 self._last_command_hex = frame.hex()
@@ -199,26 +200,37 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                 _LOGGER.warning("Failed to poll initial state: %s", err)
 
     async def _discover_characteristics(self) -> None:
-        """Look up the write and notify GATT characteristics by service + UUID.
+        """Look up the write and notify GATT characteristics.
 
-        The TCL soundbar advertises with service UUID FFF6, but once connected
-        the actual data characteristics live under a different service
-        (e49a25f8-...). The device exposes duplicate characteristic UUIDs
-        across multiple services (e49a25f8-... and 0000f500-...), so we must
-        look them up within the specific service to avoid bleak raising
-        "Multiple Characteristics with this UUID".
-
-        These UUIDs were determined empirically by connecting to the device and
-        enumerating its GATT table (see the discover_characteristics action).
+        The TCL soundbar exposes duplicate characteristic UUIDs across
+        multiple services. We log the full GATT table to help diagnose
+        which service is correct, then select characteristics from our
+        target service.
         """
         assert self._client is not None
 
         self._write_characteristic = None
         self._notify_characteristic = None
 
+        # Log the full GATT table so we can see exactly what the device
+        # exposes and which handles map to which service.
+        _LOGGER.info("GATT table for %s:", self._address)
+        for service in self._client.services:
+            _LOGGER.info(
+                "  Service: %s (handle=%d)",
+                service.uuid,
+                service.handle,
+            )
+            for char in service.characteristics:
+                _LOGGER.info(
+                    "    Char: %s (handle=%d, properties=%s)",
+                    char.uuid,
+                    char.handle,
+                    ",".join(char.properties),
+                )
+
         # Find characteristics within our target service to avoid the
-        # "Multiple Characteristics with this UUID" error that occurs when
-        # the same char UUID exists under multiple services.
+        # "Multiple Characteristics with this UUID" error.
         target_service = None
         for service in self._client.services:
             if service.uuid == GATT_SERVICE_UUID:
@@ -226,6 +238,11 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                 break
 
         if target_service:
+            _LOGGER.info(
+                "Using target service %s (handle=%d)",
+                target_service.uuid,
+                target_service.handle,
+            )
             for char in target_service.characteristics:
                 if char.uuid == GATT_WRITE_CHAR_UUID:
                     self._write_characteristic = char
@@ -234,12 +251,9 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         else:
             _LOGGER.warning(
                 "Target GATT service %s not found; "
-                "falling back to handle-based lookup across all services",
+                "falling back to first matching characteristic across all services",
                 GATT_SERVICE_UUID,
             )
-            # Fallback: iterate all services and pick the first match,
-            # using the characteristic object (which carries its handle)
-            # to avoid the ambiguous UUID lookup.
             for service in self._client.services:
                 for char in service.characteristics:
                     if char.uuid == GATT_WRITE_CHAR_UUID and self._write_characteristic is None:
@@ -248,10 +262,11 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                         self._notify_characteristic = char
 
         if self._write_characteristic:
-            _LOGGER.debug(
-                "Found write characteristic: %s (handle=%d)",
-                GATT_WRITE_CHAR_UUID,
+            _LOGGER.info(
+                "Selected write characteristic: %s (handle=%d, properties=%s)",
+                self._write_characteristic.uuid,
                 self._write_characteristic.handle,
+                ",".join(self._write_characteristic.properties),
             )
         else:
             _LOGGER.warning(
@@ -260,10 +275,11 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             )
 
         if self._notify_characteristic:
-            _LOGGER.debug(
-                "Found notify characteristic: %s (handle=%d)",
-                GATT_NOTIFY_CHAR_UUID,
+            _LOGGER.info(
+                "Selected notify characteristic: %s (handle=%d, properties=%s)",
+                self._notify_characteristic.uuid,
                 self._notify_characteristic.handle,
+                ",".join(self._notify_characteristic.properties),
             )
         else:
             _LOGGER.warning(
@@ -457,16 +473,23 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
 
         try:
             _LOGGER.debug("Sending command: %s", frame.hex())
-            # Use response=True (BLE Write Request) so bleak waits for
-            # the device to ACK at the ATT layer. Without this, bleak uses
-            # Write Without Response (fire-and-forget) which returns as soon
-            # as the data is buffered locally -- the device may never process it.
+            # Check characteristic properties to determine write type.
+            # "write" = Write Request (with ACK), "write-without-response" = fire-and-forget
+            char_props = self._write_characteristic.properties
+            use_response = "write" in char_props
+            _LOGGER.debug(
+                "Write char properties: %s, using response=%s",
+                ",".join(char_props),
+                use_response,
+            )
             await self._client.write_gatt_char(
-                self._write_characteristic, frame, response=True
+                self._write_characteristic, frame, response=use_response
             )
             self._last_command_time = time.monotonic()
             self._last_command_hex = frame.hex()
-            _LOGGER.debug("Command acknowledged by device: %s", frame.hex())
+            _LOGGER.info(
+                "Command sent (response=%s): %s", use_response, frame.hex()
+            )
             # Brief pause to let the device process before we return.
             await asyncio.sleep(0.2)
             return True
