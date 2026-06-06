@@ -15,147 +15,142 @@ from .const import (
 _LOGGER = logging.getLogger(__name__)
 
 
-class TCLSoundbarProtocol:
-    """Protocol handler for building and parsing TCL Soundbar BLE frames.
+def calculate_checksum(data: bytes) -> int:
+    """Calculate XOR checksum of all bytes (used over the frame excluding checksum)."""
+    result = 0
+    for byte in data:
+        result ^= byte
+    return result
+
+
+def build_frame(command: int, data: bytes = b"") -> bytes:
+    """Build a protocol frame.
 
     Frame format: [0xAA][length_high][length_low][command][data...][xor_checksum]
     Length = total frame length including header and checksum.
+
+    Args:
+        command: The command byte.
+        data: Optional payload data.
+
+    Returns:
+        Complete frame as bytes.
     """
+    # Length = header(1) + length(2) + command(1) + data(n) + checksum(1)
+    length = 1 + 2 + 1 + len(data) + 1
+    length_high = (length >> 8) & 0xFF
+    length_low = length & 0xFF
 
-    @staticmethod
-    def calculate_checksum(data: bytes) -> int:
-        """Calculate XOR checksum of all bytes (used over the frame excluding checksum)."""
-        result = 0
-        for byte in data:
-            result ^= byte
-        return result
+    frame_without_checksum = bytes(
+        [FRAME_HEADER, length_high, length_low, command]
+    ) + data
+    checksum = calculate_checksum(frame_without_checksum)
 
-    @staticmethod
-    def build_frame(command: int, data: bytes = b"") -> bytes:
-        """Build a protocol frame.
+    return frame_without_checksum + bytes([checksum])
 
-        Args:
-            command: The command byte.
-            data: Optional payload data.
 
-        Returns:
-            Complete frame as bytes.
-        """
-        # Length = header(1) + length(2) + command(1) + data(n) + checksum(1)
-        length = 1 + 2 + 1 + len(data) + 1
-        length_high = (length >> 8) & 0xFF
-        length_low = length & 0xFF
+def parse_frame(raw: bytes) -> tuple[int, bytes] | None:
+    """Parse a received frame and extract command and data.
 
-        frame_without_checksum = bytes(
-            [FRAME_HEADER, length_high, length_low, command]
-        ) + data
-        checksum = TCLSoundbarProtocol.calculate_checksum(frame_without_checksum)
+    Args:
+        raw: Raw bytes received from the device.
 
-        return frame_without_checksum + bytes([checksum])
+    Returns:
+        Tuple of (command, data) or None if frame is invalid.
+    """
+    if len(raw) < 5:
+        _LOGGER.debug("Frame too short: %d bytes", len(raw))
+        return None
 
-    @staticmethod
-    def parse_frame(raw: bytes) -> tuple[int, bytes] | None:
-        """Parse a received frame and extract command and data.
+    if raw[0] != FRAME_HEADER:
+        _LOGGER.debug("Invalid frame header: 0x%02X", raw[0])
+        return None
 
-        Args:
-            raw: Raw bytes received from the device.
+    # Extract expected length
+    expected_length = (raw[1] << 8) | raw[2]
+    if len(raw) < expected_length:
+        _LOGGER.debug(
+            "Frame incomplete: expected %d, got %d",
+            expected_length,
+            len(raw),
+        )
+        return None
 
-        Returns:
-            Tuple of (command, data) or None if frame is invalid.
-        """
-        if len(raw) < 5:
-            _LOGGER.debug("Frame too short: %d bytes", len(raw))
-            return None
+    # Verify checksum (XOR of all bytes except the last one)
+    frame_data = raw[: expected_length - 1]
+    expected_checksum = raw[expected_length - 1]
+    actual_checksum = calculate_checksum(frame_data)
 
-        if raw[0] != FRAME_HEADER:
-            _LOGGER.debug("Invalid frame header: 0x%02X", raw[0])
-            return None
+    if actual_checksum != expected_checksum:
+        _LOGGER.debug(
+            "Checksum mismatch: expected 0x%02X, got 0x%02X",
+            expected_checksum,
+            actual_checksum,
+        )
+        return None
 
-        # Extract expected length
-        expected_length = (raw[1] << 8) | raw[2]
-        if len(raw) < expected_length:
-            _LOGGER.debug(
-                "Frame incomplete: expected %d, got %d",
-                expected_length,
-                len(raw),
-            )
-            return None
+    command = raw[3]
+    data = raw[4 : expected_length - 1]
 
-        # Verify checksum (XOR of all bytes except the last one)
-        frame_data = raw[: expected_length - 1]
-        expected_checksum = raw[expected_length - 1]
-        actual_checksum = TCLSoundbarProtocol.calculate_checksum(frame_data)
+    return (command, data)
 
-        if actual_checksum != expected_checksum:
-            _LOGGER.debug(
-                "Checksum mismatch: expected 0x%02X, got 0x%02X",
-                expected_checksum,
-                actual_checksum,
-            )
-            return None
 
-        command = raw[3]
-        data = raw[4 : expected_length - 1]
+def build_set_volume(level: int) -> bytes:
+    """Build a set volume command frame.
 
-        return (command, data)
+    Args:
+        level: Volume level (0-100).
 
-    @staticmethod
-    def build_set_volume(level: int) -> bytes:
-        """Build a set volume command frame.
+    Returns:
+        Complete frame bytes.
+    """
+    level = max(0, min(100, level))
+    return build_frame(CMD_SET_VOLUME, bytes([level]))
 
-        Args:
-            level: Volume level (0-100).
 
-        Returns:
-            Complete frame bytes.
-        """
-        level = max(0, min(100, level))
-        return TCLSoundbarProtocol.build_frame(CMD_SET_VOLUME, bytes([level]))
+def build_set_power(on: bool) -> bytes:
+    """Build a set power command frame.
 
-    @staticmethod
-    def build_set_power(on: bool) -> bytes:
-        """Build a set power command frame.
+    Args:
+        on: True to power on, False to power off.
 
-        Args:
-            on: True to power on, False to power off.
+    Returns:
+        Complete frame bytes.
+    """
+    return build_frame(CMD_SET_POWER, bytes([0x01 if on else 0x00]))
 
-        Returns:
-            Complete frame bytes.
-        """
-        return TCLSoundbarProtocol.build_frame(CMD_SET_POWER, bytes([0x01 if on else 0x00]))
 
-    @staticmethod
-    def build_set_mute(mute: bool) -> bytes:
-        """Build a set mute command frame.
+def build_set_mute(mute: bool) -> bytes:
+    """Build a set mute command frame.
 
-        Args:
-            mute: True to mute, False to unmute.
+    Args:
+        mute: True to mute, False to unmute.
 
-        Returns:
-            Complete frame bytes.
-        """
-        return TCLSoundbarProtocol.build_frame(CMD_SET_MUTE, bytes([0x01 if mute else 0x00]))
+    Returns:
+        Complete frame bytes.
+    """
+    return build_frame(CMD_SET_MUTE, bytes([0x01 if mute else 0x00]))
 
-    @staticmethod
-    def build_set_source(source_id: int) -> bytes:
-        """Build a set source command frame.
 
-        Args:
-            source_id: Source ID from SOURCE_MAP.
+def build_set_source(source_id: int) -> bytes:
+    """Build a set source command frame.
 
-        Returns:
-            Complete frame bytes.
-        """
-        return TCLSoundbarProtocol.build_frame(CMD_SET_SOURCE, bytes([source_id]))
+    Args:
+        source_id: Source ID from SOURCE_MAP.
 
-    @staticmethod
-    def build_get_status() -> bytes:
-        """Build a get status/version command frame.
+    Returns:
+        Complete frame bytes.
+    """
+    return build_frame(CMD_SET_SOURCE, bytes([source_id]))
 
-        Returns:
-            Complete frame bytes.
-        """
-        return TCLSoundbarProtocol.build_frame(CMD_GET_VERSION)
+
+def build_get_status() -> bytes:
+    """Build a get status/version command frame.
+
+    Returns:
+        Complete frame bytes.
+    """
+    return build_frame(CMD_GET_VERSION)
 
 
 class TDataMerger:

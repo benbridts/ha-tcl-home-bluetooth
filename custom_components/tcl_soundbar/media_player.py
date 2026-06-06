@@ -48,7 +48,15 @@ from .const import (
     SOURCE_MAP,
     SOURCE_MAP_REVERSE,
 )
-from .protocol import TCLSoundbarProtocol, TDataMerger
+from .protocol import (
+    build_get_status,
+    build_set_mute,
+    build_set_power,
+    build_set_source,
+    build_set_volume,
+    parse_frame,
+    TDataMerger,
+)
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -116,20 +124,6 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             model="S55HE Soundbar",
         )
 
-    @property
-    def extra_state_attributes(self) -> dict[str, Any]:
-        """Expose BLE connection debug state as entity attributes.
-
-        These attributes help diagnose connectivity issues without
-        needing to check logs — visible directly on the entity card.
-        """
-        return {
-            "ble_connected": self._client is not None
-            and self._client.is_connected,
-            "write_characteristic": self._write_characteristic is not None,
-            "notify_characteristic": self._notify_characteristic is not None,
-        }
-
     async def async_added_to_hass(self) -> None:
         """Run when entity is added to hass."""
         _LOGGER.debug("TCL Soundbar entity added to hass: %s", self._address)
@@ -188,7 +182,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         """
         if self._client and self._write_characteristic:
             try:
-                frame = TCLSoundbarProtocol.build_get_status()
+                frame = build_get_status()
                 _LOGGER.debug("Polling initial state: %s", frame.hex())
                 await self._client.write_gatt_char(
                     self._write_characteristic, frame, response=True
@@ -310,7 +304,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         self._client = None
         self._write_characteristic = None
         self._notify_characteristic = None
-        self.schedule_update_ha_state()
+        self.async_write_ha_state()
 
     def _notification_callback(
         self, _sender: Any, data: bytearray
@@ -321,9 +315,8 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         so we feed them into TDataMerger which buffers and reassembles them.
         Once a complete frame is received, we parse and handle it.
 
-        This callback is invoked from Bleak's background thread, so we use
-        schedule_update_ha_state() (thread-safe) rather than
-        async_write_ha_state().
+        In Home Assistant, bleak notification callbacks run on the event loop
+        via the HA bluetooth integration.
         """
         _LOGGER.debug("Received notification: %s", data.hex())
 
@@ -332,7 +325,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             # Partial frame — waiting for more data
             return
 
-        parsed = TCLSoundbarProtocol.parse_frame(complete_frame)
+        parsed = parse_frame(complete_frame)
         if parsed is None:
             _LOGGER.warning("Failed to parse frame: %s", complete_frame.hex())
             return
@@ -378,9 +371,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         else:
             _LOGGER.debug("Unhandled report command: 0x%02X", command)
 
-        # Schedule state update on the event loop (thread-safe from
-        # bleak's notification callback thread)
-        self.schedule_update_ha_state()
+        self.async_write_ha_state()
 
     async def _disconnect(self) -> None:
         """Disconnect from the device and clear connection state."""
@@ -484,7 +475,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
     async def async_turn_on(self) -> None:
         """Turn the soundbar on."""
         _LOGGER.debug("Turning on TCL Soundbar")
-        frame = TCLSoundbarProtocol.build_set_power(on=True)
+        frame = build_set_power(on=True)
         if await self._send_command(frame):
             self._attr_state = MediaPlayerState.ON
             self.async_write_ha_state()
@@ -492,7 +483,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
     async def async_turn_off(self) -> None:
         """Turn the soundbar off."""
         _LOGGER.debug("Turning off TCL Soundbar")
-        frame = TCLSoundbarProtocol.build_set_power(on=False)
+        frame = build_set_power(on=False)
         if await self._send_command(frame):
             self._attr_state = MediaPlayerState.OFF
             self.async_write_ha_state()
@@ -502,7 +493,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         # Convert HA's 0.0-1.0 float to the device's 0-100 integer range
         level = int(volume * 100)
         _LOGGER.debug("Setting volume to %d%%", level)
-        frame = TCLSoundbarProtocol.build_set_volume(level)
+        frame = build_set_volume(level)
         if await self._send_command(frame):
             self._attr_volume_level = volume
             self.async_write_ha_state()
@@ -522,7 +513,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
     async def async_mute_volume(self, mute: bool) -> None:
         """Mute or unmute the soundbar."""
         _LOGGER.debug("Setting mute to %s", mute)
-        frame = TCLSoundbarProtocol.build_set_mute(mute)
+        frame = build_set_mute(mute)
         if await self._send_command(frame):
             self._attr_is_volume_muted = mute
             self.async_write_ha_state()
@@ -535,7 +526,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             return
 
         _LOGGER.debug("Selecting source: %s (ID=%d)", source, source_id)
-        frame = TCLSoundbarProtocol.build_set_source(source_id)
+        frame = build_set_source(source_id)
         if await self._send_command(frame):
             self._attr_source = source
             self.async_write_ha_state()
