@@ -1,7 +1,6 @@
 """Unit tests for the TCL Soundbar BLE protocol module."""
 from __future__ import annotations
 
-import importlib
 import sys
 from pathlib import Path
 from unittest.mock import MagicMock
@@ -28,7 +27,10 @@ from custom_components.tcl_soundbar.const import (
     CMD_SET_VOLUME,
     FRAME_HEADER,
 )
-from custom_components.tcl_soundbar.protocol import TCLSoundbarProtocol, TDataMerger
+from custom_components.tcl_soundbar.protocol import (
+    TCLSoundbarProtocol,
+    TDataMerger,
+)
 
 
 # --- Frame building tests ---
@@ -153,7 +155,7 @@ class TestParseFrame:
 
 
 class TestHelperMethods:
-    """Tests for convenience frame building methods."""
+    """Tests for convenience frame building functions."""
 
     def test_build_set_volume(self):
         """Verify volume command byte is CMD_SET_VOLUME, data is the volume level."""

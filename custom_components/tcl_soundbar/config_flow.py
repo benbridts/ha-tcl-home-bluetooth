@@ -22,7 +22,6 @@ class TCLSoundbarConfigFlow(ConfigFlow, domain=DOMAIN):
     def __init__(self) -> None:
         """Initialize the config flow."""
         self._discovery_info: BluetoothServiceInfoBleak | None = None
-        self._discovered_devices: dict[str, BluetoothServiceInfoBleak] = {}
 
     async def async_step_bluetooth(
         self, discovery_info: BluetoothServiceInfoBleak
@@ -46,7 +45,8 @@ class TCLSoundbarConfigFlow(ConfigFlow, domain=DOMAIN):
         self, user_input: dict[str, Any] | None = None
     ) -> ConfigFlowResult:
         """Confirm the Bluetooth discovery."""
-        assert self._discovery_info is not None
+        if self._discovery_info is None:
+            return self.async_abort(reason="no_devices_found")
 
         if user_input is not None:
             return self.async_create_entry(
@@ -63,8 +63,6 @@ class TCLSoundbarConfigFlow(ConfigFlow, domain=DOMAIN):
         self, user_input: dict[str, Any] | None = None
     ) -> ConfigFlowResult:
         """Handle the user step for manual configuration."""
-        errors: dict[str, str] = {}
-
         if user_input is not None:
             address = user_input["address"]
 
@@ -83,5 +81,4 @@ class TCLSoundbarConfigFlow(ConfigFlow, domain=DOMAIN):
                     vol.Required("address"): str,
                 }
             ),
-            errors=errors,
         )

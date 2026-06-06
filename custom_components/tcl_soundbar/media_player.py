@@ -116,20 +116,6 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
             model="S55HE Soundbar",
         )
 
-    @property
-    def extra_state_attributes(self) -> dict[str, Any]:
-        """Expose BLE connection debug state as entity attributes.
-
-        These attributes help diagnose connectivity issues without
-        needing to check logs — visible directly on the entity card.
-        """
-        return {
-            "ble_connected": self._client is not None
-            and self._client.is_connected,
-            "write_characteristic": self._write_characteristic is not None,
-            "notify_characteristic": self._notify_characteristic is not None,
-        }
-
     async def async_added_to_hass(self) -> None:
         """Run when entity is added to hass."""
         _LOGGER.debug("TCL Soundbar entity added to hass: %s", self._address)
@@ -310,7 +296,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         self._client = None
         self._write_characteristic = None
         self._notify_characteristic = None
-        self.schedule_update_ha_state()
+        self.async_write_ha_state()
 
     def _notification_callback(
         self, _sender: Any, data: bytearray
@@ -321,9 +307,8 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         so we feed them into TDataMerger which buffers and reassembles them.
         Once a complete frame is received, we parse and handle it.
 
-        This callback is invoked from Bleak's background thread, so we use
-        schedule_update_ha_state() (thread-safe) rather than
-        async_write_ha_state().
+        In Home Assistant, bleak notification callbacks run on the event loop
+        via the HA bluetooth integration.
         """
         _LOGGER.debug("Received notification: %s", data.hex())
 
@@ -378,9 +363,7 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
         else:
             _LOGGER.debug("Unhandled report command: 0x%02X", command)
 
-        # Schedule state update on the event loop (thread-safe from
-        # bleak's notification callback thread)
-        self.schedule_update_ha_state()
+        self.async_write_ha_state()
 
     async def _disconnect(self) -> None:
         """Disconnect from the device and clear connection state."""

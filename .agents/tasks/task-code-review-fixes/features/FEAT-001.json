@@ -1,0 +1,34 @@
+{
+  "id": "FEAT-001",
+  "type": "fix",
+  "description": "Fix incorrect comments, incorrect code, remove unused code, and apply HA/Python best practices across the integration",
+  "status": "completed",
+  "steps": [
+    "1. media_player.py: Fix the _notification_callback docstring - remove the incorrect claim that it is 'invoked from Bleak's background thread'. In Home Assistant, bleak notification callbacks run on the event loop via the HA bluetooth integration. Update both the docstring and the comment above schedule_update_ha_state() in _handle_report.",
+    "2. media_player.py: Replace schedule_update_ha_state() with async_write_ha_state() in both _notification_callback/_handle_report AND _handle_disconnect. Since callbacks run on the event loop in HA's bleak integration, async_write_ha_state() is correct. _handle_disconnect is also called from bleak's disconnected_callback which runs on the event loop in HA.",
+    "3. media_player.py: Remove the extra_state_attributes property entirely. Exposing internal debug state (ble_connected, write_characteristic, notify_characteristic) as entity attributes is not standard HA practice - this information belongs in diagnostics or debug logs, not entity state.",
+    "4. config_flow.py: Remove the unused self._discovered_devices dict from __init__. Remove the unused errors dict from async_step_user (it is created but never populated with error values). Replace 'assert self._discovery_info is not None' with a proper runtime check that raises a HomeAssistantError or returns an abort result.",
+    "5. protocol.py: Convert TCLSoundbarProtocol from a class with all @staticmethod methods to module-level functions. This is simpler Python - a class with no instance state and only static methods is better expressed as a module. Keep the same function names (calculate_checksum, build_frame, parse_frame, build_set_volume, build_set_power, build_set_mute, build_set_source, build_get_status). Update imports in media_player.py and tests/test_protocol.py accordingly.",
+    "6. const.py: Remove unused constants: CMD_SET_BASS, CMD_SET_TREBLE, CMD_SET_EQ_MODE, CMD_REPORT_RC_INDEX, CMD_REPORT_EQ_MODE. These are defined but never referenced anywhere in the codebase.",
+    "7. manifest.json: Fix the local_name pattern for bluetooth discovery. The README documents device names as lowercase 'tcl_XXXXXXXX_XXXX'. HA's bluetooth matching uses fnmatch which is case-sensitive. Change 'TCL*' to 'tcl*' to match the actual device advertisement names. Keep the service_uuid matcher as well for redundancy.",
+    "8. test_protocol.py: Remove the unused 'import importlib' statement. Update all test references from TCLSoundbarProtocol.method() to the new module-level function calls after the protocol.py refactor.",
+    "9. __init__.py: The 'from .const import DOMAIN  # noqa: F401' is actually required by HA for config flow domain resolution. Keep it but improve the comment to explain WHY it is needed (HA looks up DOMAIN from the integration's __init__ module to match config flows to their integration)."
+  ],
+  "acceptance_criteria": [
+    "All existing tests pass (python -m pytest tests/ -v)",
+    "No unused imports remain in any file",
+    "No incorrect comments about threading behavior",
+    "schedule_update_ha_state() replaced with async_write_ha_state()",
+    "extra_state_attributes property removed from media_player.py",
+    "Protocol functions are module-level, not wrapped in an unnecessary class",
+    "Unused constants removed from const.py",
+    "manifest.json local_name matches actual device advertisement pattern (lowercase tcl)",
+    "Config flow has no unused variables or assert statements",
+    "TDataMerger class remains unchanged (it has instance state so class is appropriate)"
+  ],
+  "verification": [
+    "cd /projects/sandbox/ha-tcl-home-bluetooth && python -m pytest tests/ -v"
+  ],
+  "blocked_reason": null,
+  "findings": "All 22 tests pass. No issues encountered during implementation."
+}

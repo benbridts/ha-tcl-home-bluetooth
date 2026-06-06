@@ -16,11 +16,7 @@ _LOGGER = logging.getLogger(__name__)
 
 
 class TCLSoundbarProtocol:
-    """Protocol handler for building and parsing TCL Soundbar BLE frames.
-
-    Frame format: [0xAA][length_high][length_low][command][data...][xor_checksum]
-    Length = total frame length including header and checksum.
-    """
+    """Protocol frame builder and parser for the TCL Soundbar BLE protocol."""
 
     @staticmethod
     def calculate_checksum(data: bytes) -> int:
@@ -33,6 +29,9 @@ class TCLSoundbarProtocol:
     @staticmethod
     def build_frame(command: int, data: bytes = b"") -> bytes:
         """Build a protocol frame.
+
+        Frame format: [0xAA][length_high][length_low][command][data...][xor_checksum]
+        Length = total frame length including header and checksum.
 
         Args:
             command: The command byte.
