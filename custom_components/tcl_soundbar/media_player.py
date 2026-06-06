@@ -41,6 +41,7 @@ from .const import (
     CMD_REPORT_VOLUME,
     DOMAIN,
     GATT_NOTIFY_CHAR_UUID,
+    GATT_SERVICE_UUID,
     GATT_WRITE_CHAR_UUID,
     SOURCE_MAP,
     SOURCE_MAP_REVERSE,
@@ -188,31 +189,59 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
                 _LOGGER.warning("Failed to poll initial state: %s", err)
 
     async def _discover_characteristics(self) -> None:
-        """Look up the write and notify GATT characteristics by their UUIDs.
+        """Look up the write and notify GATT characteristics by service + UUID.
 
         The TCL soundbar advertises with service UUID FFF6, but once connected
         the actual data characteristics live under a different service
-        (e49a25f8-...). We look them up directly by characteristic UUID rather
-        than iterating services, since bleak's get_characteristic() searches
-        across all services.
+        (e49a25f8-...). The device exposes duplicate characteristic UUIDs
+        across multiple services (e49a25f8-... and 0000f500-...), so we must
+        look them up within the specific service to avoid bleak raising
+        "Multiple Characteristics with this UUID".
 
         These UUIDs were determined empirically by connecting to the device and
         enumerating its GATT table (see the discover_characteristics action).
         """
         assert self._client is not None
 
-        # Look up characteristics directly by UUID — this works across all
-        # services so we don't need to know which service they belong to.
-        self._write_characteristic = self._client.services.get_characteristic(
-            GATT_WRITE_CHAR_UUID
-        )
-        self._notify_characteristic = self._client.services.get_characteristic(
-            GATT_NOTIFY_CHAR_UUID
-        )
+        self._write_characteristic = None
+        self._notify_characteristic = None
+
+        # Find characteristics within our target service to avoid the
+        # "Multiple Characteristics with this UUID" error that occurs when
+        # the same char UUID exists under multiple services.
+        target_service = None
+        for service in self._client.services:
+            if service.uuid == GATT_SERVICE_UUID:
+                target_service = service
+                break
+
+        if target_service:
+            for char in target_service.characteristics:
+                if char.uuid == GATT_WRITE_CHAR_UUID:
+                    self._write_characteristic = char
+                elif char.uuid == GATT_NOTIFY_CHAR_UUID:
+                    self._notify_characteristic = char
+        else:
+            _LOGGER.warning(
+                "Target GATT service %s not found; "
+                "falling back to handle-based lookup across all services",
+                GATT_SERVICE_UUID,
+            )
+            # Fallback: iterate all services and pick the first match,
+            # using the characteristic object (which carries its handle)
+            # to avoid the ambiguous UUID lookup.
+            for service in self._client.services:
+                for char in service.characteristics:
+                    if char.uuid == GATT_WRITE_CHAR_UUID and self._write_characteristic is None:
+                        self._write_characteristic = char
+                    elif char.uuid == GATT_NOTIFY_CHAR_UUID and self._notify_characteristic is None:
+                        self._notify_characteristic = char
 
         if self._write_characteristic:
             _LOGGER.debug(
-                "Found write characteristic: %s", GATT_WRITE_CHAR_UUID
+                "Found write characteristic: %s (handle=%d)",
+                GATT_WRITE_CHAR_UUID,
+                self._write_characteristic.handle,
             )
         else:
             _LOGGER.warning(
@@ -222,7 +251,9 @@ class TCLSoundbarMediaPlayer(MediaPlayerEntity):
 
         if self._notify_characteristic:
             _LOGGER.debug(
-                "Found notify characteristic: %s", GATT_NOTIFY_CHAR_UUID
+                "Found notify characteristic: %s (handle=%d)",
+                GATT_NOTIFY_CHAR_UUID,
+                self._notify_characteristic.handle,
             )
         else:
             _LOGGER.warning(
