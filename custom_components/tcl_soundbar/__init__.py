@@ -1,4 +1,14 @@
-"""The TCL Soundbar integration."""
+"""The TCL Soundbar integration.
+
+This integration communicates with TCL soundbars over Bluetooth Low Energy (BLE).
+It uses the HA bluetooth component for device discovery and bleak for GATT
+communication.
+
+The soundbar advertises with service UUID FFF6 (used in manifest.json for
+HA bluetooth discovery), but after connection exposes characteristics under
+a different service UUID (e49a25f8-f69a-11e8-8eb2-f2801f1b9fd1). This was
+determined by connecting to the device and enumerating its GATT table.
+"""
 from __future__ import annotations
 
 import logging
