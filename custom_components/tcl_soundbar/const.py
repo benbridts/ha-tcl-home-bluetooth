@@ -26,9 +26,12 @@ FRAME_HEADER = 0xAA
 # --- SET command bytes (sent to device) ---
 # These are the command IDs used when sending instructions to the soundbar.
 CMD_SET_VOLUME = 0x02
+CMD_SET_BASS = 0x04
+CMD_SET_TREBLE = 0x05
 CMD_SET_POWER = 0x06
 CMD_SET_MUTE = 0x0E
 CMD_SET_SOURCE = 0x0F
+CMD_SET_EQ_MODE = 0x11
 CMD_GET_VERSION = 0x18
 
 # --- REPORT command bytes (received from device) ---
@@ -36,8 +39,10 @@ CMD_GET_VERSION = 0x18
 # via BLE notifications. The IDs are offset from the SET commands (typically
 # SET + 0x82 for the corresponding report).
 CMD_REPORT_VOLUME = 0x84
+CMD_REPORT_RC_INDEX = 0x85
 CMD_REPORT_POWER = 0x88
 CMD_REPORT_SOURCE = 0x91
+CMD_REPORT_EQ_MODE = 0x93
 
 # --- Source mapping ---
 # Maps human-readable source names to the byte IDs used in the BLE protocol.
